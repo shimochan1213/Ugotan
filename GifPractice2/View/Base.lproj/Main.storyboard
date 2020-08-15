@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IWy-hD-PxZ">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -353,7 +352,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIL-b6-L0u">
-                                <rect key="frame" x="31" y="254" width="313" height="60"/>
+                                <rect key="frame" x="0.0" y="254" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
                                 <nil key="textColor"/>
@@ -399,7 +398,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdh-x2-mBF">
-                                <rect key="frame" x="25" y="311" width="326" height="44"/>
+                                <rect key="frame" x="0.0" y="311" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                 <nil key="textColor"/>
@@ -423,7 +422,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBs-Ac-WTQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3246" y="-34"/>
+            <point key="canvasLocation" x="3245.5999999999999" y="-34.632683658170919"/>
         </scene>
         <!--Test Range View Controller-->
         <scene sceneID="ar7-2N-dpG">
@@ -475,30 +474,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="英単語を表示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2I-Ux-QXe">
-                                <rect key="frame" x="33" y="340" width="309" height="89"/>
+                                <rect key="frame" x="0.0" y="340" width="375" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rQ-uU-kdb">
-                                <rect key="frame" x="16" y="419" width="149" height="159"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8rQ-uU-kdb">
+                                <rect key="frame" x="7" y="419" width="173" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88173654960000003" green="1" blue="0.96793509180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="選択肢1"/>
                                 <connections>
                                     <action selector="answer:" destination="sKY-Pk-4VK" eventType="touchUpInside" id="q05-tE-EWw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTs-Tb-CxY">
-                                <rect key="frame" x="199" y="419" width="143" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99824160340000001" green="0.98150688409999998" blue="0.63259905579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <state key="normal" title="選択肢2"/>
-                                <connections>
-                                    <action selector="answer:" destination="sKY-Pk-4VK" eventType="touchUpInside" id="CdM-Zg-dox"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxG-nG-Ipp">
@@ -522,6 +511,16 @@
                                 <rect key="frame" x="31" y="100" width="118" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hTs-Tb-CxY">
+                                <rect key="frame" x="195" y="419" width="173" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99824160340000001" green="0.98150688409999998" blue="0.63259905579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="選択肢2"/>
+                                <connections>
+                                    <action selector="answer:" destination="sKY-Pk-4VK" eventType="touchUpInside" id="CdM-Zg-dox"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1Ga-20-s6a"/>
@@ -540,7 +539,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XX3-h5-QgW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3247" y="689"/>
+            <point key="canvasLocation" x="3245.5999999999999" y="688.60569715142435"/>
         </scene>
         <!--Intro Scroll View Controller-->
         <scene sceneID="F1d-8E-Dt2">
@@ -592,10 +591,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpx-6h-sUW">
-                                <rect key="frame" x="16" y="117" width="343" height="422"/>
+                                <rect key="frame" x="16" y="117" width="343" height="436"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">　人間は、繰り返し入ってきた情報を必ず覚えることができます。あなたがお友達の名前や最寄駅の名前を覚えているのと同じです。逆に、半年前に初めて会った人の顔や名前を覚えていないのは当然です。英単語習得も同じ話です。　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　つまり、英単語を覚えるには何度も触れる必要があります。繰り返し音読してください。繰り返し動くイラストをみてください。そうすれば、誰でも必ず英単語を覚えられます。　　　　　　　　　　　　　　　自分を信じて、一緒に頑張りましょう！</string>
+                                <string key="text">　人間は、繰り返し入ってきた情報を必ず覚えることができます。あなたがお友達の名前や最寄駅の名前を覚えているのと同じです。逆に、半年前に一度だけ会った人の顔や名前を覚えていないのは当然です。英単語習得も同じ話です。　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　つまり、英単語を覚えるには何度も触れる必要があります。繰り返し音読してください。繰り返しイラストをみてください。そうすれば、誰でも必ず英単語を覚えられます。　　　　　　　　　　　　　　　自分を信じて、一緒に頑張りましょう！</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -629,16 +628,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-Or-K6F">
-                                <rect key="frame" x="22" y="117" width="337" height="409"/>
+                                <rect key="frame" x="22" y="117" width="337" height="443.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">　本アプリは30個ずつ英単語を学ぶことができます。まずは初めの30個を1日1回、1週間毎日「eat食べる、eat食べる、eat食べる」という風に音読して下さい。そして、音読を1週間繰り返した後に、是非テストをしてみてください。きっと多くの単語を正解できるはずです。ですが、それでも覚え切れない単語が当然あるでしょう。そのような単語たちは「ニガテ単語」である可能性が高いため意識的に繰り返し音読してください。　　　　　　　　　　　　慣れてきたら、ペースを上げて一日90単語などに挑戦してみて下さいね！　　　　　　　　　　　</string>
+                                <string key="text">　本アプリは30個ずつ英単語を学ぶことができます。まずは初めの30個を1日2回（時間を空けて）、3日間毎日「eat食べる、eat食べる、eat食べる」という風に音読して下さい。そして、音読を3日間繰り返した後に、是非テストをしてみてください。きっと正解できる単語が増えているはずです。ですが、それでも覚え切れない単語は当然あるでしょう。そのような単語たちは「ニガテ単語」である可能性が高いため意識的に繰り返し音読してください。　　　　　　　　　　　　慣れてきたら、ペースを上げて一日90単語などに挑戦してみて下さいね！　　　　　　　　　　　</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="毎日同じ30個を1週間繰り返す" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-ac-GQk">
-                                <rect key="frame" x="29" y="66" width="318" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="毎日2回、同じ30個を3日間繰り返す" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-ac-GQk">
+                                <rect key="frame" x="12" y="66" width="353" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" red="1" green="0.2752544582" blue="0.35707038639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

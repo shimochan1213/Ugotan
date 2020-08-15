@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //Firebase初期設定
-        FirebaseApp.configure()
+//        FirebaseApp.configure()
       
         //広告の初期設定
         GADMobileAds.sharedInstance().start(completionHandler: nil)

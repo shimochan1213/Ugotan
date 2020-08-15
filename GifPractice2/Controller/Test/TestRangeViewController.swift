@@ -31,12 +31,14 @@ class TestRangeViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     var whichHinshi = String()
     
+    let materialList = MaterialList()
+    
 
     @IBOutlet weak var tableView: UITableView!
     
     //タップされたセルの番号を入れておく（indexPath.row番目だね）
     var CellNumber = Int()
-     var textArray = ["0-30","31-60","61-90","91-120"]
+     var textArray = ["0-30","31-60","61-90","91-120","121-150","151-180"]
      
      override func viewDidLoad() {
          super.viewDidLoad()
@@ -60,7 +62,25 @@ class TestRangeViewController: UIViewController,UITableViewDelegate,UITableViewD
      
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
          //配列の中身の数だけセルを返す
-         return textArray.count
+        var numberOfRows = Int()
+        
+        switch whichHinshi {
+        case "verb":
+            numberOfRows = materialList.TOEIC600verbList.count/30 + 1
+        case "noun":
+            numberOfRows = materialList.TOEIC600NounList.count/30 + 1
+        case "adjective":
+            numberOfRows = materialList.TOEIC600AdjectiveList.count/30 + 1
+        case "adverb":
+            numberOfRows = materialList.TOEIC600AdverbList.count/30 + 1
+        case "others":
+            numberOfRows = materialList.TOEIC600OthersList.count/30 + 1
+        default:
+            print("エラー")
+        }
+        
+        
+         return numberOfRows
      }
      
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

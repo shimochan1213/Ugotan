@@ -83,40 +83,44 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 wordCount = 61
             case 3:
                 wordCount = 91
+            case 4:
+                wordCount = 121
+            case 5:
+                wordCount = 151
             default:
                 return
             }
-
-            switch whichHinshi {
-                case "verb":
-                    wordLabel.text = String(materialList.TOEIC600verbList[wordCount].Words)
-                    japanWordLabel.text = String(materialList.TOEIC600verbList[wordCount].japanWords)
-                    gifView.loadGif(name:materialList.TOEIC600verbList[wordCount].Words )
             
-                case "noun":
-                    wordLabel.text = String(materialList.TOEIC600NounList[wordCount].Words)
-                    japanWordLabel.text = String(materialList.TOEIC600NounList[wordCount].japanWords)
-                    gifView.loadGif(name:materialList.TOEIC600NounList[wordCount].Words )
-                 
-                case "adjective":
-                    wordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    japanWordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].japanWords)
-                    gifView.loadGif(name:materialList.TOEIC600AdjectiveList[wordCount].Words )
+            switch whichHinshi {
+            case "verb":
+                wordLabel.text = String(materialList.TOEIC600verbList[wordCount].Words)
+                japanWordLabel.text = String(materialList.TOEIC600verbList[wordCount].japanWords)
+                gifView.loadGif(name:materialList.TOEIC600verbList[wordCount].Words )
                 
-                case "adverb":
-                    wordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].Words)
-                    japanWordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].japanWords)
-                    gifView.loadGif(name:materialList.TOEIC600AdverbList[wordCount].Words )
-
-                    
-                case "others":
-                    wordLabel.text = String(materialList.TOEIC600OthersList[wordCount].Words)
-                    japanWordLabel.text = String(materialList.TOEIC600OthersList[wordCount].japanWords)
-                    gifView.loadGif(name:materialList.TOEIC600OthersList[wordCount].Words )
+            case "noun":
+                wordLabel.text = String(materialList.TOEIC600NounList[wordCount].Words)
+                japanWordLabel.text = String(materialList.TOEIC600NounList[wordCount].japanWords)
+                gifView.loadGif(name:materialList.TOEIC600NounList[wordCount].Words )
                 
-                default:
-                    return
-                }
+            case "adjective":
+                wordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].Words)
+                japanWordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].japanWords)
+                gifView.loadGif(name:materialList.TOEIC600AdjectiveList[wordCount].Words )
+                
+            case "adverb":
+                wordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].Words)
+                japanWordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].japanWords)
+                gifView.loadGif(name:materialList.TOEIC600AdverbList[wordCount].Words )
+                
+                
+            case "others":
+                wordLabel.text = String(materialList.TOEIC600OthersList[wordCount].Words)
+                japanWordLabel.text = String(materialList.TOEIC600OthersList[wordCount].japanWords)
+                gifView.loadGif(name:materialList.TOEIC600OthersList[wordCount].Words )
+                
+            default:
+                return
+            }
             
             
         case false:
@@ -130,65 +134,69 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 wordCount = 61
             case 3:
                 wordCount = 91
+            case 4:
+                wordCount = 121
+            case 5:
+                wordCount = 151
             default:
                 return
             }
-
+            
             
             switch whichHinshi {
             case "verb":
                 wordLabel.text = String(materialList.TOEIC600verbList[wordCount].Words)
                 japanWordLabel.text = String(materialList.TOEIC600verbList[wordCount].japanWords)
                 gifView.loadGif(name:materialList.TOEIC600verbList[wordCount].Words )
-        
+                
             case "noun":
                 wordLabel.text = String(materialList.TOEIC600NounList[wordCount].Words)
                 japanWordLabel.text = String(materialList.TOEIC600NounList[wordCount].japanWords)
                 gifView.loadGif(name:materialList.TOEIC600NounList[wordCount].Words )
-             
+                
             case "adjective":
                 wordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].Words)
                 japanWordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].japanWords)
                 gifView.loadGif(name:materialList.TOEIC600AdjectiveList[wordCount].Words )
-            
+                
             case "adverb":
                 wordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].Words)
                 japanWordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].japanWords)
                 gifView.loadGif(name:materialList.TOEIC600AdverbList[wordCount].Words )
-
+                
                 
             case "others":
                 wordLabel.text = String(materialList.TOEIC600OthersList[wordCount].Words)
                 japanWordLabel.text = String(materialList.TOEIC600OthersList[wordCount].japanWords)
                 gifView.loadGif(name:materialList.TOEIC600OthersList[wordCount].Words )
-            
+                
             default:
                 return
             }
             
             // タイマーを設定
-           timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
             
             
             
-
-           
+            
+            
             
         default: return
-        
-        
+            
+            
         }
         
-
-
+        
+        
     }
     
-
+    
     
     
     // NSTimerによって、一定の間隔で呼び出される関数
     @objc func onTimer(timer: Timer) {
-    
+        
         
         //0-30
         if receivedCellNumber == 0 && wordCount < 30{
@@ -215,6 +223,16 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
         }else if receivedCellNumber == 3 && wordCount < 120{
             //91-120
+            wordCount += 1
+            displayGif()
+            changeLabelsOfWordAndJapan()
+        }else if receivedCellNumber == 4 && wordCount < 150{
+            //121-150
+            wordCount += 1
+            displayGif()
+            changeLabelsOfWordAndJapan()
+        }else if receivedCellNumber == 5 && wordCount < 180{
+            //151-180
             wordCount += 1
             displayGif()
             changeLabelsOfWordAndJapan()
@@ -293,13 +311,6 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                         return
                     }
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     changeLabelsOfWordAndJapan()
                     //タイマー再開
                     timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
@@ -370,7 +381,77 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
                 timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                
+            }else if receivedCellNumber == 4{
+                if wordCount == 121{
+                    return
+                }
+                
+                switch whichHinshi {
+                case "verb":
+                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
+                    
+                case "noun":
+                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
+                    
+                case "adjective":
+                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
+                    
+                case "adverb":
+                    
+                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
+                    
+                case "others":
+                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
+                    
+                default:
+                    return
+                }
+                
+                changeLabelsOfWordAndJapan()
+                //タイマー再開
+                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                
+                
+                
+            }else if receivedCellNumber == 5{
+                
+                if wordCount == 151{
+                    return
+                }
+                
+                switch whichHinshi {
+                case "verb":
+                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
+                    
+                case "noun":
+                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
+                    
+                case "adjective":
+                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
+                    
+                case "adverb":
+                    
+                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
+                    
+                case "others":
+                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
+                    
+                default:
+                    return
+                }
+                
+                changeLabelsOfWordAndJapan()
+                //タイマー再開
+                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                
             }
+            
+            
+            
+            
+            
+            
             
             
             
@@ -378,6 +459,13 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         }
         
     }
+    
+    
+    
+    
+    
+    
+    
     
     
     @IBAction func stopAndRestartButton(_ sender: Any) {
@@ -393,7 +481,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             stopButton.setImage(image, for: UIControl.State.normal)
             
             
-        //戻る進むボタン無効化
+            //戻る進むボタン無効化
             nextButton.isEnabled = false
             backButton.isEnabled = false
             
@@ -559,6 +647,80 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 //タイマー再開
                 timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
             }
+        }else if receivedCellNumber == 4{
+            
+            //91-120
+            if wordCount == 150{
+                return
+            }else{
+                //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
+                self.timer?.invalidate()
+                wordCount += 1
+                
+                switch whichHinshi {
+                case "verb":
+                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
+                    
+                case "noun":
+                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
+                    
+                case "adjective":
+                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
+                    
+                case "adverb":
+                    
+                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
+                    
+                case "others":
+                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
+                    
+                default:
+                    return
+                }
+                
+                changeLabelsOfWordAndJapan()
+                //タイマー再開
+                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+            }
+            
+            
+        }else if receivedCellNumber == 5{
+            
+            //91-120
+            if wordCount == 180{
+                return
+            }else{
+                //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
+                self.timer?.invalidate()
+                wordCount += 1
+                
+                switch whichHinshi {
+                case "verb":
+                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
+                    
+                case "noun":
+                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
+                    
+                case "adjective":
+                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
+                    
+                case "adverb":
+                    
+                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
+                    
+                case "others":
+                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
+                    
+                default:
+                    return
+                }
+                
+                changeLabelsOfWordAndJapan()
+                //タイマー再開
+                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+            }
+            
+            
         }
         
         
@@ -567,11 +729,11 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     //音源ないときの処理をなんとかしないとね。オプショナル型を学ぼう
     @IBAction func soundButton(_ sender: Any) {
-
+        
         
         switch whichHinshi {
         case "verb":
-           soundFile.playSound(fileName: materialList.TOEIC600verbList[wordCount].Words, extensionName: "mp3")
+            soundFile.playSound(fileName: materialList.TOEIC600verbList[wordCount].Words, extensionName: "mp3")
             
         case "noun":
             soundFile.playSound(fileName: materialList.TOEIC600NounList[wordCount].Words, extensionName: "mp3")
@@ -591,7 +753,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         }
         
         
-            
+        
     }
     
     
@@ -621,7 +783,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     func changeLabelsOfWordAndJapan(){
-  
+        
         
         switch whichHinshi {
         case "verb":
@@ -633,12 +795,12 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             japanWordLabel.text = String(materialList.TOEIC600NounList[wordCount].japanWords)
             
         case "adjective":
-           wordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].Words)
+            wordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].Words)
             japanWordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].japanWords)
             
         case "adverb":
             
-           wordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].Words)
+            wordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].Words)
             japanWordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].japanWords)
             
         case "others":
@@ -648,7 +810,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         default:
             return
         }
-            
+        
         
     }
     
@@ -672,34 +834,34 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     
-      func showAlert(){
-            //テストの説明を表示
+    func showAlert(){
+        //テストの説明を表示
+        
+        let alertController = UIAlertController(title: "はじめまして", message: "3秒で自動的に次の単語が出ます。一時停止も可能です。3秒の間に2-3回音読ができると良いペースです。「increase増加する、increase増加する」という風に音読します。では、頑張って下さい！", preferredStyle: .alert)
+        
+        let action1 = UIAlertAction(title: "はい", style: .default) { (alert) in
             
-            let alertController = UIAlertController(title: "はじめまして", message: "3秒で自動的に次の単語が出ます。一時停止も可能です。3秒の間に2-3回音読ができると良いペースです。「increase増加する、increase増加する」という風に音読します。では、頑張って下さい！", preferredStyle: .alert)
+            //タイマースタート
+            self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
             
-            let action1 = UIAlertAction(title: "はい", style: .default) { (alert) in
-                
-                //タイマースタート
-                self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
-                
-              
-                
-            }
             
-            alertController.addAction(action1)
             
-            //ユーザーデフォルに起動した情報を記録
-            firstOrNot = false
-            UserDefaults.standard.set(firstOrNot, forKey: "alreadyManabu")
-            self.present(alertController, animated: true,completion: nil)
         }
         
+        alertController.addAction(action1)
         
+        //ユーザーデフォルに起動した情報を記録
+        firstOrNot = false
+        UserDefaults.standard.set(firstOrNot, forKey: "alreadyManabu")
+        self.present(alertController, animated: true,completion: nil)
     }
     
     
-    
-    
+}
+
+
+
+
 
 
 
