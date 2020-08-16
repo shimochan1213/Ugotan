@@ -408,7 +408,6 @@ class MaterialList{
         TOEIC600AdverbList.append(MaterialModel(wordsName: "absolutely", japanWordsName: "絶対に", correctOrNot: true))
         TOEIC600AdverbList.append(MaterialModel(wordsName: "nearly", japanWordsName: "ほぼ", correctOrNot: true))
         TOEIC600AdverbList.append(MaterialModel(wordsName: "highly", japanWordsName: "とても", correctOrNot: true))
-        TOEIC600AdverbList.append(MaterialModel(wordsName: "closely", japanWordsName: "ほぼ", correctOrNot: true))
         TOEIC600AdverbList.append(MaterialModel(wordsName: "currently", japanWordsName: "現在", correctOrNot: true))
         TOEIC600AdverbList.append(MaterialModel(wordsName: "immediately", japanWordsName: "すぐに", correctOrNot: true))
         TOEIC600AdverbList.append(MaterialModel(wordsName: "equally", japanWordsName: "同じように", correctOrNot: true))
@@ -428,7 +427,6 @@ class MaterialList{
         TOEIC600AdverbList.append(MaterialModel(wordsName: "hardly", japanWordsName: "ほとんどない", correctOrNot: true))
         TOEIC600AdverbList.append(MaterialModel(wordsName: "gradually", japanWordsName: "だんだんと、段階的に", correctOrNot: true))
         TOEIC600AdverbList.append(MaterialModel(wordsName: "somewhat", japanWordsName: "多少", correctOrNot: true))
-        TOEIC600AdverbList.append(MaterialModel(wordsName: "virtually", japanWordsName: "ほぼ", correctOrNot: true))
         TOEIC600AdverbList.append(MaterialModel(wordsName: "afterwards", japanWordsName: "後で", correctOrNot: true))
         
         
@@ -450,7 +448,6 @@ class MaterialList{
         TOEIC600OthersList.append(MaterialModel(wordsName: "be responsible of", japanWordsName: "Aに責任をもつ", correctOrNot: true))
         TOEIC600OthersList.append(MaterialModel(wordsName: "be committed to A", japanWordsName: "献身的に取り組む", correctOrNot: true))
         TOEIC600OthersList.append(MaterialModel(wordsName: "be satisdfied with A", japanWordsName: "Aに満足している", correctOrNot: true))
-        TOEIC600OthersList.append(MaterialModel(wordsName: "enable 人 to V", japanWordsName: "できるようにする", correctOrNot: true))
         TOEIC600OthersList.append(MaterialModel(wordsName: "regarding A", japanWordsName: "Aに関して", correctOrNot: true))
         TOEIC600OthersList.append(MaterialModel(wordsName: "be unable to V", japanWordsName: "〜できない", correctOrNot: true))
         TOEIC600OthersList.append(MaterialModel(wordsName: "neither A nor B", japanWordsName: "AもBも違う", correctOrNot: true))

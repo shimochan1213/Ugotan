@@ -434,40 +434,90 @@ class TestViewController: UIViewController{
         
         maruBatsuImage.image = batsuImage
         
+        //タイマーをリセットし、残り時間を再表示
+        timersResetAndShowLabel()
+        
         switch receivedCellNumber {
         case 0:
             //0-30　次の問題に行きたい時の処理を書き出す！その後メソッドにする?
-            //タイマーをリセットし、残り時間を再表示
-            timersResetAndShowLabel()
+//            //タイマーをリセットし、残り時間を再表示
+//            timersResetAndShowLabel()
             
             if questionNumber < 30{
-                
-                preventOutOfRange()
-                
-                questionNumber += 1
-                
- 
+                //これならOk!
                 switch whichHinshi {
                 case "verb":
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+                    if questionNumber == materialList.TOEIC600verbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
                 case "noun":
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+                    if questionNumber == materialList.TOEIC600NounList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
                 case "adjective":
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                    
+                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                        
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
                 case "adverb":
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
                 case "others":
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
                 default:
                     return
                 }
                 
+                questionNumber += 1
+                displayGif()
+                changeWordLabel()
                 showRandomSelection()
+                
+                
+//
+//                questionNumber += 1
+//
+//
+//                switch whichHinshi {
+//                case "verb":
+//                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+//                case "noun":
+//                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+//                case "adjective":
+//                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                case "adverb":
+//                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+//                case "others":
+//                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+//                default:
+//                    return
+//                }
+//
+//                showRandomSelection()
                 
             }else{
                 //問題終了
@@ -481,34 +531,56 @@ class TestViewController: UIViewController{
             }
         case 1:
             //31-60
-            timersResetAndShowLabel()
+//            timersResetAndShowLabel()
             
-            if questionNumber < 60{
-                
-                preventOutOfRange()
-                
-                questionNumber += 1
-                switch whichHinshi {
-                case "verb":
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
+            if questionNumber < 30{
+            //これならOk!
+            switch whichHinshi {
+            case "verb":
+                if questionNumber == materialList.TOEIC600verbList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
                     return
                 }
+            case "noun":
+                if questionNumber == materialList.TOEIC600NounList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "adjective":
                 
-                showRandomSelection()
+                if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                    
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "adverb":
+                if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "others":
+                if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            default:
+                return
+            }
+            
+            questionNumber += 1
+            displayGif()
+            changeWordLabel()
+            showRandomSelection()
                 
             }else{
                 //問題終了
@@ -522,40 +594,56 @@ class TestViewController: UIViewController{
             }
             
         case 2:
-            timersResetAndShowLabel()
+//            timersResetAndShowLabel()
             
-            if questionNumber < 90{
-                
-                
-                
-                preventOutOfRange()
-                
-                questionNumber += 1
-                
-                
-                
-                
-                switch whichHinshi {
-                case "verb":
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
+           if questionNumber < 30{
+            //これならOk!
+            switch whichHinshi {
+            case "verb":
+                if questionNumber == materialList.TOEIC600verbList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
                     return
                 }
+            case "noun":
+                if questionNumber == materialList.TOEIC600NounList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "adjective":
                 
-                showRandomSelection()
+                if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                    
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "adverb":
+                if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "others":
+                if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            default:
+                return
+            }
+            
+            questionNumber += 1
+            displayGif()
+            changeWordLabel()
+            showRandomSelection()
                 
             }else{
                 //問題終了
@@ -569,36 +657,56 @@ class TestViewController: UIViewController{
             }
             
         case 3:
-            timersResetAndShowLabel()
+//            timersResetAndShowLabel()
             
-            if questionNumber < 120{
-                
-                
-                preventOutOfRange()
-                
-                
-                questionNumber += 1
-                switch whichHinshi {
-                case "verb":
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
+           if questionNumber < 30{
+            //これならOk!
+            switch whichHinshi {
+            case "verb":
+                if questionNumber == materialList.TOEIC600verbList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
                     return
                 }
+            case "noun":
+                if questionNumber == materialList.TOEIC600NounList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "adjective":
                 
-                showRandomSelection()
+                if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                    
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "adverb":
+                if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "others":
+                if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            default:
+                return
+            }
+            
+            questionNumber += 1
+            displayGif()
+            changeWordLabel()
+            showRandomSelection()
                 
             }else{
                 //問題終了
@@ -612,37 +720,54 @@ class TestViewController: UIViewController{
             }
             
         case 4:
-            timersResetAndShowLabel()
-            
-            if questionNumber < 150{
-                
-                
-                preventOutOfRange()
-                
-                
-                
-                questionNumber += 1
-                switch whichHinshi {
-                case "verb":
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
+            if questionNumber < 30{
+            //これならOk!
+            switch whichHinshi {
+            case "verb":
+                if questionNumber == materialList.TOEIC600verbList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
                     return
                 }
+            case "noun":
+                if questionNumber == materialList.TOEIC600NounList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "adjective":
                 
-                showRandomSelection()
+                if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                    
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "adverb":
+                if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "others":
+                if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            default:
+                return
+            }
+            
+            questionNumber += 1
+            displayGif()
+            changeWordLabel()
+            showRandomSelection()
                 
             }else{
                 //問題終了
@@ -656,34 +781,54 @@ class TestViewController: UIViewController{
             }
             
             case 5:
-            timersResetAndShowLabel()
-            
-            if questionNumber < 180{
-                
-                preventOutOfRange()
-                
-                questionNumber += 1
-                switch whichHinshi {
-                case "verb":
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
+            if questionNumber < 30{
+            //これならOk!
+            switch whichHinshi {
+            case "verb":
+                if questionNumber == materialList.TOEIC600verbList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
                     return
                 }
+            case "noun":
+                if questionNumber == materialList.TOEIC600NounList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "adjective":
                 
-                showRandomSelection()
+                if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                    
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "adverb":
+                if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            case "others":
+                if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                    self.timer2.invalidate()
+                    self.timer.invalidate()
+                    performSegue(withIdentifier: "TL", sender: nil)
+                    return
+                }
+            default:
+                return
+            }
+            
+            questionNumber += 1
+            displayGif()
+            changeWordLabel()
+            showRandomSelection()
                 
             }else{
                 //問題終了
@@ -870,42 +1015,55 @@ class TestViewController: UIViewController{
         //タイマーをリセットし、残り時間を再表示
         timersResetAndShowLabel()
         
+        
         switch receivedCellNumber {
         case 0:
             //0-30
             if questionNumber < 30{
-                
-                preventOutOfRange()
-                
-                questionNumber += 1
-                
- 
-                
                 switch whichHinshi {
                 case "verb":
-                    
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+                    if questionNumber == materialList.TOEIC600verbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
                 case "noun":
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+                    if questionNumber == materialList.TOEIC600NounList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
                 case "adjective":
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                    
+                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                        
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
                 case "adverb":
-                   
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    
+                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
                 case "others":
-            
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    
+                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
                 default:
                     return
                 }
-                
+                questionNumber += 1
+                displayGif()
+                changeWordLabel()
                 
                 
             }else{
@@ -923,11 +1081,53 @@ class TestViewController: UIViewController{
             //31-60
             if questionNumber < 60{
                 
-                preventOutOfRange()
+                
+                switch whichHinshi {
+                case "verb":
+                    if questionNumber == materialList.TOEIC600verbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "noun":
+                    if questionNumber == materialList.TOEIC600NounList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "adjective":
+                    
+                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                        
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "adverb":
+                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "others":
+                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                default:
+                    return
+                }
                 
                 questionNumber += 1
                 displayGif()
                 changeWordLabel()
+                
             }else{
                 //問題終了
                 //タイマーストップ
@@ -940,78 +1140,113 @@ class TestViewController: UIViewController{
             }
             
         case 2:
-              
-//            if questionNumber < 90{
+            
+            if questionNumber < 90{
                 //61-90
-
-
                 //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
-
-
                 //これならOk!
-               switch whichHinshi {
-               case "verb":
-                   if questionNumber == materialList.TOEIC600verbList.count - 1{
-                       self.timer2.invalidate()
-                       self.timer.invalidate()
-                       performSegue(withIdentifier: "TL", sender: nil)
-                       return
-                   }
-               case "noun":
-                   if questionNumber == materialList.TOEIC600NounList.count - 1{
-                       self.timer2.invalidate()
-                       self.timer.invalidate()
-                       performSegue(withIdentifier: "TL", sender: nil)
-                       return
-                   }
-               case "adjective":
-
-                   if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-
-                       self.timer2.invalidate()
-                       self.timer.invalidate()
-                       performSegue(withIdentifier: "TL", sender: nil)
-                       return
-                   }
-               case "adverb":
-                   if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                       self.timer2.invalidate()
-                       self.timer.invalidate()
-                       performSegue(withIdentifier: "TL", sender: nil)
-                       return
-                   }
-               case "others":
-                   if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                       self.timer2.invalidate()
-                       self.timer.invalidate()
-                       performSegue(withIdentifier: "TL", sender: nil)
-                       return
-                   }
-               default:
+                switch whichHinshi {
+                case "verb":
+                    if questionNumber == materialList.TOEIC600verbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "noun":
+                    if questionNumber == materialList.TOEIC600NounList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "adjective":
+                    
+                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                        
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "adverb":
+                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "others":
+                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                default:
                     return
-               }
-
+                }
+                
                 questionNumber += 1
                 displayGif()
                 changeWordLabel()
-//            }else{
-//                //問題終了
-//                //タイマーストップ
-//                self.timer2.invalidate()
-//                self.timer.invalidate()
-//                //リザルト画面へ遷移。
-//                performSegue(withIdentifier: "TL", sender: nil)
-//                return
-//
-//            }
-       
-            
+            }else{
+                //問題終了
+                //タイマーストップ
+                self.timer2.invalidate()
+                self.timer.invalidate()
+                //リザルト画面へ遷移。
+                performSegue(withIdentifier: "TL", sender: nil)
+                return
+                
+            }
             
             
         case 3:
             if questionNumber < 120{
+                //これならOk!
+                switch whichHinshi {
+                case "verb":
+                    if questionNumber == materialList.TOEIC600verbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "noun":
+                    if questionNumber == materialList.TOEIC600NounList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "adjective":
+                    
+                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                        
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "adverb":
+                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "others":
+                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                default:
+                    return
+                }
                 
-                preventOutOfRange()
                 
                 questionNumber += 1
                 displayGif()
@@ -1027,10 +1262,51 @@ class TestViewController: UIViewController{
                 
             }
             
-            case 4:
+        case 4:
             if questionNumber < 150{
                 
-                preventOutOfRange()
+                //これならOk!
+                switch whichHinshi {
+                case "verb":
+                    if questionNumber == materialList.TOEIC600verbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "noun":
+                    if questionNumber == materialList.TOEIC600NounList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "adjective":
+                    
+                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                        
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "adverb":
+                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "others":
+                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                default:
+                    return
+                }
                 
                 questionNumber += 1
                 displayGif()
@@ -1046,10 +1322,51 @@ class TestViewController: UIViewController{
                 
             }
             
-            case 5:
+        case 5:
             if questionNumber < 180{
                 
-                preventOutOfRange()
+                //これならOk!
+                switch whichHinshi {
+                case "verb":
+                    if questionNumber == materialList.TOEIC600verbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "noun":
+                    if questionNumber == materialList.TOEIC600NounList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "adjective":
+                    
+                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                        
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "adverb":
+                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                case "others":
+                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                        self.timer2.invalidate()
+                        self.timer.invalidate()
+                        performSegue(withIdentifier: "TL", sender: nil)
+                        return
+                    }
+                default:
+                    return
+                }
                 
                 questionNumber += 1
                 displayGif()
