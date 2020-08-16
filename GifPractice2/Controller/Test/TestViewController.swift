@@ -443,7 +443,7 @@ class TestViewController: UIViewController{
 //            //タイマーをリセットし、残り時間を再表示
 //            timersResetAndShowLabel()
             
-            if questionNumber < 30{
+            if questionNumber < 29{
                 //これならOk!
                 switch whichHinshi {
                 case "verb":
@@ -533,7 +533,7 @@ class TestViewController: UIViewController{
             //31-60
 //            timersResetAndShowLabel()
             
-            if questionNumber < 30{
+            if questionNumber < 59{
             //これならOk!
             switch whichHinshi {
             case "verb":
@@ -596,7 +596,7 @@ class TestViewController: UIViewController{
         case 2:
 //            timersResetAndShowLabel()
             
-           if questionNumber < 30{
+           if questionNumber < 89{
             //これならOk!
             switch whichHinshi {
             case "verb":
@@ -659,7 +659,7 @@ class TestViewController: UIViewController{
         case 3:
 //            timersResetAndShowLabel()
             
-           if questionNumber < 30{
+           if questionNumber < 119{
             //これならOk!
             switch whichHinshi {
             case "verb":
@@ -720,7 +720,7 @@ class TestViewController: UIViewController{
             }
             
         case 4:
-            if questionNumber < 30{
+            if questionNumber < 149{
             //これならOk!
             switch whichHinshi {
             case "verb":
@@ -781,7 +781,7 @@ class TestViewController: UIViewController{
             }
             
             case 5:
-            if questionNumber < 30{
+            if questionNumber < 179{
             //これならOk!
             switch whichHinshi {
             case "verb":
@@ -1019,7 +1019,7 @@ class TestViewController: UIViewController{
         switch receivedCellNumber {
         case 0:
             //0-30
-            if questionNumber < 30{
+            if questionNumber < 29{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
@@ -1079,7 +1079,7 @@ class TestViewController: UIViewController{
             }
         case 1:
             //31-60
-            if questionNumber < 60{
+            if questionNumber < 59{
                 
                 
                 switch whichHinshi {
@@ -1141,7 +1141,7 @@ class TestViewController: UIViewController{
             
         case 2:
             
-            if questionNumber < 90{
+            if questionNumber < 89{
                 //61-90
                 //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
                 //これならOk!
@@ -1203,7 +1203,7 @@ class TestViewController: UIViewController{
             
             
         case 3:
-            if questionNumber < 120{
+            if questionNumber < 119{
                 //これならOk!
                 switch whichHinshi {
                 case "verb":
@@ -1263,7 +1263,7 @@ class TestViewController: UIViewController{
             }
             
         case 4:
-            if questionNumber < 150{
+            if questionNumber < 149{
                 
                 //これならOk!
                 switch whichHinshi {
@@ -1323,7 +1323,7 @@ class TestViewController: UIViewController{
             }
             
         case 5:
-            if questionNumber < 180{
+            if questionNumber < 179{
                 
                 //これならOk!
                 switch whichHinshi {
