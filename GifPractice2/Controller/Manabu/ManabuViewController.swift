@@ -199,7 +199,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         
         
         //0-30
-        if receivedCellNumber == 0 && wordCount < 30{
+        if receivedCellNumber == 0 && wordCount < 29{
             
             // 表示しているgifの番号を1増やす
             wordCount += 1
@@ -208,30 +208,45 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             //wordCountに応じてラベルを変更（英単語と日本語訳）
             changeLabelsOfWordAndJapan()
             
-        }else if receivedCellNumber == 1 && wordCount < 60{
+        }else if receivedCellNumber == 1 && wordCount < 59{
             //31-60
             
             wordCount += 1
             displayGif()
             changeLabelsOfWordAndJapan()
-        }else if receivedCellNumber == 2 && wordCount < 90{
+        }else if receivedCellNumber == 2 && wordCount < 89{
             //61-90
+            
+            
+            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+            
+            switch whichHinshi {
+            case "adjective":
+                
+                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+                    return
+                }
+            default:
+                return
+            }
+            
+            
             
             wordCount += 1
             displayGif()
             changeLabelsOfWordAndJapan()
             
-        }else if receivedCellNumber == 3 && wordCount < 120{
+        }else if receivedCellNumber == 3 && wordCount < 119{
             //91-120
             wordCount += 1
             displayGif()
             changeLabelsOfWordAndJapan()
-        }else if receivedCellNumber == 4 && wordCount < 150{
+        }else if receivedCellNumber == 4 && wordCount < 149{
             //121-150
             wordCount += 1
             displayGif()
             changeLabelsOfWordAndJapan()
-        }else if receivedCellNumber == 5 && wordCount < 180{
+        }else if receivedCellNumber == 5 && wordCount < 179{
             //151-180
             wordCount += 1
             displayGif()
@@ -506,11 +521,11 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func nextWordsButton(_ sender: Any) {
         
-        //動詞編の場合
+
         //countが問題数最大になるならreturn
         if receivedCellNumber == 0{
             //0-30
-            if wordCount == 30{
+            if wordCount == 29{
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
@@ -547,7 +562,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }else if receivedCellNumber == 1{
             //31-60
-            if wordCount == 60{
+            if wordCount == 59{
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
@@ -580,8 +595,24 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
             }
         }else if receivedCellNumber == 2{
-            //61-90
-            if wordCount == 90{
+            //61-90のセルが押された
+            
+            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+            
+            switch whichHinshi {
+            case "adjective":
+              
+                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+                    return
+                }
+            default:
+                print("先に進みなさい")
+            }
+            
+            
+            
+            
+            if wordCount == 89{
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
@@ -615,7 +646,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }else if receivedCellNumber == 3{
             //91-120
-            if wordCount == 120{
+            if wordCount == 119{
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
@@ -650,7 +681,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         }else if receivedCellNumber == 4{
             
             //91-120
-            if wordCount == 150{
+            if wordCount == 149{
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
@@ -687,7 +718,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         }else if receivedCellNumber == 5{
             
             //91-120
-            if wordCount == 180{
+            if wordCount == 179{
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）

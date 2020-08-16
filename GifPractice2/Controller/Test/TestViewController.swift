@@ -45,6 +45,7 @@ class TestViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         selection1.layer.cornerRadius = 15.0
         selection2.layer.cornerRadius = 15.0
         
@@ -441,6 +442,8 @@ class TestViewController: UIViewController{
             
             if questionNumber < 30{
                 
+                preventOutOfRange()
+                
                 questionNumber += 1
                 
  
@@ -482,6 +485,8 @@ class TestViewController: UIViewController{
             
             if questionNumber < 60{
                 
+                preventOutOfRange()
+                
                 questionNumber += 1
                 switch whichHinshi {
                 case "verb":
@@ -521,7 +526,15 @@ class TestViewController: UIViewController{
             
             if questionNumber < 90{
                 
+                
+                
+                preventOutOfRange()
+                
                 questionNumber += 1
+                
+                
+                
+                
                 switch whichHinshi {
                 case "verb":
                     testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
@@ -560,6 +573,10 @@ class TestViewController: UIViewController{
             
             if questionNumber < 120{
                 
+                
+                preventOutOfRange()
+                
+                
                 questionNumber += 1
                 switch whichHinshi {
                 case "verb":
@@ -594,10 +611,15 @@ class TestViewController: UIViewController{
                 
             }
             
-            case 4:
+        case 4:
             timersResetAndShowLabel()
             
             if questionNumber < 150{
+                
+                
+                preventOutOfRange()
+                
+                
                 
                 questionNumber += 1
                 switch whichHinshi {
@@ -637,6 +659,8 @@ class TestViewController: UIViewController{
             timersResetAndShowLabel()
             
             if questionNumber < 180{
+                
+                preventOutOfRange()
                 
                 questionNumber += 1
                 switch whichHinshi {
@@ -851,6 +875,7 @@ class TestViewController: UIViewController{
             //0-30
             if questionNumber < 30{
                 
+                preventOutOfRange()
                 
                 questionNumber += 1
                 
@@ -898,6 +923,8 @@ class TestViewController: UIViewController{
             //31-60
             if questionNumber < 60{
                 
+                preventOutOfRange()
+                
                 questionNumber += 1
                 displayGif()
                 changeWordLabel()
@@ -913,23 +940,78 @@ class TestViewController: UIViewController{
             }
             
         case 2:
-            if questionNumber < 90{
-                
+              
+//            if questionNumber < 90{
+                //61-90
+
+
+                //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+
+
+                //これならOk!
+               switch whichHinshi {
+               case "verb":
+                   if questionNumber == materialList.TOEIC600verbList.count - 1{
+                       self.timer2.invalidate()
+                       self.timer.invalidate()
+                       performSegue(withIdentifier: "TL", sender: nil)
+                       return
+                   }
+               case "noun":
+                   if questionNumber == materialList.TOEIC600NounList.count - 1{
+                       self.timer2.invalidate()
+                       self.timer.invalidate()
+                       performSegue(withIdentifier: "TL", sender: nil)
+                       return
+                   }
+               case "adjective":
+
+                   if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+
+                       self.timer2.invalidate()
+                       self.timer.invalidate()
+                       performSegue(withIdentifier: "TL", sender: nil)
+                       return
+                   }
+               case "adverb":
+                   if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                       self.timer2.invalidate()
+                       self.timer.invalidate()
+                       performSegue(withIdentifier: "TL", sender: nil)
+                       return
+                   }
+               case "others":
+                   if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                       self.timer2.invalidate()
+                       self.timer.invalidate()
+                       performSegue(withIdentifier: "TL", sender: nil)
+                       return
+                   }
+               default:
+                    return
+               }
+
                 questionNumber += 1
                 displayGif()
                 changeWordLabel()
-            }else{
-                //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
-                
-            }
+//            }else{
+//                //問題終了
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+//
+//            }
+       
+            
+            
+            
         case 3:
             if questionNumber < 120{
+                
+                preventOutOfRange()
                 
                 questionNumber += 1
                 displayGif()
@@ -948,6 +1030,8 @@ class TestViewController: UIViewController{
             case 4:
             if questionNumber < 150{
                 
+                preventOutOfRange()
+                
                 questionNumber += 1
                 displayGif()
                 changeWordLabel()
@@ -964,6 +1048,8 @@ class TestViewController: UIViewController{
             
             case 5:
             if questionNumber < 180{
+                
+                preventOutOfRange()
                 
                 questionNumber += 1
                 displayGif()
@@ -1285,6 +1371,56 @@ func showAlert(){
     UserDefaults.standard.set(firstOrNot, forKey: "already")
     self.present(alertController, animated: true,completion: nil)
  }
+    
+    func preventOutOfRange(){
+        
+        //品詞ごとに、単語の個数を超えてアプリが落ちないようにする処理
+        switch whichHinshi {
+        case "verb":
+            if questionNumber == materialList.TOEIC600verbList.count - 1{
+                self.timer2.invalidate()
+                self.timer.invalidate()
+                performSegue(withIdentifier: "TL", sender: nil)
+                return
+            }
+        case "noun":
+            if questionNumber == materialList.TOEIC600NounList.count - 1{
+                self.timer2.invalidate()
+                self.timer.invalidate()
+                performSegue(withIdentifier: "TL", sender: nil)
+                return
+            }
+        case "adjective":
+            
+            if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                
+                self.timer2.invalidate()
+                self.timer.invalidate()
+                performSegue(withIdentifier: "TL", sender: nil)
+                return
+            }
+        case "adverb":
+            if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                self.timer2.invalidate()
+                self.timer.invalidate()
+                performSegue(withIdentifier: "TL", sender: nil)
+                return
+            }
+        case "others":
+            if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                self.timer2.invalidate()
+                self.timer.invalidate()
+                performSegue(withIdentifier: "TL", sender: nil)
+                return
+            }
+        default:
+            questionNumber += 1
+            displayGif()
+            changeWordLabel()
+        }
+    }
+    
+    
 
 }
 
