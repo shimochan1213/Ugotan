@@ -4,44 +4,21 @@
 //
 //  Created by 下川勇輝 on 2020/06/12.
 //  Copyright © 2020 Yuki Shimokawa. All rights reserved.
-//
-
-
-
-
-
-
-
-
-
-
-
 
 import UIKit
 import AVFoundation
-
-//verbを120まで入れることが大前提！！
-//品詞関連の処理のところをかたっぱしからswitch文で分ければよくね？？
-
-
 
 class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     var audioPlayer:AVAudioPlayer!
     var soundFile = SoundFile()
     var wordCount = Int()
-    
     let materialList = MaterialList()
-    
     var wordList:[MaterialModel] = []
     var firstOrNot = true
-    
-    
     var timer:Timer?
     var timerChecker = true
-    
     var receivedCellNumber = Int()
-    
     var whichHinshi = String()
     
     @IBOutlet weak var beforeViewBtn: UIButton!
@@ -51,8 +28,8 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var japanWordLabel: UILabel!
-    
     @IBOutlet weak var gifView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -61,8 +38,6 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         timerChecker = true
         
         beforeViewBtn.layer.cornerRadius = 10.0
-        
-        
         
         //初起動かどうかのチェック
         if UserDefaults.standard.object(forKey: "alreadyManabu") != nil{
@@ -213,7 +188,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -252,7 +227,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -280,15 +255,15 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
             //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
             
-//            switch whichHinshi {
-//            case "adjective":
-//
-//                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
-//                    return
-//                }
-//            default:
-//                return
-//            }
+            //            switch whichHinshi {
+            //            case "adjective":
+            //
+            //                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+            //                    return
+            //                }
+            //            default:
+            //                return
+            //            }
             //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
             
             switch whichHinshi {
@@ -301,7 +276,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -338,7 +313,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -372,7 +347,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -406,7 +381,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -699,7 +674,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func nextWordsButton(_ sender: Any) {
         
-
+        
         //countが問題数最大になるならreturn
         if receivedCellNumber == 0{
             //0-30
@@ -715,7 +690,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -783,7 +758,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -849,7 +824,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -914,7 +889,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -983,7 +958,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -1050,7 +1025,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     return
                 }
             case "adjective":
-              
+                
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
                     return
                 }
@@ -1114,6 +1089,9 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         
         switch whichHinshi {
         case "verb":
+            //音声が空の時はリターンする処理を書きたいね
+            
+            
             soundFile.playSound(fileName: materialList.TOEIC600verbList[wordCount].Words, extensionName: "mp3")
             
         case "noun":

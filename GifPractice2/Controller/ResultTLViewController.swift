@@ -169,4 +169,22 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
     }
     
     
+    
+    @IBAction func reoButton(_ sender: Any) {
+        let alertController = UIAlertController(title: "頑張っていますね！", message: "間違えた単語は多めに音読してみましょう", preferredStyle: .actionSheet)
+              
+              let action1 = UIAlertAction(title: "はい", style: .default) { (alert) in
+                  
+              
+                  
+              }
+              
+              alertController.addAction(action1)
+        
+        self.present(alertController, animated: true,completion: nil)
+              
+           
+    }
+    
+    
 }

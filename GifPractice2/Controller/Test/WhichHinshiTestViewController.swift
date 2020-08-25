@@ -58,6 +58,7 @@ class WhichHinshiTestViewController: UIViewController,UITableViewDelegate,UITabl
             cell.backgroundColor = .systemYellow
         }
         
+//        cell.textLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 40)
         cell.textLabel?.text = textArray[indexPath.row]
         cell.textLabel?.font = .boldSystemFont(ofSize: 40)
         cell.textLabel?.textColor = .white
