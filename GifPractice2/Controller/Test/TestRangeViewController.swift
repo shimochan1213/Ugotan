@@ -65,16 +65,18 @@ class TestRangeViewController: UIViewController,UITableViewDelegate,UITableViewD
         var numberOfRows = Int()
         
         switch whichHinshi {
+            
+            //30こ刻みでやるのであれば31で割るべき（余分なセルを作らない様に）
         case "verb":
-            numberOfRows = materialList.TOEIC600verbList.count/30 + 1
+            numberOfRows = materialList.TOEIC600verbList.count/31 + 1
         case "noun":
-            numberOfRows = materialList.TOEIC600NounList.count/30 + 1
+            numberOfRows = materialList.TOEIC600NounList.count/31 + 1
         case "adjective":
-            numberOfRows = materialList.TOEIC600AdjectiveList.count/30 + 1
+            numberOfRows = materialList.TOEIC600AdjectiveList.count/31 + 1
         case "adverb":
-            numberOfRows = materialList.TOEIC600AdverbList.count/30 + 1
+            numberOfRows = materialList.TOEIC600AdverbList.count/31 + 1
         case "others":
-            numberOfRows = materialList.TOEIC600OthersList.count/30 + 1
+            numberOfRows = materialList.TOEIC600OthersList.count/31 + 1
         default:
             print("エラー")
         }
