@@ -35,6 +35,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="LB2-8v-gU7"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="adUnitID">
+                                        <string key="value">
+ca-app-pub-5717197999913003/9349881106</string>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqE-c1-RDr">
                                 <rect key="frame" x="183" y="187" width="170" height="34"/>

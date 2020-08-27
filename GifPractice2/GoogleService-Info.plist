@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>931905319904-u0ltvol8qe7iauhi8fcs7ml4rff2vfru.apps.googleusercontent.com</string>
+	<string>773427876939-lp4e2h77e32bql2tl4jq71vvnnh8the3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.931905319904-u0ltvol8qe7iauhi8fcs7ml4rff2vfru</string>
+	<string>com.googleusercontent.apps.773427876939-lp4e2h77e32bql2tl4jq71vvnnh8the3</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBraNoMQAo4579OHO4eyFAAoXw5_ILkXUM</string>
+	<string>AIzaSyBWttu8JSwPfOz3RSb7RJZrQopAosDNSkk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>931905319904</string>
+	<string>773427876939</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.yuchineko.GifPractice2</string>
 	<key>PROJECT_ID</key>
-	<string>ugotan1</string>
+	<string>ugotan-aaf5a</string>
 	<key>STORAGE_BUCKET</key>
-	<string>ugotan1.appspot.com</string>
+	<string>ugotan-aaf5a.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:931905319904:ios:0975ba7d42e2fc07e37185</string>
+	<string>1:773427876939:ios:9a46948cbdb21b90b6a9ce</string>
 	<key>DATABASE_URL</key>
-	<string>https://ugotan1.firebaseio.com</string>
+	<string>https://ugotan-aaf5a.firebaseio.com</string>
 </dict>
 </plist>

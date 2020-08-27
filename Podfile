@@ -14,7 +14,9 @@ target 'GifPractice2' do
 	pod 'Firebase/Database'
 	pod 'lottie-ios'
 	pod 'ChameleonFramework'
-
+	pod 'Firebase/Core'
+	pod 'Firebase/Messaging'
+	pod 'Firebase/Analytics'
 	
 
 

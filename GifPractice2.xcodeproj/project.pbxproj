@@ -14,7 +14,6 @@
 		B13638B924E296370089ED95 /* SetsumeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13638B824E296370089ED95 /* SetsumeiViewController.swift */; };
 		B13A0158248FE5F200EC6EED /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13A0157248FE5F200EC6EED /* RegisterViewController.swift */; };
 		B13A015A248FE60000EC6EED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13A0159248FE60000EC6EED /* LoginViewController.swift */; };
-		B13A015C248FF1BB00EC6EED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B13A015B248FF1BB00EC6EED /* GoogleService-Info.plist */; };
 		B13CE25E24DD530C006C9902 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13CE25D24DD530C006C9902 /* ResultViewController.swift */; };
 		B14110132473ED7600336F40 /* accept.gif in Resources */ = {isa = PBXBuildFile; fileRef = B14110122473ED7500336F40 /* accept.gif */; };
 		B14110192473EF7900336F40 /* move.gif in Resources */ = {isa = PBXBuildFile; fileRef = B14110182473EF7900336F40 /* move.gif */; };
@@ -47,6 +46,7 @@
 		B1BE99B32461D190005766A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1BE99B12461D190005766A6 /* LaunchScreen.storyboard */; };
 		B1BE99BB2461D1E0005766A6 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BE99BA2461D1E0005766A6 /* Swift+Gif.swift */; };
 		B1C49DEE24DB006600C25A35 /* ManabuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C49DED24DB006600C25A35 /* ManabuViewController.swift */; };
+		B1D0E5B324F5545800FB2CDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D0E5B224F5545800FB2CDA /* GoogleService-Info.plist */; };
 		B1D4C9D52487EBDC00F08EA4 /* locate.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C9D22487EBDC00F08EA4 /* locate.gif */; };
 		B1D4C9D62487EBDC00F08EA4 /* agree.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C9D32487EBDC00F08EA4 /* agree.gif */; };
 		B1D4C9D72487EBDC00F08EA4 /* increase.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C9D42487EBDC00F08EA4 /* increase.gif */; };
@@ -65,7 +65,6 @@
 		B13638B824E296370089ED95 /* SetsumeiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsumeiViewController.swift; sourceTree = "<group>"; };
 		B13A0157248FE5F200EC6EED /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B13A0159248FE60000EC6EED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B13A015B248FF1BB00EC6EED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B13CE25D24DD530C006C9902 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		B14110122473ED7500336F40 /* accept.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = accept.gif; sourceTree = "<group>"; };
 		B14110182473EF7900336F40 /* move.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = move.gif; sourceTree = "<group>"; };
@@ -100,6 +99,8 @@
 		B1BE99B42461D190005766A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1BE99BA2461D1E0005766A6 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
 		B1C49DED24DB006600C25A35 /* ManabuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManabuViewController.swift; sourceTree = "<group>"; };
+		B1D0E5B224F5545800FB2CDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1D0E5B424F55C3D00FB2CDA /* ugotan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ugotan.entitlements; sourceTree = "<group>"; };
 		B1D4C9D22487EBDC00F08EA4 /* locate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = locate.gif; sourceTree = "<group>"; };
 		B1D4C9D32487EBDC00F08EA4 /* agree.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = agree.gif; sourceTree = "<group>"; };
 		B1D4C9D42487EBDC00F08EA4 /* increase.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = increase.gif; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 		B1BE99A52461D18F005766A6 /* GifPractice2 */ = {
 			isa = PBXGroup;
 			children = (
+				B1D0E5B424F55C3D00FB2CDA /* ugotan.entitlements */,
 				B14110172473EF1200336F40 /* GifMp3 */,
 				B1A4CE272472F4F3009F361F /* Model */,
 				B1A4CE2D2472F86A009F361F /* View */,
@@ -250,7 +252,7 @@
 				B1967E0524DD875A007EB7D0 /* cat.json */,
 				B1967E0324DD866E007EB7D0 /* hang.json */,
 				B1967DFC24DD7EA0007EB7D0 /* summer.json */,
-				B13A015B248FF1BB00EC6EED /* GoogleService-Info.plist */,
+				B1D0E5B224F5545800FB2CDA /* GoogleService-Info.plist */,
 			);
 			path = GifPractice2;
 			sourceTree = "<group>";
@@ -275,7 +277,7 @@
 				B1BE999F2461D18F005766A6 /* Sources */,
 				B1BE99A02461D18F005766A6 /* Frameworks */,
 				B1BE99A12461D18F005766A6 /* Resources */,
-				D8344F9ECCB1A943259385DF /* [CP] Embed Pods Frameworks */,
+				2957A71F679B00BB361B69E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -331,6 +333,7 @@
 				B17FD10E246298C700F13729 /* expand.mp3 in Resources */,
 				B12D764D2490004C00D2D760 /* loading.json in Resources */,
 				B14110132473ED7600336F40 /* accept.gif in Resources */,
+				B1D0E5B324F5545800FB2CDA /* GoogleService-Info.plist in Resources */,
 				B1967E0424DD866F007EB7D0 /* hang.json in Resources */,
 				B1BE99AE2461D18F005766A6 /* Main.storyboard in Resources */,
 				B1E5EDFB24E19C8A0067B91C /* fuseikai.mp3 in Resources */,
@@ -349,13 +352,29 @@
 				B1D4C9D72487EBDC00F08EA4 /* increase.gif in Resources */,
 				B1E5EDF824E1984E0067B91C /* cat.mp3 in Resources */,
 				B1D4C9D52487EBDC00F08EA4 /* locate.gif in Resources */,
-				B13A015C248FF1BB00EC6EED /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2957A71F679B00BB361B69E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C7B6F8693E64B3101173CC1C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,23 +395,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D8344F9ECCB1A943259385DF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -567,7 +569,9 @@
 			baseConfigurationReference = D1AD3A80373D01901471E550 /* Pods-GifPractice2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = GifPractice2/ugotan.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GNSD4R2925;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = GifPractice2/Info.plist;
@@ -578,6 +582,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuchineko.GifPractice2;
 				PRODUCT_NAME = ugotan;
+				PROVISIONING_PROFILE_SPECIFIER = ugotanIos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -588,7 +593,9 @@
 			baseConfigurationReference = DAC187A698B0DE6DC7AABC52 /* Pods-GifPractice2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = GifPractice2/ugotan.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GNSD4R2925;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = GifPractice2/Info.plist;
@@ -599,6 +606,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuchineko.GifPractice2;
 				PRODUCT_NAME = ugotan;
+				PROVISIONING_PROFILE_SPECIFIER = ugotan;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

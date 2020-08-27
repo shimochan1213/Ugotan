@@ -31,7 +31,7 @@ class ModeSelectViewController: UIViewController {
         
         
 
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-5717197999913003/9349881106"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         
