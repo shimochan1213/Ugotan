@@ -56,8 +56,6 @@ class TestViewController: UIViewController{
             //初めての起動
             showAlert()
          
-            
-            
         case false:
 //            2回目以降の起動ではアラート出さない
 //             タイマーを設定　制限時間カウントダウンタイマー
@@ -67,13 +65,9 @@ class TestViewController: UIViewController{
             // タイマーを設定　時間切れで次の問題へ行くためのタイマー
             timer = Timer.scheduledTimer(timeInterval: timeLimit, target: self, selector: #selector(TestViewController.onTimer(timer:)), userInfo: nil, repeats: true)
             
-            
             default:
                 return
             }
-            
-            
-            
             
             
             switch receivedCellNumber {
@@ -464,40 +458,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -509,40 +508,15 @@ class TestViewController: UIViewController{
                 showRandomSelection()
                 
                 
-                //
-                //                questionNumber += 1
-                //
-                //
-                //                switch whichHinshi {
-                //                case "verb":
-                //                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                //                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                //                case "noun":
-                //                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                //                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                //                case "adjective":
-                //                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                //                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                //                case "adverb":
-                //                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                //                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                //                case "others":
-                //                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                //                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                //                default:
-                //                    return
-                //                }
-                //
-                //                showRandomSelection()
-                
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
                 
             }
         case 1:
@@ -554,40 +528,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -600,12 +579,13 @@ class TestViewController: UIViewController{
                 
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
                 
             }
             
@@ -617,40 +597,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -663,12 +648,13 @@ class TestViewController: UIViewController{
                 
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
                 
             }
             
@@ -680,40 +666,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -726,13 +717,13 @@ class TestViewController: UIViewController{
                 
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
-                
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
             }
             
         case 4:
@@ -741,40 +732,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -787,12 +783,13 @@ class TestViewController: UIViewController{
                 
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
                 
             }
             
@@ -802,40 +799,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -848,25 +850,20 @@ class TestViewController: UIViewController{
                 
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
                 
             }
-            
-            
             
         default:
             return
         }
         
-        
-        
-        //        newNextQuestion()
-        //        showRandomSelection()
     }
     
     
@@ -952,11 +949,7 @@ class TestViewController: UIViewController{
     func selection2NextWord(){
         let random = arc4random_uniform(UInt32(Int(materialList.TOEIC600verbList.count)))
         
-        
-        //        selection2.setTitle(materialList.TOEIC600verbList[Int(random)].japanWords, for:UIControl.State.normal)
-        
-        
-        
+
         switch whichHinshi {
         case "verb":
             selection2.setTitle(materialList.TOEIC600verbList[Int(random)].japanWords, for:UIControl.State.normal)
@@ -1039,40 +1032,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -1084,13 +1082,14 @@ class TestViewController: UIViewController{
                 
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                //                performSegue(withIdentifier: "next", sender: nil)
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                //                performSegue(withIdentifier: "next", sender: nil)
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
                 
             }
         case 1:
@@ -1101,40 +1100,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -1146,12 +1150,13 @@ class TestViewController: UIViewController{
                 
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
                 
             }
             
@@ -1164,40 +1169,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -1208,13 +1218,13 @@ class TestViewController: UIViewController{
                 changeWordLabel()
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
-                
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
             }
             
             
@@ -1224,40 +1234,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -1269,12 +1284,13 @@ class TestViewController: UIViewController{
                 changeWordLabel()
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
                 
             }
             
@@ -1285,40 +1301,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -1329,12 +1350,13 @@ class TestViewController: UIViewController{
                 changeWordLabel()
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
                 
             }
             
@@ -1345,40 +1367,45 @@ class TestViewController: UIViewController{
                 switch whichHinshi {
                 case "verb":
                     if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "noun":
                     if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adjective":
                     
                     if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                         
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "adverb":
                     if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 case "others":
                     if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        self.timer2.invalidate()
-                        self.timer.invalidate()
-                        performSegue(withIdentifier: "TL", sender: nil)
-                        return
+//                        self.timer2.invalidate()
+//                        self.timer.invalidate()
+//                        performSegue(withIdentifier: "TL", sender: nil)
+//                        return
+                        timerResetAndPerformSegue()
                     }
                 default:
                     return
@@ -1389,12 +1416,13 @@ class TestViewController: UIViewController{
                 changeWordLabel()
             }else{
                 //問題終了
-                //タイマーストップ
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                //リザルト画面へ遷移。
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                //タイマーストップ
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                //リザルト画面へ遷移。
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
                 
             }
         default:
@@ -1402,6 +1430,16 @@ class TestViewController: UIViewController{
         }
         
         
+    }
+    
+    
+    func timerResetAndPerformSegue(){
+        
+        //returnは、いるのだろうか？要検証
+    self.timer2.invalidate()
+    self.timer.invalidate()
+    performSegue(withIdentifier: "TL", sender: nil)
+    return
     }
     
     
@@ -1711,40 +1749,45 @@ class TestViewController: UIViewController{
         switch whichHinshi {
         case "verb":
             if questionNumber == materialList.TOEIC600verbList.count - 1{
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
             }
         case "noun":
             if questionNumber == materialList.TOEIC600NounList.count - 1{
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
             }
         case "adjective":
             
             if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                 
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
             }
         case "adverb":
             if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
             }
         case "others":
             if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                self.timer2.invalidate()
-                self.timer.invalidate()
-                performSegue(withIdentifier: "TL", sender: nil)
-                return
+//                self.timer2.invalidate()
+//                self.timer.invalidate()
+//                performSegue(withIdentifier: "TL", sender: nil)
+//                return
+                timerResetAndPerformSegue()
             }
         default:
             questionNumber += 1

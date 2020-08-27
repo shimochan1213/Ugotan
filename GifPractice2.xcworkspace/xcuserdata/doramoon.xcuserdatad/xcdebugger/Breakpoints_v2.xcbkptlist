@@ -14,8 +14,8 @@
             filePath = "GifPractice2/Controller/Test/TestViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1158"
-            endingLineNumber = "1158"
+            startingLineNumber = "1163"
+            endingLineNumber = "1163"
             landmarkName = "newNextQuestion()"
             landmarkType = "7">
          </BreakpointContent>

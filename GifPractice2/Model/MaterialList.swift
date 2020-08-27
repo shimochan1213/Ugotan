@@ -462,7 +462,7 @@ class MaterialList{
         TOEIC600OthersList.append(MaterialModel(wordsName: "every other week", japanWordsName: "1週間おきに", correctOrNot: true))
         TOEIC600OthersList.append(MaterialModel(wordsName: "on board", japanWordsName: "（飛行）機内で", correctOrNot: true))
         TOEIC600OthersList.append(MaterialModel(wordsName: "in cash", japanWordsName: "現金で", correctOrNot: true))
-        
+        TOEIC600OthersList.append(MaterialModel(wordsName: "due to A", japanWordsName: "Aが理由で", correctOrNot: true))
         
         
         //30子以上入れる！
