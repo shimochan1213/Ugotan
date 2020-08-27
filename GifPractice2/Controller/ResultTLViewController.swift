@@ -10,28 +10,21 @@ import UIKit
 import ViewAnimator
 import GoogleMobileAds
 
-//動詞編をタップされたときに表示されるセルたち。30こずつ範囲を選ばせる予定。
 
 class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
 //    @IBOutlet weak var bannerView: GADBannerView!
-    
-
     @IBOutlet weak var tableView: UITableView!
-    
     //間違えた問題の番号が入っている配列
     var resultIncorrectNumberArray: [Int] = []
     
     var materialList = MaterialList()
     
     var whichHinshi = String()
-
-    
-    
+    let soundFile = SoundFile()
     //タップされたセルの番号を入れておく（indexPath.row番目だね）
     var CellNumber = Int()
-//     var textArray = ["0-30","31-60","61-90","91-120"]
-     
+ 
      override func viewDidLoad() {
          super.viewDidLoad()
 
@@ -39,10 +32,6 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
          tableView.dataSource = self
         
         print(resultIncorrectNumberArray)
-        
-        
-        
-        
 //        //広告表示
 //        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
 //        bannerView.rootViewController = self
@@ -112,16 +101,11 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
             gifView.loadGif(name: materialList.TOEIC600OthersList[resultIncorrectNumberArray[indexPath.row]].Words)
             
         default: print("どれでもないよ")
+        
         }
         
         
-        
-        
-        
-        
-        
-    
-        
+     
 //        //セルに丸みを帯びさせる
 //        cell.layer.cornerRadius = 8
       
@@ -129,6 +113,7 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
          return cell
          
      }
+        
      
      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return view.frame.height/4
@@ -137,29 +122,39 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
      //セルがタップされた時に呼ばれる
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let animation = [AnimationType.rotate(angle: CGFloat.pi/6)]
+//        let animation = [AnimationType.rotate(angle: CGFloat.pi/6)]
+//        let animation = [AnimationType.zoom(scale: 10)]
         
         tableView.reloadData()
-        UIView.animate(views: tableView.visibleCells, animations: animation)
+//        UIView.animate(views: tableView.visibleCells, animations: animation)
         
         
         
         
-//        CellNumber = indexPath.row
         
-       
-      
+        switch whichHinshi {
+                  case "Verb":
+                    soundFile.playSound(fileName: materialList.TOEIC600verbList[resultIncorrectNumberArray[indexPath.row]].Words, extensionName: "mp3")
+                  case "Noun":
+                    soundFile.playSound(fileName: materialList.TOEIC600NounList[resultIncorrectNumberArray[indexPath.row]].Words, extensionName: "mp3")
+                  case "Adjective":
+                   soundFile.playSound(fileName: materialList.TOEIC600AdjectiveList[resultIncorrectNumberArray[indexPath.row]].Words, extensionName: "mp3")
+                  case "Adverb":
+                    soundFile.playSound(fileName: materialList.TOEIC600AdverbList[resultIncorrectNumberArray[indexPath.row]].Words, extensionName: "mp3")
+                  case "Others":
+                    soundFile.playSound(fileName: materialList.TOEIC600OthersList[resultIncorrectNumberArray[indexPath.row]].Words, extensionName: "mp3")
+              default: print("どれでもないよ")
+        
+        }
+        
+        
 
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-      
-//            let verbManabuVC = segue.destination as! TestVerbViewController
-//            verbManabuVC.receivedCellNumber  = CellNumber
-      
-        
+     
         
     }
     
@@ -187,4 +182,6 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
     }
     
     
+
+
 }

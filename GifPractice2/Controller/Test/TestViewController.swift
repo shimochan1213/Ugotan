@@ -15,6 +15,7 @@ class TestViewController: UIViewController{
     var questionNumber = 0
     var timer = Timer()
     var timer2 = Timer()
+    var timer3 = Timer()
     var soundFile = SoundFile()
     var correctCount = 0
     var incorrectCount = 0
@@ -55,182 +56,181 @@ class TestViewController: UIViewController{
         case true:
             //初めての起動
             showAlert()
-         
+            
         case false:
-//            2回目以降の起動ではアラート出さない
-//             タイマーを設定　制限時間カウントダウンタイマー
+            //            2回目以降の起動ではアラート出さない
+            //             タイマーを設定　制限時間カウントダウンタイマー
             timer2 = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(TestViewController.onTimer2(timer:)), userInfo: nil, repeats: true)
             countdownLabel.text = String(timerCount)
-
+            
             // タイマーを設定　時間切れで次の問題へ行くためのタイマー
             timer = Timer.scheduledTimer(timeInterval: timeLimit, target: self, selector: #selector(TestViewController.onTimer(timer:)), userInfo: nil, repeats: true)
             
+        default:
+            return
+        }
+        
+        //単語の範囲はどこか
+        switch receivedCellNumber {
+        case 0:
+            //0-30
+            
+            questionNumber = 0
+            
+            switch whichHinshi {
+            case "verb":
+                
+                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+            case "noun":
+                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+            case "adjective":
+                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+            case "adverb":
+                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+            case "others":
+                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
             default:
                 return
             }
             
-          //単語の範囲はどこか
-            switch receivedCellNumber {
-            case 0:
-                //0-30
-
-                questionNumber = 0
-                
-                switch whichHinshi {
-                case "verb":
-                    
-                  
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                
-                //選択肢を左右ランダムに表示したい
-                showRandomSelection()
-                
-                
-            case 1:
-                //31-60
-                questionNumber = 31
-                
-                switch whichHinshi {
-                case "verb":
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                
-                showRandomSelection()
-                
-            case 2:
-                //61-90
-                questionNumber = 61
-                switch whichHinshi {
-                case "verb":
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                showRandomSelection()
-            case 3:
-                //91-120
-                questionNumber = 91
-                switch whichHinshi {
-                case "verb":
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                showRandomSelection()
-                
-            case 4:
-                //121-150
-                questionNumber = 121
-                
-                switch whichHinshi {
-                case "verb":
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                
-                //選択肢を左右ランダムに表示したい
-                showRandomSelection()
-            case 5:
-                //151-180
-                questionNumber = 151
-                
-                switch whichHinshi {
-                case "verb":
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                
-                //選択肢を左右ランダムに表示したい
-                showRandomSelection()
+            //選択肢を左右ランダムに表示したい
+            showRandomSelection()
+            
+            
+        case 1:
+            //31-60
+            questionNumber = 31
+            
+            switch whichHinshi {
+            case "verb":
+                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+            case "noun":
+                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+            case "adjective":
+                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+            case "adverb":
+                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+            case "others":
+                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
             default:
                 return
             }
-
+            
+            showRandomSelection()
+            
+        case 2:
+            //61-90
+            questionNumber = 61
+            switch whichHinshi {
+            case "verb":
+                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+            case "noun":
+                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+            case "adjective":
+                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+            case "adverb":
+                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+            case "others":
+                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+            default:
+                return
+            }
+            showRandomSelection()
+        case 3:
+            //91-120
+            questionNumber = 91
+            switch whichHinshi {
+            case "verb":
+                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+            case "noun":
+                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+            case "adjective":
+                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+            case "adverb":
+                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+            case "others":
+                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+            default:
+                return
+            }
+            showRandomSelection()
+            
+        case 4:
+            //121-150
+            questionNumber = 121
+            
+            switch whichHinshi {
+            case "verb":
+                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+            case "noun":
+                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+            case "adjective":
+                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+            case "adverb":
+                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+            case "others":
+                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+            default:
+                return
+            }
+            
+            //選択肢を左右ランダムに表示したい
+            showRandomSelection()
+        case 5:
+            //151-180
+            questionNumber = 151
+            
+            switch whichHinshi {
+            case "verb":
+                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+            case "noun":
+                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+            case "adjective":
+                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+            case "adverb":
+                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+            case "others":
+                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+            default:
+                return
+            }
+            
+            //選択肢を左右ランダムに表示したい
+            showRandomSelection()
+        default:
+            return
+        }
+        
         
     }
     
@@ -247,327 +247,6 @@ class TestViewController: UIViewController{
         
     }
     
-    
-    
-//    // NSTimerによって、一定の間隔で呼び出される関数
-//    @objc func onTimer(timer: Timer){
-//        //不正解判定
-//        print("不正解")
-//        incorrectCount += 1
-//
-//        //不正解の番号を記録
-//        incorrectArray.append(questionNumber)
-//        //
-//        //        UserDefaults.standard.set(questionNumber, forKey: String(questionNumber))
-//
-//        //不正解の音を鳴らす
-//        soundFile.playSound(fileName: "fuseikai", extensionName: "mp3")
-//
-//        maruBatsuImage.image = batsuImage
-//
-//        //タイマーをリセットし、残り時間を再表示
-//        timersResetAndShowLabel()
-//
-//        switch receivedCellNumber {
-//        case 0:
-//            //0-30　次の問題に行きたい時の処理を書き出す！その後メソッドにする?
-//
-//            if questionNumber < 29{
-//                //これならOk!
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//                showRandomSelection()
-//
-//
-//            }else{
-//                //問題終了
-//                timerResetAndPerformSegue()
-//
-//            }
-//
-//
-//        case 1:
-//            //31-60
-//            if questionNumber < 59{
-//                //これならOk!
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//                showRandomSelection()
-//
-//            }else{
-//                //問題終了
-//
-//                timerResetAndPerformSegue()
-//
-//            }
-//
-//        case 2:
-//            //            timersResetAndShowLabel()
-//
-//            if questionNumber < 89{
-//                //これならOk!
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//                showRandomSelection()
-//
-//            }else{
-//                //問題終了
-//
-//                timerResetAndPerformSegue()
-//
-//            }
-//
-//        case 3:
-//            //            timersResetAndShowLabel()
-//
-//            if questionNumber < 119{
-//                //これならOk!
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//                showRandomSelection()
-//
-//            }else{
-//                //問題終了
-//
-//                timerResetAndPerformSegue()
-//            }
-//
-//        case 4:
-//            if questionNumber < 149{
-//                //これならOk!
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//                showRandomSelection()
-//
-//            }else{
-//                //問題終了
-//                timerResetAndPerformSegue()
-//            }
-//
-//        case 5:
-//            if questionNumber < 179{
-//                //これならOk!
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//                showRandomSelection()
-//
-//            }else{
-//                //問題終了
-//                timerResetAndPerformSegue()
-//            }
-//
-//        default:
-//            return
-//        }
-//
-//    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     // NSTimerによって、一定の間隔で呼び出される関数
     @objc func onTimer(timer: Timer){
         //不正解判定
@@ -576,23 +255,23 @@ class TestViewController: UIViewController{
         
         //不正解の番号を記録
         incorrectArray.append(questionNumber)
-        //
-        //        UserDefaults.standard.set(questionNumber, forKey: String(questionNumber))
-        
+     
         //不正解の音を鳴らす
         soundFile.playSound(fileName: "fuseikai", extensionName: "mp3")
+
         
         maruBatsuImage.image = batsuImage
         
         //タイマーをリセットし、残り時間を再表示
         timersResetAndShowLabel()
         
+        //選択肢を0.5秒間無効化。制限時間ギリ超過時の誤タッチ防止。
+        validateAndInvalidateButton()
+        
         switch receivedCellNumber {
         case 0:
             //0-30
-            
-            
-            //これならOk!
+
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
@@ -600,6 +279,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -610,6 +291,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                     ()
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -621,6 +304,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -631,6 +316,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -641,6 +328,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -648,8 +337,6 @@ class TestViewController: UIViewController{
             default:
                 return
             }
-            
-            
             
             if questionNumber == 29{
                 //問題終了
@@ -668,6 +355,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -678,6 +367,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -689,6 +380,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -699,6 +392,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -709,6 +404,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -720,9 +417,6 @@ class TestViewController: UIViewController{
             
             
         case 2:
-            //            timersResetAndShowLabel()
-            
-            
             //61-90
             switch whichHinshi {
             case "verb":
@@ -731,6 +425,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -741,6 +437,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -752,6 +450,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -762,6 +462,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -772,6 +474,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -787,8 +491,6 @@ class TestViewController: UIViewController{
             }
             
         case 3:
-            //            timersResetAndShowLabel()
-            
             //91-120
             switch whichHinshi {
             case "verb":
@@ -797,6 +499,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -807,6 +511,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -818,6 +524,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -828,6 +536,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -838,6 +548,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -853,7 +565,6 @@ class TestViewController: UIViewController{
             
             
         case 4:
-            
             //121-150
             switch whichHinshi {
             case "verb":
@@ -862,6 +573,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -872,6 +585,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -883,6 +598,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -893,6 +610,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -903,6 +622,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -918,7 +639,6 @@ class TestViewController: UIViewController{
             
             
         case 5:
-            
             //151-180
             switch whichHinshi {
             case "verb":
@@ -927,6 +647,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -937,6 +659,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -948,6 +672,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -958,6 +684,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -968,6 +696,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else{
                     questionNumber += 1
+                       
+                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -982,36 +712,11 @@ class TestViewController: UIViewController{
             }
             
             
-            
         default:
             return
         }
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     //残り時間のラベル
     @objc func onTimer2(timer:Timer){
@@ -1138,287 +843,6 @@ class TestViewController: UIViewController{
     }
     
     
-//    func newNextQuestion(){
-//        //次の問題へ行く処理
-//        //ランダムに選択肢を表示する処理も書くべきじゃね？
-//
-//        //タイマーをリセットし、残り時間を再表示
-//        timersResetAndShowLabel()
-//
-//        switch receivedCellNumber {
-//        case 0:
-//            //0-30
-//            if questionNumber < 29{
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//
-//
-//            }else{
-//                //問題終了
-//                timerResetAndPerformSegue()
-//            }
-//        case 1:
-//            //31-60
-//            if questionNumber < 59{
-//
-//
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//
-//            }else{
-//                //問題終了
-//                timerResetAndPerformSegue()
-//            }
-//
-//        case 2:
-//
-//            if questionNumber < 89{
-//                //61-90
-//                //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
-//                //これならOk!
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//            }else{
-//                //問題終了
-//                timerResetAndPerformSegue()
-//            }
-//
-//
-//        case 3:
-//            if questionNumber < 119{
-//                //これならOk!
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//
-//
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//            }else{
-//                //問題終了
-//                timerResetAndPerformSegue()
-//            }
-//
-//        case 4:
-//            if questionNumber < 149{
-//
-//                //これならOk!
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//            }else{
-//                //問題終了
-//                timerResetAndPerformSegue()
-//            }
-//
-//        case 5:
-//            if questionNumber < 179{
-//
-//                //これならOk!
-//                switch whichHinshi {
-//                case "verb":
-//                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "noun":
-//                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adjective":
-//
-//                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "adverb":
-//                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                case "others":
-//                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                        timerResetAndPerformSegue()
-//                    }
-//                default:
-//                    return
-//                }
-//
-//                questionNumber += 1
-//                displayGif()
-//                changeWordLabel()
-//            }else{
-//                //問題終了
-//                timerResetAndPerformSegue()
-//            }
-//        default:
-//            return
-//        }
-//    }
-//
-    
-    
-    
-    
-    
-    
-    
     
     func newNextQuestion(){
         //次の問題へ行く処理
@@ -1430,303 +854,302 @@ class TestViewController: UIViewController{
         switch receivedCellNumber {
         case 0:
             //0-30
-    
-            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにす
-                switch whichHinshi {
-                case "verb":
-                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "noun":
-                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adjective":
-                    
-                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adverb":
-                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "others":
-                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                        timerResetAndPerformSegue()
-                        
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                default:
-                    return
-                }
-                
             
-                if questionNumber == 29{
-                    //問題終了
+            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにす
+            switch whichHinshi {
+            case "verb":
+                if questionNumber == materialList.TOEIC600verbList.count - 1{
                     timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "noun":
+                if questionNumber == materialList.TOEIC600NounList.count - 1{
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adjective":
+                
+                if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adverb":
+                if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "others":
+                if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                    timerResetAndPerformSegue()
+                    
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            default:
+                return
             }
-      
+            
+            
+            if questionNumber == 29{
+                //問題終了
+                timerResetAndPerformSegue()
+            }
+            
             
             
             
             
         case 1:
             //31-60
-    
-                switch whichHinshi {
-                case "verb":
-                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "noun":
-                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adjective":
+            
+            switch whichHinshi {
+            case "verb":
+                if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
-                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adverb":
-                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "others":
-                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                default:
-                    return
-                }
-                
-          
-                if questionNumber == 59{
-                    //問題終了
                     timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
                 }
-          
+            case "noun":
+                if questionNumber == materialList.TOEIC600NounList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adjective":
+                
+                if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adverb":
+                if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "others":
+                if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            default:
+                return
+            }
+            
+            
+            if questionNumber == 59{
+                //問題終了
+                timerResetAndPerformSegue()
+            }
+            
             
         case 2:
             
-          
-                //61-90
-                //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
-                //これならOk!
-                switch whichHinshi {
-                case "verb":
-                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "noun":
-                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adjective":
+            
+            //61-90
+            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+            switch whichHinshi {
+            case "verb":
+                if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
-                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adverb":
-                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "others":
-                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                default:
-                    return
-                }
-                
-                
-                if questionNumber == 89{
-                    //問題終了
                     timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
                 }
+            case "noun":
+                if questionNumber == materialList.TOEIC600NounList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adjective":
+                
+                if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adverb":
+                if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "others":
+                if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            default:
+                return
+            }
+            
+            
+            if questionNumber == 89{
+                //問題終了
+                timerResetAndPerformSegue()
+            }
             
             
         case 3:
-    
-                //これならOk!
-                switch whichHinshi {
-                case "verb":
-                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "noun":
-                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adjective":
+            
+            //これならOk!
+            switch whichHinshi {
+            case "verb":
+                if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
-                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adverb":
-                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "others":
-                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                default:
-                    return
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
                 }
+            case "noun":
+                if questionNumber == materialList.TOEIC600NounList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adjective":
                 
+                if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adverb":
+                if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "others":
+                if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            default:
+                return
+            }
+            
             if questionNumber == 119{
                 //問題終了
                 timerResetAndPerformSegue()
             }
-        
+            
             
         case 4:
-                //これならOk!
-                switch whichHinshi {
-                case "verb":
-                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "noun":
-                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adjective":
+            //これならOk!
+            switch whichHinshi {
+            case "verb":
+                if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
-                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adverb":
-                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "others":
-                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                default:
-                    return
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
                 }
-
+            case "noun":
+                if questionNumber == materialList.TOEIC600NounList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adjective":
+                
+                if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adverb":
+                if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "others":
+                if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            default:
+                return
+            }
+            
             
             if questionNumber == 149{
                 //問題終了
@@ -1734,92 +1157,80 @@ class TestViewController: UIViewController{
             }
             
         case 5:
-
-                //これならOk!
-                switch whichHinshi {
-                case "verb":
-                    if questionNumber == materialList.TOEIC600verbList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "noun":
-                    if questionNumber == materialList.TOEIC600NounList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adjective":
+            
+            //これならOk!
+            switch whichHinshi {
+            case "verb":
+                if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
-                    if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "adverb":
-                    if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                case "others":
-                    if questionNumber == materialList.TOEIC600OthersList.count - 1{
-
-                        timerResetAndPerformSegue()
-                    }else{
-                        questionNumber += 1
-                        displayGif()
-                        changeWordLabel()
-                    }
-                default:
-                    return
-                }
-                
-                
-                if questionNumber == 179{
-                    //問題終了
                     timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "noun":
+                if questionNumber == materialList.TOEIC600NounList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adjective":
+                
+                if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "adverb":
+                if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            case "others":
+                if questionNumber == materialList.TOEIC600OthersList.count - 1{
+                    
+                    timerResetAndPerformSegue()
+                }else{
+                    questionNumber += 1
+                    displayGif()
+                    changeWordLabel()
+                }
+            default:
+                return
             }
             
             
-                
-                
+            if questionNumber == 179{
+                //問題終了
+                timerResetAndPerformSegue()
+            }
+            
+            
+            
+            
         default:
             return
         }
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     func timerResetAndPerformSegue(){
         //returnは、いるのだろうか？要検証
-    self.timer2.invalidate()
-    self.timer.invalidate()
-    performSegue(withIdentifier: "TL", sender: nil)
-    return
+        self.timer2.invalidate()
+        self.timer.invalidate()
+        performSegue(withIdentifier: "TL", sender: nil)
+        return
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -1866,8 +1277,6 @@ class TestViewController: UIViewController{
                 return
             }
             //ダミー選択肢を右に表示させる処理
-            //        var random = Int(arc4random_uniform(UInt32(Int(materialList.TOEIC600verbList.count - 1))))
-            
             var random = Int()
             
             switch whichHinshi {
@@ -1970,14 +1379,8 @@ class TestViewController: UIViewController{
             }
             
             
-            
-            
-            
-            
             if random != questionNumber{
-                
-                //                selection1.setTitle(materialList.TOEIC600verbList[random].japanWords, for: UIControl.State.normal)
-                
+     
                 switch whichHinshi {
                 case "verb":
                     random = Int(arc4random_uniform(UInt32(Int(materialList.TOEIC600verbList.count - 1))))
@@ -2037,6 +1440,10 @@ class TestViewController: UIViewController{
     
     @IBAction func answer(_ sender: Any){
         
+        
+        //選択肢を0.5秒間無効化。制限時間ギリ超過時の誤タッチ防止。
+        validateAndInvalidateButton()
+        
         timersResetAndShowLabel()
         
         if (sender as AnyObject).tag == 1{
@@ -2048,6 +1455,10 @@ class TestViewController: UIViewController{
                 checkAnswer()
                 
                 newNextQuestion()
+                
+                   
+                  
+                
                 showRandomSelection()
                 
                 
@@ -2057,6 +1468,9 @@ class TestViewController: UIViewController{
                 checkAnswer()
                 
                 newNextQuestion()
+                   
+                  
+                
                 showRandomSelection()
             }
             
@@ -2069,6 +1483,8 @@ class TestViewController: UIViewController{
                 checkAnswer()
                 
                 newNextQuestion()
+                   
+                  
                 showRandomSelection()
                 
             }else if selectionRightOrLeft == 1{
@@ -2077,6 +1493,8 @@ class TestViewController: UIViewController{
                 checkAnswer()
                 
                 newNextQuestion()
+                   
+                  
                 showRandomSelection()
             }
         }
@@ -2114,28 +1532,28 @@ class TestViewController: UIViewController{
         switch whichHinshi {
         case "verb":
             if questionNumber == materialList.TOEIC600verbList.count - 1{
-
+                
                 timerResetAndPerformSegue()
             }
         case "noun":
             if questionNumber == materialList.TOEIC600NounList.count - 1{
-
+                
                 timerResetAndPerformSegue()
             }
         case "adjective":
             
             if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-
+                
                 timerResetAndPerformSegue()
             }
         case "adverb":
             if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-
+                
                 timerResetAndPerformSegue()
             }
         case "others":
             if questionNumber == materialList.TOEIC600OthersList.count - 1{
-
+                
                 timerResetAndPerformSegue()
             }
         default:
@@ -2144,6 +1562,24 @@ class TestViewController: UIViewController{
             changeWordLabel()
         }
     }
+    
+    
+    func validateAndInvalidateButton (){
+       //回答ボタンを無効化
+        selection1.isEnabled = false
+        selection2.isEnabled = false
+        
+      //0.3秒後にボタンを有効化
+    //タイマーを設定
+        timer3 = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(TestViewController.onTimer3(timer:)), userInfo: nil, repeats: false)
+    }
+    
+   @objc func onTimer3(timer: Timer){
+        selection1.isEnabled = true
+        selection2.isEnabled = true
+    }
+    
+
     
     
     

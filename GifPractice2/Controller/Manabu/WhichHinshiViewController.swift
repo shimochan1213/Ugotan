@@ -79,7 +79,9 @@ class WhichHinshiViewController: UIViewController,UITableViewDelegate,UITableVie
      //セルがタップされた時に呼ばれる
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let animation = [AnimationType.rotate(angle: CGFloat.pi/6)]
+//        let animation = [AnimationType.rotate(angle: CGFloat.pi/6)]
+//        let animation = [AnimationType.zoom(scale: 1.1)]
+        let animation = [AnimationType.random()]
          
          tableView.reloadData()
          UIView.animate(views: tableView.visibleCells, animations: animation)

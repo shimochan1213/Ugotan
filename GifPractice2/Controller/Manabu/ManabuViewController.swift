@@ -66,6 +66,8 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 return
             }
             
+            playWordSound()
+            
             switch whichHinshi {
             case "verb":
                 wordLabel.text = String(materialList.TOEIC600verbList[wordCount].Words)
@@ -116,6 +118,8 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             default:
                 return
             }
+            
+            playWordSound()
             
             
             switch whichHinshi {
@@ -208,6 +212,9 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
             // 表示しているgifの番号を1増やす
             wordCount += 1
+            
+            playWordSound()
+            
             // 表示している画像の番号を基にgifを表示する。
             displayGif()
             //wordCountに応じてラベルを変更（英単語と日本語訳）
@@ -251,21 +258,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             changeLabelsOfWordAndJapan()
         }else if receivedCellNumber == 2 && wordCount < 89{
             //61-90
-            
-            
-            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
-            
-            //            switch whichHinshi {
-            //            case "adjective":
-            //
-            //                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
-            //                    return
-            //                }
-            //            default:
-            //                return
-            //            }
-            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
-            
+
             switch whichHinshi {
             case "verb":
                 if wordCount == materialList.TOEIC600verbList.count - 1{
@@ -416,6 +409,9 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
             self.timer?.invalidate()
             wordCount -= 1
+            
+            playWordSound()
+            
             //0-30ならば
             if receivedCellNumber == 0{
                 
@@ -710,13 +706,14 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
             
             if wordCount == 29{
+                showCongratsAlert()
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
                 self.timer?.invalidate()
                 wordCount += 1
                 
-                
+                playWordSound()
                 
                 switch whichHinshi {
                 case "verb":
@@ -778,11 +775,13 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
             
             if wordCount == 59{
+                showCongratsAlert()
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
                 self.timer?.invalidate()
                 wordCount += 1
+                playWordSound()
                 
                 switch whichHinshi {
                 case "verb":
@@ -842,11 +841,13 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }
             
             if wordCount == 89{
+                showCongratsAlert()
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
                 self.timer?.invalidate()
                 wordCount += 1
+                playWordSound()
                 
                 switch whichHinshi {
                 case "verb":
@@ -912,11 +913,13 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
             
             if wordCount == 119{
+                showCongratsAlert()
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
                 self.timer?.invalidate()
                 wordCount += 1
+                playWordSound()
                 
                 switch whichHinshi {
                 case "verb":
@@ -977,11 +980,13 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
             
             if wordCount == 149{
+                showCongratsAlert()
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
                 self.timer?.invalidate()
                 wordCount += 1
+                playWordSound()
                 
                 switch whichHinshi {
                 case "verb":
@@ -1044,11 +1049,13 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
             
             if wordCount == 179{
+                showCongratsAlert()
                 return
             }else{
                 //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
                 self.timer?.invalidate()
                 wordCount += 1
+                playWordSound()
                 
                 switch whichHinshi {
                 case "verb":
@@ -1082,38 +1089,42 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
-    
-    //音源ないときの処理をなんとかしないとね。オプショナル型を学ぼう
+
     @IBAction func soundButton(_ sender: Any) {
+        playWordSound()
+    }
+    
+    
+    
+    func playWordSound() {
+    //単語の音声流す
+    
+    switch whichHinshi {
+    case "verb":
+
+        soundFile.playSound(fileName: materialList.TOEIC600verbList[wordCount].Words, extensionName: "mp3")
         
+    case "noun":
+        soundFile.playSound(fileName: materialList.TOEIC600NounList[wordCount].Words, extensionName: "mp3")
         
-        switch whichHinshi {
-        case "verb":
-            //音声が空の時はリターンする処理を書きたいね
-            
-            
-            soundFile.playSound(fileName: materialList.TOEIC600verbList[wordCount].Words, extensionName: "mp3")
-            
-        case "noun":
-            soundFile.playSound(fileName: materialList.TOEIC600NounList[wordCount].Words, extensionName: "mp3")
-            
-        case "adjective":
-            soundFile.playSound(fileName: materialList.TOEIC600AdjectiveList[wordCount].Words, extensionName: "mp3")
-            
-        case "adverb":
-            
-            soundFile.playSound(fileName: materialList.TOEIC600AdverbList[wordCount].Words, extensionName: "mp3")
-            
-        case "others":
-            soundFile.playSound(fileName: materialList.TOEIC600OthersList[wordCount].Words, extensionName: "mp3")
-            
-        default:
-            return
-        }
+    case "adjective":
+        soundFile.playSound(fileName: materialList.TOEIC600AdjectiveList[wordCount].Words, extensionName: "mp3")
         
+    case "adverb":
         
+        soundFile.playSound(fileName: materialList.TOEIC600AdverbList[wordCount].Words, extensionName: "mp3")
+        
+    case "others":
+        soundFile.playSound(fileName: materialList.TOEIC600OthersList[wordCount].Words, extensionName: "mp3")
+        
+    default:
+        return
+    }
         
     }
+    
+    
+    
     
     
     
@@ -1196,7 +1207,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     func showAlert(){
         //テストの説明を表示
         
-        let alertController = UIAlertController(title: "はじめまして", message: "3秒で自動的に次の単語が出ます。一時停止も可能です。3秒の間に2-3回音読ができると良いペースです。「increase増加する、increase増加する」という風に音読します。では、頑張って下さい！", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "はじめまして", message: "3秒で自動的に次の単語が出ます。1単語あたり2-3回音読ができると良いペースです。流れてくる音声に続いて「increase増加する、increase増加する」という風に音読します。では、頑張って下さい！", preferredStyle: .alert)
         
         let action1 = UIAlertAction(title: "はい", style: .default) { (alert) in
             
@@ -1214,6 +1225,34 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         UserDefaults.standard.set(firstOrNot, forKey: "alreadyManabu")
         self.present(alertController, animated: true,completion: nil)
     }
+    
+    
+    func showCongratsAlert(){
+           //単語最後まで行った時に「完了」を示すアラートを出す
+           
+           let alertController = UIAlertController(title: "お疲れ様でした！", message: "引き続き頑張ってくださいね！", preferredStyle: .alert)
+           
+           let action1 = UIAlertAction(title: "ホームへ", style: .default) { (alert) in
+            self.navigationController?.popToRootViewController(animated: true)
+           }
+        
+        let action2 = UIAlertAction(title: "範囲選択へ", style: .default) { (alert) in
+            
+        self.navigationController?.popViewController(animated: true)
+            //ナビゲーションバー再表示
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+        }
+        
+        let action3 = UIAlertAction(title: "まだ続ける", style: .default) { (alert) in
+            return
+        }
+           
+           alertController.addAction(action1)
+           alertController.addAction(action2)
+           alertController.addAction(action3)
+           self.present(alertController, animated: true,completion: nil)
+          
+       }
     
     
 }
