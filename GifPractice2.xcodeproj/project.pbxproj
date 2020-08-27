@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B11BDFB024F79FA70001251C /* increase.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B11BDFAF24F79FA70001251C /* increase.mp3 */; };
 		B122FFC5248CEDB900D5450B /* correctSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B122FFC4248CEDB900D5450B /* correctSound.mp3 */; };
 		B122FFC7248CEDBD00D5450B /* incorrectSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B122FFC6248CEDBD00D5450B /* incorrectSound.mp3 */; };
 		B122FFC9248CF23600D5450B /* ModeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122FFC8248CF23600D5450B /* ModeSelectViewController.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B11BDFAF24F79FA70001251C /* increase.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = increase.mp3; sourceTree = "<group>"; };
 		B122FFC4248CEDB900D5450B /* correctSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctSound.mp3; sourceTree = "<group>"; };
 		B122FFC6248CEDBD00D5450B /* incorrectSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incorrectSound.mp3; sourceTree = "<group>"; };
 		B122FFC8248CF23600D5450B /* ModeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSelectViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				B17FD10B246298C000F13729 /* move.mp3 */,
 				B17FD10F246299F000F13729 /* expand.gif */,
 				B17FD10D246298C700F13729 /* expand.mp3 */,
+				B11BDFAF24F79FA70001251C /* increase.mp3 */,
 				B14110122473ED7500336F40 /* accept.gif */,
 				B17FD1192462A7F200F13729 /* accept.mp3 */,
 				B1D4C9D32487EBDC00F08EA4 /* agree.gif */,
@@ -337,6 +340,7 @@
 				B1967E0424DD866F007EB7D0 /* hang.json in Resources */,
 				B1BE99AE2461D18F005766A6 /* Main.storyboard in Resources */,
 				B1E5EDFB24E19C8A0067B91C /* fuseikai.mp3 in Resources */,
+				B11BDFB024F79FA70001251C /* increase.mp3 in Resources */,
 				B1D4C9D62487EBDC00F08EA4 /* agree.gif in Resources */,
 				B1967DFE24DD7EA1007EB7D0 /* dancing.json in Resources */,
 				B18D7FFC248D325300C2EEC4 /* path.gif in Resources */,

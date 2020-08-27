@@ -55,181 +55,36 @@ class TestViewController: UIViewController{
         case true:
             //初めての起動
             showAlert()
+         
             
-            switch receivedCellNumber {
-            case 0:
-                //0-30
-                questionNumber = 0
-                
-                switch whichHinshi {
-                case "verb":
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                
-                //選択肢を左右ランダムに表示したい
-                showRandomSelection()
-                
-                
-            case 1:
-                //31-60
-                questionNumber = 31
-                
-                switch whichHinshi {
-                case "verb":
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                
-                showRandomSelection()
-                
-            case 2:
-                //61-90
-                questionNumber = 61
-                switch whichHinshi {
-                case "verb":
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                showRandomSelection()
-            case 3:
-                //91-120
-                questionNumber = 91
-                switch whichHinshi {
-                case "verb":
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                showRandomSelection()
-                
-            case 4:
-                //121-150
-                questionNumber = 121
-                
-                switch whichHinshi {
-                case "verb":
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                
-                //選択肢を左右ランダムに表示したい
-                showRandomSelection()
-            case 5:
-                //151-180
-                questionNumber = 151
-                
-                switch whichHinshi {
-                case "verb":
-                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-                case "noun":
-                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-                case "adjective":
-                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                case "adverb":
-                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-                case "others":
-                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-                default:
-                    return
-                }
-                
-                //選択肢を左右ランダムに表示したい
-                showRandomSelection()
-            default:
-                return
-            }
             
         case false:
-            //2回目以降の起動ではアラート出さない
-            // タイマーを設定　制限時間カウントダウンタイマー
+//            2回目以降の起動ではアラート出さない
+//             タイマーを設定　制限時間カウントダウンタイマー
             timer2 = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(TestViewController.onTimer2(timer:)), userInfo: nil, repeats: true)
             countdownLabel.text = String(timerCount)
-            
+
             // タイマーを設定　時間切れで次の問題へ行くためのタイマー
             timer = Timer.scheduledTimer(timeInterval: timeLimit, target: self, selector: #selector(TestViewController.onTimer(timer:)), userInfo: nil, repeats: true)
             
             
+            default:
+                return
+            }
+            
+            
+            
+            
+            
             switch receivedCellNumber {
             case 0:
                 //0-30
                 questionNumber = 0
+                
                 switch whichHinshi {
                 case "verb":
+                    
+                  
                     testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
                     testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
                 case "noun":
@@ -247,6 +102,7 @@ class TestViewController: UIViewController{
                 default:
                     return
                 }
+                
                 //選択肢を左右ランダムに表示したい
                 showRandomSelection()
                 
@@ -254,6 +110,7 @@ class TestViewController: UIViewController{
             case 1:
                 //31-60
                 questionNumber = 31
+                
                 switch whichHinshi {
                 case "verb":
                     testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
@@ -273,6 +130,7 @@ class TestViewController: UIViewController{
                 default:
                     return
                 }
+                
                 showRandomSelection()
                 
             case 2:
@@ -374,15 +232,182 @@ class TestViewController: UIViewController{
                 
                 //選択肢を左右ランダムに表示したい
                 showRandomSelection()
-                
             default:
                 return
             }
             
+//        case false:
+//            //2回目以降の起動ではアラート出さない
+//            // タイマーを設定　制限時間カウントダウンタイマー
+//            timer2 = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(TestViewController.onTimer2(timer:)), userInfo: nil, repeats: true)
+//            countdownLabel.text = String(timerCount)
+//
+//            // タイマーを設定　時間切れで次の問題へ行くためのタイマー
+//            timer = Timer.scheduledTimer(timeInterval: timeLimit, target: self, selector: #selector(TestViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+//
+//
+//            switch receivedCellNumber {
+//            case 0:
+//                //0-30
+//                questionNumber = 0
+//                switch whichHinshi {
+//                case "verb":
+//
+//                    soundFile.playSound(fileName: materialList.TOEIC600verbList[questionNumber].Words, extensionName: "mp3")
+//
+//                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                case "noun":
+//                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                case "adjective":
+//                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                case "adverb":
+//                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                case "others":
+//                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                default:
+//                    return
+//                }
+//                //選択肢を左右ランダムに表示したい
+//                showRandomSelection()
+//
+//
+//            case 1:
+//                //31-60
+//                questionNumber = 31
+//                switch whichHinshi {
+//                case "verb":
+//                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                case "noun":
+//                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                case "adjective":
+//                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                case "adverb":
+//                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                case "others":
+//                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                default:
+//                    return
+//                }
+//                showRandomSelection()
+//
+//            case 2:
+//                //61-90
+//                questionNumber = 61
+//                switch whichHinshi {
+//                case "verb":
+//                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                case "noun":
+//                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                case "adjective":
+//                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                case "adverb":
+//                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                case "others":
+//                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                default:
+//                    return
+//                }
+//                showRandomSelection()
+//            case 3:
+//                //91-120
+//                questionNumber = 91
+//                switch whichHinshi {
+//                case "verb":
+//                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                case "noun":
+//                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                case "adjective":
+//                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                case "adverb":
+//                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                case "others":
+//                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                default:
+//                    return
+//                }
+//                showRandomSelection()
+//
+//            case 4:
+//                //121-150
+//                questionNumber = 121
+//
+//                switch whichHinshi {
+//                case "verb":
+//                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                case "noun":
+//                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                case "adjective":
+//                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                case "adverb":
+//                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                case "others":
+//                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                default:
+//                    return
+//                }
+//
+//                //選択肢を左右ランダムに表示したい
+//                showRandomSelection()
+//            case 5:
+//                //151-180
+//                questionNumber = 151
+//
+//                switch whichHinshi {
+//                case "verb":
+//                    testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                case "noun":
+//                    testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                case "adjective":
+//                    testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                case "adverb":
+//                    testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                case "others":
+//                    testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
+//                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                default:
+//                    return
+//                }
+//
+//                //選択肢を左右ランダムに表示したい
+//                showRandomSelection()
+//
+//            default:
+//                return
+//            }
             
-        default:
-            return
-        }
+            
+//        default:
+//            return
+//        }
         
         
     }
