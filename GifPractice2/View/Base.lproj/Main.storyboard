@@ -401,8 +401,8 @@ ca-app-pub-5717197999913003/9349881106</string>
                                     <action selector="soundButton:" destination="wxd-hQ-7a1" eventType="touchUpInside" id="Qoh-Z0-lve"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIL-b6-L0u">
-                                <rect key="frame" x="0.0" y="334" width="375" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jIL-b6-L0u">
+                                <rect key="frame" x="10" y="334" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="BD3-au-NzG"/>
                                 </constraints>
@@ -434,8 +434,8 @@ ca-app-pub-5717197999913003/9349881106</string>
                                     <action selector="nextWordsButton:" destination="wxd-hQ-7a1" eventType="touchUpInside" id="qDT-Ei-WIY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdh-x2-mBF">
-                                <rect key="frame" x="0.0" y="392" width="375" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qdh-x2-mBF">
+                                <rect key="frame" x="10" y="392" width="355" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="wdv-My-CMs"/>
                                 </constraints>
@@ -469,14 +469,14 @@ ca-app-pub-5717197999913003/9349881106</string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qdh-x2-mBF" firstAttribute="trailing" secondItem="Oxg-Jd-fAv" secondAttribute="trailing" id="26k-YG-wEq"/>
-                            <constraint firstItem="jIL-b6-L0u" firstAttribute="trailing" secondItem="Oxg-Jd-fAv" secondAttribute="trailing" id="4IO-bG-g5D"/>
-                            <constraint firstItem="qdh-x2-mBF" firstAttribute="leading" secondItem="Oxg-Jd-fAv" secondAttribute="leading" id="5OF-AC-Shl"/>
+                            <constraint firstItem="qdh-x2-mBF" firstAttribute="trailing" secondItem="Oxg-Jd-fAv" secondAttribute="trailing" constant="-10" id="26k-YG-wEq"/>
+                            <constraint firstItem="jIL-b6-L0u" firstAttribute="trailing" secondItem="Oxg-Jd-fAv" secondAttribute="trailing" constant="-10" id="4IO-bG-g5D"/>
+                            <constraint firstItem="qdh-x2-mBF" firstAttribute="leading" secondItem="Oxg-Jd-fAv" secondAttribute="leading" constant="10" id="5OF-AC-Shl"/>
                             <constraint firstItem="d79-2K-uzX" firstAttribute="leading" secondItem="Oxg-Jd-fAv" secondAttribute="leading" constant="15" id="86Y-Eh-Htb"/>
                             <constraint firstItem="Oxg-Jd-fAv" firstAttribute="trailing" secondItem="n7I-C4-9c5" secondAttribute="trailing" constant="6" id="9qs-tx-FiH"/>
                             <constraint firstItem="jIL-b6-L0u" firstAttribute="top" secondItem="Oxg-Jd-fAv" secondAttribute="top" constant="290" id="C0k-vy-7K1"/>
                             <constraint firstItem="RMt-yv-GcC" firstAttribute="top" secondItem="qdh-x2-mBF" secondAttribute="bottom" constant="72" id="DDh-CB-rlx"/>
-                            <constraint firstItem="jIL-b6-L0u" firstAttribute="leading" secondItem="Oxg-Jd-fAv" secondAttribute="leading" id="Eaz-bT-NGG"/>
+                            <constraint firstItem="jIL-b6-L0u" firstAttribute="leading" secondItem="Oxg-Jd-fAv" secondAttribute="leading" constant="10" id="Eaz-bT-NGG"/>
                             <constraint firstItem="W3o-rg-PBH" firstAttribute="leading" secondItem="Oxg-Jd-fAv" secondAttribute="leading" constant="32" id="Gal-H4-o6j"/>
                             <constraint firstItem="d79-2K-uzX" firstAttribute="centerX" secondItem="vpL-Da-mFE" secondAttribute="centerX" id="NDF-5v-k2Z"/>
                             <constraint firstItem="W3o-rg-PBH" firstAttribute="top" secondItem="qdh-x2-mBF" secondAttribute="bottom" constant="73" id="QGi-PF-czv"/>
@@ -569,7 +569,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                                     <constraint firstAttribute="height" constant="373" id="8FB-f2-ZPC"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英単語を表示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2I-Ux-QXe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英単語を表示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="V2I-Ux-QXe">
                                 <rect key="frame" x="0.0" y="321" width="375" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="TwN-Bo-Q0f"/>
@@ -710,12 +710,6 @@ ca-app-pub-5717197999913003/9349881106</string>
                                 <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="具体的にどうするか" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0j-Li-phB">
-                                <rect key="frame" x="16" y="446" width="176" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpx-6h-sUW">
                                 <rect key="frame" x="16" y="117" width="343" height="472"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -741,7 +735,6 @@ ca-app-pub-5717197999913003/9349881106</string>
                         <constraints>
                             <constraint firstItem="bSx-yD-fww" firstAttribute="trailing" secondItem="yz3-6O-OhA" secondAttribute="trailing" constant="28" id="4vL-4w-7Nt"/>
                             <constraint firstItem="yz3-6O-OhA" firstAttribute="leading" secondItem="bSx-yD-fww" secondAttribute="leading" constant="28" id="Dv9-bR-MHZ"/>
-                            <constraint firstItem="bpx-6h-sUW" firstAttribute="leading" secondItem="g0j-Li-phB" secondAttribute="leading" id="E3c-DK-KHp"/>
                             <constraint firstItem="bpx-6h-sUW" firstAttribute="leading" secondItem="bSx-yD-fww" secondAttribute="leading" constant="16" id="G6T-mP-bf2"/>
                             <constraint firstItem="O1D-jS-HgP" firstAttribute="top" secondItem="bSx-yD-fww" secondAttribute="top" constant="27" id="OZz-TV-sml"/>
                             <constraint firstItem="bSx-yD-fww" firstAttribute="trailing" secondItem="bpx-6h-sUW" secondAttribute="trailing" constant="16" id="RgQ-Iy-35r"/>
@@ -855,14 +848,14 @@ ca-app-pub-5717197999913003/9349881106</string>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dgx-Us-xHv">
                                                     <rect key="frame" x="10" y="0.0" width="355" height="58"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWV-Rc-0NQ">
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eWV-Rc-0NQ">
                                                             <rect key="frame" x="0.0" y="0.0" width="355" height="29"/>
                                                             <color key="backgroundColor" red="0.99824160340000001" green="0.98150688409999998" blue="0.63259905579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gef-Ud-Sfg">
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gef-Ud-Sfg">
                                                             <rect key="frame" x="0.0" y="29" width="355" height="29"/>
                                                             <color key="backgroundColor" red="0.88173654957442493" green="1" blue="0.96793509179627302" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>

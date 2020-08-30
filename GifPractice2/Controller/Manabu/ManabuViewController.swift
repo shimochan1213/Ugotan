@@ -693,10 +693,12 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 
             case "adverb":
                 if wordCount == materialList.TOEIC600AdverbList.count - 1{
+                    showCongratsAlert()
                     return
                 }
             case "others":
                 if wordCount == materialList.TOEIC600OthersList.count - 1{
+                    showCongratsAlert()
                     return
                 }
             default:
@@ -762,10 +764,12 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 
             case "adverb":
                 if wordCount == materialList.TOEIC600AdverbList.count - 1{
+                    showCongratsAlert()
                     return
                 }
             case "others":
                 if wordCount == materialList.TOEIC600OthersList.count - 1{
+                    showCongratsAlert()
                     return
                 }
             default:
@@ -825,6 +829,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             case "adjective":
                 
                 if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+                    showCongratsAlert()
                     return
                 }
                 
@@ -883,6 +888,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             switch whichHinshi {
             case "verb":
                 if wordCount == materialList.TOEIC600verbList.count - 1{
+                    showCongratsAlert()
                     return
                 }
             case "noun":
@@ -958,6 +964,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 }
             case "noun":
                 if wordCount == materialList.TOEIC600NounList.count - 1{
+                    showCongratsAlert()
                     return
                 }
             case "adjective":
