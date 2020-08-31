@@ -4,7 +4,7 @@
 //
 //  Created by 下川勇輝 on 2020/06/09.
 //  Copyright © 2020 Yuki Shimokawa. All rights reserved.
-//あたらしい方 テストのレベル用
+
 
 import UIKit
 import ViewAnimator
@@ -15,7 +15,8 @@ class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableVie
     @IBOutlet weak var bannerView: GADBannerView!
     
     @IBOutlet weak var tableView: UITableView!
-    
+   
+    var firstOrNot = true
     //タップされたセルの番号を入れておく（indexPath.row番目だね）
     var CellNumber = Int()
     var textArray = ["動詞編","名詞編","形容詞編","副詞編","その他重要表現"]
@@ -26,8 +27,24 @@ class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableVie
         tableView.delegate = self
         tableView.dataSource = self
         
+        //初起動かどうかのチェック
+        if UserDefaults.standard.object(forKey: "alreadyReview") != nil{
+            firstOrNot = UserDefaults.standard.object(forKey: "alreadyReview") as! Bool
+        }
+        
+        if firstOrNot == true{
+        showAlert()
+        }
+        
+        
+        
+        
+        
+        
+        
+        
         //広告表示
-        bannerView.adUnitID = "ca-app-pub-5717197999913003/4320533202"
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         
@@ -128,5 +145,40 @@ class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableVie
         
         
     }
+    
+    
+    func showAlert(){
+       
+        
+        let alertController = UIAlertController(title: "復習モードへようこそ", message: "テストモードで間違えた単語のみを表示します。繰り返し英単語に触れてくださいね!", preferredStyle: .alert)
+        
+        let action1 = UIAlertAction(title: "はい", style: .default) { (alert) in
+            
+            
+            return
+            
+            
+        }
+        
+        alertController.addAction(action1)
+        
+        //ユーザーデフォルに起動した情報を記録
+        firstOrNot = false
+        UserDefaults.standard.set(firstOrNot, forKey: "alreadyReview")
+        self.present(alertController, animated: true,completion: nil)
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }

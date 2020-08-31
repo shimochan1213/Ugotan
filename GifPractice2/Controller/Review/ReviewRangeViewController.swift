@@ -24,7 +24,7 @@ import GoogleMobileAds
 
 class ReviewRangeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
-//    @IBOutlet weak var bannerView: GADBannerView!
+
     
   
     var receivedCellNumber = 0
@@ -33,7 +33,8 @@ class ReviewRangeViewController: UIViewController,UITableViewDelegate,UITableVie
     
     let materialList = MaterialList()
     
-
+    @IBOutlet weak var bannerView: GADBannerView!
+    
     @IBOutlet weak var tableView: UITableView!
     
     //タップされたセルの番号を入れておく（indexPath.row番目だね）
@@ -48,10 +49,10 @@ class ReviewRangeViewController: UIViewController,UITableViewDelegate,UITableVie
         
         
         
-//        //広告表示
-//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-//        bannerView.rootViewController = self
-//        bannerView.load(GADRequest())
+        //広告表示
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         
          
      }

@@ -35,6 +35,7 @@ class TestRangeViewController: UIViewController,UITableViewDelegate,UITableViewD
     
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var bannerView: GADBannerView!
     
     //タップされたセルの番号を入れておく（indexPath.row番目だね）
     var CellNumber = Int()
@@ -48,10 +49,10 @@ class TestRangeViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         
         
-//        //広告表示
-//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-//        bannerView.rootViewController = self
-//        bannerView.load(GADRequest())
+        //広告表示
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         
          
      }

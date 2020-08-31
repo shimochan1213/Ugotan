@@ -288,6 +288,11 @@ ca-app-pub-5717197999913003/9349881106</string>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UNP-2O-vXv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="0PK-K6-PaK" customClass="GADBannerView">
+                                    <rect key="frame" x="0.0" y="153" width="375" height="57"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="97" id="Mhw-gH-C4a">
                                         <rect key="frame" x="0.0" y="28" width="375" height="97"/>
@@ -311,13 +316,14 @@ ca-app-pub-5717197999913003/9349881106</string>
                     </view>
                     <navigationItem key="navigationItem" id="oke-OG-vjt"/>
                     <connections>
+                        <outlet property="bannerView" destination="0PK-K6-PaK" id="ivP-Wx-Mx7"/>
                         <outlet property="tableView" destination="UNP-2O-vXv" id="RDv-Tu-PV9"/>
                         <segue destination="wxd-hQ-7a1" kind="show" identifier="manabu" id="pMt-Rm-vAI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPR-Uu-Xhl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2382" y="-34"/>
+            <point key="canvasLocation" x="2381.5999999999999" y="-34.632683658170919"/>
         </scene>
         <!--Which Hinshi Test View Controller-->
         <scene sceneID="nKK-1u-RjN">
@@ -511,6 +517,11 @@ ca-app-pub-5717197999913003/9349881106</string>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f9Z-Vw-BYa">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Bdz-Zz-jEa" customClass="GADBannerView">
+                                    <rect key="frame" x="0.0" y="153" width="375" height="63"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="97" id="YVD-oy-KUo">
                                         <rect key="frame" x="0.0" y="28" width="375" height="97"/>
@@ -538,13 +549,14 @@ ca-app-pub-5717197999913003/9349881106</string>
                     </view>
                     <navigationItem key="navigationItem" id="JJG-dk-PQU"/>
                     <connections>
+                        <outlet property="bannerView" destination="Bdz-Zz-jEa" id="PoP-xY-X4h"/>
                         <outlet property="tableView" destination="f9Z-Vw-BYa" id="5Py-ad-pYg"/>
                         <segue destination="sKY-Pk-4VK" kind="show" identifier="test" id="Qkg-tR-1yh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33v-Dx-Mwz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2382" y="633"/>
+            <point key="canvasLocation" x="2381.5999999999999" y="632.83358320839591"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="vce-CQ-EGB">
@@ -967,6 +979,11 @@ ca-app-pub-5717197999913003/9349881106</string>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mfY-ef-6JN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="wpK-AM-tqE" customClass="GADBannerView">
+                                    <rect key="frame" x="0.0" y="153" width="375" height="67"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="97" id="8eb-hc-YC6">
                                         <rect key="frame" x="0.0" y="28" width="375" height="97"/>
@@ -994,13 +1011,14 @@ ca-app-pub-5717197999913003/9349881106</string>
                     </view>
                     <navigationItem key="navigationItem" id="xYS-Jc-kZd"/>
                     <connections>
+                        <outlet property="bannerView" destination="wpK-AM-tqE" id="3cf-cN-lAT"/>
                         <outlet property="tableView" destination="mfY-ef-6JN" id="W3k-cC-bJO"/>
                         <segue destination="hsf-TU-dYS" kind="show" identifier="next" id="tT1-cT-Dgp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i4T-NY-QID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2337" y="1415"/>
+            <point key="canvasLocation" x="2336.8000000000002" y="1414.5427286356824"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="MlB-Da-qjN">

@@ -67,6 +67,358 @@
 		B196DD5224FCB478009DD78C /* WhichReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196DD5124FCB478009DD78C /* WhichReviewViewController.swift */; };
 		B196DD5424FCB548009DD78C /* ReviewRangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196DD5324FCB548009DD78C /* ReviewRangeViewController.swift */; };
 		B196DD5624FCB665009DD78C /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196DD5524FCB665009DD78C /* ReviewViewController.swift */; };
+		B196DD8324FCD4C7009DD78C /* inform.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD5824FCD4C1009DD78C /* inform.mp3 */; };
+		B196DD8424FCD4C7009DD78C /* explore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD5924FCD4C1009DD78C /* explore.mp3 */; };
+		B196DD8524FCD4C7009DD78C /* separate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD5A24FCD4C2009DD78C /* separate.mp3 */; };
+		B196DD8624FCD4C7009DD78C /* obtain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD5B24FCD4C2009DD78C /* obtain.mp3 */; };
+		B196DD8724FCD4C7009DD78C /* recognize.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD5C24FCD4C2009DD78C /* recognize.mp3 */; };
+		B196DD8824FCD4C7009DD78C /* delay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD5D24FCD4C2009DD78C /* delay.mp3 */; };
+		B196DD8924FCD4C7009DD78C /* note.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD5E24FCD4C2009DD78C /* note.mp3 */; };
+		B196DD8A24FCD4C7009DD78C /* create.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD5F24FCD4C2009DD78C /* create.mp3 */; };
+		B196DD8B24FCD4C7009DD78C /* inquire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6024FCD4C3009DD78C /* inquire.mp3 */; };
+		B196DD8C24FCD4C7009DD78C /* avoid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6124FCD4C3009DD78C /* avoid.mp3 */; };
+		B196DD8D24FCD4C7009DD78C /* develop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6224FCD4C3009DD78C /* develop.mp3 */; };
+		B196DD8E24FCD4C7009DD78C /* hesitate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6324FCD4C3009DD78C /* hesitate.mp3 */; };
+		B196DD8F24FCD4C7009DD78C /* gain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6424FCD4C3009DD78C /* gain.mp3 */; };
+		B196DD9024FCD4C7009DD78C /* fund.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6524FCD4C3009DD78C /* fund.mp3 */; };
+		B196DD9124FCD4C7009DD78C /* consult.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6624FCD4C3009DD78C /* consult.mp3 */; };
+		B196DD9224FCD4C7009DD78C /* charge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6724FCD4C3009DD78C /* charge.mp3 */; };
+		B196DD9324FCD4C7009DD78C /* dispatch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6824FCD4C3009DD78C /* dispatch.mp3 */; };
+		B196DD9424FCD4C7009DD78C /* proceed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6924FCD4C4009DD78C /* proceed.mp3 */; };
+		B196DD9524FCD4C7009DD78C /* purchase (1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6A24FCD4C4009DD78C /* purchase (1).mp3 */; };
+		B196DD9624FCD4C7009DD78C /* reserve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6B24FCD4C4009DD78C /* reserve.mp3 */; };
+		B196DD9724FCD4C7009DD78C /* seek.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6C24FCD4C4009DD78C /* seek.mp3 */; };
+		B196DD9824FCD4C7009DD78C /* ship.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6D24FCD4C4009DD78C /* ship.mp3 */; };
+		B196DD9924FCD4C7009DD78C /* prove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6E24FCD4C4009DD78C /* prove.mp3 */; };
+		B196DD9A24FCD4C7009DD78C /* vote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD6F24FCD4C4009DD78C /* vote.mp3 */; };
+		B196DD9B24FCD4C7009DD78C /* assure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7024FCD4C4009DD78C /* assure.mp3 */; };
+		B196DD9C24FCD4C7009DD78C /* attract.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7124FCD4C4009DD78C /* attract.mp3 */; };
+		B196DD9D24FCD4C7009DD78C /* achieve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7224FCD4C5009DD78C /* achieve.mp3 */; };
+		B196DD9E24FCD4C7009DD78C /* remind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7324FCD4C5009DD78C /* remind.mp3 */; };
+		B196DD9F24FCD4C7009DD78C /* announce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7424FCD4C5009DD78C /* announce.mp3 */; };
+		B196DDA024FCD4C7009DD78C /* conduct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7524FCD4C5009DD78C /* conduct.mp3 */; };
+		B196DDA124FCD4C7009DD78C /* launch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7624FCD4C5009DD78C /* launch.mp3 */; };
+		B196DDA224FCD4C7009DD78C /* register.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7724FCD4C5009DD78C /* register.mp3 */; };
+		B196DDA324FCD4C7009DD78C /* attend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7824FCD4C5009DD78C /* attend.mp3 */; };
+		B196DDA424FCD4C7009DD78C /* fit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7924FCD4C6009DD78C /* fit.mp3 */; };
+		B196DDA524FCD4C7009DD78C /* occure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7A24FCD4C6009DD78C /* occure.mp3 */; };
+		B196DDA624FCD4C7009DD78C /* expect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7B24FCD4C6009DD78C /* expect.mp3 */; };
+		B196DDA724FCD4C7009DD78C /* improve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7C24FCD4C6009DD78C /* improve.mp3 */; };
+		B196DDA824FCD4C7009DD78C /* require.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7D24FCD4C6009DD78C /* require.mp3 */; };
+		B196DDA924FCD4C7009DD78C /* determine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7E24FCD4C6009DD78C /* determine.mp3 */; };
+		B196DDAA24FCD4C7009DD78C /* affect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD7F24FCD4C6009DD78C /* affect.mp3 */; };
+		B196DDAB24FCD4C7009DD78C /* repair (1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD8024FCD4C6009DD78C /* repair (1).mp3 */; };
+		B196DDAC24FCD4C7009DD78C /* demand.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD8124FCD4C7009DD78C /* demand.mp3 */; };
+		B196DDAD24FCD4C7009DD78C /* confirm (1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DD8224FCD4C7009DD78C /* confirm (1).mp3 */; };
+		B196DDDA24FCD77D009DD78C /* impress.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDAE24FCD777009DD78C /* impress.mp3 */; };
+		B196DDDB24FCD77D009DD78C /* imply.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDAF24FCD777009DD78C /* imply.mp3 */; };
+		B196DDDC24FCD77D009DD78C /* cause.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDB024FCD777009DD78C /* cause.mp3 */; };
+		B196DDDD24FCD77D009DD78C /* finalize.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDB124FCD777009DD78C /* finalize.mp3 */; };
+		B196DDDE24FCD77D009DD78C /* approve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDB224FCD777009DD78C /* approve.mp3 */; };
+		B196DDDF24FCD77D009DD78C /* introduce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDB324FCD777009DD78C /* introduce.mp3 */; };
+		B196DDE024FCD77D009DD78C /* complain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDB424FCD778009DD78C /* complain.mp3 */; };
+		B196DDE124FCD77D009DD78C /* maintain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDB524FCD778009DD78C /* maintain.mp3 */; };
+		B196DDE224FCD77D009DD78C /* mention.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDB624FCD778009DD78C /* mention.mp3 */; };
+		B196DDE324FCD77D009DD78C /* organize.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDB724FCD778009DD78C /* organize.mp3 */; };
+		B196DDE424FCD77D009DD78C /* preserve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDB824FCD778009DD78C /* preserve.mp3 */; };
+		B196DDE524FCD77D009DD78C /* arrange.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDB924FCD778009DD78C /* arrange.mp3 */; };
+		B196DDE624FCD77D009DD78C /* found.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDBA24FCD778009DD78C /* found.mp3 */; };
+		B196DDE724FCD77D009DD78C /* operate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDBB24FCD778009DD78C /* operate.mp3 */; };
+		B196DDE824FCD77D009DD78C /* display.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDBC24FCD779009DD78C /* display.mp3 */; };
+		B196DDE924FCD77D009DD78C /* represent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDBD24FCD779009DD78C /* represent.mp3 */; };
+		B196DDEA24FCD77D009DD78C /* share A with B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDBE24FCD779009DD78C /* share A with B.mp3 */; };
+		B196DDEB24FCD77D009DD78C /* guarantee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDBF24FCD779009DD78C /* guarantee.mp3 */; };
+		B196DDEC24FCD77D009DD78C /* postpone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDC024FCD779009DD78C /* postpone.mp3 */; };
+		B196DDED24FCD77D009DD78C /* direct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDC124FCD779009DD78C /* direct.mp3 */; };
+		B196DDEE24FCD77D009DD78C /* contain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDC224FCD779009DD78C /* contain.mp3 */; };
+		B196DDEF24FCD77D009DD78C /* can afford to V.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDC324FCD77A009DD78C /* can afford to V.mp3 */; };
+		B196DDF024FCD77D009DD78C /* recommend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDC424FCD77A009DD78C /* recommend.mp3 */; };
+		B196DDF124FCD77D009DD78C /* broadcast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDC524FCD77A009DD78C /* broadcast.mp3 */; };
+		B196DDF224FCD77D009DD78C /* enclose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDC624FCD77A009DD78C /* enclose.mp3 */; };
+		B196DDF324FCD77D009DD78C /* reduce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDC724FCD77A009DD78C /* reduce.mp3 */; };
+		B196DDF424FCD77D009DD78C /* compete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDC824FCD77A009DD78C /* compete.mp3 */; };
+		B196DDF524FCD77D009DD78C /* regret.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDC924FCD77A009DD78C /* regret.mp3 */; };
+		B196DDF624FCD77D009DD78C /* retire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDCA24FCD77B009DD78C /* retire.mp3 */; };
+		B196DDF724FCD77D009DD78C /* appoint.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDCB24FCD77B009DD78C /* appoint.mp3 */; };
+		B196DDF824FCD77D009DD78C /* publish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDCC24FCD77B009DD78C /* publish.mp3 */; };
+		B196DDF924FCD77D009DD78C /* appreciate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDCD24FCD77B009DD78C /* appreciate.mp3 */; };
+		B196DDFA24FCD77D009DD78C /* reschedule.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDCE24FCD77B009DD78C /* reschedule.mp3 */; };
+		B196DDFB24FCD77D009DD78C /* deserve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDCF24FCD77B009DD78C /* deserve.mp3 */; };
+		B196DDFC24FCD77D009DD78C /* stress.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDD024FCD77B009DD78C /* stress.mp3 */; };
+		B196DDFD24FCD77D009DD78C /* apologize.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDD124FCD77B009DD78C /* apologize.mp3 */; };
+		B196DDFE24FCD77D009DD78C /* resolve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDD224FCD77C009DD78C /* resolve.mp3 */; };
+		B196DDFF24FCD77D009DD78C /* participate in.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDD324FCD77C009DD78C /* participate in.mp3 */; };
+		B196DE0024FCD77D009DD78C /* advise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDD424FCD77C009DD78C /* advise.mp3 */; };
+		B196DE0124FCD77D009DD78C /* regard A as B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDD524FCD77C009DD78C /* regard A as B.mp3 */; };
+		B196DE0224FCD77D009DD78C /* praise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDD624FCD77C009DD78C /* praise.mp3 */; };
+		B196DE0324FCD77D009DD78C /* divide into A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDD724FCD77C009DD78C /* divide into A.mp3 */; };
+		B196DE0424FCD77D009DD78C /* allow A to V.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDD824FCD77C009DD78C /* allow A to V.mp3 */; };
+		B196DE0524FCD77D009DD78C /* prefer A to B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DDD924FCD77D009DD78C /* prefer A to B.mp3 */; };
+		B196DE9824FCE15D009DD78C /* brochure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE0824FCE13E009DD78C /* brochure.mp3 */; };
+		B196DE9924FCE15D009DD78C /* display (1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE0924FCE13E009DD78C /* display (1).mp3 */; };
+		B196DE9A24FCE15D009DD78C /* payment.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE0A24FCE13E009DD78C /* payment.mp3 */; };
+		B196DE9B24FCE15D009DD78C /* luggage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE0B24FCE13E009DD78C /* luggage.mp3 */; };
+		B196DE9C24FCE15D009DD78C /* range.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE0C24FCE13E009DD78C /* range.mp3 */; };
+		B196DE9D24FCE15D009DD78C /* stock-holder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE0D24FCE13E009DD78C /* stock-holder.mp3 */; };
+		B196DE9E24FCE15D009DD78C /* claim.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE0E24FCE13F009DD78C /* claim.mp3 */; };
+		B196DE9F24FCE15D009DD78C /* deposit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE0F24FCE13F009DD78C /* deposit.mp3 */; };
+		B196DEA024FCE15D009DD78C /* figure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1024FCE13F009DD78C /* figure.mp3 */; };
+		B196DEA124FCE15D009DD78C /* construction.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1124FCE13F009DD78C /* construction.mp3 */; };
+		B196DEA224FCE15D009DD78C /* import.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1224FCE13F009DD78C /* import.mp3 */; };
+		B196DEA324FCE15D009DD78C /* tips.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1324FCE13F009DD78C /* tips.mp3 */; };
+		B196DEA424FCE15D009DD78C /* district.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1424FCE13F009DD78C /* district.mp3 */; };
+		B196DEA524FCE15D009DD78C /* application.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1524FCE140009DD78C /* application.mp3 */; };
+		B196DEA624FCE15D009DD78C /* admission.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1624FCE140009DD78C /* admission.mp3 */; };
+		B196DEA724FCE15D009DD78C /* institution.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1724FCE140009DD78C /* institution.mp3 */; };
+		B196DEA824FCE15D009DD78C /* preparation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1824FCE140009DD78C /* preparation.mp3 */; };
+		B196DEA924FCE15D009DD78C /* clothing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1924FCE140009DD78C /* clothing.mp3 */; };
+		B196DEAA24FCE15D009DD78C /* proof.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1A24FCE140009DD78C /* proof.mp3 */; };
+		B196DEAB24FCE15D009DD78C /* membership.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1B24FCE141009DD78C /* membership.mp3 */; };
+		B196DEAC24FCE15D009DD78C /* factor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1C24FCE141009DD78C /* factor.mp3 */; };
+		B196DEAD24FCE15D009DD78C /* celebration.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1D24FCE141009DD78C /* celebration.mp3 */; };
+		B196DEAE24FCE15D009DD78C /* content.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1E24FCE141009DD78C /* content.mp3 */; };
+		B196DEAF24FCE15D009DD78C /* discount.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE1F24FCE141009DD78C /* discount.mp3 */; };
+		B196DEB024FCE15D009DD78C /* budget.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2024FCE141009DD78C /* budget.mp3 */; };
+		B196DEB124FCE15D009DD78C /* quarter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2124FCE142009DD78C /* quarter.mp3 */; };
+		B196DEB224FCE15D009DD78C /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2224FCE142009DD78C /* background.mp3 */; };
+		B196DEB324FCE15D009DD78C /* document.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2324FCE142009DD78C /* document.mp3 */; };
+		B196DEB424FCE15D009DD78C /* industory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2424FCE142009DD78C /* industory.mp3 */; };
+		B196DEB524FCE15D009DD78C /* option.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2524FCE142009DD78C /* option.mp3 */; };
+		B196DEB624FCE15D009DD78C /* representative.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2624FCE142009DD78C /* representative.mp3 */; };
+		B196DEB724FCE15D009DD78C /* priority.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2724FCE142009DD78C /* priority.mp3 */; };
+		B196DEB824FCE15D009DD78C /* vehicle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2824FCE143009DD78C /* vehicle.mp3 */; };
+		B196DEB924FCE15D009DD78C /* conference.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2924FCE143009DD78C /* conference.mp3 */; };
+		B196DEBA24FCE15D009DD78C /* environment.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2A24FCE143009DD78C /* environment.mp3 */; };
+		B196DEBB24FCE15D009DD78C /* executive.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2B24FCE143009DD78C /* executive.mp3 */; };
+		B196DEBC24FCE15D009DD78C /* headquarters.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2C24FCE143009DD78C /* headquarters.mp3 */; };
+		B196DEBD24FCE15D009DD78C /* cafeteria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2D24FCE143009DD78C /* cafeteria.mp3 */; };
+		B196DEBE24FCE15D009DD78C /* reference.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2E24FCE143009DD78C /* reference.mp3 */; };
+		B196DEBF24FCE15D009DD78C /* survey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE2F24FCE144009DD78C /* survey.mp3 */; };
+		B196DEC024FCE15D009DD78C /* transportation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3024FCE144009DD78C /* transportation.mp3 */; };
+		B196DEC124FCE15D009DD78C /* department.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3124FCE144009DD78C /* department.mp3 */; };
+		B196DEC224FCE15D009DD78C /* balance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3224FCE144009DD78C /* balance.mp3 */; };
+		B196DEC324FCE15D009DD78C /* host.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3324FCE144009DD78C /* host.mp3 */; };
+		B196DEC424FCE15D009DD78C /* region.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3424FCE144009DD78C /* region.mp3 */; };
+		B196DEC524FCE15D009DD78C /* expense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3524FCE145009DD78C /* expense.mp3 */; };
+		B196DEC624FCE15D009DD78C /* atmosphere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3624FCE145009DD78C /* atmosphere.mp3 */; };
+		B196DEC724FCE15D009DD78C /* findings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3724FCE145009DD78C /* findings.mp3 */; };
+		B196DEC824FCE15D009DD78C /* exhibition.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3824FCE145009DD78C /* exhibition.mp3 */; };
+		B196DEC924FCE15D009DD78C /* shuttle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3924FCE145009DD78C /* shuttle.mp3 */; };
+		B196DECA24FCE15D009DD78C /* manufacture.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3A24FCE145009DD78C /* manufacture.mp3 */; };
+		B196DECB24FCE15D009DD78C /* recommendation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3B24FCE146009DD78C /* recommendation.mp3 */; };
+		B196DECC24FCE15D009DD78C /* reputation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3C24FCE146009DD78C /* reputation.mp3 */; };
+		B196DECD24FCE15D009DD78C /* fuel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3D24FCE146009DD78C /* fuel.mp3 */; };
+		B196DECE24FCE15D009DD78C /* reward.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3E24FCE146009DD78C /* reward.mp3 */; };
+		B196DECF24FCE15D009DD78C /* individual.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE3F24FCE147009DD78C /* individual.mp3 */; };
+		B196DED024FCE15D009DD78C /* departure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4024FCE147009DD78C /* departure.mp3 */; };
+		B196DED124FCE15D009DD78C /* connection.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4124FCE147009DD78C /* connection.mp3 */; };
+		B196DED224FCE15D009DD78C /* duty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4224FCE147009DD78C /* duty.mp3 */; };
+		B196DED324FCE15D009DD78C /* warranty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4324FCE147009DD78C /* warranty.mp3 */; };
+		B196DED424FCE15D009DD78C /* client.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4424FCE148009DD78C /* client.mp3 */; };
+		B196DED524FCE15D009DD78C /* anniversary.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4524FCE148009DD78C /* anniversary.mp3 */; };
+		B196DED624FCE15D009DD78C /* editor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4624FCE148009DD78C /* editor.mp3 */; };
+		B196DED724FCE15D009DD78C /* job opening.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4724FCE14A009DD78C /* job opening.mp3 */; };
+		B196DED824FCE15D009DD78C /* bill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4824FCE14A009DD78C /* bill.mp3 */; };
+		B196DED924FCE15D009DD78C /* flyer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4924FCE14B009DD78C /* flyer.mp3 */; };
+		B196DEDA24FCE15D009DD78C /* detail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4A24FCE14B009DD78C /* detail.mp3 */; };
+		B196DEDB24FCE15D009DD78C /* concern.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4B24FCE14B009DD78C /* concern.mp3 */; };
+		B196DEDC24FCE15D009DD78C /* exhibit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4C24FCE14B009DD78C /* exhibit.mp3 */; };
+		B196DEDD24FCE15D009DD78C /* suggestion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4D24FCE14B009DD78C /* suggestion.mp3 */; };
+		B196DEDE24FCE15D009DD78C /* arrival.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4E24FCE14C009DD78C /* arrival.mp3 */; };
+		B196DEDF24FCE15D009DD78C /* trade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE4F24FCE14C009DD78C /* trade.mp3 */; };
+		B196DEE024FCE15D009DD78C /* confident.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5024FCE14D009DD78C /* confident.mp3 */; };
+		B196DEE124FCE15D009DD78C /* instruction.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5124FCE14D009DD78C /* instruction.mp3 */; };
+		B196DEE224FCE15D009DD78C /* cooperation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5224FCE14D009DD78C /* cooperation.mp3 */; };
+		B196DEE324FCE15D009DD78C /* replacement.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5324FCE14D009DD78C /* replacement.mp3 */; };
+		B196DEE424FCE15D009DD78C /* packaging.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5424FCE14D009DD78C /* packaging.mp3 */; };
+		B196DEE524FCE15D009DD78C /* income.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5524FCE14E009DD78C /* income.mp3 */; };
+		B196DEE624FCE15D009DD78C /* invitation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5624FCE14E009DD78C /* invitation.mp3 */; };
+		B196DEE724FCE15D009DD78C /* capacity.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5724FCE14F009DD78C /* capacity.mp3 */; };
+		B196DEE824FCE15D009DD78C /* comparison.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5824FCE14F009DD78C /* comparison.mp3 */; };
+		B196DEE924FCE15D009DD78C /* personnel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5924FCE14F009DD78C /* personnel.mp3 */; };
+		B196DEEA24FCE15D009DD78C /* delivery.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5A24FCE14F009DD78C /* delivery.mp3 */; };
+		B196DEEB24FCE15D009DD78C /* automobile.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5B24FCE150009DD78C /* automobile.mp3 */; };
+		B196DEEC24FCE15D009DD78C /* applicant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5C24FCE150009DD78C /* applicant.mp3 */; };
+		B196DEED24FCE15D009DD78C /* aspect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5D24FCE150009DD78C /* aspect.mp3 */; };
+		B196DEEE24FCE15D009DD78C /* basis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5E24FCE150009DD78C /* basis.mp3 */; };
+		B196DEEF24FCE15D009DD78C /* complex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE5F24FCE150009DD78C /* complex.mp3 */; };
+		B196DEF024FCE15D009DD78C /* impact.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6024FCE151009DD78C /* impact.mp3 */; };
+		B196DEF124FCE15D009DD78C /* labour.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6124FCE151009DD78C /* labour.mp3 */; };
+		B196DEF224FCE15D009DD78C /* process.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6224FCE151009DD78C /* process.mp3 */; };
+		B196DEF324FCE15D009DD78C /* path.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6324FCE152009DD78C /* path.mp3 */; };
+		B196DEF424FCE15D009DD78C /* profit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6424FCE152009DD78C /* profit.mp3 */; };
+		B196DEF524FCE15D009DD78C /* fee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6524FCE152009DD78C /* fee.mp3 */; };
+		B196DEF624FCE15D009DD78C /* council.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6624FCE152009DD78C /* council.mp3 */; };
+		B196DEF724FCE15D009DD78C /* complaint.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6724FCE152009DD78C /* complaint.mp3 */; };
+		B196DEF824FCE15D009DD78C /* proposal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6824FCE152009DD78C /* proposal.mp3 */; };
+		B196DEF924FCE15D009DD78C /* popularity.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6924FCE153009DD78C /* popularity.mp3 */; };
+		B196DEFA24FCE15D009DD78C /* research.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6A24FCE153009DD78C /* research.mp3 */; };
+		B196DEFB24FCE15D009DD78C /* mayor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6B24FCE153009DD78C /* mayor.mp3 */; };
+		B196DEFC24FCE15D009DD78C /* response.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6C24FCE153009DD78C /* response.mp3 */; };
+		B196DEFD24FCE15D009DD78C /* resource.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6D24FCE153009DD78C /* resource.mp3 */; };
+		B196DEFE24FCE15D009DD78C /* author.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6E24FCE154009DD78C /* author.mp3 */; };
+		B196DEFF24FCE15D009DD78C /* firm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE6F24FCE154009DD78C /* firm.mp3 */; };
+		B196DF0024FCE15D009DD78C /* contract.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7024FCE154009DD78C /* contract.mp3 */; };
+		B196DF0124FCE15D009DD78C /* equipment.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7124FCE154009DD78C /* equipment.mp3 */; };
+		B196DF0224FCE15D009DD78C /* promotion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7224FCE154009DD78C /* promotion.mp3 */; };
+		B196DF0324FCE15D009DD78C /* warehouse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7324FCE155009DD78C /* warehouse.mp3 */; };
+		B196DF0424FCE15D009DD78C /* deadline.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7424FCE155009DD78C /* deadline.mp3 */; };
+		B196DF0524FCE15D009DD78C /* award.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7524FCE155009DD78C /* award.mp3 */; };
+		B196DF0624FCE15D009DD78C /* constract.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7624FCE155009DD78C /* constract.mp3 */; };
+		B196DF0724FCE15D009DD78C /* advertisement.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7724FCE155009DD78C /* advertisement.mp3 */; };
+		B196DF0824FCE15D009DD78C /* destination.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7824FCE155009DD78C /* destination.mp3 */; };
+		B196DF0924FCE15D009DD78C /* crew.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7924FCE156009DD78C /* crew.mp3 */; };
+		B196DF0A24FCE15D009DD78C /* production.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7A24FCE156009DD78C /* production.mp3 */; };
+		B196DF0B24FCE15D009DD78C /* component.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7B24FCE156009DD78C /* component.mp3 */; };
+		B196DF0C24FCE15D009DD78C /* regulation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7C24FCE156009DD78C /* regulation.mp3 */; };
+		B196DF0D24FCE15D009DD78C /* donation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7D24FCE157009DD78C /* donation.mp3 */; };
+		B196DF0E24FCE15D009DD78C /* insurance premium.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7E24FCE157009DD78C /* insurance premium.mp3 */; };
+		B196DF0F24FCE15D009DD78C /* agreement.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE7F24FCE157009DD78C /* agreement.mp3 */; };
+		B196DF1024FCE15D009DD78C /* agency.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8024FCE157009DD78C /* agency.mp3 */; };
+		B196DF1124FCE15D009DD78C /* procedure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8124FCE157009DD78C /* procedure.mp3 */; };
+		B196DF1224FCE15D009DD78C /* merchandise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8224FCE157009DD78C /* merchandise.mp3 */; };
+		B196DF1324FCE15D009DD78C /* employee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8324FCE158009DD78C /* employee.mp3 */; };
+		B196DF1424FCE15D009DD78C /* method.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8424FCE158009DD78C /* method.mp3 */; };
+		B196DF1524FCE15D009DD78C /* organization.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8524FCE158009DD78C /* organization.mp3 */; };
+		B196DF1624FCE15D009DD78C /* result.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8624FCE158009DD78C /* result.mp3 */; };
+		B196DF1724FCE15D009DD78C /* management.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8724FCE158009DD78C /* management.mp3 */; };
+		B196DF1824FCE15D009DD78C /* refund.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8824FCE159009DD78C /* refund.mp3 */; };
+		B196DF1924FCE15D009DD78C /* branch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8924FCE159009DD78C /* branch.mp3 */; };
+		B196DF1A24FCE15D009DD78C /* function.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8A24FCE159009DD78C /* function.mp3 */; };
+		B196DF1B24FCE15D009DD78C /* crop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8B24FCE159009DD78C /* crop.mp3 */; };
+		B196DF1C24FCE15D009DD78C /* decade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8C24FCE15A009DD78C /* decade.mp3 */; };
+		B196DF1D24FCE15D009DD78C /* saving.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8D24FCE15A009DD78C /* saving.mp3 */; };
+		B196DF1E24FCE15D009DD78C /* strength.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8E24FCE15A009DD78C /* strength.mp3 */; };
+		B196DF1F24FCE15D009DD78C /* facility.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE8F24FCE15A009DD78C /* facility.mp3 */; };
+		B196DF2024FCE15D009DD78C /* landscaping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE9024FCE15B009DD78C /* landscaping.mp3 */; };
+		B196DF2124FCE15D009DD78C /* policy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE9124FCE15B009DD78C /* policy.mp3 */; };
+		B196DF2224FCE15D009DD78C /* ability.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE9224FCE15B009DD78C /* ability.mp3 */; };
+		B196DF2324FCE15D009DD78C /* contrast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE9324FCE15B009DD78C /* contrast.mp3 */; };
+		B196DF2424FCE15D009DD78C /* estimate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE9424FCE15C009DD78C /* estimate.mp3 */; };
+		B196DF2524FCE15D009DD78C /* occasion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE9524FCE15C009DD78C /* occasion.mp3 */; };
+		B196DF2624FCE15D009DD78C /* neighborhood.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE9624FCE15C009DD78C /* neighborhood.mp3 */; };
+		B196DF2724FCE15D009DD78C /* resident.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DE9724FCE15C009DD78C /* resident.mp3 */; };
+		B196DF6624FCE70C009DD78C /* modern.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF2824FCE6FE009DD78C /* modern.mp3 */; };
+		B196DF6724FCE70C009DD78C /* necessary.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF2924FCE6FF009DD78C /* necessary.mp3 */; };
+		B196DF6824FCE70C009DD78C /* familiar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF2A24FCE6FF009DD78C /* familiar.mp3 */; };
+		B196DF6924FCE70C009DD78C /* brief.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF2B24FCE6FF009DD78C /* brief.mp3 */; };
+		B196DF6A24FCE70C009DD78C /* involved.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF2C24FCE6FF009DD78C /* involved.mp3 */; };
+		B196DF6B24FCE70C009DD78C /* initial.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF2D24FCE700009DD78C /* initial.mp3 */; };
+		B196DF6C24FCE70C009DD78C /* amazing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF2E24FCE700009DD78C /* amazing.mp3 */; };
+		B196DF6D24FCE70C009DD78C /* former.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF2F24FCE700009DD78C /* former.mp3 */; };
+		B196DF6E24FCE70C009DD78C /* advance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3024FCE700009DD78C /* advance.mp3 */; };
+		B196DF6F24FCE70C009DD78C /* exact.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3124FCE701009DD78C /* exact.mp3 */; };
+		B196DF7024FCE70C009DD78C /* overseas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3224FCE701009DD78C /* overseas.mp3 */; };
+		B196DF7124FCE70C009DD78C /* temporary.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3324FCE701009DD78C /* temporary.mp3 */; };
+		B196DF7224FCE70C009DD78C /* traditional.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3424FCE701009DD78C /* traditional.mp3 */; };
+		B196DF7324FCE70C009DD78C /* mechanical.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3524FCE702009DD78C /* mechanical.mp3 */; };
+		B196DF7424FCE70C009DD78C /* upcoming.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3624FCE702009DD78C /* upcoming.mp3 */; };
+		B196DF7524FCE70C009DD78C /* experienced.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3724FCE702009DD78C /* experienced.mp3 */; };
+		B196DF7624FCE70C009DD78C /* intended.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3824FCE702009DD78C /* intended.mp3 */; };
+		B196DF7724FCE70C009DD78C /* existing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3924FCE702009DD78C /* existing.mp3 */; };
+		B196DF7824FCE70C009DD78C /* serious.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3A24FCE702009DD78C /* serious.mp3 */; };
+		B196DF7924FCE70C009DD78C /* helpful.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3B24FCE702009DD78C /* helpful.mp3 */; };
+		B196DF7A24FCE70C009DD78C /* comfortable.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3C24FCE703009DD78C /* comfortable.mp3 */; };
+		B196DF7B24FCE70C009DD78C /* confident (1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3D24FCE703009DD78C /* confident (1).mp3 */; };
+		B196DF7C24FCE70C009DD78C /* related.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3E24FCE703009DD78C /* related.mp3 */; };
+		B196DF7D24FCE70C009DD78C /* favorable.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF3F24FCE703009DD78C /* favorable.mp3 */; };
+		B196DF7E24FCE70C009DD78C /* generous.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4024FCE704009DD78C /* generous.mp3 */; };
+		B196DF7F24FCE70C009DD78C /* overall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4124FCE704009DD78C /* overall.mp3 */; };
+		B196DF8024FCE70C009DD78C /* suitable.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4224FCE704009DD78C /* suitable.mp3 */; };
+		B196DF8124FCE70C009DD78C /* downtown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4324FCE704009DD78C /* downtown.mp3 */; };
+		B196DF8224FCE70C009DD78C /* accurate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4424FCE704009DD78C /* accurate.mp3 */; };
+		B196DF8324FCE70C009DD78C /* valuable.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4524FCE705009DD78C /* valuable.mp3 */; };
+		B196DF8424FCE70C009DD78C /* specific.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4624FCE705009DD78C /* specific.mp3 */; };
+		B196DF8524FCE70C009DD78C /* successful.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4724FCE705009DD78C /* successful.mp3 */; };
+		B196DF8624FCE70C009DD78C /* paid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4824FCE705009DD78C /* paid.mp3 */; };
+		B196DF8724FCE70C009DD78C /* corporate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4924FCE705009DD78C /* corporate.mp3 */; };
+		B196DF8824FCE70C009DD78C /* sufficient.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4A24FCE705009DD78C /* sufficient.mp3 */; };
+		B196DF8924FCE70C009DD78C /* unique.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4B24FCE706009DD78C /* unique.mp3 */; };
+		B196DF8A24FCE70C009DD78C /* crowded.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4C24FCE706009DD78C /* crowded.mp3 */; };
+		B196DF8B24FCE70C009DD78C /* full-time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4D24FCE706009DD78C /* full-time.mp3 */; };
+		B196DF8C24FCE70C009DD78C /* agricultural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4E24FCE706009DD78C /* agricultural.mp3 */; };
+		B196DF8D24FCE70C009DD78C /* leading.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF4F24FCE707009DD78C /* leading.mp3 */; };
+		B196DF8E24FCE70C009DD78C /* efficient.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5024FCE707009DD78C /* efficient.mp3 */; };
+		B196DF8F24FCE70C009DD78C /* available.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5124FCE707009DD78C /* available.mp3 */; };
+		B196DF9024FCE70C009DD78C /* financial.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5224FCE707009DD78C /* financial.mp3 */; };
+		B196DF9124FCE70C009DD78C /* commercial.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5324FCE708009DD78C /* commercial.mp3 */; };
+		B196DF9224FCE70C009DD78C /* local.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5424FCE708009DD78C /* local.mp3 */; };
+		B196DF9324FCE70C009DD78C /* limited.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5524FCE708009DD78C /* limited.mp3 */; };
+		B196DF9424FCE70C009DD78C /* practical.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5624FCE708009DD78C /* practical.mp3 */; };
+		B196DF9524FCE70C009DD78C /* previous.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5724FCE709009DD78C /* previous.mp3 */; };
+		B196DF9624FCE70C009DD78C /* effective.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5824FCE709009DD78C /* effective.mp3 */; };
+		B196DF9724FCE70C009DD78C /* permanent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5924FCE709009DD78C /* permanent.mp3 */; };
+		B196DF9824FCE70C009DD78C /* significant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5A24FCE709009DD78C /* significant.mp3 */; };
+		B196DF9924FCE70C009DD78C /* complicated.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5B24FCE709009DD78C /* complicated.mp3 */; };
+		B196DF9A24FCE70C009DD78C /* promising.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5C24FCE70A009DD78C /* promising.mp3 */; };
+		B196DF9B24FCE70C009DD78C /* alternative.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5D24FCE70A009DD78C /* alternative.mp3 */; };
+		B196DF9C24FCE70C009DD78C /* legal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5E24FCE70A009DD78C /* legal.mp3 */; };
+		B196DF9D24FCE70C009DD78C /* reasonable.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF5F24FCE70A009DD78C /* reasonable.mp3 */; };
+		B196DF9E24FCE70C009DD78C /* informal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF6024FCE70A009DD78C /* informal.mp3 */; };
+		B196DF9F24FCE70C009DD78C /* ideal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF6124FCE70B009DD78C /* ideal.mp3 */; };
+		B196DFA024FCE70C009DD78C /* various.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF6224FCE70B009DD78C /* various.mp3 */; };
+		B196DFA124FCE70C009DD78C /* economic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF6324FCE70B009DD78C /* economic.mp3 */; };
+		B196DFA224FCE70C009DD78C /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF6424FCE70B009DD78C /* correct.mp3 */; };
+		B196DFA324FCE70C009DD78C /* latest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DF6524FCE70C009DD78C /* latest.mp3 */; };
+		B196DFDE24FCED02009DD78C /* due to A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFA424FCECF5009DD78C /* due to A.mp3 */; };
+		B196DFDF24FCED02009DD78C /* particularly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFA524FCECF6009DD78C /* particularly.mp3 */; };
+		B196DFE024FCED02009DD78C /* regularly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFA624FCECF6009DD78C /* regularly.mp3 */; };
+		B196DFE124FCED02009DD78C /* be pleased with A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFA724FCECF6009DD78C /* be pleased with A.mp3 */; };
+		B196DFE224FCED02009DD78C /* with ease.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFA824FCECF6009DD78C /* with ease.mp3 */; };
+		B196DFE424FCED02009DD78C /* occasionally.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFAA24FCECF6009DD78C /* occasionally.mp3 */; };
+		B196DFE524FCED02009DD78C /* every other week.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFAB24FCECF7009DD78C /* every other week.mp3 */; };
+		B196DFE624FCED02009DD78C /* be willing to V.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFAC24FCECF7009DD78C /* be willing to V.mp3 */; };
+		B196DFE724FCED02009DD78C /* according to.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFAD24FCECF7009DD78C /* according to.mp3 */; };
+		B196DFE824FCED02009DD78C /* likely.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFAE24FCECF7009DD78C /* likely.mp3 */; };
+		B196DFE924FCED02009DD78C /* currently.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFAF24FCECF7009DD78C /* currently.mp3 */; };
+		B196DFEA24FCED02009DD78C /* slightly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFB024FCECF8009DD78C /* slightly.mp3 */; };
+		B196DFEB24FCED02009DD78C /* hardly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFB124FCECF8009DD78C /* hardly.mp3 */; };
+		B196DFEC24FCED02009DD78C /* recently.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFB224FCECF8009DD78C /* recently.mp3 */; };
+		B196DFED24FCED02009DD78C /* rather.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFB324FCECF8009DD78C /* rather.mp3 */; };
+		B196DFEE24FCED02009DD78C /* fairly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFB424FCECF8009DD78C /* fairly.mp3 */; };
+		B196DFEF24FCED02009DD78C /* eventually.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFB524FCECF8009DD78C /* eventually.mp3 */; };
+		B196DFF024FCED02009DD78C /* approximately.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFB624FCECF9009DD78C /* approximately.mp3 */; };
+		B196DFF124FCED02009DD78C /* somewhat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFB724FCECF9009DD78C /* somewhat.mp3 */; };
+		B196DFF224FCED02009DD78C /* afterwards.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFB824FCECF9009DD78C /* afterwards.mp3 */; };
+		B196DFF324FCED02009DD78C /* alike.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFB924FCECF9009DD78C /* alike.mp3 */; };
+		B196DFF424FCED02009DD78C /* almost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFBA24FCECF9009DD78C /* almost.mp3 */; };
+		B196DFF524FCED02009DD78C /* both A and B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFBB24FCECFA009DD78C /* both A and B.mp3 */; };
+		B196DFF624FCED02009DD78C /* unfortunately.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFBC24FCECFA009DD78C /* unfortunately.mp3 */; };
+		B196DFF724FCED02009DD78C /* in cash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFBD24FCECFA009DD78C /* in cash.mp3 */; };
+		B196DFF824FCED02009DD78C /* each.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFBE24FCECFA009DD78C /* each.mp3 */; };
+		B196DFF924FCED02009DD78C /* nearly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFBF24FCECFA009DD78C /* nearly.mp3 */; };
+		B196DFFA24FCED02009DD78C /* in a different setting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFC024FCECFB009DD78C /* in a different setting.mp3 */; };
+		B196DFFB24FCED02009DD78C /* behind the wheel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFC124FCECFB009DD78C /* behind the wheel.mp3 */; };
+		B196DFFC24FCED02009DD78C /* hence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFC224FCECFB009DD78C /* hence.mp3 */; };
+		B196DFFD24FCED02009DD78C /* shortly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFC324FCECFB009DD78C /* shortly.mp3 */; };
+		B196DFFE24FCED02009DD78C /* neither A nor B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFC424FCECFC009DD78C /* neither A nor B.mp3 */; };
+		B196DFFF24FCED02009DD78C /* properly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFC524FCECFC009DD78C /* properly.mp3 */; };
+		B196E00024FCED02009DD78C /* frequently.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFC624FCECFC009DD78C /* frequently.mp3 */; };
+		B196E00124FCED02009DD78C /* equally.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFC724FCECFC009DD78C /* equally.mp3 */; };
+		B196E00224FCED02009DD78C /* besides.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFC824FCECFC009DD78C /* besides.mp3 */; };
+		B196E00324FCED02009DD78C /* be eager to V.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFC924FCECFD009DD78C /* be eager to V.mp3 */; };
+		B196E00424FCED02009DD78C /* loyal customer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFCA24FCECFD009DD78C /* loyal customer.mp3 */; };
+		B196E00524FCED02009DD78C /* seldom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFCB24FCECFD009DD78C /* seldom.mp3 */; };
+		B196E00624FCED02009DD78C /* following A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFCC24FCECFD009DD78C /* following A.mp3 */; };
+		B196E00724FCED02009DD78C /* latter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFCD24FCECFE009DD78C /* latter.mp3 */; };
+		B196E00824FCED02009DD78C /* regarding A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFCE24FCECFE009DD78C /* regarding A.mp3 */; };
+		B196E00924FCED02009DD78C /* absolutely.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFCF24FCECFE009DD78C /* absolutely.mp3 */; };
+		B196E00A24FCED02009DD78C /* guided tour.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFD024FCECFE009DD78C /* guided tour.mp3 */; };
+		B196E00B24FCED02009DD78C /* gradually.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFD124FCECFF009DD78C /* gradually.mp3 */; };
+		B196E00C24FCED02009DD78C /* highly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFD224FCECFF009DD78C /* highly.mp3 */; };
+		B196E00D24FCED02009DD78C /* unlike.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFD324FCECFF009DD78C /* unlike.mp3 */; };
+		B196E00F24FCED02009DD78C /* without A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFD524FCED00009DD78C /* without A.mp3 */; };
+		B196E01024FCED02009DD78C /* be aware of A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFD624FCED00009DD78C /* be aware of A.mp3 */; };
+		B196E01224FCED02009DD78C /* anyway.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFD824FCED00009DD78C /* anyway.mp3 */; };
+		B196E01324FCED02009DD78C /* be unable to V.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFD924FCED01009DD78C /* be unable to V.mp3 */; };
+		B196E01424FCED02009DD78C /* perhaps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFDA24FCED01009DD78C /* perhaps.mp3 */; };
+		B196E01524FCED02009DD78C /* on board.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFDB24FCED01009DD78C /* on board.mp3 */; };
+		B196E01624FCED02009DD78C /* in spite of A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFDC24FCED01009DD78C /* in spite of A.mp3 */; };
+		B196E01724FCED02009DD78C /* immediately.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFDD24FCED02009DD78C /* immediately.mp3 */; };
+		B196E01924FCEDAE009DD78C /* be responsible of A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196E01824FCEDAE009DD78C /* be responsible of A.mp3 */; };
+		B196E01C24FCEEA2009DD78C /* be satisfied with A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196E01A24FCEEA1009DD78C /* be satisfied with A.mp3 */; };
+		B196E01D24FCEEA2009DD78C /* be committed to A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196E01B24FCEEA2009DD78C /* be committed to A.mp3 */; };
+		B196E01F24FCEF3D009DD78C /* relatively.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196E01E24FCEF3D009DD78C /* relatively.mp3 */; };
 		B1A4CE292472F5BF009F361F /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4CE282472F5BF009F361F /* MaterialModel.swift */; };
 		B1A4CE2B2472F716009F361F /* MaterialList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4CE2A2472F716009F361F /* MaterialList.swift */; };
 		B1A96B39248E98E000E751EA /* WhichHinshiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A96B38248E98E000E751EA /* WhichHinshiViewController.swift */; };
@@ -149,6 +501,358 @@
 		B196DD5124FCB478009DD78C /* WhichReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichReviewViewController.swift; sourceTree = "<group>"; };
 		B196DD5324FCB548009DD78C /* ReviewRangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRangeViewController.swift; sourceTree = "<group>"; };
 		B196DD5524FCB665009DD78C /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		B196DD5824FCD4C1009DD78C /* inform.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inform.mp3; sourceTree = "<group>"; };
+		B196DD5924FCD4C1009DD78C /* explore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explore.mp3; sourceTree = "<group>"; };
+		B196DD5A24FCD4C2009DD78C /* separate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = separate.mp3; sourceTree = "<group>"; };
+		B196DD5B24FCD4C2009DD78C /* obtain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = obtain.mp3; sourceTree = "<group>"; };
+		B196DD5C24FCD4C2009DD78C /* recognize.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = recognize.mp3; sourceTree = "<group>"; };
+		B196DD5D24FCD4C2009DD78C /* delay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = delay.mp3; sourceTree = "<group>"; };
+		B196DD5E24FCD4C2009DD78C /* note.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = note.mp3; sourceTree = "<group>"; };
+		B196DD5F24FCD4C2009DD78C /* create.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = create.mp3; sourceTree = "<group>"; };
+		B196DD6024FCD4C3009DD78C /* inquire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inquire.mp3; sourceTree = "<group>"; };
+		B196DD6124FCD4C3009DD78C /* avoid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = avoid.mp3; sourceTree = "<group>"; };
+		B196DD6224FCD4C3009DD78C /* develop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = develop.mp3; sourceTree = "<group>"; };
+		B196DD6324FCD4C3009DD78C /* hesitate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hesitate.mp3; sourceTree = "<group>"; };
+		B196DD6424FCD4C3009DD78C /* gain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gain.mp3; sourceTree = "<group>"; };
+		B196DD6524FCD4C3009DD78C /* fund.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fund.mp3; sourceTree = "<group>"; };
+		B196DD6624FCD4C3009DD78C /* consult.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = consult.mp3; sourceTree = "<group>"; };
+		B196DD6724FCD4C3009DD78C /* charge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = charge.mp3; sourceTree = "<group>"; };
+		B196DD6824FCD4C3009DD78C /* dispatch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dispatch.mp3; sourceTree = "<group>"; };
+		B196DD6924FCD4C4009DD78C /* proceed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = proceed.mp3; sourceTree = "<group>"; };
+		B196DD6A24FCD4C4009DD78C /* purchase (1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "purchase (1).mp3"; sourceTree = "<group>"; };
+		B196DD6B24FCD4C4009DD78C /* reserve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reserve.mp3; sourceTree = "<group>"; };
+		B196DD6C24FCD4C4009DD78C /* seek.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = seek.mp3; sourceTree = "<group>"; };
+		B196DD6D24FCD4C4009DD78C /* ship.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ship.mp3; sourceTree = "<group>"; };
+		B196DD6E24FCD4C4009DD78C /* prove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = prove.mp3; sourceTree = "<group>"; };
+		B196DD6F24FCD4C4009DD78C /* vote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vote.mp3; sourceTree = "<group>"; };
+		B196DD7024FCD4C4009DD78C /* assure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = assure.mp3; sourceTree = "<group>"; };
+		B196DD7124FCD4C4009DD78C /* attract.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = attract.mp3; sourceTree = "<group>"; };
+		B196DD7224FCD4C5009DD78C /* achieve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = achieve.mp3; sourceTree = "<group>"; };
+		B196DD7324FCD4C5009DD78C /* remind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = remind.mp3; sourceTree = "<group>"; };
+		B196DD7424FCD4C5009DD78C /* announce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = announce.mp3; sourceTree = "<group>"; };
+		B196DD7524FCD4C5009DD78C /* conduct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = conduct.mp3; sourceTree = "<group>"; };
+		B196DD7624FCD4C5009DD78C /* launch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = launch.mp3; sourceTree = "<group>"; };
+		B196DD7724FCD4C5009DD78C /* register.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = register.mp3; sourceTree = "<group>"; };
+		B196DD7824FCD4C5009DD78C /* attend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = attend.mp3; sourceTree = "<group>"; };
+		B196DD7924FCD4C6009DD78C /* fit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fit.mp3; sourceTree = "<group>"; };
+		B196DD7A24FCD4C6009DD78C /* occure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = occure.mp3; sourceTree = "<group>"; };
+		B196DD7B24FCD4C6009DD78C /* expect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = expect.mp3; sourceTree = "<group>"; };
+		B196DD7C24FCD4C6009DD78C /* improve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = improve.mp3; sourceTree = "<group>"; };
+		B196DD7D24FCD4C6009DD78C /* require.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = require.mp3; sourceTree = "<group>"; };
+		B196DD7E24FCD4C6009DD78C /* determine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = determine.mp3; sourceTree = "<group>"; };
+		B196DD7F24FCD4C6009DD78C /* affect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = affect.mp3; sourceTree = "<group>"; };
+		B196DD8024FCD4C6009DD78C /* repair (1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "repair (1).mp3"; sourceTree = "<group>"; };
+		B196DD8124FCD4C7009DD78C /* demand.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = demand.mp3; sourceTree = "<group>"; };
+		B196DD8224FCD4C7009DD78C /* confirm (1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "confirm (1).mp3"; sourceTree = "<group>"; };
+		B196DDAE24FCD777009DD78C /* impress.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = impress.mp3; sourceTree = "<group>"; };
+		B196DDAF24FCD777009DD78C /* imply.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = imply.mp3; sourceTree = "<group>"; };
+		B196DDB024FCD777009DD78C /* cause.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cause.mp3; sourceTree = "<group>"; };
+		B196DDB124FCD777009DD78C /* finalize.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finalize.mp3; sourceTree = "<group>"; };
+		B196DDB224FCD777009DD78C /* approve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = approve.mp3; sourceTree = "<group>"; };
+		B196DDB324FCD777009DD78C /* introduce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = introduce.mp3; sourceTree = "<group>"; };
+		B196DDB424FCD778009DD78C /* complain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = complain.mp3; sourceTree = "<group>"; };
+		B196DDB524FCD778009DD78C /* maintain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maintain.mp3; sourceTree = "<group>"; };
+		B196DDB624FCD778009DD78C /* mention.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mention.mp3; sourceTree = "<group>"; };
+		B196DDB724FCD778009DD78C /* organize.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = organize.mp3; sourceTree = "<group>"; };
+		B196DDB824FCD778009DD78C /* preserve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = preserve.mp3; sourceTree = "<group>"; };
+		B196DDB924FCD778009DD78C /* arrange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arrange.mp3; sourceTree = "<group>"; };
+		B196DDBA24FCD778009DD78C /* found.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = found.mp3; sourceTree = "<group>"; };
+		B196DDBB24FCD778009DD78C /* operate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = operate.mp3; sourceTree = "<group>"; };
+		B196DDBC24FCD779009DD78C /* display.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = display.mp3; sourceTree = "<group>"; };
+		B196DDBD24FCD779009DD78C /* represent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = represent.mp3; sourceTree = "<group>"; };
+		B196DDBE24FCD779009DD78C /* share A with B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "share A with B.mp3"; sourceTree = "<group>"; };
+		B196DDBF24FCD779009DD78C /* guarantee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = guarantee.mp3; sourceTree = "<group>"; };
+		B196DDC024FCD779009DD78C /* postpone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = postpone.mp3; sourceTree = "<group>"; };
+		B196DDC124FCD779009DD78C /* direct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = direct.mp3; sourceTree = "<group>"; };
+		B196DDC224FCD779009DD78C /* contain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = contain.mp3; sourceTree = "<group>"; };
+		B196DDC324FCD77A009DD78C /* can afford to V.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "can afford to V.mp3"; sourceTree = "<group>"; };
+		B196DDC424FCD77A009DD78C /* recommend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = recommend.mp3; sourceTree = "<group>"; };
+		B196DDC524FCD77A009DD78C /* broadcast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = broadcast.mp3; sourceTree = "<group>"; };
+		B196DDC624FCD77A009DD78C /* enclose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enclose.mp3; sourceTree = "<group>"; };
+		B196DDC724FCD77A009DD78C /* reduce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reduce.mp3; sourceTree = "<group>"; };
+		B196DDC824FCD77A009DD78C /* compete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = compete.mp3; sourceTree = "<group>"; };
+		B196DDC924FCD77A009DD78C /* regret.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = regret.mp3; sourceTree = "<group>"; };
+		B196DDCA24FCD77B009DD78C /* retire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retire.mp3; sourceTree = "<group>"; };
+		B196DDCB24FCD77B009DD78C /* appoint.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = appoint.mp3; sourceTree = "<group>"; };
+		B196DDCC24FCD77B009DD78C /* publish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = publish.mp3; sourceTree = "<group>"; };
+		B196DDCD24FCD77B009DD78C /* appreciate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = appreciate.mp3; sourceTree = "<group>"; };
+		B196DDCE24FCD77B009DD78C /* reschedule.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reschedule.mp3; sourceTree = "<group>"; };
+		B196DDCF24FCD77B009DD78C /* deserve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = deserve.mp3; sourceTree = "<group>"; };
+		B196DDD024FCD77B009DD78C /* stress.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stress.mp3; sourceTree = "<group>"; };
+		B196DDD124FCD77B009DD78C /* apologize.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = apologize.mp3; sourceTree = "<group>"; };
+		B196DDD224FCD77C009DD78C /* resolve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = resolve.mp3; sourceTree = "<group>"; };
+		B196DDD324FCD77C009DD78C /* participate in.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "participate in.mp3"; sourceTree = "<group>"; };
+		B196DDD424FCD77C009DD78C /* advise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = advise.mp3; sourceTree = "<group>"; };
+		B196DDD524FCD77C009DD78C /* regard A as B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "regard A as B.mp3"; sourceTree = "<group>"; };
+		B196DDD624FCD77C009DD78C /* praise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = praise.mp3; sourceTree = "<group>"; };
+		B196DDD724FCD77C009DD78C /* divide into A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "divide into A.mp3"; sourceTree = "<group>"; };
+		B196DDD824FCD77C009DD78C /* allow A to V.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "allow A to V.mp3"; sourceTree = "<group>"; };
+		B196DDD924FCD77D009DD78C /* prefer A to B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "prefer A to B.mp3"; sourceTree = "<group>"; };
+		B196DE0824FCE13E009DD78C /* brochure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brochure.mp3; sourceTree = "<group>"; };
+		B196DE0924FCE13E009DD78C /* display (1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "display (1).mp3"; sourceTree = "<group>"; };
+		B196DE0A24FCE13E009DD78C /* payment.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = payment.mp3; sourceTree = "<group>"; };
+		B196DE0B24FCE13E009DD78C /* luggage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = luggage.mp3; sourceTree = "<group>"; };
+		B196DE0C24FCE13E009DD78C /* range.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = range.mp3; sourceTree = "<group>"; };
+		B196DE0D24FCE13E009DD78C /* stock-holder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "stock-holder.mp3"; sourceTree = "<group>"; };
+		B196DE0E24FCE13F009DD78C /* claim.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = claim.mp3; sourceTree = "<group>"; };
+		B196DE0F24FCE13F009DD78C /* deposit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = deposit.mp3; sourceTree = "<group>"; };
+		B196DE1024FCE13F009DD78C /* figure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = figure.mp3; sourceTree = "<group>"; };
+		B196DE1124FCE13F009DD78C /* construction.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = construction.mp3; sourceTree = "<group>"; };
+		B196DE1224FCE13F009DD78C /* import.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = import.mp3; sourceTree = "<group>"; };
+		B196DE1324FCE13F009DD78C /* tips.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tips.mp3; sourceTree = "<group>"; };
+		B196DE1424FCE13F009DD78C /* district.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = district.mp3; sourceTree = "<group>"; };
+		B196DE1524FCE140009DD78C /* application.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = application.mp3; sourceTree = "<group>"; };
+		B196DE1624FCE140009DD78C /* admission.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = admission.mp3; sourceTree = "<group>"; };
+		B196DE1724FCE140009DD78C /* institution.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = institution.mp3; sourceTree = "<group>"; };
+		B196DE1824FCE140009DD78C /* preparation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = preparation.mp3; sourceTree = "<group>"; };
+		B196DE1924FCE140009DD78C /* clothing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clothing.mp3; sourceTree = "<group>"; };
+		B196DE1A24FCE140009DD78C /* proof.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = proof.mp3; sourceTree = "<group>"; };
+		B196DE1B24FCE141009DD78C /* membership.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = membership.mp3; sourceTree = "<group>"; };
+		B196DE1C24FCE141009DD78C /* factor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = factor.mp3; sourceTree = "<group>"; };
+		B196DE1D24FCE141009DD78C /* celebration.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = celebration.mp3; sourceTree = "<group>"; };
+		B196DE1E24FCE141009DD78C /* content.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = content.mp3; sourceTree = "<group>"; };
+		B196DE1F24FCE141009DD78C /* discount.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = discount.mp3; sourceTree = "<group>"; };
+		B196DE2024FCE141009DD78C /* budget.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = budget.mp3; sourceTree = "<group>"; };
+		B196DE2124FCE142009DD78C /* quarter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quarter.mp3; sourceTree = "<group>"; };
+		B196DE2224FCE142009DD78C /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
+		B196DE2324FCE142009DD78C /* document.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = document.mp3; sourceTree = "<group>"; };
+		B196DE2424FCE142009DD78C /* industory.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = industory.mp3; sourceTree = "<group>"; };
+		B196DE2524FCE142009DD78C /* option.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = option.mp3; sourceTree = "<group>"; };
+		B196DE2624FCE142009DD78C /* representative.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = representative.mp3; sourceTree = "<group>"; };
+		B196DE2724FCE142009DD78C /* priority.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = priority.mp3; sourceTree = "<group>"; };
+		B196DE2824FCE143009DD78C /* vehicle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vehicle.mp3; sourceTree = "<group>"; };
+		B196DE2924FCE143009DD78C /* conference.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = conference.mp3; sourceTree = "<group>"; };
+		B196DE2A24FCE143009DD78C /* environment.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = environment.mp3; sourceTree = "<group>"; };
+		B196DE2B24FCE143009DD78C /* executive.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = executive.mp3; sourceTree = "<group>"; };
+		B196DE2C24FCE143009DD78C /* headquarters.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = headquarters.mp3; sourceTree = "<group>"; };
+		B196DE2D24FCE143009DD78C /* cafeteria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cafeteria.mp3; sourceTree = "<group>"; };
+		B196DE2E24FCE143009DD78C /* reference.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reference.mp3; sourceTree = "<group>"; };
+		B196DE2F24FCE144009DD78C /* survey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = survey.mp3; sourceTree = "<group>"; };
+		B196DE3024FCE144009DD78C /* transportation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = transportation.mp3; sourceTree = "<group>"; };
+		B196DE3124FCE144009DD78C /* department.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = department.mp3; sourceTree = "<group>"; };
+		B196DE3224FCE144009DD78C /* balance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = balance.mp3; sourceTree = "<group>"; };
+		B196DE3324FCE144009DD78C /* host.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = host.mp3; sourceTree = "<group>"; };
+		B196DE3424FCE144009DD78C /* region.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = region.mp3; sourceTree = "<group>"; };
+		B196DE3524FCE145009DD78C /* expense.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = expense.mp3; sourceTree = "<group>"; };
+		B196DE3624FCE145009DD78C /* atmosphere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = atmosphere.mp3; sourceTree = "<group>"; };
+		B196DE3724FCE145009DD78C /* findings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = findings.mp3; sourceTree = "<group>"; };
+		B196DE3824FCE145009DD78C /* exhibition.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exhibition.mp3; sourceTree = "<group>"; };
+		B196DE3924FCE145009DD78C /* shuttle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shuttle.mp3; sourceTree = "<group>"; };
+		B196DE3A24FCE145009DD78C /* manufacture.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = manufacture.mp3; sourceTree = "<group>"; };
+		B196DE3B24FCE146009DD78C /* recommendation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = recommendation.mp3; sourceTree = "<group>"; };
+		B196DE3C24FCE146009DD78C /* reputation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reputation.mp3; sourceTree = "<group>"; };
+		B196DE3D24FCE146009DD78C /* fuel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fuel.mp3; sourceTree = "<group>"; };
+		B196DE3E24FCE146009DD78C /* reward.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reward.mp3; sourceTree = "<group>"; };
+		B196DE3F24FCE147009DD78C /* individual.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = individual.mp3; sourceTree = "<group>"; };
+		B196DE4024FCE147009DD78C /* departure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = departure.mp3; sourceTree = "<group>"; };
+		B196DE4124FCE147009DD78C /* connection.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = connection.mp3; sourceTree = "<group>"; };
+		B196DE4224FCE147009DD78C /* duty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = duty.mp3; sourceTree = "<group>"; };
+		B196DE4324FCE147009DD78C /* warranty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = warranty.mp3; sourceTree = "<group>"; };
+		B196DE4424FCE148009DD78C /* client.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = client.mp3; sourceTree = "<group>"; };
+		B196DE4524FCE148009DD78C /* anniversary.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = anniversary.mp3; sourceTree = "<group>"; };
+		B196DE4624FCE148009DD78C /* editor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = editor.mp3; sourceTree = "<group>"; };
+		B196DE4724FCE14A009DD78C /* job opening.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "job opening.mp3"; sourceTree = "<group>"; };
+		B196DE4824FCE14A009DD78C /* bill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bill.mp3; sourceTree = "<group>"; };
+		B196DE4924FCE14B009DD78C /* flyer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flyer.mp3; sourceTree = "<group>"; };
+		B196DE4A24FCE14B009DD78C /* detail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = detail.mp3; sourceTree = "<group>"; };
+		B196DE4B24FCE14B009DD78C /* concern.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = concern.mp3; sourceTree = "<group>"; };
+		B196DE4C24FCE14B009DD78C /* exhibit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exhibit.mp3; sourceTree = "<group>"; };
+		B196DE4D24FCE14B009DD78C /* suggestion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = suggestion.mp3; sourceTree = "<group>"; };
+		B196DE4E24FCE14C009DD78C /* arrival.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arrival.mp3; sourceTree = "<group>"; };
+		B196DE4F24FCE14C009DD78C /* trade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trade.mp3; sourceTree = "<group>"; };
+		B196DE5024FCE14D009DD78C /* confident.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = confident.mp3; sourceTree = "<group>"; };
+		B196DE5124FCE14D009DD78C /* instruction.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = instruction.mp3; sourceTree = "<group>"; };
+		B196DE5224FCE14D009DD78C /* cooperation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cooperation.mp3; sourceTree = "<group>"; };
+		B196DE5324FCE14D009DD78C /* replacement.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = replacement.mp3; sourceTree = "<group>"; };
+		B196DE5424FCE14D009DD78C /* packaging.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = packaging.mp3; sourceTree = "<group>"; };
+		B196DE5524FCE14E009DD78C /* income.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = income.mp3; sourceTree = "<group>"; };
+		B196DE5624FCE14E009DD78C /* invitation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = invitation.mp3; sourceTree = "<group>"; };
+		B196DE5724FCE14F009DD78C /* capacity.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = capacity.mp3; sourceTree = "<group>"; };
+		B196DE5824FCE14F009DD78C /* comparison.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comparison.mp3; sourceTree = "<group>"; };
+		B196DE5924FCE14F009DD78C /* personnel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = personnel.mp3; sourceTree = "<group>"; };
+		B196DE5A24FCE14F009DD78C /* delivery.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = delivery.mp3; sourceTree = "<group>"; };
+		B196DE5B24FCE150009DD78C /* automobile.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = automobile.mp3; sourceTree = "<group>"; };
+		B196DE5C24FCE150009DD78C /* applicant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = applicant.mp3; sourceTree = "<group>"; };
+		B196DE5D24FCE150009DD78C /* aspect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aspect.mp3; sourceTree = "<group>"; };
+		B196DE5E24FCE150009DD78C /* basis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = basis.mp3; sourceTree = "<group>"; };
+		B196DE5F24FCE150009DD78C /* complex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = complex.mp3; sourceTree = "<group>"; };
+		B196DE6024FCE151009DD78C /* impact.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = impact.mp3; sourceTree = "<group>"; };
+		B196DE6124FCE151009DD78C /* labour.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = labour.mp3; sourceTree = "<group>"; };
+		B196DE6224FCE151009DD78C /* process.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = process.mp3; sourceTree = "<group>"; };
+		B196DE6324FCE152009DD78C /* path.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = path.mp3; sourceTree = "<group>"; };
+		B196DE6424FCE152009DD78C /* profit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = profit.mp3; sourceTree = "<group>"; };
+		B196DE6524FCE152009DD78C /* fee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fee.mp3; sourceTree = "<group>"; };
+		B196DE6624FCE152009DD78C /* council.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = council.mp3; sourceTree = "<group>"; };
+		B196DE6724FCE152009DD78C /* complaint.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = complaint.mp3; sourceTree = "<group>"; };
+		B196DE6824FCE152009DD78C /* proposal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = proposal.mp3; sourceTree = "<group>"; };
+		B196DE6924FCE153009DD78C /* popularity.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = popularity.mp3; sourceTree = "<group>"; };
+		B196DE6A24FCE153009DD78C /* research.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = research.mp3; sourceTree = "<group>"; };
+		B196DE6B24FCE153009DD78C /* mayor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mayor.mp3; sourceTree = "<group>"; };
+		B196DE6C24FCE153009DD78C /* response.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = response.mp3; sourceTree = "<group>"; };
+		B196DE6D24FCE153009DD78C /* resource.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = resource.mp3; sourceTree = "<group>"; };
+		B196DE6E24FCE154009DD78C /* author.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = author.mp3; sourceTree = "<group>"; };
+		B196DE6F24FCE154009DD78C /* firm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = firm.mp3; sourceTree = "<group>"; };
+		B196DE7024FCE154009DD78C /* contract.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = contract.mp3; sourceTree = "<group>"; };
+		B196DE7124FCE154009DD78C /* equipment.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = equipment.mp3; sourceTree = "<group>"; };
+		B196DE7224FCE154009DD78C /* promotion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = promotion.mp3; sourceTree = "<group>"; };
+		B196DE7324FCE155009DD78C /* warehouse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = warehouse.mp3; sourceTree = "<group>"; };
+		B196DE7424FCE155009DD78C /* deadline.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = deadline.mp3; sourceTree = "<group>"; };
+		B196DE7524FCE155009DD78C /* award.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = award.mp3; sourceTree = "<group>"; };
+		B196DE7624FCE155009DD78C /* constract.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = constract.mp3; sourceTree = "<group>"; };
+		B196DE7724FCE155009DD78C /* advertisement.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = advertisement.mp3; sourceTree = "<group>"; };
+		B196DE7824FCE155009DD78C /* destination.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = destination.mp3; sourceTree = "<group>"; };
+		B196DE7924FCE156009DD78C /* crew.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crew.mp3; sourceTree = "<group>"; };
+		B196DE7A24FCE156009DD78C /* production.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = production.mp3; sourceTree = "<group>"; };
+		B196DE7B24FCE156009DD78C /* component.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = component.mp3; sourceTree = "<group>"; };
+		B196DE7C24FCE156009DD78C /* regulation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = regulation.mp3; sourceTree = "<group>"; };
+		B196DE7D24FCE157009DD78C /* donation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = donation.mp3; sourceTree = "<group>"; };
+		B196DE7E24FCE157009DD78C /* insurance premium.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "insurance premium.mp3"; sourceTree = "<group>"; };
+		B196DE7F24FCE157009DD78C /* agreement.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = agreement.mp3; sourceTree = "<group>"; };
+		B196DE8024FCE157009DD78C /* agency.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = agency.mp3; sourceTree = "<group>"; };
+		B196DE8124FCE157009DD78C /* procedure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = procedure.mp3; sourceTree = "<group>"; };
+		B196DE8224FCE157009DD78C /* merchandise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = merchandise.mp3; sourceTree = "<group>"; };
+		B196DE8324FCE158009DD78C /* employee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = employee.mp3; sourceTree = "<group>"; };
+		B196DE8424FCE158009DD78C /* method.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = method.mp3; sourceTree = "<group>"; };
+		B196DE8524FCE158009DD78C /* organization.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = organization.mp3; sourceTree = "<group>"; };
+		B196DE8624FCE158009DD78C /* result.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = result.mp3; sourceTree = "<group>"; };
+		B196DE8724FCE158009DD78C /* management.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = management.mp3; sourceTree = "<group>"; };
+		B196DE8824FCE159009DD78C /* refund.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = refund.mp3; sourceTree = "<group>"; };
+		B196DE8924FCE159009DD78C /* branch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = branch.mp3; sourceTree = "<group>"; };
+		B196DE8A24FCE159009DD78C /* function.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = function.mp3; sourceTree = "<group>"; };
+		B196DE8B24FCE159009DD78C /* crop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crop.mp3; sourceTree = "<group>"; };
+		B196DE8C24FCE15A009DD78C /* decade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = decade.mp3; sourceTree = "<group>"; };
+		B196DE8D24FCE15A009DD78C /* saving.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = saving.mp3; sourceTree = "<group>"; };
+		B196DE8E24FCE15A009DD78C /* strength.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = strength.mp3; sourceTree = "<group>"; };
+		B196DE8F24FCE15A009DD78C /* facility.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = facility.mp3; sourceTree = "<group>"; };
+		B196DE9024FCE15B009DD78C /* landscaping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = landscaping.mp3; sourceTree = "<group>"; };
+		B196DE9124FCE15B009DD78C /* policy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = policy.mp3; sourceTree = "<group>"; };
+		B196DE9224FCE15B009DD78C /* ability.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ability.mp3; sourceTree = "<group>"; };
+		B196DE9324FCE15B009DD78C /* contrast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = contrast.mp3; sourceTree = "<group>"; };
+		B196DE9424FCE15C009DD78C /* estimate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = estimate.mp3; sourceTree = "<group>"; };
+		B196DE9524FCE15C009DD78C /* occasion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = occasion.mp3; sourceTree = "<group>"; };
+		B196DE9624FCE15C009DD78C /* neighborhood.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = neighborhood.mp3; sourceTree = "<group>"; };
+		B196DE9724FCE15C009DD78C /* resident.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = resident.mp3; sourceTree = "<group>"; };
+		B196DF2824FCE6FE009DD78C /* modern.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = modern.mp3; sourceTree = "<group>"; };
+		B196DF2924FCE6FF009DD78C /* necessary.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = necessary.mp3; sourceTree = "<group>"; };
+		B196DF2A24FCE6FF009DD78C /* familiar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = familiar.mp3; sourceTree = "<group>"; };
+		B196DF2B24FCE6FF009DD78C /* brief.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brief.mp3; sourceTree = "<group>"; };
+		B196DF2C24FCE6FF009DD78C /* involved.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = involved.mp3; sourceTree = "<group>"; };
+		B196DF2D24FCE700009DD78C /* initial.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = initial.mp3; sourceTree = "<group>"; };
+		B196DF2E24FCE700009DD78C /* amazing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = amazing.mp3; sourceTree = "<group>"; };
+		B196DF2F24FCE700009DD78C /* former.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = former.mp3; sourceTree = "<group>"; };
+		B196DF3024FCE700009DD78C /* advance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = advance.mp3; sourceTree = "<group>"; };
+		B196DF3124FCE701009DD78C /* exact.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exact.mp3; sourceTree = "<group>"; };
+		B196DF3224FCE701009DD78C /* overseas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = overseas.mp3; sourceTree = "<group>"; };
+		B196DF3324FCE701009DD78C /* temporary.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temporary.mp3; sourceTree = "<group>"; };
+		B196DF3424FCE701009DD78C /* traditional.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = traditional.mp3; sourceTree = "<group>"; };
+		B196DF3524FCE702009DD78C /* mechanical.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mechanical.mp3; sourceTree = "<group>"; };
+		B196DF3624FCE702009DD78C /* upcoming.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = upcoming.mp3; sourceTree = "<group>"; };
+		B196DF3724FCE702009DD78C /* experienced.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = experienced.mp3; sourceTree = "<group>"; };
+		B196DF3824FCE702009DD78C /* intended.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = intended.mp3; sourceTree = "<group>"; };
+		B196DF3924FCE702009DD78C /* existing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = existing.mp3; sourceTree = "<group>"; };
+		B196DF3A24FCE702009DD78C /* serious.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = serious.mp3; sourceTree = "<group>"; };
+		B196DF3B24FCE702009DD78C /* helpful.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = helpful.mp3; sourceTree = "<group>"; };
+		B196DF3C24FCE703009DD78C /* comfortable.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comfortable.mp3; sourceTree = "<group>"; };
+		B196DF3D24FCE703009DD78C /* confident (1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "confident (1).mp3"; sourceTree = "<group>"; };
+		B196DF3E24FCE703009DD78C /* related.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = related.mp3; sourceTree = "<group>"; };
+		B196DF3F24FCE703009DD78C /* favorable.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = favorable.mp3; sourceTree = "<group>"; };
+		B196DF4024FCE704009DD78C /* generous.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = generous.mp3; sourceTree = "<group>"; };
+		B196DF4124FCE704009DD78C /* overall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = overall.mp3; sourceTree = "<group>"; };
+		B196DF4224FCE704009DD78C /* suitable.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = suitable.mp3; sourceTree = "<group>"; };
+		B196DF4324FCE704009DD78C /* downtown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = downtown.mp3; sourceTree = "<group>"; };
+		B196DF4424FCE704009DD78C /* accurate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = accurate.mp3; sourceTree = "<group>"; };
+		B196DF4524FCE705009DD78C /* valuable.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = valuable.mp3; sourceTree = "<group>"; };
+		B196DF4624FCE705009DD78C /* specific.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = specific.mp3; sourceTree = "<group>"; };
+		B196DF4724FCE705009DD78C /* successful.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = successful.mp3; sourceTree = "<group>"; };
+		B196DF4824FCE705009DD78C /* paid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = paid.mp3; sourceTree = "<group>"; };
+		B196DF4924FCE705009DD78C /* corporate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = corporate.mp3; sourceTree = "<group>"; };
+		B196DF4A24FCE705009DD78C /* sufficient.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sufficient.mp3; sourceTree = "<group>"; };
+		B196DF4B24FCE706009DD78C /* unique.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = unique.mp3; sourceTree = "<group>"; };
+		B196DF4C24FCE706009DD78C /* crowded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crowded.mp3; sourceTree = "<group>"; };
+		B196DF4D24FCE706009DD78C /* full-time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "full-time.mp3"; sourceTree = "<group>"; };
+		B196DF4E24FCE706009DD78C /* agricultural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = agricultural.mp3; sourceTree = "<group>"; };
+		B196DF4F24FCE707009DD78C /* leading.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = leading.mp3; sourceTree = "<group>"; };
+		B196DF5024FCE707009DD78C /* efficient.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = efficient.mp3; sourceTree = "<group>"; };
+		B196DF5124FCE707009DD78C /* available.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = available.mp3; sourceTree = "<group>"; };
+		B196DF5224FCE707009DD78C /* financial.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = financial.mp3; sourceTree = "<group>"; };
+		B196DF5324FCE708009DD78C /* commercial.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = commercial.mp3; sourceTree = "<group>"; };
+		B196DF5424FCE708009DD78C /* local.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = local.mp3; sourceTree = "<group>"; };
+		B196DF5524FCE708009DD78C /* limited.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = limited.mp3; sourceTree = "<group>"; };
+		B196DF5624FCE708009DD78C /* practical.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = practical.mp3; sourceTree = "<group>"; };
+		B196DF5724FCE709009DD78C /* previous.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = previous.mp3; sourceTree = "<group>"; };
+		B196DF5824FCE709009DD78C /* effective.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = effective.mp3; sourceTree = "<group>"; };
+		B196DF5924FCE709009DD78C /* permanent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = permanent.mp3; sourceTree = "<group>"; };
+		B196DF5A24FCE709009DD78C /* significant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = significant.mp3; sourceTree = "<group>"; };
+		B196DF5B24FCE709009DD78C /* complicated.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = complicated.mp3; sourceTree = "<group>"; };
+		B196DF5C24FCE70A009DD78C /* promising.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = promising.mp3; sourceTree = "<group>"; };
+		B196DF5D24FCE70A009DD78C /* alternative.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alternative.mp3; sourceTree = "<group>"; };
+		B196DF5E24FCE70A009DD78C /* legal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = legal.mp3; sourceTree = "<group>"; };
+		B196DF5F24FCE70A009DD78C /* reasonable.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reasonable.mp3; sourceTree = "<group>"; };
+		B196DF6024FCE70A009DD78C /* informal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = informal.mp3; sourceTree = "<group>"; };
+		B196DF6124FCE70B009DD78C /* ideal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ideal.mp3; sourceTree = "<group>"; };
+		B196DF6224FCE70B009DD78C /* various.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = various.mp3; sourceTree = "<group>"; };
+		B196DF6324FCE70B009DD78C /* economic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = economic.mp3; sourceTree = "<group>"; };
+		B196DF6424FCE70B009DD78C /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		B196DF6524FCE70C009DD78C /* latest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = latest.mp3; sourceTree = "<group>"; };
+		B196DFA424FCECF5009DD78C /* due to A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "due to A.mp3"; sourceTree = "<group>"; };
+		B196DFA524FCECF6009DD78C /* particularly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = particularly.mp3; sourceTree = "<group>"; };
+		B196DFA624FCECF6009DD78C /* regularly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = regularly.mp3; sourceTree = "<group>"; };
+		B196DFA724FCECF6009DD78C /* be pleased with A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be pleased with A.mp3"; sourceTree = "<group>"; };
+		B196DFA824FCECF6009DD78C /* with ease.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "with ease.mp3"; sourceTree = "<group>"; };
+		B196DFAA24FCECF6009DD78C /* occasionally.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = occasionally.mp3; sourceTree = "<group>"; };
+		B196DFAB24FCECF7009DD78C /* every other week.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "every other week.mp3"; sourceTree = "<group>"; };
+		B196DFAC24FCECF7009DD78C /* be willing to V.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be willing to V.mp3"; sourceTree = "<group>"; };
+		B196DFAD24FCECF7009DD78C /* according to.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "according to.mp3"; sourceTree = "<group>"; };
+		B196DFAE24FCECF7009DD78C /* likely.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = likely.mp3; sourceTree = "<group>"; };
+		B196DFAF24FCECF7009DD78C /* currently.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = currently.mp3; sourceTree = "<group>"; };
+		B196DFB024FCECF8009DD78C /* slightly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slightly.mp3; sourceTree = "<group>"; };
+		B196DFB124FCECF8009DD78C /* hardly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hardly.mp3; sourceTree = "<group>"; };
+		B196DFB224FCECF8009DD78C /* recently.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = recently.mp3; sourceTree = "<group>"; };
+		B196DFB324FCECF8009DD78C /* rather.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rather.mp3; sourceTree = "<group>"; };
+		B196DFB424FCECF8009DD78C /* fairly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fairly.mp3; sourceTree = "<group>"; };
+		B196DFB524FCECF8009DD78C /* eventually.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eventually.mp3; sourceTree = "<group>"; };
+		B196DFB624FCECF9009DD78C /* approximately.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = approximately.mp3; sourceTree = "<group>"; };
+		B196DFB724FCECF9009DD78C /* somewhat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = somewhat.mp3; sourceTree = "<group>"; };
+		B196DFB824FCECF9009DD78C /* afterwards.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = afterwards.mp3; sourceTree = "<group>"; };
+		B196DFB924FCECF9009DD78C /* alike.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alike.mp3; sourceTree = "<group>"; };
+		B196DFBA24FCECF9009DD78C /* almost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = almost.mp3; sourceTree = "<group>"; };
+		B196DFBB24FCECFA009DD78C /* both A and B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "both A and B.mp3"; sourceTree = "<group>"; };
+		B196DFBC24FCECFA009DD78C /* unfortunately.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = unfortunately.mp3; sourceTree = "<group>"; };
+		B196DFBD24FCECFA009DD78C /* in cash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "in cash.mp3"; sourceTree = "<group>"; };
+		B196DFBE24FCECFA009DD78C /* each.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = each.mp3; sourceTree = "<group>"; };
+		B196DFBF24FCECFA009DD78C /* nearly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nearly.mp3; sourceTree = "<group>"; };
+		B196DFC024FCECFB009DD78C /* in a different setting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "in a different setting.mp3"; sourceTree = "<group>"; };
+		B196DFC124FCECFB009DD78C /* behind the wheel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "behind the wheel.mp3"; sourceTree = "<group>"; };
+		B196DFC224FCECFB009DD78C /* hence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hence.mp3; sourceTree = "<group>"; };
+		B196DFC324FCECFB009DD78C /* shortly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shortly.mp3; sourceTree = "<group>"; };
+		B196DFC424FCECFC009DD78C /* neither A nor B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "neither A nor B.mp3"; sourceTree = "<group>"; };
+		B196DFC524FCECFC009DD78C /* properly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = properly.mp3; sourceTree = "<group>"; };
+		B196DFC624FCECFC009DD78C /* frequently.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = frequently.mp3; sourceTree = "<group>"; };
+		B196DFC724FCECFC009DD78C /* equally.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = equally.mp3; sourceTree = "<group>"; };
+		B196DFC824FCECFC009DD78C /* besides.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = besides.mp3; sourceTree = "<group>"; };
+		B196DFC924FCECFD009DD78C /* be eager to V.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be eager to V.mp3"; sourceTree = "<group>"; };
+		B196DFCA24FCECFD009DD78C /* loyal customer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "loyal customer.mp3"; sourceTree = "<group>"; };
+		B196DFCB24FCECFD009DD78C /* seldom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = seldom.mp3; sourceTree = "<group>"; };
+		B196DFCC24FCECFD009DD78C /* following A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "following A.mp3"; sourceTree = "<group>"; };
+		B196DFCD24FCECFE009DD78C /* latter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = latter.mp3; sourceTree = "<group>"; };
+		B196DFCE24FCECFE009DD78C /* regarding A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "regarding A.mp3"; sourceTree = "<group>"; };
+		B196DFCF24FCECFE009DD78C /* absolutely.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = absolutely.mp3; sourceTree = "<group>"; };
+		B196DFD024FCECFE009DD78C /* guided tour.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "guided tour.mp3"; sourceTree = "<group>"; };
+		B196DFD124FCECFF009DD78C /* gradually.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gradually.mp3; sourceTree = "<group>"; };
+		B196DFD224FCECFF009DD78C /* highly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = highly.mp3; sourceTree = "<group>"; };
+		B196DFD324FCECFF009DD78C /* unlike.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = unlike.mp3; sourceTree = "<group>"; };
+		B196DFD524FCED00009DD78C /* without A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "without A.mp3"; sourceTree = "<group>"; };
+		B196DFD624FCED00009DD78C /* be aware of A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be aware of A.mp3"; sourceTree = "<group>"; };
+		B196DFD824FCED00009DD78C /* anyway.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = anyway.mp3; sourceTree = "<group>"; };
+		B196DFD924FCED01009DD78C /* be unable to V.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be unable to V.mp3"; sourceTree = "<group>"; };
+		B196DFDA24FCED01009DD78C /* perhaps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = perhaps.mp3; sourceTree = "<group>"; };
+		B196DFDB24FCED01009DD78C /* on board.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "on board.mp3"; sourceTree = "<group>"; };
+		B196DFDC24FCED01009DD78C /* in spite of A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "in spite of A.mp3"; sourceTree = "<group>"; };
+		B196DFDD24FCED02009DD78C /* immediately.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = immediately.mp3; sourceTree = "<group>"; };
+		B196E01824FCEDAE009DD78C /* be responsible of A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be responsible of A.mp3"; sourceTree = "<group>"; };
+		B196E01A24FCEEA1009DD78C /* be satisfied with A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be satisfied with A.mp3"; sourceTree = "<group>"; };
+		B196E01B24FCEEA2009DD78C /* be committed to A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be committed to A.mp3"; sourceTree = "<group>"; };
+		B196E01E24FCEF3D009DD78C /* relatively.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relatively.mp3; sourceTree = "<group>"; };
 		B1A4CE282472F5BF009F361F /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
 		B1A4CE2A2472F716009F361F /* MaterialList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialList.swift; sourceTree = "<group>"; };
 		B1A96B38248E98E000E751EA /* WhichHinshiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichHinshiViewController.swift; sourceTree = "<group>"; };
@@ -199,46 +903,398 @@
 		B14110172473EF1200336F40 /* GifMp3 */ = {
 			isa = PBXGroup;
 			children = (
-				B14110182473EF7900336F40 /* move.gif */,
-				B17FD10B246298C000F13729 /* move.mp3 */,
-				B17FD10F246299F000F13729 /* expand.gif */,
-				B17FD10D246298C700F13729 /* expand.mp3 */,
-				B11BDFAF24F79FA70001251C /* increase.mp3 */,
+				B196DE9224FCE15B009DD78C /* ability.mp3 */,
+				B196DFCF24FCECFE009DD78C /* absolutely.mp3 */,
 				B14110122473ED7500336F40 /* accept.gif */,
 				B17FD1192462A7F200F13729 /* accept.mp3 */,
+				B196DFAD24FCECF7009DD78C /* according to.mp3 */,
+				B196DF4424FCE704009DD78C /* accurate.mp3 */,
+				B196DD7224FCD4C5009DD78C /* achieve.mp3 */,
+				B196DE1624FCE140009DD78C /* admission.mp3 */,
+				B196DF3024FCE700009DD78C /* advance.mp3 */,
+				B196DE7724FCE155009DD78C /* advertisement.mp3 */,
+				B196DDD424FCD77C009DD78C /* advise.mp3 */,
+				B196DD7F24FCD4C6009DD78C /* affect.mp3 */,
+				B196DFB824FCECF9009DD78C /* afterwards.mp3 */,
+				B196DE8024FCE157009DD78C /* agency.mp3 */,
+				B1D4C9D32487EBDC00F08EA4 /* agree.gif */,
 				B11BDFBA24F7FE510001251C /* agree.mp3 */,
-				B11BDFB824F7FE510001251C /* attach.mp3 */,
-				B11BDFBC24F7FE520001251C /* confirm.mp3 */,
-				B11BDFB424F7FE510001251C /* distribute.mp3 */,
-				B11BDFBD24F7FE520001251C /* earn.mp3 */,
+				B196DE7F24FCE157009DD78C /* agreement.mp3 */,
+				B196DF4E24FCE706009DD78C /* agricultural.mp3 */,
+				B196DFB924FCECF9009DD78C /* alike.mp3 */,
+				B196DDD824FCD77C009DD78C /* allow A to V.mp3 */,
+				B196DFBA24FCECF9009DD78C /* almost.mp3 */,
+				B196DF5D24FCE70A009DD78C /* alternative.mp3 */,
+				B196DF2E24FCE700009DD78C /* amazing.mp3 */,
 				B11BDFD324F7FF480001251C /* analyse.mp3 */,
+				B196DE4524FCE148009DD78C /* anniversary.mp3 */,
+				B196DD7424FCD4C5009DD78C /* announce.mp3 */,
+				B196DFD824FCED00009DD78C /* anyway.mp3 */,
+				B196DDD124FCD77B009DD78C /* apologize.mp3 */,
 				B11BDFCD24F7FF470001251C /* appear.mp3 */,
+				B196DE5C24FCE150009DD78C /* applicant.mp3 */,
+				B196DE1524FCE140009DD78C /* application.mp3 */,
+				B196DDCB24FCD77B009DD78C /* appoint.mp3 */,
+				B196DDCD24FCD77B009DD78C /* appreciate.mp3 */,
+				B196DDB224FCD777009DD78C /* approve.mp3 */,
+				B196DFB624FCECF9009DD78C /* approximately.mp3 */,
+				B196DDB924FCD778009DD78C /* arrange.mp3 */,
+				B196DE4E24FCE14C009DD78C /* arrival.mp3 */,
+				B196DE5D24FCE150009DD78C /* aspect.mp3 */,
+				B196DD7024FCD4C4009DD78C /* assure.mp3 */,
+				B196DE3624FCE145009DD78C /* atmosphere.mp3 */,
+				B11BDFB824F7FE510001251C /* attach.mp3 */,
+				B196DD7824FCD4C5009DD78C /* attend.mp3 */,
+				B196DD7124FCD4C4009DD78C /* attract.mp3 */,
+				B196DE6E24FCE154009DD78C /* author.mp3 */,
+				B196DE5B24FCE150009DD78C /* automobile.mp3 */,
+				B196DF5124FCE707009DD78C /* available.mp3 */,
+				B196DD6124FCD4C3009DD78C /* avoid.mp3 */,
+				B196DE7524FCE155009DD78C /* award.mp3 */,
+				B196DE2224FCE142009DD78C /* background.mp3 */,
+				B196DE3224FCE144009DD78C /* balance.mp3 */,
+				B196DE5E24FCE150009DD78C /* basis.mp3 */,
+				B196DFD624FCED00009DD78C /* be aware of A.mp3 */,
+				B196E01B24FCEEA2009DD78C /* be committed to A.mp3 */,
+				B196DFC924FCECFD009DD78C /* be eager to V.mp3 */,
+				B196DFA724FCECF6009DD78C /* be pleased with A.mp3 */,
+				B196E01824FCEDAE009DD78C /* be responsible of A.mp3 */,
+				B196E01A24FCEEA1009DD78C /* be satisfied with A.mp3 */,
+				B196DFD924FCED01009DD78C /* be unable to V.mp3 */,
+				B196DFAC24FCECF7009DD78C /* be willing to V.mp3 */,
+				B196DFC124FCECFB009DD78C /* behind the wheel.mp3 */,
+				B196DFC824FCECFC009DD78C /* besides.mp3 */,
+				B196DE4824FCE14A009DD78C /* bill.mp3 */,
+				B196DFBB24FCECFA009DD78C /* both A and B.mp3 */,
+				B196DE8924FCE159009DD78C /* branch.mp3 */,
+				B196DF2B24FCE6FF009DD78C /* brief.mp3 */,
+				B196DDC524FCD77A009DD78C /* broadcast.mp3 */,
+				B196DE0824FCE13E009DD78C /* brochure.mp3 */,
+				B196DE2024FCE141009DD78C /* budget.mp3 */,
+				B196DE2D24FCE143009DD78C /* cafeteria.mp3 */,
+				B196DDC324FCD77A009DD78C /* can afford to V.mp3 */,
+				B196DE5724FCE14F009DD78C /* capacity.mp3 */,
+				B196DDB024FCD777009DD78C /* cause.mp3 */,
+				B196DE1D24FCE141009DD78C /* celebration.mp3 */,
+				B196DD6724FCD4C3009DD78C /* charge.mp3 */,
+				B196DE0E24FCE13F009DD78C /* claim.mp3 */,
+				B196DE4424FCE148009DD78C /* client.mp3 */,
+				B196DE1924FCE140009DD78C /* clothing.mp3 */,
+				B196DF3C24FCE703009DD78C /* comfortable.mp3 */,
+				B196DF5324FCE708009DD78C /* commercial.mp3 */,
+				B196DE5824FCE14F009DD78C /* comparison.mp3 */,
+				B196DDC824FCD77A009DD78C /* compete.mp3 */,
+				B196DDB424FCD778009DD78C /* complain.mp3 */,
+				B196DE6724FCE152009DD78C /* complaint.mp3 */,
+				B196DE5F24FCE150009DD78C /* complex.mp3 */,
+				B196DF5B24FCE709009DD78C /* complicated.mp3 */,
+				B196DE7B24FCE156009DD78C /* component.mp3 */,
+				B196DE4B24FCE14B009DD78C /* concern.mp3 */,
+				B196DD7524FCD4C5009DD78C /* conduct.mp3 */,
+				B196DE2924FCE143009DD78C /* conference.mp3 */,
+				B196DF3D24FCE703009DD78C /* confident (1).mp3 */,
+				B196DE5024FCE14D009DD78C /* confident.mp3 */,
+				B196DD8224FCD4C7009DD78C /* confirm (1).mp3 */,
+				B11BDFBC24F7FE520001251C /* confirm.mp3 */,
+				B196DE4124FCE147009DD78C /* connection.mp3 */,
 				B11BDFD024F7FF480001251C /* consider.mp3 */,
+				B196DE7624FCE155009DD78C /* constract.mp3 */,
+				B196DE1124FCE13F009DD78C /* construction.mp3 */,
+				B196DD6624FCD4C3009DD78C /* consult.mp3 */,
+				B196DDC224FCD779009DD78C /* contain.mp3 */,
+				B196DE1E24FCE141009DD78C /* content.mp3 */,
+				B196DE7024FCE154009DD78C /* contract.mp3 */,
+				B196DE9324FCE15B009DD78C /* contrast.mp3 */,
 				B11BDFCB24F7FF470001251C /* convey.mp3 */,
-				B11BDFCF24F7FF480001251C /* enhance.mp3 */,
-				B11BDFCC24F7FF470001251C /* establish.mp3 */,
-				B11BDFD624F7FF490001251C /* hire.mp3 */,
-				B11BDFCE24F7FF480001251C /* mail.mp3 */,
-				B11BDFD424F7FF490001251C /* offer.mp3 */,
-				B11BDFD724F7FF490001251C /* provide.mp3 */,
-				B11BDFD524F7FF490001251C /* release.mp3 */,
-				B11BDFD824F7FF490001251C /* renew.mp3 */,
-				B11BDFD124F7FF480001251C /* state.mp3 */,
-				B11BDFD224F7FF480001251C /* submit.mp3 */,
+				B196DE5224FCE14D009DD78C /* cooperation.mp3 */,
+				B196DF4924FCE705009DD78C /* corporate.mp3 */,
+				B196DF6424FCE70B009DD78C /* correct.mp3 */,
+				B122FFC4248CEDB900D5450B /* correctSound.mp3 */,
+				B196DE6624FCE152009DD78C /* council.mp3 */,
+				B196DD5F24FCD4C2009DD78C /* create.mp3 */,
+				B196DE7924FCE156009DD78C /* crew.mp3 */,
+				B196DE8B24FCE159009DD78C /* crop.mp3 */,
+				B196DF4C24FCE706009DD78C /* crowded.mp3 */,
+				B196DFAF24FCECF7009DD78C /* currently.mp3 */,
+				B196DE7424FCE155009DD78C /* deadline.mp3 */,
+				B196DE8C24FCE15A009DD78C /* decade.mp3 */,
+				B196DD5D24FCD4C2009DD78C /* delay.mp3 */,
+				B196DE5A24FCE14F009DD78C /* delivery.mp3 */,
+				B196DD8124FCD4C7009DD78C /* demand.mp3 */,
+				B196DE3124FCE144009DD78C /* department.mp3 */,
+				B196DE4024FCE147009DD78C /* departure.mp3 */,
+				B196DE0F24FCE13F009DD78C /* deposit.mp3 */,
+				B196DDCF24FCD77B009DD78C /* deserve.mp3 */,
+				B196DE7824FCE155009DD78C /* destination.mp3 */,
+				B196DE4A24FCE14B009DD78C /* detail.mp3 */,
+				B196DD7E24FCD4C6009DD78C /* determine.mp3 */,
+				B196DD6224FCD4C3009DD78C /* develop.mp3 */,
+				B196DDC124FCD779009DD78C /* direct.mp3 */,
+				B196DE1F24FCE141009DD78C /* discount.mp3 */,
+				B196DD6824FCD4C3009DD78C /* dispatch.mp3 */,
+				B196DE0924FCE13E009DD78C /* display (1).mp3 */,
+				B196DDBC24FCD779009DD78C /* display.mp3 */,
+				B11BDFB424F7FE510001251C /* distribute.mp3 */,
+				B196DE1424FCE13F009DD78C /* district.mp3 */,
+				B196DDD724FCD77C009DD78C /* divide into A.mp3 */,
+				B196DE2324FCE142009DD78C /* document.mp3 */,
+				B196DE7D24FCE157009DD78C /* donation.mp3 */,
+				B196DF4324FCE704009DD78C /* downtown.mp3 */,
+				B196DFA424FCECF5009DD78C /* due to A.mp3 */,
+				B196DE4224FCE147009DD78C /* duty.mp3 */,
+				B196DFBE24FCECFA009DD78C /* each.mp3 */,
+				B11BDFBD24F7FE520001251C /* earn.mp3 */,
+				B196DF6324FCE70B009DD78C /* economic.mp3 */,
+				B196DE4624FCE148009DD78C /* editor.mp3 */,
+				B196DF5824FCE709009DD78C /* effective.mp3 */,
+				B196DF5024FCE707009DD78C /* efficient.mp3 */,
 				B11BDFBB24F7FE520001251C /* eliminate.mp3 */,
 				B11BDFB324F7FE500001251C /* emphasize.mp3 */,
+				B196DE8324FCE158009DD78C /* employee.mp3 */,
+				B196DDC624FCD77A009DD78C /* enclose.mp3 */,
+				B11BDFCF24F7FF480001251C /* enhance.mp3 */,
+				B196DE2A24FCE143009DD78C /* environment.mp3 */,
+				B196DFC724FCECFC009DD78C /* equally.mp3 */,
+				B196DE7124FCE154009DD78C /* equipment.mp3 */,
+				B11BDFCC24F7FF470001251C /* establish.mp3 */,
+				B196DE9424FCE15C009DD78C /* estimate.mp3 */,
+				B196DFB524FCECF8009DD78C /* eventually.mp3 */,
+				B196DFAB24FCECF7009DD78C /* every other week.mp3 */,
+				B196DF3124FCE701009DD78C /* exact.mp3 */,
+				B196DE2B24FCE143009DD78C /* executive.mp3 */,
+				B196DE4C24FCE14B009DD78C /* exhibit.mp3 */,
+				B196DE3824FCE145009DD78C /* exhibition.mp3 */,
+				B196DF3924FCE702009DD78C /* existing.mp3 */,
+				B17FD10F246299F000F13729 /* expand.gif */,
+				B17FD10D246298C700F13729 /* expand.mp3 */,
+				B196DD7B24FCD4C6009DD78C /* expect.mp3 */,
+				B196DE3524FCE145009DD78C /* expense.mp3 */,
+				B196DF3724FCE702009DD78C /* experienced.mp3 */,
+				B196DD5924FCD4C1009DD78C /* explore.mp3 */,
+				B196DE8F24FCE15A009DD78C /* facility.mp3 */,
+				B196DE1C24FCE141009DD78C /* factor.mp3 */,
+				B196DFB424FCECF8009DD78C /* fairly.mp3 */,
+				B196DF2A24FCE6FF009DD78C /* familiar.mp3 */,
+				B196DF3F24FCE703009DD78C /* favorable.mp3 */,
+				B196DE6524FCE152009DD78C /* fee.mp3 */,
+				B196DE1024FCE13F009DD78C /* figure.mp3 */,
+				B196DDB124FCD777009DD78C /* finalize.mp3 */,
+				B196DF5224FCE707009DD78C /* financial.mp3 */,
+				B196DE3724FCE145009DD78C /* findings.mp3 */,
+				B196DE6F24FCE154009DD78C /* firm.mp3 */,
+				B196DD7924FCD4C6009DD78C /* fit.mp3 */,
+				B196DE4924FCE14B009DD78C /* flyer.mp3 */,
+				B196DFCC24FCECFD009DD78C /* following A.mp3 */,
+				B196DF2F24FCE700009DD78C /* former.mp3 */,
+				B196DDBA24FCD778009DD78C /* found.mp3 */,
+				B196DFC624FCECFC009DD78C /* frequently.mp3 */,
+				B196DE3D24FCE146009DD78C /* fuel.mp3 */,
+				B196DF4D24FCE706009DD78C /* full-time.mp3 */,
+				B196DE8A24FCE159009DD78C /* function.mp3 */,
+				B196DD6524FCD4C3009DD78C /* fund.mp3 */,
+				B196DD6424FCD4C3009DD78C /* gain.mp3 */,
+				B196DF4024FCE704009DD78C /* generous.mp3 */,
+				B196DFD124FCECFF009DD78C /* gradually.mp3 */,
+				B196DDBF24FCD779009DD78C /* guarantee.mp3 */,
+				B196DFD024FCECFE009DD78C /* guided tour.mp3 */,
+				B196DFB124FCECF8009DD78C /* hardly.mp3 */,
+				B196DE2C24FCE143009DD78C /* headquarters.mp3 */,
+				B196DF3B24FCE702009DD78C /* helpful.mp3 */,
+				B196DFC224FCECFB009DD78C /* hence.mp3 */,
+				B196DD6324FCD4C3009DD78C /* hesitate.mp3 */,
+				B196DFD224FCECFF009DD78C /* highly.mp3 */,
+				B11BDFD624F7FF490001251C /* hire.mp3 */,
+				B196DE3324FCE144009DD78C /* host.mp3 */,
+				B196DF6124FCE70B009DD78C /* ideal.mp3 */,
+				B196DFDD24FCED02009DD78C /* immediately.mp3 */,
+				B196DE6024FCE151009DD78C /* impact.mp3 */,
+				B196DDAF24FCD777009DD78C /* imply.mp3 */,
+				B196DE1224FCE13F009DD78C /* import.mp3 */,
+				B196DDAE24FCD777009DD78C /* impress.mp3 */,
+				B196DD7C24FCD4C6009DD78C /* improve.mp3 */,
+				B196DFC024FCECFB009DD78C /* in a different setting.mp3 */,
+				B196DFBD24FCECFA009DD78C /* in cash.mp3 */,
+				B196DFDC24FCED01009DD78C /* in spite of A.mp3 */,
 				B11BDFB624F7FE510001251C /* include.mp3 */,
-				B11BDFB124F7FE500001251C /* locate.mp3 */,
-				B11BDFB524F7FE510001251C /* raise.mp3 */,
-				B11BDFB224F7FE500001251C /* remove.mp3 */,
-				B11BDFB724F7FE510001251C /* repair.mp3 */,
-				B11BDFB924F7FE510001251C /* resume.mp3 */,
-				B1D4C9D32487EBDC00F08EA4 /* agree.gif */,
-				B1D4C9D42487EBDC00F08EA4 /* increase.gif */,
+				B196DE5524FCE14E009DD78C /* income.mp3 */,
 				B122FFC6248CEDBD00D5450B /* incorrectSound.mp3 */,
-				B122FFC4248CEDB900D5450B /* correctSound.mp3 */,
+				B1D4C9D42487EBDC00F08EA4 /* increase.gif */,
+				B11BDFAF24F79FA70001251C /* increase.mp3 */,
+				B196DE3F24FCE147009DD78C /* individual.mp3 */,
+				B196DE2424FCE142009DD78C /* industory.mp3 */,
+				B196DD5824FCD4C1009DD78C /* inform.mp3 */,
+				B196DF6024FCE70A009DD78C /* informal.mp3 */,
+				B196DF2D24FCE700009DD78C /* initial.mp3 */,
+				B196DD6024FCD4C3009DD78C /* inquire.mp3 */,
+				B196DE1724FCE140009DD78C /* institution.mp3 */,
+				B196DE5124FCE14D009DD78C /* instruction.mp3 */,
+				B196DE7E24FCE157009DD78C /* insurance premium.mp3 */,
+				B196DF3824FCE702009DD78C /* intended.mp3 */,
+				B196DDB324FCD777009DD78C /* introduce.mp3 */,
+				B196DE5624FCE14E009DD78C /* invitation.mp3 */,
+				B196DF2C24FCE6FF009DD78C /* involved.mp3 */,
+				B196DE4724FCE14A009DD78C /* job opening.mp3 */,
+				B196DE6124FCE151009DD78C /* labour.mp3 */,
+				B196DE9024FCE15B009DD78C /* landscaping.mp3 */,
+				B196DF6524FCE70C009DD78C /* latest.mp3 */,
+				B196DFCD24FCECFE009DD78C /* latter.mp3 */,
+				B196DD7624FCD4C5009DD78C /* launch.mp3 */,
+				B196DF4F24FCE707009DD78C /* leading.mp3 */,
+				B196DF5E24FCE70A009DD78C /* legal.mp3 */,
+				B196DFAE24FCECF7009DD78C /* likely.mp3 */,
+				B196DF5524FCE708009DD78C /* limited.mp3 */,
+				B196DF5424FCE708009DD78C /* local.mp3 */,
 				B1D4C9D22487EBDC00F08EA4 /* locate.gif */,
+				B11BDFB124F7FE500001251C /* locate.mp3 */,
+				B196DFCA24FCECFD009DD78C /* loyal customer.mp3 */,
+				B196DE0B24FCE13E009DD78C /* luggage.mp3 */,
+				B11BDFCE24F7FF480001251C /* mail.mp3 */,
+				B196DDB524FCD778009DD78C /* maintain.mp3 */,
+				B196DE8724FCE158009DD78C /* management.mp3 */,
+				B196DE3A24FCE145009DD78C /* manufacture.mp3 */,
+				B196DE6B24FCE153009DD78C /* mayor.mp3 */,
+				B196DF3524FCE702009DD78C /* mechanical.mp3 */,
+				B196DE1B24FCE141009DD78C /* membership.mp3 */,
+				B196DDB624FCD778009DD78C /* mention.mp3 */,
+				B196DE8224FCE157009DD78C /* merchandise.mp3 */,
+				B196DE8424FCE158009DD78C /* method.mp3 */,
+				B196DF2824FCE6FE009DD78C /* modern.mp3 */,
+				B14110182473EF7900336F40 /* move.gif */,
+				B17FD10B246298C000F13729 /* move.mp3 */,
+				B196DFBF24FCECFA009DD78C /* nearly.mp3 */,
+				B196DF2924FCE6FF009DD78C /* necessary.mp3 */,
+				B196DE9624FCE15C009DD78C /* neighborhood.mp3 */,
+				B196DFC424FCECFC009DD78C /* neither A nor B.mp3 */,
+				B196DD5E24FCD4C2009DD78C /* note.mp3 */,
+				B196DD5B24FCD4C2009DD78C /* obtain.mp3 */,
+				B196DE9524FCE15C009DD78C /* occasion.mp3 */,
+				B196DFAA24FCECF6009DD78C /* occasionally.mp3 */,
+				B196DD7A24FCD4C6009DD78C /* occure.mp3 */,
+				B11BDFD424F7FF490001251C /* offer.mp3 */,
+				B196DFDB24FCED01009DD78C /* on board.mp3 */,
+				B196DDBB24FCD778009DD78C /* operate.mp3 */,
+				B196DE2524FCE142009DD78C /* option.mp3 */,
+				B196DE8524FCE158009DD78C /* organization.mp3 */,
+				B196DDB724FCD778009DD78C /* organize.mp3 */,
+				B196DF4124FCE704009DD78C /* overall.mp3 */,
+				B196DF3224FCE701009DD78C /* overseas.mp3 */,
+				B196DE5424FCE14D009DD78C /* packaging.mp3 */,
+				B196DF4824FCE705009DD78C /* paid.mp3 */,
+				B196DDD324FCD77C009DD78C /* participate in.mp3 */,
+				B196DFA524FCECF6009DD78C /* particularly.mp3 */,
 				B18D7FFB248D325300C2EEC4 /* path.gif */,
+				B196DE6324FCE152009DD78C /* path.mp3 */,
+				B196DE0A24FCE13E009DD78C /* payment.mp3 */,
+				B196DFDA24FCED01009DD78C /* perhaps.mp3 */,
+				B196DF5924FCE709009DD78C /* permanent.mp3 */,
+				B196DE5924FCE14F009DD78C /* personnel.mp3 */,
+				B196DE9124FCE15B009DD78C /* policy.mp3 */,
+				B196DE6924FCE153009DD78C /* popularity.mp3 */,
+				B196DDC024FCD779009DD78C /* postpone.mp3 */,
+				B196DF5624FCE708009DD78C /* practical.mp3 */,
+				B196DDD624FCD77C009DD78C /* praise.mp3 */,
+				B196DDD924FCD77D009DD78C /* prefer A to B.mp3 */,
+				B196DE1824FCE140009DD78C /* preparation.mp3 */,
+				B196DDB824FCD778009DD78C /* preserve.mp3 */,
+				B196DF5724FCE709009DD78C /* previous.mp3 */,
+				B196DE2724FCE142009DD78C /* priority.mp3 */,
+				B196DE8124FCE157009DD78C /* procedure.mp3 */,
+				B196DD6924FCD4C4009DD78C /* proceed.mp3 */,
+				B196DE6224FCE151009DD78C /* process.mp3 */,
+				B196DE7A24FCE156009DD78C /* production.mp3 */,
+				B196DE6424FCE152009DD78C /* profit.mp3 */,
+				B196DF5C24FCE70A009DD78C /* promising.mp3 */,
+				B196DE7224FCE154009DD78C /* promotion.mp3 */,
+				B196DE1A24FCE140009DD78C /* proof.mp3 */,
+				B196DFC524FCECFC009DD78C /* properly.mp3 */,
+				B196DE6824FCE152009DD78C /* proposal.mp3 */,
+				B196DD6E24FCD4C4009DD78C /* prove.mp3 */,
+				B11BDFD724F7FF490001251C /* provide.mp3 */,
+				B196DDCC24FCD77B009DD78C /* publish.mp3 */,
+				B196DD6A24FCD4C4009DD78C /* purchase (1).mp3 */,
+				B196DE2124FCE142009DD78C /* quarter.mp3 */,
+				B11BDFB524F7FE510001251C /* raise.mp3 */,
+				B196DE0C24FCE13E009DD78C /* range.mp3 */,
+				B196DFB324FCECF8009DD78C /* rather.mp3 */,
+				B196DF5F24FCE70A009DD78C /* reasonable.mp3 */,
+				B196DFB224FCECF8009DD78C /* recently.mp3 */,
+				B196DD5C24FCD4C2009DD78C /* recognize.mp3 */,
+				B196DDC424FCD77A009DD78C /* recommend.mp3 */,
+				B196DE3B24FCE146009DD78C /* recommendation.mp3 */,
+				B196DDC724FCD77A009DD78C /* reduce.mp3 */,
+				B196DE2E24FCE143009DD78C /* reference.mp3 */,
+				B196DE8824FCE159009DD78C /* refund.mp3 */,
+				B196DDD524FCD77C009DD78C /* regard A as B.mp3 */,
+				B196DFCE24FCECFE009DD78C /* regarding A.mp3 */,
+				B196DE3424FCE144009DD78C /* region.mp3 */,
+				B196DD7724FCD4C5009DD78C /* register.mp3 */,
+				B196DDC924FCD77A009DD78C /* regret.mp3 */,
+				B196DFA624FCECF6009DD78C /* regularly.mp3 */,
+				B196DE7C24FCE156009DD78C /* regulation.mp3 */,
+				B196DF3E24FCE703009DD78C /* related.mp3 */,
+				B196E01E24FCEF3D009DD78C /* relatively.mp3 */,
+				B11BDFD524F7FF490001251C /* release.mp3 */,
+				B196DD7324FCD4C5009DD78C /* remind.mp3 */,
+				B11BDFB224F7FE500001251C /* remove.mp3 */,
+				B11BDFD824F7FF490001251C /* renew.mp3 */,
+				B196DD8024FCD4C6009DD78C /* repair (1).mp3 */,
+				B11BDFB724F7FE510001251C /* repair.mp3 */,
+				B196DE5324FCE14D009DD78C /* replacement.mp3 */,
+				B196DDBD24FCD779009DD78C /* represent.mp3 */,
+				B196DE2624FCE142009DD78C /* representative.mp3 */,
+				B196DE3C24FCE146009DD78C /* reputation.mp3 */,
+				B196DD7D24FCD4C6009DD78C /* require.mp3 */,
+				B196DDCE24FCD77B009DD78C /* reschedule.mp3 */,
+				B196DE6A24FCE153009DD78C /* research.mp3 */,
+				B196DD6B24FCD4C4009DD78C /* reserve.mp3 */,
+				B196DE9724FCE15C009DD78C /* resident.mp3 */,
+				B196DDD224FCD77C009DD78C /* resolve.mp3 */,
+				B196DE6D24FCE153009DD78C /* resource.mp3 */,
+				B196DE6C24FCE153009DD78C /* response.mp3 */,
+				B196DE8624FCE158009DD78C /* result.mp3 */,
+				B11BDFB924F7FE510001251C /* resume.mp3 */,
+				B196DDCA24FCD77B009DD78C /* retire.mp3 */,
+				B196DE3E24FCE146009DD78C /* reward.mp3 */,
+				B196DE8D24FCE15A009DD78C /* saving.mp3 */,
+				B196DD6C24FCD4C4009DD78C /* seek.mp3 */,
+				B196DFCB24FCECFD009DD78C /* seldom.mp3 */,
+				B196DD5A24FCD4C2009DD78C /* separate.mp3 */,
+				B196DF3A24FCE702009DD78C /* serious.mp3 */,
+				B196DDBE24FCD779009DD78C /* share A with B.mp3 */,
+				B196DD6D24FCD4C4009DD78C /* ship.mp3 */,
+				B196DFC324FCECFB009DD78C /* shortly.mp3 */,
+				B196DE3924FCE145009DD78C /* shuttle.mp3 */,
+				B196DF5A24FCE709009DD78C /* significant.mp3 */,
+				B196DFB024FCECF8009DD78C /* slightly.mp3 */,
+				B196DFB724FCECF9009DD78C /* somewhat.mp3 */,
+				B196DF4624FCE705009DD78C /* specific.mp3 */,
+				B11BDFD124F7FF480001251C /* state.mp3 */,
+				B196DE0D24FCE13E009DD78C /* stock-holder.mp3 */,
+				B196DE8E24FCE15A009DD78C /* strength.mp3 */,
+				B196DDD024FCD77B009DD78C /* stress.mp3 */,
+				B11BDFD224F7FF480001251C /* submit.mp3 */,
+				B196DF4724FCE705009DD78C /* successful.mp3 */,
+				B196DF4A24FCE705009DD78C /* sufficient.mp3 */,
+				B196DE4D24FCE14B009DD78C /* suggestion.mp3 */,
+				B196DF4224FCE704009DD78C /* suitable.mp3 */,
+				B196DE2F24FCE144009DD78C /* survey.mp3 */,
+				B196DF3324FCE701009DD78C /* temporary.mp3 */,
+				B196DE1324FCE13F009DD78C /* tips.mp3 */,
+				B196DE4F24FCE14C009DD78C /* trade.mp3 */,
+				B196DF3424FCE701009DD78C /* traditional.mp3 */,
+				B196DE3024FCE144009DD78C /* transportation.mp3 */,
+				B196DFBC24FCECFA009DD78C /* unfortunately.mp3 */,
+				B196DF4B24FCE706009DD78C /* unique.mp3 */,
+				B196DFD324FCECFF009DD78C /* unlike.mp3 */,
+				B196DF3624FCE702009DD78C /* upcoming.mp3 */,
+				B196DF4524FCE705009DD78C /* valuable.mp3 */,
+				B196DF6224FCE70B009DD78C /* various.mp3 */,
+				B196DE2824FCE143009DD78C /* vehicle.mp3 */,
+				B196DD6F24FCD4C4009DD78C /* vote.mp3 */,
+				B196DE7324FCE155009DD78C /* warehouse.mp3 */,
+				B196DE4324FCE147009DD78C /* warranty.mp3 */,
+				B196DFA824FCECF6009DD78C /* with ease.mp3 */,
+				B196DFD524FCED00009DD78C /* without A.mp3 */,
 			);
 			path = GifMp3;
 			sourceTree = "<group>";
@@ -263,6 +1319,16 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		B196DD5724FCD098009DD78C /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				B196DD5124FCB478009DD78C /* WhichReviewViewController.swift */,
+				B196DD5324FCB548009DD78C /* ReviewRangeViewController.swift */,
+				B196DD5524FCB665009DD78C /* ReviewViewController.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
 		B1A4CE272472F4F3009F361F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +1345,7 @@
 			children = (
 				B173337D24E12AC400B6CC39 /* Manabu */,
 				B173337E24E12B4A00B6CC39 /* Test */,
+				B196DD5724FCD098009DD78C /* Review */,
 				B122FFC8248CF23600D5450B /* ModeSelectViewController.swift */,
 				B13A0157248FE5F200EC6EED /* RegisterViewController.swift */,
 				B13A0159248FE60000EC6EED /* LoginViewController.swift */,
@@ -286,9 +1353,6 @@
 				B1967DF624DD769B007EB7D0 /* IntroScrollViewController.swift */,
 				B15DB49C24E039D100A14C11 /* ResultTLViewController.swift */,
 				B13638B824E296370089ED95 /* SetsumeiViewController.swift */,
-				B196DD5124FCB478009DD78C /* WhichReviewViewController.swift */,
-				B196DD5324FCB548009DD78C /* ReviewRangeViewController.swift */,
-				B196DD5524FCB665009DD78C /* ReviewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -419,60 +1483,412 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B196DFEC24FCED02009DD78C /* recently.mp3 in Resources */,
+				B196DE0124FCD77D009DD78C /* regard A as B.mp3 in Resources */,
+				B196DFEB24FCED02009DD78C /* hardly.mp3 in Resources */,
+				B196E01D24FCEEA2009DD78C /* be committed to A.mp3 in Resources */,
+				B196DEE924FCE15D009DD78C /* personnel.mp3 in Resources */,
+				B196DF7024FCE70C009DD78C /* overseas.mp3 in Resources */,
 				B11BDFC724F7FE520001251C /* agree.mp3 in Resources */,
+				B196DFE824FCED02009DD78C /* likely.mp3 in Resources */,
+				B196DD8B24FCD4C7009DD78C /* inquire.mp3 in Resources */,
+				B196DEAE24FCE15D009DD78C /* content.mp3 in Resources */,
+				B196DEB624FCE15D009DD78C /* representative.mp3 in Resources */,
+				B196DF1224FCE15D009DD78C /* merchandise.mp3 in Resources */,
+				B196DF2624FCE15D009DD78C /* neighborhood.mp3 in Resources */,
+				B196DEFC24FCE15D009DD78C /* response.mp3 in Resources */,
+				B196DFFB24FCED02009DD78C /* behind the wheel.mp3 in Resources */,
+				B196DF9524FCE70C009DD78C /* previous.mp3 in Resources */,
+				B196DF1624FCE15D009DD78C /* result.mp3 in Resources */,
+				B196DF1F24FCE15D009DD78C /* facility.mp3 in Resources */,
+				B196DDA324FCD4C7009DD78C /* attend.mp3 in Resources */,
+				B196DEFA24FCE15D009DD78C /* research.mp3 in Resources */,
 				B11BDFDC24F7FF490001251C /* mail.mp3 in Resources */,
+				B196E00924FCED02009DD78C /* absolutely.mp3 in Resources */,
+				B196DD9024FCD4C7009DD78C /* fund.mp3 in Resources */,
+				B196DF8E24FCE70C009DD78C /* efficient.mp3 in Resources */,
+				B196E00324FCED02009DD78C /* be eager to V.mp3 in Resources */,
 				B17FD11A2462A7F200F13729 /* accept.mp3 in Resources */,
 				B11BDFBF24F7FE520001251C /* remove.mp3 in Resources */,
+				B196DEA224FCE15D009DD78C /* import.mp3 in Resources */,
+				B196DDFF24FCD77D009DD78C /* participate in.mp3 in Resources */,
+				B196E01524FCED02009DD78C /* on board.mp3 in Resources */,
+				B196DEAC24FCE15D009DD78C /* factor.mp3 in Resources */,
+				B196DF2724FCE15D009DD78C /* resident.mp3 in Resources */,
+				B196DEA624FCE15D009DD78C /* admission.mp3 in Resources */,
+				B196DEE624FCE15D009DD78C /* invitation.mp3 in Resources */,
+				B196DE9E24FCE15D009DD78C /* claim.mp3 in Resources */,
 				B1BE99B32461D190005766A6 /* LaunchScreen.storyboard in Resources */,
+				B196DF7C24FCE70C009DD78C /* related.mp3 in Resources */,
+				B196DF1924FCE15D009DD78C /* branch.mp3 in Resources */,
+				B196DDEF24FCD77D009DD78C /* can afford to V.mp3 in Resources */,
+				B196DDA424FCD4C7009DD78C /* fit.mp3 in Resources */,
+				B196DEDA24FCE15D009DD78C /* detail.mp3 in Resources */,
+				B196DF9924FCE70C009DD78C /* complicated.mp3 in Resources */,
+				B196DF7324FCE70C009DD78C /* mechanical.mp3 in Resources */,
+				B196DDE724FCD77D009DD78C /* operate.mp3 in Resources */,
+				B196E00224FCED02009DD78C /* besides.mp3 in Resources */,
+				B196DEE424FCE15D009DD78C /* packaging.mp3 in Resources */,
+				B196DF6F24FCE70C009DD78C /* exact.mp3 in Resources */,
+				B196DDEA24FCD77D009DD78C /* share A with B.mp3 in Resources */,
 				B1967E0024DD7EA1007EB7D0 /* dog.json in Resources */,
+				B196DF7924FCE70C009DD78C /* helpful.mp3 in Resources */,
+				B196E01C24FCEEA2009DD78C /* be satisfied with A.mp3 in Resources */,
+				B196DEC524FCE15D009DD78C /* expense.mp3 in Resources */,
+				B196DDDF24FCD77D009DD78C /* introduce.mp3 in Resources */,
+				B196DECE24FCE15D009DD78C /* reward.mp3 in Resources */,
 				B1BE99B02461D190005766A6 /* Assets.xcassets in Resources */,
+				B196DF1824FCE15D009DD78C /* refund.mp3 in Resources */,
+				B196DEAD24FCE15D009DD78C /* celebration.mp3 in Resources */,
+				B196DDA624FCD4C7009DD78C /* expect.mp3 in Resources */,
+				B196DF7624FCE70C009DD78C /* intended.mp3 in Resources */,
+				B196DDDA24FCD77D009DD78C /* impress.mp3 in Resources */,
+				B196DD8524FCD4C7009DD78C /* separate.mp3 in Resources */,
+				B196DDAD24FCD4C7009DD78C /* confirm (1).mp3 in Resources */,
+				B196DEBA24FCE15D009DD78C /* environment.mp3 in Resources */,
+				B196DFF324FCED02009DD78C /* alike.mp3 in Resources */,
+				B196DFFD24FCED02009DD78C /* shortly.mp3 in Resources */,
 				B17FD10E246298C700F13729 /* expand.mp3 in Resources */,
+				B196DD8724FCD4C7009DD78C /* recognize.mp3 in Resources */,
+				B196DEF924FCE15D009DD78C /* popularity.mp3 in Resources */,
+				B196DEE524FCE15D009DD78C /* income.mp3 in Resources */,
+				B196DFFA24FCED02009DD78C /* in a different setting.mp3 in Resources */,
+				B196DEAF24FCE15D009DD78C /* discount.mp3 in Resources */,
+				B196DDAA24FCD4C7009DD78C /* affect.mp3 in Resources */,
+				B196DF0124FCE15D009DD78C /* equipment.mp3 in Resources */,
+				B196DDEB24FCD77D009DD78C /* guarantee.mp3 in Resources */,
+				B196DF9A24FCE70C009DD78C /* promising.mp3 in Resources */,
+				B196DED124FCE15D009DD78C /* connection.mp3 in Resources */,
+				B196DF7F24FCE70C009DD78C /* overall.mp3 in Resources */,
+				B196DF8824FCE70C009DD78C /* sufficient.mp3 in Resources */,
+				B196DD8E24FCD4C7009DD78C /* hesitate.mp3 in Resources */,
+				B196DD8824FCD4C7009DD78C /* delay.mp3 in Resources */,
+				B196DD8624FCD4C7009DD78C /* obtain.mp3 in Resources */,
 				B12D764D2490004C00D2D760 /* loading.json in Resources */,
+				B196DDE924FCD77D009DD78C /* represent.mp3 in Resources */,
+				B196DF1324FCE15D009DD78C /* employee.mp3 in Resources */,
+				B196E00A24FCED02009DD78C /* guided tour.mp3 in Resources */,
+				B196DD9524FCD4C7009DD78C /* purchase (1).mp3 in Resources */,
+				B196E00F24FCED02009DD78C /* without A.mp3 in Resources */,
 				B11BDFE224F7FF490001251C /* offer.mp3 in Resources */,
+				B196DEB024FCE15D009DD78C /* budget.mp3 in Resources */,
 				B11BDFC924F7FE520001251C /* confirm.mp3 in Resources */,
+				B196DF7524FCE70C009DD78C /* experienced.mp3 in Resources */,
+				B196DFFC24FCED02009DD78C /* hence.mp3 in Resources */,
+				B196DFE724FCED02009DD78C /* according to.mp3 in Resources */,
+				B196DFDE24FCED02009DD78C /* due to A.mp3 in Resources */,
+				B196DDE324FCD77D009DD78C /* organize.mp3 in Resources */,
+				B196DF9424FCE70C009DD78C /* practical.mp3 in Resources */,
+				B196DFF424FCED02009DD78C /* almost.mp3 in Resources */,
 				B14110132473ED7600336F40 /* accept.gif in Resources */,
 				B1D0E5B324F5545800FB2CDA /* GoogleService-Info.plist in Resources */,
+				B196DEC624FCE15D009DD78C /* atmosphere.mp3 in Resources */,
+				B196DD9224FCD4C7009DD78C /* charge.mp3 in Resources */,
+				B196E00424FCED02009DD78C /* loyal customer.mp3 in Resources */,
+				B196DEB224FCE15D009DD78C /* background.mp3 in Resources */,
+				B196DF1B24FCE15D009DD78C /* crop.mp3 in Resources */,
+				B196DF2424FCE15D009DD78C /* estimate.mp3 in Resources */,
+				B196DE9D24FCE15D009DD78C /* stock-holder.mp3 in Resources */,
+				B196DF0D24FCE15D009DD78C /* donation.mp3 in Resources */,
 				B11BDFE024F7FF490001251C /* submit.mp3 in Resources */,
+				B196DDE624FCD77D009DD78C /* found.mp3 in Resources */,
+				B196DF9D24FCE70C009DD78C /* reasonable.mp3 in Resources */,
+				B196DFA024FCE70C009DD78C /* various.mp3 in Resources */,
 				B11BDFE524F7FF490001251C /* provide.mp3 in Resources */,
+				B196DEE024FCE15D009DD78C /* confident.mp3 in Resources */,
+				B196DED824FCE15D009DD78C /* bill.mp3 in Resources */,
+				B196DEFE24FCE15D009DD78C /* author.mp3 in Resources */,
+				B196DF7D24FCE70C009DD78C /* favorable.mp3 in Resources */,
+				B196DF9824FCE70C009DD78C /* significant.mp3 in Resources */,
+				B196DF6924FCE70C009DD78C /* brief.mp3 in Resources */,
+				B196DFE624FCED02009DD78C /* be willing to V.mp3 in Resources */,
+				B196DF8524FCE70C009DD78C /* successful.mp3 in Resources */,
 				B11BDFC624F7FE520001251C /* resume.mp3 in Resources */,
+				B196DEB924FCE15D009DD78C /* conference.mp3 in Resources */,
+				B196DDA924FCD4C7009DD78C /* determine.mp3 in Resources */,
+				B196DFFE24FCED02009DD78C /* neither A nor B.mp3 in Resources */,
+				B196E00724FCED02009DD78C /* latter.mp3 in Resources */,
+				B196DEB424FCE15D009DD78C /* industory.mp3 in Resources */,
+				B196DD8424FCD4C7009DD78C /* explore.mp3 in Resources */,
+				B196DE0524FCD77D009DD78C /* prefer A to B.mp3 in Resources */,
+				B196DD9724FCD4C7009DD78C /* seek.mp3 in Resources */,
+				B196DF8224FCE70C009DD78C /* accurate.mp3 in Resources */,
+				B196DEE224FCE15D009DD78C /* cooperation.mp3 in Resources */,
+				B196DF1524FCE15D009DD78C /* organization.mp3 in Resources */,
 				B11BDFBE24F7FE520001251C /* locate.mp3 in Resources */,
+				B196DF8724FCE70C009DD78C /* corporate.mp3 in Resources */,
+				B196DD9C24FCD4C7009DD78C /* attract.mp3 in Resources */,
+				B196DED224FCE15D009DD78C /* duty.mp3 in Resources */,
+				B196DFF924FCED02009DD78C /* nearly.mp3 in Resources */,
+				B196DEA424FCE15D009DD78C /* district.mp3 in Resources */,
+				B196DDF524FCD77D009DD78C /* regret.mp3 in Resources */,
+				B196DDE424FCD77D009DD78C /* preserve.mp3 in Resources */,
+				B196DEF524FCE15D009DD78C /* fee.mp3 in Resources */,
+				B196DF1424FCE15D009DD78C /* method.mp3 in Resources */,
+				B196DEC424FCE15D009DD78C /* region.mp3 in Resources */,
+				B196DEFD24FCE15D009DD78C /* resource.mp3 in Resources */,
+				B196DDF024FCD77D009DD78C /* recommend.mp3 in Resources */,
+				B196DEA724FCE15D009DD78C /* institution.mp3 in Resources */,
 				B11BDFE324F7FF490001251C /* release.mp3 in Resources */,
+				B196DEA324FCE15D009DD78C /* tips.mp3 in Resources */,
+				B196DECC24FCE15D009DD78C /* reputation.mp3 in Resources */,
 				B11BDFC324F7FE520001251C /* include.mp3 in Resources */,
+				B196DFE924FCED02009DD78C /* currently.mp3 in Resources */,
+				B196DE0424FCD77D009DD78C /* allow A to V.mp3 in Resources */,
+				B196DF7224FCE70C009DD78C /* traditional.mp3 in Resources */,
 				B1967E0424DD866F007EB7D0 /* hang.json in Resources */,
+				B196DFF024FCED02009DD78C /* approximately.mp3 in Resources */,
+				B196DD8C24FCD4C7009DD78C /* avoid.mp3 in Resources */,
+				B196DEAB24FCE15D009DD78C /* membership.mp3 in Resources */,
+				B196DF0E24FCE15D009DD78C /* insurance premium.mp3 in Resources */,
+				B196DE0024FCD77D009DD78C /* advise.mp3 in Resources */,
 				B11BDFC024F7FE520001251C /* emphasize.mp3 in Resources */,
+				B196DF8F24FCE70C009DD78C /* available.mp3 in Resources */,
+				B196DFF524FCED02009DD78C /* both A and B.mp3 in Resources */,
+				B196DEEA24FCE15D009DD78C /* delivery.mp3 in Resources */,
+				B196DDFD24FCD77D009DD78C /* apologize.mp3 in Resources */,
+				B196E00524FCED02009DD78C /* seldom.mp3 in Resources */,
 				B1BE99AE2461D18F005766A6 /* Main.storyboard in Resources */,
+				B196DEF124FCE15D009DD78C /* labour.mp3 in Resources */,
+				B196DEE124FCE15D009DD78C /* instruction.mp3 in Resources */,
+				B196DED724FCE15D009DD78C /* job opening.mp3 in Resources */,
 				B1E5EDFB24E19C8A0067B91C /* fuseikai.mp3 in Resources */,
 				B11BDFB024F79FA70001251C /* increase.mp3 in Resources */,
+				B196DEFB24FCE15D009DD78C /* mayor.mp3 in Resources */,
+				B196DEC924FCE15D009DD78C /* shuttle.mp3 in Resources */,
+				B196DEC224FCE15D009DD78C /* balance.mp3 in Resources */,
 				B1D4C9D62487EBDC00F08EA4 /* agree.gif in Resources */,
+				B196DF2524FCE15D009DD78C /* occasion.mp3 in Resources */,
+				B196DEF624FCE15D009DD78C /* council.mp3 in Resources */,
 				B1967DFE24DD7EA1007EB7D0 /* dancing.json in Resources */,
+				B196DD9A24FCD4C7009DD78C /* vote.mp3 in Resources */,
 				B18D7FFC248D325300C2EEC4 /* path.gif in Resources */,
 				B11BDFDA24F7FF490001251C /* establish.mp3 in Resources */,
+				B196DD9B24FCD4C7009DD78C /* assure.mp3 in Resources */,
+				B196DFF124FCED02009DD78C /* somewhat.mp3 in Resources */,
+				B196DEF824FCE15D009DD78C /* proposal.mp3 in Resources */,
 				B11BDFE624F7FF490001251C /* renew.mp3 in Resources */,
+				B196DFFF24FCED02009DD78C /* properly.mp3 in Resources */,
+				B196DDAC24FCD4C7009DD78C /* demand.mp3 in Resources */,
+				B196DDE224FCD77D009DD78C /* mention.mp3 in Resources */,
+				B196DF8C24FCE70C009DD78C /* agricultural.mp3 in Resources */,
+				B196DEC124FCE15D009DD78C /* department.mp3 in Resources */,
+				B196DFE424FCED02009DD78C /* occasionally.mp3 in Resources */,
+				B196DDF824FCD77D009DD78C /* publish.mp3 in Resources */,
+				B196DEA124FCE15D009DD78C /* construction.mp3 in Resources */,
+				B196DF7A24FCE70C009DD78C /* comfortable.mp3 in Resources */,
+				B196DEB724FCE15D009DD78C /* priority.mp3 in Resources */,
+				B196E00D24FCED02009DD78C /* unlike.mp3 in Resources */,
+				B196DFEA24FCED02009DD78C /* slightly.mp3 in Resources */,
+				B196DFF224FCED02009DD78C /* afterwards.mp3 in Resources */,
+				B196E00824FCED02009DD78C /* regarding A.mp3 in Resources */,
 				B11BDFDF24F7FF490001251C /* state.mp3 in Resources */,
+				B196DF7424FCE70C009DD78C /* upcoming.mp3 in Resources */,
+				B196E01724FCED02009DD78C /* immediately.mp3 in Resources */,
+				B196DDF924FCD77D009DD78C /* appreciate.mp3 in Resources */,
 				B17FD110246299F000F13729 /* expand.gif in Resources */,
+				B196DFA124FCE70C009DD78C /* economic.mp3 in Resources */,
 				B1967DFF24DD7EA1007EB7D0 /* fall.json in Resources */,
+				B196DEBD24FCE15D009DD78C /* cafeteria.mp3 in Resources */,
+				B196DF0B24FCE15D009DD78C /* component.mp3 in Resources */,
+				B196DD9324FCD4C7009DD78C /* dispatch.mp3 in Resources */,
+				B196DD9F24FCD4C7009DD78C /* announce.mp3 in Resources */,
+				B196DF0524FCE15D009DD78C /* award.mp3 in Resources */,
+				B196DEF724FCE15D009DD78C /* complaint.mp3 in Resources */,
 				B11BDFD924F7FF490001251C /* convey.mp3 in Resources */,
+				B196DD8F24FCD4C7009DD78C /* gain.mp3 in Resources */,
+				B196E01324FCED02009DD78C /* be unable to V.mp3 in Resources */,
+				B196DEBE24FCE15D009DD78C /* reference.mp3 in Resources */,
 				B1E5EDF924E1984E0067B91C /* seikai.mp3 in Resources */,
+				B196DDE024FCD77D009DD78C /* complain.mp3 in Resources */,
+				B196DF1724FCE15D009DD78C /* management.mp3 in Resources */,
+				B196DF2224FCE15D009DD78C /* ability.mp3 in Resources */,
 				B1967E0124DD7EA1007EB7D0 /* summer.json in Resources */,
+				B196DEF024FCE15D009DD78C /* impact.mp3 in Resources */,
 				B11BDFDE24F7FF490001251C /* consider.mp3 in Resources */,
+				B196DFE524FCED02009DD78C /* every other week.mp3 in Resources */,
+				B196DEA024FCE15D009DD78C /* figure.mp3 in Resources */,
+				B196DDF424FCD77D009DD78C /* compete.mp3 in Resources */,
 				B11BDFDD24F7FF490001251C /* enhance.mp3 in Resources */,
+				B196DEC024FCE15D009DD78C /* transportation.mp3 in Resources */,
+				B196DED924FCE15D009DD78C /* flyer.mp3 in Resources */,
+				B196DE9924FCE15D009DD78C /* display (1).mp3 in Resources */,
+				B196DD8D24FCD4C7009DD78C /* develop.mp3 in Resources */,
+				B196DDF224FCD77D009DD78C /* enclose.mp3 in Resources */,
+				B196DEDE24FCE15D009DD78C /* arrival.mp3 in Resources */,
+				B196DDDC24FCD77D009DD78C /* cause.mp3 in Resources */,
+				B196DF8B24FCE70C009DD78C /* full-time.mp3 in Resources */,
+				B196DF0624FCE15D009DD78C /* constract.mp3 in Resources */,
+				B196DF9224FCE70C009DD78C /* local.mp3 in Resources */,
+				B196DEA924FCE15D009DD78C /* clothing.mp3 in Resources */,
 				B1967E0624DD875B007EB7D0 /* cat.json in Resources */,
+				B196DF6624FCE70C009DD78C /* modern.mp3 in Resources */,
 				B122FFC5248CEDB900D5450B /* correctSound.mp3 in Resources */,
+				B196DF8624FCE70C009DD78C /* paid.mp3 in Resources */,
+				B196DEC824FCE15D009DD78C /* exhibition.mp3 in Resources */,
+				B196DEE724FCE15D009DD78C /* capacity.mp3 in Resources */,
+				B196E01224FCED02009DD78C /* anyway.mp3 in Resources */,
+				B196DFDF24FCED02009DD78C /* particularly.mp3 in Resources */,
+				B196DF9124FCE70C009DD78C /* commercial.mp3 in Resources */,
+				B196DF6C24FCE70C009DD78C /* amazing.mp3 in Resources */,
+				B196DDDD24FCD77D009DD78C /* finalize.mp3 in Resources */,
+				B196DEE824FCE15D009DD78C /* comparison.mp3 in Resources */,
+				B196DF9024FCE70C009DD78C /* financial.mp3 in Resources */,
+				B196E00C24FCED02009DD78C /* highly.mp3 in Resources */,
+				B196DDF724FCD77D009DD78C /* appoint.mp3 in Resources */,
+				B196DF6B24FCE70C009DD78C /* initial.mp3 in Resources */,
+				B196E01624FCED02009DD78C /* in spite of A.mp3 in Resources */,
+				B196DD9E24FCD4C7009DD78C /* remind.mp3 in Resources */,
 				B14110192473EF7900336F40 /* move.gif in Resources */,
+				B196DD9D24FCD4C7009DD78C /* achieve.mp3 in Resources */,
+				B196DF9E24FCE70C009DD78C /* informal.mp3 in Resources */,
+				B196DF0024FCE15D009DD78C /* contract.mp3 in Resources */,
+				B196DF8D24FCE70C009DD78C /* leading.mp3 in Resources */,
+				B196DF2124FCE15D009DD78C /* policy.mp3 in Resources */,
+				B196DF9C24FCE70C009DD78C /* legal.mp3 in Resources */,
+				B196DF7124FCE70C009DD78C /* temporary.mp3 in Resources */,
+				B196DF2024FCE15D009DD78C /* landscaping.mp3 in Resources */,
+				B196DDA124FCD4C7009DD78C /* launch.mp3 in Resources */,
+				B196DFA324FCE70C009DD78C /* latest.mp3 in Resources */,
+				B196DE9A24FCE15D009DD78C /* payment.mp3 in Resources */,
+				B196DDEC24FCD77D009DD78C /* postpone.mp3 in Resources */,
+				B196DFE224FCED02009DD78C /* with ease.mp3 in Resources */,
+				B196DF1C24FCE15D009DD78C /* decade.mp3 in Resources */,
+				B196DF1024FCE15D009DD78C /* agency.mp3 in Resources */,
+				B196DD8924FCD4C7009DD78C /* note.mp3 in Resources */,
+				B196DF0424FCE15D009DD78C /* deadline.mp3 in Resources */,
+				B196DF7E24FCE70C009DD78C /* generous.mp3 in Resources */,
+				B196DDFC24FCD77D009DD78C /* stress.mp3 in Resources */,
+				B196DDFB24FCD77D009DD78C /* deserve.mp3 in Resources */,
+				B196DF0F24FCE15D009DD78C /* agreement.mp3 in Resources */,
+				B196DEF324FCE15D009DD78C /* path.mp3 in Resources */,
 				B122FFC7248CEDBD00D5450B /* incorrectSound.mp3 in Resources */,
+				B196DDEE24FCD77D009DD78C /* contain.mp3 in Resources */,
+				B196E01024FCED02009DD78C /* be aware of A.mp3 in Resources */,
+				B196DEDD24FCE15D009DD78C /* suggestion.mp3 in Resources */,
+				B196DF9B24FCE70C009DD78C /* alternative.mp3 in Resources */,
+				B196DFA224FCE70C009DD78C /* correct.mp3 in Resources */,
+				B196DEB824FCE15D009DD78C /* vehicle.mp3 in Resources */,
+				B196DEFF24FCE15D009DD78C /* firm.mp3 in Resources */,
+				B196DF7824FCE70C009DD78C /* serious.mp3 in Resources */,
+				B196DDA524FCD4C7009DD78C /* occure.mp3 in Resources */,
 				B11BDFC824F7FE520001251C /* eliminate.mp3 in Resources */,
+				B196DD8A24FCD4C7009DD78C /* create.mp3 in Resources */,
+				B196DDA724FCD4C7009DD78C /* improve.mp3 in Resources */,
+				B196DEEB24FCE15D009DD78C /* automobile.mp3 in Resources */,
+				B196DF9F24FCE70C009DD78C /* ideal.mp3 in Resources */,
+				B196DDA024FCD4C7009DD78C /* conduct.mp3 in Resources */,
 				B11BDFDB24F7FF490001251C /* appear.mp3 in Resources */,
+				B196DF6824FCE70C009DD78C /* familiar.mp3 in Resources */,
+				B196DDE524FCD77D009DD78C /* arrange.mp3 in Resources */,
 				B11BDFC424F7FE520001251C /* repair.mp3 in Resources */,
+				B196DEBB24FCE15D009DD78C /* executive.mp3 in Resources */,
+				B196DD9424FCD4C7009DD78C /* proceed.mp3 in Resources */,
+				B196DED524FCE15D009DD78C /* anniversary.mp3 in Resources */,
+				B196DF9624FCE70C009DD78C /* effective.mp3 in Resources */,
+				B196DE0324FCD77D009DD78C /* divide into A.mp3 in Resources */,
+				B196DDDB24FCD77D009DD78C /* imply.mp3 in Resources */,
+				B196DE9C24FCE15D009DD78C /* range.mp3 in Resources */,
+				B196DF8124FCE70C009DD78C /* downtown.mp3 in Resources */,
+				B196DF6724FCE70C009DD78C /* necessary.mp3 in Resources */,
 				B11BDFC524F7FE520001251C /* attach.mp3 in Resources */,
+				B196DF8324FCE70C009DD78C /* valuable.mp3 in Resources */,
+				B196DEC324FCE15D009DD78C /* host.mp3 in Resources */,
+				B196DF0224FCE15D009DD78C /* promotion.mp3 in Resources */,
+				B196DF6A24FCE70C009DD78C /* involved.mp3 in Resources */,
+				B196DED324FCE15D009DD78C /* warranty.mp3 in Resources */,
+				B196DF7724FCE70C009DD78C /* existing.mp3 in Resources */,
+				B196DEA824FCE15D009DD78C /* preparation.mp3 in Resources */,
+				B196DFF824FCED02009DD78C /* each.mp3 in Resources */,
+				B196DF8A24FCE70C009DD78C /* crowded.mp3 in Resources */,
+				B196DED624FCE15D009DD78C /* editor.mp3 in Resources */,
+				B196DF0C24FCE15D009DD78C /* regulation.mp3 in Resources */,
+				B196DECA24FCE15D009DD78C /* manufacture.mp3 in Resources */,
 				B17FD10C246298C100F13729 /* move.mp3 in Resources */,
 				B11BDFC224F7FE520001251C /* raise.mp3 in Resources */,
+				B196DEED24FCE15D009DD78C /* aspect.mp3 in Resources */,
+				B196DDF124FCD77D009DD78C /* broadcast.mp3 in Resources */,
+				B196DD9124FCD4C7009DD78C /* consult.mp3 in Resources */,
+				B196DDE824FCD77D009DD78C /* display.mp3 in Resources */,
+				B196E00024FCED02009DD78C /* frequently.mp3 in Resources */,
+				B196DED424FCE15D009DD78C /* client.mp3 in Resources */,
+				B196E00624FCED02009DD78C /* following A.mp3 in Resources */,
+				B196E00B24FCED02009DD78C /* gradually.mp3 in Resources */,
+				B196DFF724FCED02009DD78C /* in cash.mp3 in Resources */,
+				B196DEDF24FCE15D009DD78C /* trade.mp3 in Resources */,
+				B196DEC724FCE15D009DD78C /* findings.mp3 in Resources */,
+				B196E01424FCED02009DD78C /* perhaps.mp3 in Resources */,
+				B196DE9B24FCE15D009DD78C /* luggage.mp3 in Resources */,
+				B196DF8924FCE70C009DD78C /* unique.mp3 in Resources */,
+				B196DECF24FCE15D009DD78C /* individual.mp3 in Resources */,
+				B196DFE024FCED02009DD78C /* regularly.mp3 in Resources */,
 				B1D4C9D72487EBDC00F08EA4 /* increase.gif in Resources */,
+				B196DEB124FCE15D009DD78C /* quarter.mp3 in Resources */,
+				B196DDAB24FCD4C7009DD78C /* repair (1).mp3 in Resources */,
+				B196DFE124FCED02009DD78C /* be pleased with A.mp3 in Resources */,
+				B196DF0824FCE15D009DD78C /* destination.mp3 in Resources */,
+				B196DEAA24FCE15D009DD78C /* proof.mp3 in Resources */,
+				B196E01F24FCEF3D009DD78C /* relatively.mp3 in Resources */,
+				B196DDA224FCD4C7009DD78C /* register.mp3 in Resources */,
+				B196DF0A24FCE15D009DD78C /* production.mp3 in Resources */,
 				B11BDFCA24F7FE520001251C /* earn.mp3 in Resources */,
+				B196DEDC24FCE15D009DD78C /* exhibit.mp3 in Resources */,
+				B196DF9724FCE70C009DD78C /* permanent.mp3 in Resources */,
+				B196DF9324FCE70C009DD78C /* limited.mp3 in Resources */,
+				B196DEE324FCE15D009DD78C /* replacement.mp3 in Resources */,
+				B196DE9F24FCE15D009DD78C /* deposit.mp3 in Resources */,
+				B196DF8024FCE70C009DD78C /* suitable.mp3 in Resources */,
+				B196DF1D24FCE15D009DD78C /* saving.mp3 in Resources */,
+				B196DE0224FCD77D009DD78C /* praise.mp3 in Resources */,
+				B196DFEE24FCED02009DD78C /* fairly.mp3 in Resources */,
+				B196DDA824FCD4C7009DD78C /* require.mp3 in Resources */,
 				B11BDFC124F7FE520001251C /* distribute.mp3 in Resources */,
+				B196DEEE24FCE15D009DD78C /* basis.mp3 in Resources */,
+				B196DDFE24FCD77D009DD78C /* resolve.mp3 in Resources */,
+				B196DEF424FCE15D009DD78C /* profit.mp3 in Resources */,
+				B196DD8324FCD4C7009DD78C /* inform.mp3 in Resources */,
+				B196DF1A24FCE15D009DD78C /* function.mp3 in Resources */,
+				B196DF0724FCE15D009DD78C /* advertisement.mp3 in Resources */,
+				B196DEF224FCE15D009DD78C /* process.mp3 in Resources */,
+				B196DF1124FCE15D009DD78C /* procedure.mp3 in Resources */,
+				B196E01924FCEDAE009DD78C /* be responsible of A.mp3 in Resources */,
+				B196DF1E24FCE15D009DD78C /* strength.mp3 in Resources */,
+				B196DF7B24FCE70C009DD78C /* confident (1).mp3 in Resources */,
+				B196DED024FCE15D009DD78C /* departure.mp3 in Resources */,
+				B196DD9624FCD4C7009DD78C /* reserve.mp3 in Resources */,
+				B196DEEF24FCE15D009DD78C /* complex.mp3 in Resources */,
+				B196DEB324FCE15D009DD78C /* document.mp3 in Resources */,
+				B196DFEF24FCED02009DD78C /* eventually.mp3 in Resources */,
 				B1E5EDF824E1984E0067B91C /* cat.mp3 in Resources */,
+				B196DF6E24FCE70C009DD78C /* advance.mp3 in Resources */,
+				B196DEBF24FCE15D009DD78C /* survey.mp3 in Resources */,
+				B196DDF324FCD77D009DD78C /* reduce.mp3 in Resources */,
+				B196DDFA24FCD77D009DD78C /* reschedule.mp3 in Resources */,
+				B196DDED24FCD77D009DD78C /* direct.mp3 in Resources */,
+				B196DEBC24FCE15D009DD78C /* headquarters.mp3 in Resources */,
+				B196DF0324FCE15D009DD78C /* warehouse.mp3 in Resources */,
+				B196DEEC24FCE15D009DD78C /* applicant.mp3 in Resources */,
+				B196DF2324FCE15D009DD78C /* contrast.mp3 in Resources */,
 				B1D4C9D52487EBDC00F08EA4 /* locate.gif in Resources */,
+				B196DECB24FCE15D009DD78C /* recommendation.mp3 in Resources */,
+				B196DFED24FCED02009DD78C /* rather.mp3 in Resources */,
 				B11BDFE424F7FF490001251C /* hire.mp3 in Resources */,
+				B196DDDE24FCD77D009DD78C /* approve.mp3 in Resources */,
+				B196DEA524FCE15D009DD78C /* application.mp3 in Resources */,
+				B196DEB524FCE15D009DD78C /* option.mp3 in Resources */,
+				B196DF0924FCE15D009DD78C /* crew.mp3 in Resources */,
+				B196DF6D24FCE70C009DD78C /* former.mp3 in Resources */,
+				B196DD9824FCD4C7009DD78C /* ship.mp3 in Resources */,
+				B196DFF624FCED02009DD78C /* unfortunately.mp3 in Resources */,
+				B196DF8424FCE70C009DD78C /* specific.mp3 in Resources */,
+				B196E00124FCED02009DD78C /* equally.mp3 in Resources */,
+				B196DEDB24FCE15D009DD78C /* concern.mp3 in Resources */,
 				B11BDFE124F7FF490001251C /* analyse.mp3 in Resources */,
+				B196DDE124FCD77D009DD78C /* maintain.mp3 in Resources */,
+				B196DE9824FCE15D009DD78C /* brochure.mp3 in Resources */,
+				B196DD9924FCD4C7009DD78C /* prove.mp3 in Resources */,
+				B196DECD24FCE15D009DD78C /* fuel.mp3 in Resources */,
+				B196DDF624FCD77D009DD78C /* retire.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
