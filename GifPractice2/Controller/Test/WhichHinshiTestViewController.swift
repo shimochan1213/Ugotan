@@ -83,9 +83,9 @@ class WhichHinshiTestViewController: UIViewController,UITableViewDelegate,UITabl
         //         let animation = [AnimationType.zoom(scale: 50)]
         
 //        let animation = [AnimationType.rotate(angle: CGFloat.pi/6)]
-        let animation = [AnimationType.random()]
+//        let animation = [AnimationType.random()]
         tableView.reloadData()
-        UIView.animate(views: tableView.visibleCells, animations: animation)
+//        UIView.animate(views: tableView.visibleCells, animations: animation)
         
         
         

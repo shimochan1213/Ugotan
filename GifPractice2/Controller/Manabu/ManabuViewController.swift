@@ -21,7 +21,8 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     var receivedCellNumber = Int()
     var whichHinshi = String()
     
-    @IBOutlet weak var beforeViewBtn: UIButton!
+ 
+    @IBOutlet var beforeViewBtn: UIView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
@@ -30,10 +31,12 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var japanWordLabel: UILabel!
     @IBOutlet weak var gifView: UIImageView!
     
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.setNavigationBarHidden(true, animated: false)
+
         
         timerChecker = true
         
@@ -254,6 +257,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
             
             wordCount += 1
+            playWordSound()
             displayGif()
             changeLabelsOfWordAndJapan()
         }else if receivedCellNumber == 2 && wordCount < 89{
@@ -289,6 +293,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
             
             wordCount += 1
+            playWordSound()
             displayGif()
             changeLabelsOfWordAndJapan()
             
@@ -324,6 +329,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }
             
             wordCount += 1
+            playWordSound()
             displayGif()
             changeLabelsOfWordAndJapan()
         }else if receivedCellNumber == 4 && wordCount < 149{
@@ -358,6 +364,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }
             
             wordCount += 1
+            playWordSound()
             displayGif()
             changeLabelsOfWordAndJapan()
         }else if receivedCellNumber == 5 && wordCount < 179{
@@ -392,6 +399,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }
             
             wordCount += 1
+            playWordSound()
             displayGif()
             changeLabelsOfWordAndJapan()
         }
@@ -1201,14 +1209,14 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     
-    @IBAction func backToLevel(_ sender: Any) {
+    @IBAction func backToRange(_ sender: Any) {
         self.timer?.invalidate()
         //ナビゲーションバー再表示
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         navigationController?.popViewController(animated: true)
-        
     }
+
     
     
     func showAlert(){

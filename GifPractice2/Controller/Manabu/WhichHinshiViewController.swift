@@ -81,10 +81,12 @@ class WhichHinshiViewController: UIViewController,UITableViewDelegate,UITableVie
         
 //        let animation = [AnimationType.rotate(angle: CGFloat.pi/6)]
 //        let animation = [AnimationType.zoom(scale: 1.1)]
-        let animation = [AnimationType.random()]
+//        let animation = [AnimationType.random()]
+//        let animation = [AnimationType.from(direction: .left, offset: 0.2)]
+        
          
          tableView.reloadData()
-         UIView.animate(views: tableView.visibleCells, animations: animation)
+//         UIView.animate(views: tableView.visibleCells, animations: animation)
         
         
         

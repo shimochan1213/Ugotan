@@ -21,7 +21,7 @@ class ManabuRangeViewController: UIViewController,UITableViewDelegate,UITableVie
     
     var whichHinshi = String()
     let materialList = MaterialList()
-    
+    let manabuVC = ManabuViewController()
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var bannerView: GADBannerView!
@@ -46,6 +46,13 @@ class ManabuRangeViewController: UIViewController,UITableViewDelegate,UITableVie
         
          
      }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+//        //この画面に戻った時に学ぶモードのタイマーを無効化
+//        manabuVC.timer?.invalidate()
+        
+    }
      
      func numberOfSections(in tableView: UITableView) -> Int {
          return 1
@@ -110,9 +117,9 @@ class ManabuRangeViewController: UIViewController,UITableViewDelegate,UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
 //        let animation = [AnimationType.rotate(angle: CGFloat.pi/6)]
-        let animation = [AnimationType.random()]
+//        let animation = [AnimationType.random()]
         tableView.reloadData()
-        UIView.animate(views: tableView.visibleCells, animations: animation)
+//        UIView.animate(views: tableView.visibleCells, animations: animation)
         
         
         
