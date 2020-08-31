@@ -11,12 +11,12 @@ import ViewAnimator
 import GoogleMobileAds
 
 
-class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+class ReviewViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
 //    @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var tableView: UITableView!
-    //間違えた問題の番号が入っている配列
-    var resultIncorrectNumberArray: [Int] = []
+    
+    var receivedCellNumber = Int()
     
     var verb0:[Int] = []
     var verb1:[Int] = []
@@ -35,8 +35,8 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     
     
-    
-    var receivedCellNumber = Int()
+    //間違えた問題の番号が入っている配列
+    var resultIncorrectNumberArray: [Int] = []
     
     var materialList = MaterialList()
     
@@ -44,86 +44,96 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
     let soundFile = SoundFile()
     //タップされたセルの番号を入れておく（indexPath.row番目だね）
     var CellNumber = Int()
-    
-    
-    
+ 
      override func viewDidLoad() {
          super.viewDidLoad()
 
          tableView.delegate = self
          tableView.dataSource = self
         
-        print(resultIncorrectNumberArray)
+//        print(resultIncorrectNumberArray)
 //        //広告表示
 //        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
 //        bannerView.rootViewController = self
 //        bannerView.load(GADRequest())
         
-        //復習用に、間違えた単語たちを保存
-           //動詞　セル0 ならば　”verb0”で配列の中身を保存
+        
+        
+        
+        //resultIncorrectNumberArrayに、ユーザーデフォルトで保存したものを呼び出し、ぶち込む
         switch whichHinshi {
-        case "Verb":
-            switch receivedCellNumber{
-                case 0:verb0 = resultIncorrectNumberArray
-                UserDefaults.standard.set(verb0, forKey: "verb0")
-                case 1:verb1 = resultIncorrectNumberArray
-                UserDefaults.standard.set(verb1, forKey: "verb1")
-                case 2:verb2 = resultIncorrectNumberArray
-                UserDefaults.standard.set(verb2, forKey: "verb2")
-                case 3:verb3 = resultIncorrectNumberArray
-                UserDefaults.standard.set(verb3, forKey: "verb3")
-            default: return
-                }
-            
-            
-        case "Noun":
-            switch receivedCellNumber{
-            case 0:noun0 = resultIncorrectNumberArray
-                UserDefaults.standard.set(noun0, forKey: "noun0")
-            case 1:noun1 = resultIncorrectNumberArray
-                UserDefaults.standard.set(noun1, forKey: "noun1")
-            case 2:noun2 = resultIncorrectNumberArray
-                UserDefaults.standard.set(noun2, forKey: "noun2")
-            case 3:noun3 = resultIncorrectNumberArray
-                UserDefaults.standard.set(noun3, forKey: "noun3")
-            case 4:noun4 = resultIncorrectNumberArray
-                UserDefaults.standard.set(noun4, forKey: "noun4")
-            default: return
-            }
-        case "Adjective":
-                switch receivedCellNumber{
-            case 0:adjective0 = resultIncorrectNumberArray
-                    UserDefaults.standard.set(adjective0, forKey: "adjective0")
-            case 1:adjective1 = resultIncorrectNumberArray
-                    UserDefaults.standard.set(adjective1, forKey: "adjective1")
-            case 2:adjective2 = resultIncorrectNumberArray
-                    UserDefaults.standard.set(adjective2, forKey: "adjective2")
-         default: return
-         }
-            
-        case "Adverb":
-                    switch receivedCellNumber{
-            case 0:adverb0 = resultIncorrectNumberArray
-                        UserDefaults.standard.set(adverb0, forKey: "adverb0")
-            default: return
-            }
-            
-        case "Others":
-                        switch receivedCellNumber{
-            case 0:others0 = resultIncorrectNumberArray
-                            UserDefaults.standard.set(others0, forKey: "others0")
-            default: return
-            }
-            
-        default: print("どれでもないよ")
-            
-        }
+              case "verb":
+                  switch receivedCellNumber{
+                      case 0:if UserDefaults.standard.object(forKey: "verb0") != nil{
+                          resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "verb0") as! [Int]
+                      }
+                      case 1:if UserDefaults.standard.object(forKey: "verb1") != nil{
+                          resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "verb1") as! [Int]
+                      }
+                      case 2:if UserDefaults.standard.object(forKey: "verb2") != nil{
+                          resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "verb2") as! [Int]
+                      }
+                      case 3:if UserDefaults.standard.object(forKey: "verb3") != nil{
+                          resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "verb3") as! [Int]
+                      }
+                  default: return
+                      }
+                  
+                  
+              case "noun":
+                  switch receivedCellNumber{
+                  case 0:if UserDefaults.standard.object(forKey: "noun0") != nil{
+                      resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "noun0") as! [Int]
+                  }
+                  case 1:if UserDefaults.standard.object(forKey: "noun1") != nil{
+                      resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "noun1") as! [Int]
+                  }
+                  case 2:if UserDefaults.standard.object(forKey: "noun2") != nil{
+                      resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "noun2") as! [Int]
+                  }
+                  case 3:if UserDefaults.standard.object(forKey: "noun3") != nil{
+                      resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "noun3") as! [Int]
+                  }
+                  case 4:if UserDefaults.standard.object(forKey: "noun4") != nil{
+                      resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "noun4") as! [Int]
+                  }
+                  default: return
+                  }
+              case "adjective":
+                      switch receivedCellNumber{
+                  case 0:if UserDefaults.standard.object(forKey: "adjective0") != nil{
+                      resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "adjective0") as! [Int]
+                  }
+                  case 1:if UserDefaults.standard.object(forKey: "adjective1") != nil{
+                      resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "adjective1") as! [Int]
+                  }
+                  case 2:if UserDefaults.standard.object(forKey: "adjective2") != nil{
+                      resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "adjective2") as! [Int]
+                  }
+               default: return
+               }
+                  
+              case "adverb":
+                          switch receivedCellNumber{
+                  case 0:if UserDefaults.standard.object(forKey: "adverb0") != nil{
+                      resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "adverb0") as! [Int]
+                  }
+                  default: return
+                  }
+                  
+              case "others":
+                              switch receivedCellNumber{
+                  case 0:if UserDefaults.standard.object(forKey: "others0") != nil{
+                      resultIncorrectNumberArray = UserDefaults.standard.object(forKey: "others0") as! [Int]
+                  }
+                  default: return
+                  }
+                  
+              default: print("どれでもないよ")
+                  
+              }
         
-        
-        
-        
-        
-        
+
         
          
      }
@@ -142,15 +152,15 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
          
         let wordLabel = cell.viewWithTag(1) as! UILabel
         switch whichHinshi {
-                  case "Verb":
+                  case "verb":
                     wordLabel.text = materialList.TOEIC600verbList[resultIncorrectNumberArray[indexPath.row]].Words
-                  case "Noun":
+                  case "noun":
                     wordLabel.text = materialList.TOEIC600NounList[resultIncorrectNumberArray[indexPath.row]].Words
-                  case "Adjective":
+                  case "adjective":
                     wordLabel.text = materialList.TOEIC600AdjectiveList[resultIncorrectNumberArray[indexPath.row]].Words
-                  case "Adverb":
+                  case "adverb":
                     wordLabel.text = materialList.TOEIC600AdverbList[resultIncorrectNumberArray[indexPath.row]].Words
-                  case "Others":
+                  case "others":
                     wordLabel.text = materialList.TOEIC600OthersList[resultIncorrectNumberArray[indexPath.row]].Words
               default: print("どれでもないよ")
               }
@@ -159,15 +169,15 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
         
         let jpnWordLabel = cell.viewWithTag(2) as! UILabel
         switch whichHinshi {
-            case "Verb":
+            case "verb":
                 jpnWordLabel.text = materialList.TOEIC600verbList[resultIncorrectNumberArray[indexPath.row]].japanWords
-            case "Noun":
+            case "noun":
                jpnWordLabel.text = materialList.TOEIC600NounList[resultIncorrectNumberArray[indexPath.row]].japanWords
-            case "Adjective":
+            case "adjective":
                jpnWordLabel.text = materialList.TOEIC600AdjectiveList[resultIncorrectNumberArray[indexPath.row]].japanWords
-            case "Adverb":
+            case "adverb":
                 jpnWordLabel.text = materialList.TOEIC600AdverbList[resultIncorrectNumberArray[indexPath.row]].japanWords
-            case "Others":
+            case "others":
             jpnWordLabel.text = materialList.TOEIC600OthersList[resultIncorrectNumberArray[indexPath.row]].japanWords
             
         default: print("どれでもないよ")
@@ -177,15 +187,15 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
         
         let gifView = cell.viewWithTag(3) as! UIImageView
         switch whichHinshi {
-            case "Verb":
+            case "verb":
                 gifView.loadGif(name: materialList.TOEIC600verbList[resultIncorrectNumberArray[indexPath.row]].Words)
-            case "Noun":
+            case "noun":
                 gifView.loadGif(name: materialList.TOEIC600NounList[resultIncorrectNumberArray[indexPath.row]].Words)
-            case "Adjective":
+            case "adjective":
                 gifView.loadGif(name: materialList.TOEIC600AdjectiveList[resultIncorrectNumberArray[indexPath.row]].Words)
-            case "Adverb":
+            case "adverb":
                 gifView.loadGif(name: materialList.TOEIC600AdverbList[resultIncorrectNumberArray[indexPath.row]].Words)
-            case "Others":
+            case "others":
             gifView.loadGif(name: materialList.TOEIC600OthersList[resultIncorrectNumberArray[indexPath.row]].Words)
             
         default: print("どれでもないよ")
@@ -221,15 +231,15 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
         
         
         switch whichHinshi {
-                  case "Verb":
+                  case "verb":
                     soundFile.playSound(fileName: materialList.TOEIC600verbList[resultIncorrectNumberArray[indexPath.row]].Words, extensionName: "mp3")
-                  case "Noun":
+                  case "noun":
                     soundFile.playSound(fileName: materialList.TOEIC600NounList[resultIncorrectNumberArray[indexPath.row]].Words, extensionName: "mp3")
-                  case "Adjective":
+                  case "adjective":
                    soundFile.playSound(fileName: materialList.TOEIC600AdjectiveList[resultIncorrectNumberArray[indexPath.row]].Words, extensionName: "mp3")
-                  case "Adverb":
+                  case "adverb":
                     soundFile.playSound(fileName: materialList.TOEIC600AdverbList[resultIncorrectNumberArray[indexPath.row]].Words, extensionName: "mp3")
-                  case "Others":
+                  case "others":
                     soundFile.playSound(fileName: materialList.TOEIC600OthersList[resultIncorrectNumberArray[indexPath.row]].Words, extensionName: "mp3")
               default: print("どれでもないよ")
         
@@ -268,17 +278,6 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
               
            
     }
-    
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
     
     
 

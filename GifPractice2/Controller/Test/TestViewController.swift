@@ -1241,6 +1241,9 @@ class TestViewController: UIViewController{
         //不正解の問題の番号を渡す
         resultTLVC.resultIncorrectNumberArray = incorrectArray
         
+        //単語の範囲を渡す（復習用保存のため）
+        resultTLVC.receivedCellNumber = receivedCellNumber
+        
         switch whichHinshi {
         case "verb":
             resultTLVC.whichHinshi = "Verb"

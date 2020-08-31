@@ -64,6 +64,9 @@
 		B1967E0124DD7EA1007EB7D0 /* summer.json in Resources */ = {isa = PBXBuildFile; fileRef = B1967DFC24DD7EA0007EB7D0 /* summer.json */; };
 		B1967E0424DD866F007EB7D0 /* hang.json in Resources */ = {isa = PBXBuildFile; fileRef = B1967E0324DD866E007EB7D0 /* hang.json */; };
 		B1967E0624DD875B007EB7D0 /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = B1967E0524DD875A007EB7D0 /* cat.json */; };
+		B196DD5224FCB478009DD78C /* WhichReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196DD5124FCB478009DD78C /* WhichReviewViewController.swift */; };
+		B196DD5424FCB548009DD78C /* ReviewRangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196DD5324FCB548009DD78C /* ReviewRangeViewController.swift */; };
+		B196DD5624FCB665009DD78C /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196DD5524FCB665009DD78C /* ReviewViewController.swift */; };
 		B1A4CE292472F5BF009F361F /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4CE282472F5BF009F361F /* MaterialModel.swift */; };
 		B1A4CE2B2472F716009F361F /* MaterialList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4CE2A2472F716009F361F /* MaterialList.swift */; };
 		B1A96B39248E98E000E751EA /* WhichHinshiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A96B38248E98E000E751EA /* WhichHinshiViewController.swift */; };
@@ -143,6 +146,9 @@
 		B1967DFC24DD7EA0007EB7D0 /* summer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = summer.json; sourceTree = "<group>"; };
 		B1967E0324DD866E007EB7D0 /* hang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hang.json; path = ../../../Downloads/hang.json; sourceTree = "<group>"; };
 		B1967E0524DD875A007EB7D0 /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
+		B196DD5124FCB478009DD78C /* WhichReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichReviewViewController.swift; sourceTree = "<group>"; };
+		B196DD5324FCB548009DD78C /* ReviewRangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRangeViewController.swift; sourceTree = "<group>"; };
+		B196DD5524FCB665009DD78C /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		B1A4CE282472F5BF009F361F /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
 		B1A4CE2A2472F716009F361F /* MaterialList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialList.swift; sourceTree = "<group>"; };
 		B1A96B38248E98E000E751EA /* WhichHinshiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichHinshiViewController.swift; sourceTree = "<group>"; };
@@ -280,6 +286,9 @@
 				B1967DF624DD769B007EB7D0 /* IntroScrollViewController.swift */,
 				B15DB49C24E039D100A14C11 /* ResultTLViewController.swift */,
 				B13638B824E296370089ED95 /* SetsumeiViewController.swift */,
+				B196DD5124FCB478009DD78C /* WhichReviewViewController.swift */,
+				B196DD5324FCB548009DD78C /* ReviewRangeViewController.swift */,
+				B196DD5524FCB665009DD78C /* ReviewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -520,6 +529,7 @@
 				B1C49DEE24DB006600C25A35 /* ManabuViewController.swift in Sources */,
 				B13CE25E24DD530C006C9902 /* ResultViewController.swift in Sources */,
 				B1A96B39248E98E000E751EA /* WhichHinshiViewController.swift in Sources */,
+				B196DD5424FCB548009DD78C /* ReviewRangeViewController.swift in Sources */,
 				B1A4CE2B2472F716009F361F /* MaterialList.swift in Sources */,
 				B171AFBD24DD401300CF5214 /* TestRangeViewController.swift in Sources */,
 				B171AFB724DD223B00CF5214 /* TestViewController.swift in Sources */,
@@ -529,11 +539,13 @@
 				B1A4CE292472F5BF009F361F /* MaterialModel.swift in Sources */,
 				B122FFC9248CF23600D5450B /* ModeSelectViewController.swift in Sources */,
 				B13638B924E296370089ED95 /* SetsumeiViewController.swift in Sources */,
+				B196DD5624FCB665009DD78C /* ReviewViewController.swift in Sources */,
 				B15DB49D24E039D100A14C11 /* ResultTLViewController.swift in Sources */,
 				B171AFBB24DD3ECE00CF5214 /* ManabuRangeViewController.swift in Sources */,
 				B17FD11224629C3E00F13729 /* SoundFile.swift in Sources */,
 				B1E563B02492A6BF000B69C6 /* WhichHinshiTestViewController.swift in Sources */,
 				B17FD11424629F1200F13729 /* WordsGifSoundList.swift in Sources */,
+				B196DD5224FCB478009DD78C /* WhichReviewViewController.swift in Sources */,
 				B156B4002462B56400E2D762 /* ChangeGif.swift in Sources */,
 				B13A0158248FE5F200EC6EED /* RegisterViewController.swift in Sources */,
 				B1BE99A92461D18F005766A6 /* SceneDelegate.swift in Sources */,
