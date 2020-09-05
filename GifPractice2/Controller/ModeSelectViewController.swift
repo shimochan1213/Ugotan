@@ -18,6 +18,7 @@ class ModeSelectViewController: UIViewController {
     @IBOutlet weak var testBtn: UIButton!
     @IBOutlet weak var tipsBtn: UIButton!
     @IBOutlet weak var reviewBtn: UIButton!
+    @IBOutlet weak var settingBtn: UIButton!
     
     @IBOutlet weak var makeAccount: UIButton!
     @IBOutlet weak var loginBtn: UIButton!
@@ -40,6 +41,7 @@ class ModeSelectViewController: UIViewController {
         manabuBtn.layer.cornerRadius = 10.0
         testBtn.layer.cornerRadius = 10.0
         reviewBtn.layer.cornerRadius = 10.0
+        settingBtn.layer.cornerRadius = 10.0
         
         //リザルトから戻ったときにナビゲーションバー消えないように
         self.navigationController?.isNavigationBarHidden = false

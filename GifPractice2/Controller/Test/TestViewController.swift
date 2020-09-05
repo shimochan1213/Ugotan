@@ -29,6 +29,7 @@ class TestViewController: UIViewController{
     let batsuImage = UIImage(named: "batsucat")
     let maruImage = UIImage(named: "marucat")
     var firstOrNot = true
+    var gifOnOff = true
     var whichHinshi = String()
     @IBOutlet weak var gifView: UIImageView!
     @IBOutlet weak var maruBatsuImage: UIImageView!
@@ -77,23 +78,25 @@ class TestViewController: UIViewController{
             
             questionNumber = 0
             
+            displayGif()
+            
             switch whichHinshi {
             case "verb":
                 
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
             default:
                 return
             }
@@ -106,22 +109,24 @@ class TestViewController: UIViewController{
             //31-60
             questionNumber = 31
             
+            displayGif()
+            
             switch whichHinshi {
             case "verb":
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
             default:
                 return
             }
@@ -131,22 +136,24 @@ class TestViewController: UIViewController{
         case 2:
             //61-90
             questionNumber = 61
+            
+            displayGif()
             switch whichHinshi {
             case "verb":
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
             default:
                 return
             }
@@ -154,22 +161,23 @@ class TestViewController: UIViewController{
         case 3:
             //91-120
             questionNumber = 91
+            displayGif()
             switch whichHinshi {
             case "verb":
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
             default:
                 return
             }
@@ -178,23 +186,24 @@ class TestViewController: UIViewController{
         case 4:
             //121-150
             questionNumber = 121
+            displayGif()
             
             switch whichHinshi {
             case "verb":
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
             default:
                 return
             }
@@ -204,23 +213,24 @@ class TestViewController: UIViewController{
         case 5:
             //151-180
             questionNumber = 151
+            displayGif()
             
             switch whichHinshi {
             case "verb":
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
             default:
                 return
             }
@@ -727,20 +737,56 @@ class TestViewController: UIViewController{
     
     //このへんはmodelにぶちこむかい？
     func displayGif(){
-        switch whichHinshi {
-        case "verb":
-            testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
-        case "noun":
-            testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
-        case "adjective":
-            testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
-        case "adverb":
-            testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
-        case "others":
-            testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
-        default:
-            return
+        
+        
+        
+        //設定で「表示しない」となってたらここでreturnさせれば良い
+        if UserDefaults.standard.object(forKey: "gifOnOff") != nil{
+                  gifOnOff = UserDefaults.standard.object(forKey: "gifOnOff") as! Bool
+            if gifOnOff == false{
+                return
+            }else{
+                
+                switch whichHinshi {
+                case "verb":
+                    testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+                case "noun":
+                    testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+                case "adjective":
+                    testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                case "adverb":
+                    testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+                case "others":
+                    testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+                default:
+                    return
+                }
+                
+                
+            }
+            
+        }else{
+            //初起動
+            switch whichHinshi {
+            case "verb":
+                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+            case "noun":
+                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+            case "adjective":
+                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+            case "adverb":
+                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+            case "others":
+                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+            default:
+                return
+            }
+
+            
+            
         }
+        
+        
         
     }
     
@@ -1507,7 +1553,7 @@ class TestViewController: UIViewController{
     func showAlert(){
         //テストの説明を表示
         
-        let alertController = UIAlertController(title: "はじめまして", message: "制限時間はとても短いですが、即答できるレベルになって初めてリスニングや読解に対応できます。頑張って下さい！", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "はじめまして", message: "制限時間はとても短いですが、即答できるレベルになって初めてリスニングや読解に対応できます。頑張って下さい！設定でイラストを非表示にすることもできます。", preferredStyle: .alert)
         
         let action1 = UIAlertAction(title: "はい", style: .default) { (alert) in
             

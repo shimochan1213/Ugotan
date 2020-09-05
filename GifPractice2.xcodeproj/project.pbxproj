@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B117C59E250380FB003266C3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B117C59D250380FB003266C3 /* SettingViewController.swift */; };
 		B11BDFB024F79FA70001251C /* increase.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B11BDFAF24F79FA70001251C /* increase.mp3 */; };
 		B11BDFBE24F7FE520001251C /* locate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B11BDFB124F7FE500001251C /* locate.mp3 */; };
 		B11BDFBF24F7FE520001251C /* remove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B11BDFB224F7FE500001251C /* remove.mp3 */; };
@@ -433,6 +434,9 @@
 		B1D4C9D62487EBDC00F08EA4 /* agree.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C9D32487EBDC00F08EA4 /* agree.gif */; };
 		B1D4C9D72487EBDC00F08EA4 /* increase.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C9D42487EBDC00F08EA4 /* increase.gif */; };
 		B1E563B02492A6BF000B69C6 /* WhichHinshiTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E563AF2492A6BF000B69C6 /* WhichHinshiTestViewController.swift */; };
+		B1E5EC5425012DDB005A7BBC /* vehicle.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EC5325012DDA005A7BBC /* vehicle.gif */; };
+		B1E5EC5D2501385D005A7BBC /* brochure.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EC5B2501385C005A7BBC /* brochure.gif */; };
+		B1E5EC602501388C005A7BBC /* advertisement.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EC5F2501388B005A7BBC /* advertisement.gif */; };
 		B1E5EDF824E1984E0067B91C /* cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EDF624E1984D0067B91C /* cat.mp3 */; };
 		B1E5EDF924E1984E0067B91C /* seikai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EDF724E1984D0067B91C /* seikai.mp3 */; };
 		B1E5EDFB24E19C8A0067B91C /* fuseikai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EDFA24E19C8A0067B91C /* fuseikai.mp3 */; };
@@ -442,6 +446,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B117C59D250380FB003266C3 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		B11BDFAF24F79FA70001251C /* increase.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = increase.mp3; sourceTree = "<group>"; };
 		B11BDFB124F7FE500001251C /* locate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = locate.mp3; sourceTree = "<group>"; };
 		B11BDFB224F7FE500001251C /* remove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = remove.mp3; sourceTree = "<group>"; };
@@ -872,6 +877,9 @@
 		B1D4C9D42487EBDC00F08EA4 /* increase.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = increase.gif; sourceTree = "<group>"; };
 		B1DF5656247F8EBB006BAAFC /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
 		B1E563AF2492A6BF000B69C6 /* WhichHinshiTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichHinshiTestViewController.swift; sourceTree = "<group>"; };
+		B1E5EC5325012DDA005A7BBC /* vehicle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vehicle.gif; sourceTree = "<group>"; };
+		B1E5EC5B2501385C005A7BBC /* brochure.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = brochure.gif; sourceTree = "<group>"; };
+		B1E5EC5F2501388B005A7BBC /* advertisement.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = advertisement.gif; sourceTree = "<group>"; };
 		B1E5EDF624E1984D0067B91C /* cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat.mp3; sourceTree = "<group>"; };
 		B1E5EDF724E1984D0067B91C /* seikai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = seikai.mp3; sourceTree = "<group>"; };
 		B1E5EDFA24E19C8A0067B91C /* fuseikai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fuseikai.mp3; sourceTree = "<group>"; };
@@ -915,6 +923,7 @@
 				B196DE1624FCE140009DD78C /* admission.mp3 */,
 				B196DF3024FCE700009DD78C /* advance.mp3 */,
 				B196DE7724FCE155009DD78C /* advertisement.mp3 */,
+				B1E5EC5F2501388B005A7BBC /* advertisement.gif */,
 				B196DDD424FCD77C009DD78C /* advise.mp3 */,
 				B196DD7F24FCD4C6009DD78C /* affect.mp3 */,
 				B196DFB824FCECF9009DD78C /* afterwards.mp3 */,
@@ -931,7 +940,6 @@
 				B11BDFD324F7FF480001251C /* analyse.mp3 */,
 				B196DE4524FCE148009DD78C /* anniversary.mp3 */,
 				B196DD7424FCD4C5009DD78C /* announce.mp3 */,
-				B1E6A05324FCF99000BC4E5E /* delivery.gif */,
 				B196DFD824FCED00009DD78C /* anyway.mp3 */,
 				B196DDD124FCD77B009DD78C /* apologize.mp3 */,
 				B11BDFCD24F7FF470001251C /* appear.mp3 */,
@@ -972,6 +980,7 @@
 				B196DE8924FCE159009DD78C /* branch.mp3 */,
 				B196DF2B24FCE6FF009DD78C /* brief.mp3 */,
 				B196DDC524FCD77A009DD78C /* broadcast.mp3 */,
+				B1E5EC5B2501385C005A7BBC /* brochure.gif */,
 				B196DE0824FCE13E009DD78C /* brochure.mp3 */,
 				B196DE2024FCE141009DD78C /* budget.mp3 */,
 				B196DE2D24FCE143009DD78C /* cafeteria.mp3 */,
@@ -1022,6 +1031,7 @@
 				B196DE7424FCE155009DD78C /* deadline.mp3 */,
 				B196DE8C24FCE15A009DD78C /* decade.mp3 */,
 				B196DD5D24FCD4C2009DD78C /* delay.mp3 */,
+				B1E6A05324FCF99000BC4E5E /* delivery.gif */,
 				B196DE5A24FCE14F009DD78C /* delivery.mp3 */,
 				B196DD8124FCD4C7009DD78C /* demand.mp3 */,
 				B196DE3124FCE144009DD78C /* department.mp3 */,
@@ -1185,8 +1195,8 @@
 				B196DF4824FCE705009DD78C /* paid.mp3 */,
 				B196DDD324FCD77C009DD78C /* participate in.mp3 */,
 				B196DFA524FCECF6009DD78C /* particularly.mp3 */,
-				B196DE6324FCE152009DD78C /* path.mp3 */,
 				B1E6A05524FCFB8D00BC4E5E /* path.gif */,
+				B196DE6324FCE152009DD78C /* path.mp3 */,
 				B196DE0A24FCE13E009DD78C /* payment.mp3 */,
 				B196DFDA24FCED01009DD78C /* perhaps.mp3 */,
 				B196DF5924FCE709009DD78C /* permanent.mp3 */,
@@ -1292,6 +1302,7 @@
 				B196DF3624FCE702009DD78C /* upcoming.mp3 */,
 				B196DF4524FCE705009DD78C /* valuable.mp3 */,
 				B196DF6224FCE70B009DD78C /* various.mp3 */,
+				B1E5EC5325012DDA005A7BBC /* vehicle.gif */,
 				B196DE2824FCE143009DD78C /* vehicle.mp3 */,
 				B196DD6F24FCD4C4009DD78C /* vote.mp3 */,
 				B196DE7324FCE155009DD78C /* warehouse.mp3 */,
@@ -1356,6 +1367,7 @@
 				B1967DF624DD769B007EB7D0 /* IntroScrollViewController.swift */,
 				B15DB49C24E039D100A14C11 /* ResultTLViewController.swift */,
 				B13638B824E296370089ED95 /* SetsumeiViewController.swift */,
+				B117C59D250380FB003266C3 /* SettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1685,6 +1697,7 @@
 				B196DFEA24FCED02009DD78C /* slightly.mp3 in Resources */,
 				B196DFF224FCED02009DD78C /* afterwards.mp3 in Resources */,
 				B196E00824FCED02009DD78C /* regarding A.mp3 in Resources */,
+				B1E5EC5425012DDB005A7BBC /* vehicle.gif in Resources */,
 				B11BDFDF24F7FF490001251C /* state.mp3 in Resources */,
 				B196DF7424FCE70C009DD78C /* upcoming.mp3 in Resources */,
 				B196E01724FCED02009DD78C /* immediately.mp3 in Resources */,
@@ -1736,6 +1749,7 @@
 				B196DF6C24FCE70C009DD78C /* amazing.mp3 in Resources */,
 				B196DDDD24FCD77D009DD78C /* finalize.mp3 in Resources */,
 				B196DEE824FCE15D009DD78C /* comparison.mp3 in Resources */,
+				B1E5EC602501388C005A7BBC /* advertisement.gif in Resources */,
 				B196DF9024FCE70C009DD78C /* financial.mp3 in Resources */,
 				B196E00C24FCED02009DD78C /* highly.mp3 in Resources */,
 				B196DDF724FCD77D009DD78C /* appoint.mp3 in Resources */,
@@ -1887,6 +1901,7 @@
 				B196DF8424FCE70C009DD78C /* specific.mp3 in Resources */,
 				B196E00124FCED02009DD78C /* equally.mp3 in Resources */,
 				B196DEDB24FCE15D009DD78C /* concern.mp3 in Resources */,
+				B1E5EC5D2501385D005A7BBC /* brochure.gif in Resources */,
 				B11BDFE124F7FF490001251C /* analyse.mp3 in Resources */,
 				B196DDE124FCD77D009DD78C /* maintain.mp3 in Resources */,
 				B196DE9824FCE15D009DD78C /* brochure.mp3 in Resources */,
@@ -1955,6 +1970,7 @@
 				B171AFB724DD223B00CF5214 /* TestViewController.swift in Sources */,
 				B1BE99BB2461D1E0005766A6 /* Swift+Gif.swift in Sources */,
 				B1967DF724DD769B007EB7D0 /* IntroScrollViewController.swift in Sources */,
+				B117C59E250380FB003266C3 /* SettingViewController.swift in Sources */,
 				B1BE99A72461D18F005766A6 /* AppDelegate.swift in Sources */,
 				B1A4CE292472F5BF009F361F /* MaterialModel.swift in Sources */,
 				B122FFC9248CF23600D5450B /* ModeSelectViewController.swift in Sources */,
