@@ -56,15 +56,15 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             case 0:
                 wordCount = 0
             case 1:
-                wordCount = 31
+                wordCount = 30
             case 2:
-                wordCount = 61
+                wordCount = 60
             case 3:
-                wordCount = 91
+                wordCount = 90
             case 4:
-                wordCount = 121
+                wordCount = 120
             case 5:
-                wordCount = 151
+                wordCount = 150
             default:
                 return
             }
@@ -109,15 +109,15 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             case 0:
                 wordCount = 0
             case 1:
-                wordCount = 31
+                wordCount = 30
             case 2:
-                wordCount = 61
+                wordCount = 60
             case 3:
-                wordCount = 91
+                wordCount = 90
             case 4:
-                wordCount = 121
+                wordCount = 120
             case 5:
-                wordCount = 151
+                wordCount = 150
             default:
                 return
             }

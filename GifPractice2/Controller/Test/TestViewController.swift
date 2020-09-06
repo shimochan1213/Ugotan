@@ -107,7 +107,7 @@ class TestViewController: UIViewController{
             
         case 1:
             //31-60
-            questionNumber = 31
+            questionNumber = 30
             
             displayGif()
             
@@ -135,7 +135,7 @@ class TestViewController: UIViewController{
             
         case 2:
             //61-90
-            questionNumber = 61
+            questionNumber = 60
             
             displayGif()
             switch whichHinshi {
@@ -160,7 +160,7 @@ class TestViewController: UIViewController{
             showRandomSelection()
         case 3:
             //91-120
-            questionNumber = 91
+            questionNumber = 90
             displayGif()
             switch whichHinshi {
             case "verb":
@@ -185,7 +185,7 @@ class TestViewController: UIViewController{
             
         case 4:
             //121-150
-            questionNumber = 121
+            questionNumber = 120
             displayGif()
             
             switch whichHinshi {
@@ -212,7 +212,7 @@ class TestViewController: UIViewController{
             showRandomSelection()
         case 5:
             //151-180
-            questionNumber = 151
+            questionNumber = 150
             displayGif()
             
             switch whichHinshi {
@@ -287,144 +287,144 @@ class TestViewController: UIViewController{
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 29{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 29{
                     questionNumber += 1
-                       
-                     ()
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 29{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 29{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
-                    questionNumber += 1
-                       
-                      
+                }else if questionNumber != 29{
+                    questionNumber += 1                                             
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
             
-            if questionNumber == 29{
-                //問題終了
-                timerResetAndPerformSegue()
-            }
-            
+           
+//            if questionNumber == 30{
+//                //問題終了
+//                timerResetAndPerformSegue()
+//            }
+//
             
         case 1:
             //31-60
-            
-            //これならOk!
+
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 60{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 60{
+                    timerResetAndPerformSegue()
                 }
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 60{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 60{
+                    timerResetAndPerformSegue()
                 }
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 60{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 60{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 60{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 60{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 60{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 60{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
             
-            
+
             
         case 2:
             //61-90
@@ -433,73 +433,69 @@ class TestViewController: UIViewController{
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 90{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 90{
+                    timerResetAndPerformSegue()
                 }
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 90{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 90{
+                    timerResetAndPerformSegue()
                 }
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 90{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 90{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 90{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 90{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 90{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 90{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
             
             
-            if questionNumber == 89{
-                //問題終了
-                timerResetAndPerformSegue()
-            }
-            
+ 
         case 3:
             //91-120
             switch whichHinshi {
@@ -507,72 +503,76 @@ class TestViewController: UIViewController{
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 120{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 120{
                     questionNumber += 1
                        
                       
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 120{
                     questionNumber += 1
                        
                       
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 120{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 120{
                     questionNumber += 1
                        
                       
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 120{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 120{
                     questionNumber += 1
                        
                       
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 120{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
             
-            if questionNumber == 119{
-                //問題終了
-                timerResetAndPerformSegue()
-            }
-            
+
             
         case 4:
             //121-150
@@ -581,72 +581,68 @@ class TestViewController: UIViewController{
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 150{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 150{
+                    timerResetAndPerformSegue()
                 }
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 150{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 150{
+                    timerResetAndPerformSegue()
                 }
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 150{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 150{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 150{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 150{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 150{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 150{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
             
-            if questionNumber == 149{
-                //問題終了
-                timerResetAndPerformSegue()
-            }
-            
+
             
         case 5:
             //151-180
@@ -655,72 +651,68 @@ class TestViewController: UIViewController{
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 180{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 180{
+                    timerResetAndPerformSegue()
                 }
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 180{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 180{
+                    timerResetAndPerformSegue()
                 }
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 180{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 180{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 180{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 180{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 180{
                     questionNumber += 1
-                       
-                      
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
+                }else if questionNumber == 180{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
             
-            if questionNumber == 179{
-                //問題終了
-                timerResetAndPerformSegue()
-            }
-            
+
             
         default:
             return
@@ -900,125 +892,136 @@ class TestViewController: UIViewController{
         switch receivedCellNumber {
         case 0:
             //0-30
-            
+            //OKのやつ
             //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにす
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 29{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
+                
+                
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 29{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
+                
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 29{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 29{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     timerResetAndPerformSegue()
                     
-                }else{
+                }else if questionNumber != 29{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 29{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
-            
-            
-            if questionNumber == 29{
-                //問題終了
-                timerResetAndPerformSegue()
-            }
-            
-            
-            
+    
             
             
         case 1:
             //31-60
+            //purchaseはquestionNumber = 30
             
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 60{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 60{
+                    timerResetAndPerformSegue()
                 }
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 60{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 60{
+                    timerResetAndPerformSegue()
                 }
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 60{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 60{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 60{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 60{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 60{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 60{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
             
-            
-            if questionNumber == 59{
-                //問題終了
-                timerResetAndPerformSegue()
-            }
-            
+ 
             
         case 2:
             
@@ -1030,177 +1033,200 @@ class TestViewController: UIViewController{
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 90{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 90{
+                    timerResetAndPerformSegue()
                 }
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 90{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 90{
+                    timerResetAndPerformSegue()
                 }
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 90{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 90{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 90{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 90{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 90{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 90{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
             
             
-            if questionNumber == 89{
-                //問題終了
-                timerResetAndPerformSegue()
-            }
-            
+
             
         case 3:
             
-            //これならOk!
+         
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 120{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 120{
+                    timerResetAndPerformSegue()
                 }
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 120{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 120{
+                    timerResetAndPerformSegue()
                 }
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 120{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 120{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 120{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 120{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 120{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 120{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
             
-            if questionNumber == 119{
-                //問題終了
-                timerResetAndPerformSegue()
-            }
+//            if questionNumber == 120{
+//                //問題終了
+//                timerResetAndPerformSegue()
+//            }
             
             
         case 4:
-            //これならOk!
+          
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 150{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 150{
+                    timerResetAndPerformSegue()
                 }
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 150{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 150{
+                    timerResetAndPerformSegue()
                 }
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 150{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 150{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 150{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 150{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 150{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 150{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
             
             
-            if questionNumber == 149{
-                //問題終了
-                timerResetAndPerformSegue()
-            }
+            
             
         case 5:
             
@@ -1210,58 +1236,63 @@ class TestViewController: UIViewController{
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 180{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 180{
+                    timerResetAndPerformSegue()
                 }
             case "noun":
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 180{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 180{
+                    timerResetAndPerformSegue()
                 }
             case "adjective":
                 
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 180{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 180{
+                    timerResetAndPerformSegue()
                 }
             case "adverb":
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 180{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 180{
+                    timerResetAndPerformSegue()
                 }
             case "others":
                 if questionNumber == materialList.TOEIC600OthersList.count - 1{
                     
                     timerResetAndPerformSegue()
-                }else{
+                }else if questionNumber != 180{
                     questionNumber += 1
                     displayGif()
                     changeWordLabel()
+                }else if questionNumber == 180{
+                    timerResetAndPerformSegue()
                 }
             default:
                 return
             }
             
-            
-            if questionNumber == 179{
-                //問題終了
-                timerResetAndPerformSegue()
-            }
-            
+       
             
             
             
@@ -1488,8 +1519,6 @@ class TestViewController: UIViewController{
     
     
     @IBAction func answer(_ sender: Any){
-        
-        
         //選択肢を0.5秒間無効化。制限時間ギリ超過時の誤タッチ防止。
         validateAndInvalidateButton()
         
@@ -1502,24 +1531,14 @@ class TestViewController: UIViewController{
                 //正解は今左にある。つまり左を押したから正解。
                 pickedAnswer = true
                 checkAnswer()
-                
                 newNextQuestion()
-                
-                   
-                  
-                
                 showRandomSelection()
-                
                 
             }else if selectionRightOrLeft == 1{
                 //正解は右にある。つまり左を押したから不正解
                 pickedAnswer = false
                 checkAnswer()
-                
                 newNextQuestion()
-                   
-                  
-                
                 showRandomSelection()
             }
             
@@ -1530,20 +1549,14 @@ class TestViewController: UIViewController{
                 //正解は今左にある。つまり右をを押したから不正解。
                 pickedAnswer = false
                 checkAnswer()
-                
                 newNextQuestion()
-                   
-                  
                 showRandomSelection()
                 
             }else if selectionRightOrLeft == 1{
                 //正解は右にある。つまり、右が押されたので正解。
                 pickedAnswer = true
                 checkAnswer()
-                
                 newNextQuestion()
-                   
-                  
                 showRandomSelection()
             }
         }
@@ -1575,43 +1588,43 @@ class TestViewController: UIViewController{
         self.present(alertController, animated: true,completion: nil)
     }
     
-    func preventOutOfRange(){
-        
-        //品詞ごとに、単語の個数を超えてアプリが落ちないようにする処理
-        switch whichHinshi {
-        case "verb":
-            if questionNumber == materialList.TOEIC600verbList.count - 1{
-                
-                timerResetAndPerformSegue()
-            }
-        case "noun":
-            if questionNumber == materialList.TOEIC600NounList.count - 1{
-                
-                timerResetAndPerformSegue()
-            }
-        case "adjective":
-            
-            if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-                
-                timerResetAndPerformSegue()
-            }
-        case "adverb":
-            if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-                
-                timerResetAndPerformSegue()
-            }
-        case "others":
-            if questionNumber == materialList.TOEIC600OthersList.count - 1{
-                
-                timerResetAndPerformSegue()
-            }
-        default:
-            questionNumber += 1
-            displayGif()
-            changeWordLabel()
-        }
-    }
-    
+//    func preventOutOfRange(){
+//
+//        //品詞ごとに、単語の個数を超えてアプリが落ちないようにする処理
+//        switch whichHinshi {
+//        case "verb":
+//            if questionNumber == materialList.TOEIC600verbList.count - 1{
+//
+//                timerResetAndPerformSegue()
+//            }
+//        case "noun":
+//            if questionNumber == materialList.TOEIC600NounList.count - 1{
+//
+//                timerResetAndPerformSegue()
+//            }
+//        case "adjective":
+//
+//            if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
+//
+//                timerResetAndPerformSegue()
+//            }
+//        case "adverb":
+//            if questionNumber == materialList.TOEIC600AdverbList.count - 1{
+//
+//                timerResetAndPerformSegue()
+//            }
+//        case "others":
+//            if questionNumber == materialList.TOEIC600OthersList.count - 1{
+//
+//                timerResetAndPerformSegue()
+//            }
+//        default:
+//            questionNumber += 1
+//            displayGif()
+//            changeWordLabel()
+//        }
+//    }
+//
     
     func validateAndInvalidateButton (){
        //回答ボタンを無効化
