@@ -37,6 +37,20 @@ class ModeSelectViewController: UIViewController {
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         
+//        manabuBtn.imageView?.contentMode = .scaleAspectFit
+//        manabuBtn.contentHorizontalAlignment = .fill
+//        manabuBtn.contentVerticalAlignment = .fill
+//        manabuBtn.imageEdgeInsets = UIEdgeInsets(top: 30, left: 30, bottom: 30, right: 30)
+//        manabuBtn.contentEdgeInsets = UIEdgeInsets(top: 85, left: 25, bottom: 25, right: 25)
+//
+//
+//
+//        reviewBtn.imageEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+        
+  
+        
+        
+        
         tipsBtn.layer.cornerRadius = 10.0
         manabuBtn.layer.cornerRadius = 10.0
         testBtn.layer.cornerRadius = 10.0
@@ -48,6 +62,12 @@ class ModeSelectViewController: UIViewController {
  
         
     }
+    
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//        
+//        manabuBtn.imageView?.frame = CGRect(x: self.view.frame.size.width/4, y: self.view.frame.size.height/4, width: self.view.frame.size.width/2, height: self.view.frame.size.height/2)
+//    }
     
  
     

@@ -44,6 +44,71 @@
 		B13A015A248FE60000EC6EED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13A0159248FE60000EC6EED /* LoginViewController.swift */; };
 		B13CE25E24DD530C006C9902 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13CE25D24DD530C006C9902 /* ResultViewController.swift */; };
 		B156B4002462B56400E2D762 /* ChangeGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B156B3FF2462B56400E2D762 /* ChangeGif.swift */; };
+		B15A65A4250A334C00920766 /* significant.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6587250A334100920766 /* significant.gif */; };
+		B15A65A5250A334C00920766 /* complicated.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6588250A334100920766 /* complicated.gif */; };
+		B15A65A6250A334C00920766 /* latest.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6589250A334100920766 /* latest.gif */; };
+		B15A65A7250A334C00920766 /* permanent.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A658A250A334200920766 /* permanent.gif */; };
+		B15A65A8250A334C00920766 /* mechanical.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A658B250A334200920766 /* mechanical.gif */; };
+		B15A65A9250A334C00920766 /* temporary.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A658C250A334200920766 /* temporary.gif */; };
+		B15A65AA250A334C00920766 /* successful.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A658D250A334200920766 /* successful.gif */; };
+		B15A65AB250A334C00920766 /* comfortable.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A658E250A334300920766 /* comfortable.gif */; };
+		B15A65AC250A334C00920766 /* confident.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A658F250A334400920766 /* confident.gif */; };
+		B15A65AD250A334C00920766 /* various.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6590250A334500920766 /* various.gif */; };
+		B15A65AE250A334C00920766 /* leading.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6591250A334500920766 /* leading.gif */; };
+		B15A65AF250A334C00920766 /* accurate.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6592250A334500920766 /* accurate.gif */; };
+		B15A65B0250A334C00920766 /* downtown.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6593250A334600920766 /* downtown.gif */; };
+		B15A65B1250A334C00920766 /* amazing.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6594250A334600920766 /* amazing.gif */; };
+		B15A65B2250A334C00920766 /* generous.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6595250A334600920766 /* generous.gif */; };
+		B15A65B3250A334C00920766 /* specific.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6596250A334700920766 /* specific.gif */; };
+		B15A65B4250A334C00920766 /* sufficient.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6597250A334700920766 /* sufficient.gif */; };
+		B15A65B5250A334C00920766 /* economic.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6598250A334700920766 /* economic.gif */; };
+		B15A65B6250A334C00920766 /* upcoming.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6599250A334800920766 /* upcoming.gif */; };
+		B15A65B7250A334C00920766 /* crowded.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A659A250A334800920766 /* crowded.gif */; };
+		B15A65B8250A334C00920766 /* unique.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A659B250A334900920766 /* unique.gif */; };
+		B15A65B9250A334C00920766 /* valuable.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A659C250A334900920766 /* valuable.gif */; };
+		B15A65BA250A334C00920766 /* ideal.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A659D250A334900920766 /* ideal.gif */; };
+		B15A65BB250A334C00920766 /* involved.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A659E250A334A00920766 /* involved.gif */; };
+		B15A65BC250A334C00920766 /* financial.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A659F250A334A00920766 /* financial.gif */; };
+		B15A65BD250A334C00920766 /* agricultural.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65A0250A334A00920766 /* agricultural.gif */; };
+		B15A65BE250A334C00920766 /* traditional.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65A1250A334B00920766 /* traditional.gif */; };
+		B15A65BF250A334C00920766 /* full-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65A2250A334B00920766 /* full-time.gif */; };
+		B15A65C0250A334C00920766 /* local.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65A3250A334C00920766 /* local.gif */; };
+		B15A65CC250A396E00920766 /* commercial.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65C1250A396A00920766 /* commercial.gif */; };
+		B15A65CD250A396E00920766 /* advance.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65C2250A396A00920766 /* advance.gif */; };
+		B15A65CE250A396E00920766 /* exact.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65C3250A396A00920766 /* exact.gif */; };
+		B15A65CF250A396E00920766 /* legal.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65C4250A396B00920766 /* legal.gif */; };
+		B15A65D0250A396E00920766 /* overseas.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65C5250A396B00920766 /* overseas.gif */; };
+		B15A65D1250A396E00920766 /* favorable.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65C6250A396B00920766 /* favorable.gif */; };
+		B15A65D2250A396E00920766 /* experienced.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65C7250A396C00920766 /* experienced.gif */; };
+		B15A65D3250A396E00920766 /* related.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65C8250A396C00920766 /* related.gif */; };
+		B15A65D4250A396E00920766 /* helpful.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65C9250A396D00920766 /* helpful.gif */; };
+		B15A65D5250A396E00920766 /* correct.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65CA250A396D00920766 /* correct.gif */; };
+		B15A65D6250A396E00920766 /* corporate.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65CB250A396D00920766 /* corporate.gif */; };
+		B15A65EA250A534900920766 /* loyal customer.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65D7250A534200920766 /* loyal customer.gif */; };
+		B15A65EB250A534900920766 /* immediately.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65D8250A534200920766 /* immediately.gif */; };
+		B15A65EC250A534900920766 /* be willing to V.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65D9250A534200920766 /* be willing to V.gif */; };
+		B15A65EE250A534900920766 /* be pleased with A.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65DB250A534300920766 /* be pleased with A.gif */; };
+		B15A65EF250A534900920766 /* on board.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65DC250A534300920766 /* on board.gif */; };
+		B15A65F0250A534900920766 /* besides.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65DD250A534400920766 /* besides.gif */; };
+		B15A65F1250A534900920766 /* with ease.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65DE250A534400920766 /* with ease.gif */; };
+		B15A65F2250A534900920766 /* be satisfied with A.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65DF250A534400920766 /* be satisfied with A.gif */; };
+		B15A65F3250A534900920766 /* be unable to V.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65E0250A534500920766 /* be unable to V.gif */; };
+		B15A65F4250A534900920766 /* behind the wheel.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65E1250A534500920766 /* behind the wheel.gif */; };
+		B15A65F5250A534900920766 /* equally.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65E2250A534500920766 /* equally.gif */; };
+		B15A65F6250A534900920766 /* gradually.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65E3250A534600920766 /* gradually.gif */; };
+		B15A65F7250A534900920766 /* guided tour.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65E4250A534600920766 /* guided tour.gif */; };
+		B15A65F8250A534900920766 /* relatively.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65E5250A534600920766 /* relatively.gif */; };
+		B15A65F9250A534900920766 /* slightly.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65E6250A534700920766 /* slightly.gif */; };
+		B15A65FA250A534900920766 /* unfortunately.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65E7250A534800920766 /* unfortunately.gif */; };
+		B15A65FB250A534900920766 /* unlike.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65E8250A534800920766 /* unlike.gif */; };
+		B15A65FC250A534900920766 /* following A.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65E9250A534800920766 /* following A.gif */; };
+		B15A65FE250A546500920766 /* in cash.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65FD250A546500920766 /* in cash.gif */; };
+		B15A6600250A55A600920766 /* be committed to A.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A65FF250A55A500920766 /* be committed to A.gif */; };
+		B15A6602250A561B00920766 /* be committed to A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B15A6601250A561B00920766 /* be committed to A.mp3 */; };
+		B15A6604250A590700920766 /* advertisement.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6603250A590700920766 /* advertisement.gif */; };
+		B15A6606250A59A200920766 /* vehicle.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6605250A59A100920766 /* vehicle.gif */; };
+		B15A6608250A5A6B00920766 /* brochure.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6607250A5A6A00920766 /* brochure.gif */; };
+		B15A660A250A5FB900920766 /* delivery.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6609250A5FB700920766 /* delivery.gif */; };
 		B15DB49D24E039D100A14C11 /* ResultTLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DB49C24E039D100A14C11 /* ResultTLViewController.swift */; };
 		B171AFB724DD223B00CF5214 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171AFB624DD223B00CF5214 /* TestViewController.swift */; };
 		B171AFBB24DD3ECE00CF5214 /* ManabuRangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171AFBA24DD3ECE00CF5214 /* ManabuRangeViewController.swift */; };
@@ -413,7 +478,6 @@
 		B196E01724FCED02009DD78C /* immediately.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196DFDD24FCED02009DD78C /* immediately.mp3 */; };
 		B196E01924FCEDAE009DD78C /* be responsible of A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196E01824FCEDAE009DD78C /* be responsible of A.mp3 */; };
 		B196E01C24FCEEA2009DD78C /* be satisfied with A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196E01A24FCEEA1009DD78C /* be satisfied with A.mp3 */; };
-		B196E01D24FCEEA2009DD78C /* be committed to A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196E01B24FCEEA2009DD78C /* be committed to A.mp3 */; };
 		B196E01F24FCEF3D009DD78C /* relatively.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B196E01E24FCEF3D009DD78C /* relatively.mp3 */; };
 		B1A4CE292472F5BF009F361F /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4CE282472F5BF009F361F /* MaterialModel.swift */; };
 		B1A4CE2B2472F716009F361F /* MaterialList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4CE2A2472F716009F361F /* MaterialList.swift */; };
@@ -500,7 +564,6 @@
 		B1EDCB272504EE5C004D3A0D /* priority.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCAE12504EE5B004D3A0D /* priority.gif */; };
 		B1EDCB282504EE5C004D3A0D /* firm.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCAE22504EE5B004D3A0D /* firm.gif */; };
 		B1EDCB2B2504EE62004D3A0D /* path.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCB292504EE61004D3A0D /* path.gif */; };
-		B1EDCB2C2504EE62004D3A0D /* delivery.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCB2A2504EE62004D3A0D /* delivery.gif */; };
 		B1EDCB2E2504EE87004D3A0D /* accept.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCB2D2504EE86004D3A0D /* accept.gif */; };
 		B1EDCB302504EE8C004D3A0D /* expand.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCB2F2504EE8B004D3A0D /* expand.gif */; };
 		B1EDCB322504EE9F004D3A0D /* agree.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCB312504EE9E004D3A0D /* agree.gif */; };
@@ -549,6 +612,71 @@
 		B13A0159248FE60000EC6EED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B13CE25D24DD530C006C9902 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		B156B3FF2462B56400E2D762 /* ChangeGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeGif.swift; sourceTree = "<group>"; };
+		B15A6587250A334100920766 /* significant.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = significant.gif; sourceTree = "<group>"; };
+		B15A6588250A334100920766 /* complicated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = complicated.gif; sourceTree = "<group>"; };
+		B15A6589250A334100920766 /* latest.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = latest.gif; sourceTree = "<group>"; };
+		B15A658A250A334200920766 /* permanent.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = permanent.gif; sourceTree = "<group>"; };
+		B15A658B250A334200920766 /* mechanical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mechanical.gif; sourceTree = "<group>"; };
+		B15A658C250A334200920766 /* temporary.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = temporary.gif; sourceTree = "<group>"; };
+		B15A658D250A334200920766 /* successful.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = successful.gif; sourceTree = "<group>"; };
+		B15A658E250A334300920766 /* comfortable.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = comfortable.gif; sourceTree = "<group>"; };
+		B15A658F250A334400920766 /* confident.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = confident.gif; sourceTree = "<group>"; };
+		B15A6590250A334500920766 /* various.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = various.gif; sourceTree = "<group>"; };
+		B15A6591250A334500920766 /* leading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leading.gif; sourceTree = "<group>"; };
+		B15A6592250A334500920766 /* accurate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = accurate.gif; sourceTree = "<group>"; };
+		B15A6593250A334600920766 /* downtown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = downtown.gif; sourceTree = "<group>"; };
+		B15A6594250A334600920766 /* amazing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = amazing.gif; sourceTree = "<group>"; };
+		B15A6595250A334600920766 /* generous.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = generous.gif; sourceTree = "<group>"; };
+		B15A6596250A334700920766 /* specific.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = specific.gif; sourceTree = "<group>"; };
+		B15A6597250A334700920766 /* sufficient.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sufficient.gif; sourceTree = "<group>"; };
+		B15A6598250A334700920766 /* economic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = economic.gif; sourceTree = "<group>"; };
+		B15A6599250A334800920766 /* upcoming.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = upcoming.gif; sourceTree = "<group>"; };
+		B15A659A250A334800920766 /* crowded.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = crowded.gif; sourceTree = "<group>"; };
+		B15A659B250A334900920766 /* unique.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = unique.gif; sourceTree = "<group>"; };
+		B15A659C250A334900920766 /* valuable.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = valuable.gif; sourceTree = "<group>"; };
+		B15A659D250A334900920766 /* ideal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ideal.gif; sourceTree = "<group>"; };
+		B15A659E250A334A00920766 /* involved.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = involved.gif; sourceTree = "<group>"; };
+		B15A659F250A334A00920766 /* financial.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = financial.gif; sourceTree = "<group>"; };
+		B15A65A0250A334A00920766 /* agricultural.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = agricultural.gif; sourceTree = "<group>"; };
+		B15A65A1250A334B00920766 /* traditional.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = traditional.gif; sourceTree = "<group>"; };
+		B15A65A2250A334B00920766 /* full-time.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "full-time.gif"; sourceTree = "<group>"; };
+		B15A65A3250A334C00920766 /* local.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = local.gif; sourceTree = "<group>"; };
+		B15A65C1250A396A00920766 /* commercial.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = commercial.gif; sourceTree = "<group>"; };
+		B15A65C2250A396A00920766 /* advance.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = advance.gif; sourceTree = "<group>"; };
+		B15A65C3250A396A00920766 /* exact.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = exact.gif; sourceTree = "<group>"; };
+		B15A65C4250A396B00920766 /* legal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = legal.gif; sourceTree = "<group>"; };
+		B15A65C5250A396B00920766 /* overseas.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = overseas.gif; sourceTree = "<group>"; };
+		B15A65C6250A396B00920766 /* favorable.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = favorable.gif; sourceTree = "<group>"; };
+		B15A65C7250A396C00920766 /* experienced.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = experienced.gif; sourceTree = "<group>"; };
+		B15A65C8250A396C00920766 /* related.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = related.gif; sourceTree = "<group>"; };
+		B15A65C9250A396D00920766 /* helpful.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = helpful.gif; sourceTree = "<group>"; };
+		B15A65CA250A396D00920766 /* correct.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = correct.gif; sourceTree = "<group>"; };
+		B15A65CB250A396D00920766 /* corporate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = corporate.gif; sourceTree = "<group>"; };
+		B15A65D7250A534200920766 /* loyal customer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loyal customer.gif"; sourceTree = "<group>"; };
+		B15A65D8250A534200920766 /* immediately.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = immediately.gif; sourceTree = "<group>"; };
+		B15A65D9250A534200920766 /* be willing to V.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "be willing to V.gif"; sourceTree = "<group>"; };
+		B15A65DB250A534300920766 /* be pleased with A.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "be pleased with A.gif"; sourceTree = "<group>"; };
+		B15A65DC250A534300920766 /* on board.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "on board.gif"; sourceTree = "<group>"; };
+		B15A65DD250A534400920766 /* besides.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = besides.gif; sourceTree = "<group>"; };
+		B15A65DE250A534400920766 /* with ease.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "with ease.gif"; sourceTree = "<group>"; };
+		B15A65DF250A534400920766 /* be satisfied with A.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "be satisfied with A.gif"; sourceTree = "<group>"; };
+		B15A65E0250A534500920766 /* be unable to V.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "be unable to V.gif"; sourceTree = "<group>"; };
+		B15A65E1250A534500920766 /* behind the wheel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "behind the wheel.gif"; sourceTree = "<group>"; };
+		B15A65E2250A534500920766 /* equally.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = equally.gif; sourceTree = "<group>"; };
+		B15A65E3250A534600920766 /* gradually.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gradually.gif; sourceTree = "<group>"; };
+		B15A65E4250A534600920766 /* guided tour.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "guided tour.gif"; sourceTree = "<group>"; };
+		B15A65E5250A534600920766 /* relatively.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = relatively.gif; sourceTree = "<group>"; };
+		B15A65E6250A534700920766 /* slightly.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slightly.gif; sourceTree = "<group>"; };
+		B15A65E7250A534800920766 /* unfortunately.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = unfortunately.gif; sourceTree = "<group>"; };
+		B15A65E8250A534800920766 /* unlike.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = unlike.gif; sourceTree = "<group>"; };
+		B15A65E9250A534800920766 /* following A.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "following A.gif"; sourceTree = "<group>"; };
+		B15A65FD250A546500920766 /* in cash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "in cash.gif"; sourceTree = "<group>"; };
+		B15A65FF250A55A500920766 /* be committed to A.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "be committed to A.gif"; sourceTree = "<group>"; };
+		B15A6601250A561B00920766 /* be committed to A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be committed to A.mp3"; sourceTree = "<group>"; };
+		B15A6603250A590700920766 /* advertisement.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = advertisement.gif; path = ../../../../Downloads/advertisement.gif; sourceTree = "<group>"; };
+		B15A6605250A59A100920766 /* vehicle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = vehicle.gif; path = ../../../../Downloads/vehicle.gif; sourceTree = "<group>"; };
+		B15A6607250A5A6A00920766 /* brochure.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = brochure.gif; sourceTree = "<group>"; };
+		B15A6609250A5FB700920766 /* delivery.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = delivery.gif; sourceTree = "<group>"; };
 		B15DB49C24E039D100A14C11 /* ResultTLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTLViewController.swift; sourceTree = "<group>"; };
 		B171AFB624DD223B00CF5214 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		B171AFBA24DD3ECE00CF5214 /* ManabuRangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManabuRangeViewController.swift; sourceTree = "<group>"; };
@@ -918,7 +1046,6 @@
 		B196DFDD24FCED02009DD78C /* immediately.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = immediately.mp3; sourceTree = "<group>"; };
 		B196E01824FCEDAE009DD78C /* be responsible of A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be responsible of A.mp3"; sourceTree = "<group>"; };
 		B196E01A24FCEEA1009DD78C /* be satisfied with A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be satisfied with A.mp3"; sourceTree = "<group>"; };
-		B196E01B24FCEEA2009DD78C /* be committed to A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "be committed to A.mp3"; sourceTree = "<group>"; };
 		B196E01E24FCEF3D009DD78C /* relatively.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relatively.mp3; sourceTree = "<group>"; };
 		B1A4CE282472F5BF009F361F /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
 		B1A4CE2A2472F716009F361F /* MaterialList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialList.swift; sourceTree = "<group>"; };
@@ -1009,7 +1136,6 @@
 		B1EDCAE12504EE5B004D3A0D /* priority.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = priority.gif; sourceTree = "<group>"; };
 		B1EDCAE22504EE5B004D3A0D /* firm.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = firm.gif; sourceTree = "<group>"; };
 		B1EDCB292504EE61004D3A0D /* path.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = path.gif; sourceTree = "<group>"; };
-		B1EDCB2A2504EE62004D3A0D /* delivery.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = delivery.gif; sourceTree = "<group>"; };
 		B1EDCB2D2504EE86004D3A0D /* accept.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = accept.gif; path = "../../../MyApps/ugotan_log/うご単528/GifPractice2/GifMp3/accept.gif"; sourceTree = "<group>"; };
 		B1EDCB2F2504EE8B004D3A0D /* expand.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = expand.gif; sourceTree = "<group>"; };
 		B1EDCB312504EE9E004D3A0D /* agree.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = agree.gif; sourceTree = "<group>"; };
@@ -1050,11 +1176,14 @@
 				B1EDCB2D2504EE86004D3A0D /* accept.gif */,
 				B17FD1192462A7F200F13729 /* accept.mp3 */,
 				B196DFAD24FCECF7009DD78C /* according to.mp3 */,
+				B15A6592250A334500920766 /* accurate.gif */,
 				B196DF4424FCE704009DD78C /* accurate.mp3 */,
 				B196DD7224FCD4C5009DD78C /* achieve.mp3 */,
 				B1EDCACD2504EE56004D3A0D /* admission.gif */,
 				B196DE1624FCE140009DD78C /* admission.mp3 */,
+				B15A65C2250A396A00920766 /* advance.gif */,
 				B196DF3024FCE700009DD78C /* advance.mp3 */,
+				B15A6603250A590700920766 /* advertisement.gif */,
 				B196DE7724FCE155009DD78C /* advertisement.mp3 */,
 				B196DDD424FCD77C009DD78C /* advise.mp3 */,
 				B196DD7F24FCD4C6009DD78C /* affect.mp3 */,
@@ -1063,11 +1192,13 @@
 				B1EDCB312504EE9E004D3A0D /* agree.gif */,
 				B11BDFBA24F7FE510001251C /* agree.mp3 */,
 				B196DE7F24FCE157009DD78C /* agreement.mp3 */,
+				B15A65A0250A334A00920766 /* agricultural.gif */,
 				B196DF4E24FCE706009DD78C /* agricultural.mp3 */,
 				B196DFB924FCECF9009DD78C /* alike.mp3 */,
 				B196DDD824FCD77C009DD78C /* allow A to V.mp3 */,
 				B196DFBA24FCECF9009DD78C /* almost.mp3 */,
 				B196DF5D24FCE70A009DD78C /* alternative.mp3 */,
+				B15A6594250A334600920766 /* amazing.gif */,
 				B196DF2E24FCE700009DD78C /* amazing.mp3 */,
 				B11BDFD324F7FF480001251C /* analyse.mp3 */,
 				B1EDCAA42504EE4A004D3A0D /* anniversary.gif */,
@@ -1103,14 +1234,21 @@
 				B196DE3224FCE144009DD78C /* balance.mp3 */,
 				B196DE5E24FCE150009DD78C /* basis.mp3 */,
 				B196DFD624FCED00009DD78C /* be aware of A.mp3 */,
-				B196E01B24FCEEA2009DD78C /* be committed to A.mp3 */,
+				B15A65FF250A55A500920766 /* be committed to A.gif */,
+				B15A6601250A561B00920766 /* be committed to A.mp3 */,
 				B196DFC924FCECFD009DD78C /* be eager to V.mp3 */,
+				B15A65DB250A534300920766 /* be pleased with A.gif */,
 				B196DFA724FCECF6009DD78C /* be pleased with A.mp3 */,
 				B196E01824FCEDAE009DD78C /* be responsible of A.mp3 */,
+				B15A65DF250A534400920766 /* be satisfied with A.gif */,
 				B196E01A24FCEEA1009DD78C /* be satisfied with A.mp3 */,
+				B15A65E0250A534500920766 /* be unable to V.gif */,
 				B196DFD924FCED01009DD78C /* be unable to V.mp3 */,
+				B15A65D9250A534200920766 /* be willing to V.gif */,
 				B196DFAC24FCECF7009DD78C /* be willing to V.mp3 */,
+				B15A65E1250A534500920766 /* behind the wheel.gif */,
 				B196DFC124FCECFB009DD78C /* behind the wheel.mp3 */,
+				B15A65DD250A534400920766 /* besides.gif */,
 				B196DFC824FCECFC009DD78C /* besides.mp3 */,
 				B196DE4824FCE14A009DD78C /* bill.mp3 */,
 				B196DFBB24FCECFA009DD78C /* both A and B.mp3 */,
@@ -1118,6 +1256,7 @@
 				B196DE8924FCE159009DD78C /* branch.mp3 */,
 				B196DF2B24FCE6FF009DD78C /* brief.mp3 */,
 				B196DDC524FCD77A009DD78C /* broadcast.mp3 */,
+				B15A6607250A5A6A00920766 /* brochure.gif */,
 				B196DE0824FCE13E009DD78C /* brochure.mp3 */,
 				B196DE2024FCE141009DD78C /* budget.mp3 */,
 				B1EDCAC92504EE55004D3A0D /* cafeteria.gif */,
@@ -1135,7 +1274,9 @@
 				B196DE4424FCE148009DD78C /* client.mp3 */,
 				B1EDCA9D2504EE48004D3A0D /* clothing.gif */,
 				B196DE1924FCE140009DD78C /* clothing.mp3 */,
+				B15A658E250A334300920766 /* comfortable.gif */,
 				B196DF3C24FCE703009DD78C /* comfortable.mp3 */,
+				B15A65C1250A396A00920766 /* commercial.gif */,
 				B196DF5324FCE708009DD78C /* commercial.mp3 */,
 				B1EDCAD32504EE57004D3A0D /* comparison.gif */,
 				B196DE5824FCE14F009DD78C /* comparison.mp3 */,
@@ -1144,6 +1285,7 @@
 				B196DE6724FCE152009DD78C /* complaint.mp3 */,
 				B1EDCAC82504EE54004D3A0D /* complex.gif */,
 				B196DE5F24FCE150009DD78C /* complex.mp3 */,
+				B15A6588250A334100920766 /* complicated.gif */,
 				B196DF5B24FCE709009DD78C /* complicated.mp3 */,
 				B1EDCAD92504EE59004D3A0D /* component.gif */,
 				B196DE7B24FCE156009DD78C /* component.mp3 */,
@@ -1152,6 +1294,7 @@
 				B1EDCAD52504EE58004D3A0D /* conference.gif */,
 				B196DE2924FCE143009DD78C /* conference.mp3 */,
 				B196DF3D24FCE703009DD78C /* confident (1).mp3 */,
+				B15A658F250A334400920766 /* confident.gif */,
 				B196DE5024FCE14D009DD78C /* confident.mp3 */,
 				B196DD8224FCD4C7009DD78C /* confirm (1).mp3 */,
 				B11BDFBC24F7FE520001251C /* confirm.mp3 */,
@@ -1168,7 +1311,9 @@
 				B196DE9324FCE15B009DD78C /* contrast.mp3 */,
 				B11BDFCB24F7FF470001251C /* convey.mp3 */,
 				B196DE5224FCE14D009DD78C /* cooperation.mp3 */,
+				B15A65CB250A396D00920766 /* corporate.gif */,
 				B196DF4924FCE705009DD78C /* corporate.mp3 */,
+				B15A65CA250A396D00920766 /* correct.gif */,
 				B196DF6424FCE70B009DD78C /* correct.mp3 */,
 				B122FFC4248CEDB900D5450B /* correctSound.mp3 */,
 				B1EDCAB12504EE4E004D3A0D /* council.gif */,
@@ -1178,13 +1323,13 @@
 				B196DE7924FCE156009DD78C /* crew.mp3 */,
 				B1EDCAB52504EE4F004D3A0D /* crop.gif */,
 				B196DE8B24FCE159009DD78C /* crop.mp3 */,
+				B15A659A250A334800920766 /* crowded.gif */,
 				B196DF4C24FCE706009DD78C /* crowded.mp3 */,
 				B196DFAF24FCECF7009DD78C /* currently.mp3 */,
 				B1EDCAC52504EE53004D3A0D /* deadline.gif */,
 				B196DE7424FCE155009DD78C /* deadline.mp3 */,
 				B196DE8C24FCE15A009DD78C /* decade.mp3 */,
 				B196DD5D24FCD4C2009DD78C /* delay.mp3 */,
-				B1EDCB2A2504EE62004D3A0D /* delivery.gif */,
 				B196DE5A24FCE14F009DD78C /* delivery.mp3 */,
 				B196DD8124FCD4C7009DD78C /* demand.mp3 */,
 				B196DE3124FCE144009DD78C /* department.mp3 */,
@@ -1196,6 +1341,7 @@
 				B196DE7824FCE155009DD78C /* destination.mp3 */,
 				B1EDCAD12504EE57004D3A0D /* detail.gif */,
 				B196DE4A24FCE14B009DD78C /* detail.mp3 */,
+				B15A6609250A5FB700920766 /* delivery.gif */,
 				B196DD7E24FCD4C6009DD78C /* determine.mp3 */,
 				B196DD6224FCD4C3009DD78C /* develop.mp3 */,
 				B196DDC124FCD779009DD78C /* direct.mp3 */,
@@ -1210,11 +1356,13 @@
 				B196DDD724FCD77C009DD78C /* divide into A.mp3 */,
 				B196DE2324FCE142009DD78C /* document.mp3 */,
 				B196DE7D24FCE157009DD78C /* donation.mp3 */,
+				B15A6593250A334600920766 /* downtown.gif */,
 				B196DF4324FCE704009DD78C /* downtown.mp3 */,
 				B196DFA424FCECF5009DD78C /* due to A.mp3 */,
 				B196DE4224FCE147009DD78C /* duty.mp3 */,
 				B196DFBE24FCECFA009DD78C /* each.mp3 */,
 				B11BDFBD24F7FE520001251C /* earn.mp3 */,
+				B15A6598250A334700920766 /* economic.gif */,
 				B196DF6324FCE70B009DD78C /* economic.mp3 */,
 				B196DE4624FCE148009DD78C /* editor.mp3 */,
 				B196DF5824FCE709009DD78C /* effective.mp3 */,
@@ -1226,6 +1374,7 @@
 				B196DDC624FCD77A009DD78C /* enclose.mp3 */,
 				B11BDFCF24F7FF480001251C /* enhance.mp3 */,
 				B196DE2A24FCE143009DD78C /* environment.mp3 */,
+				B15A65E2250A534500920766 /* equally.gif */,
 				B196DFC724FCECFC009DD78C /* equally.mp3 */,
 				B1EDCACF2504EE56004D3A0D /* equipment.gif */,
 				B196DE7124FCE154009DD78C /* equipment.mp3 */,
@@ -1234,6 +1383,7 @@
 				B196DE9424FCE15C009DD78C /* estimate.mp3 */,
 				B196DFB524FCECF8009DD78C /* eventually.mp3 */,
 				B196DFAB24FCECF7009DD78C /* every other week.mp3 */,
+				B15A65C3250A396A00920766 /* exact.gif */,
 				B196DF3124FCE701009DD78C /* exact.mp3 */,
 				B1EDCAB72504EE4F004D3A0D /* executive.gif */,
 				B196DE2B24FCE143009DD78C /* executive.mp3 */,
@@ -1246,18 +1396,21 @@
 				B196DD7B24FCD4C6009DD78C /* expect.mp3 */,
 				B1EDCACC2504EE55004D3A0D /* expense.gif */,
 				B196DE3524FCE145009DD78C /* expense.mp3 */,
+				B15A65C7250A396C00920766 /* experienced.gif */,
 				B196DF3724FCE702009DD78C /* experienced.mp3 */,
 				B196DD5924FCD4C1009DD78C /* explore.mp3 */,
 				B196DE8F24FCE15A009DD78C /* facility.mp3 */,
 				B196DE1C24FCE141009DD78C /* factor.mp3 */,
 				B196DFB424FCECF8009DD78C /* fairly.mp3 */,
 				B196DF2A24FCE6FF009DD78C /* familiar.mp3 */,
+				B15A65C6250A396B00920766 /* favorable.gif */,
 				B196DF3F24FCE703009DD78C /* favorable.mp3 */,
 				B1EDCA9E2504EE48004D3A0D /* fee.gif */,
 				B196DE6524FCE152009DD78C /* fee.mp3 */,
 				B1EDCB392504F25E004D3A0D /* figure.gif */,
 				B196DE1024FCE13F009DD78C /* figure.mp3 */,
 				B196DDB124FCD777009DD78C /* finalize.mp3 */,
+				B15A659F250A334A00920766 /* financial.gif */,
 				B196DF5224FCE707009DD78C /* financial.mp3 */,
 				B196DE3724FCE145009DD78C /* findings.mp3 */,
 				B1EDCAE22504EE5B004D3A0D /* firm.gif */,
@@ -1265,30 +1418,38 @@
 				B196DD7924FCD4C6009DD78C /* fit.mp3 */,
 				B1EDCAC72504EE54004D3A0D /* flyer.gif */,
 				B196DE4924FCE14B009DD78C /* flyer.mp3 */,
+				B15A65E9250A534800920766 /* following A.gif */,
 				B196DFCC24FCECFD009DD78C /* following A.mp3 */,
 				B196DF2F24FCE700009DD78C /* former.mp3 */,
 				B196DDBA24FCD778009DD78C /* found.mp3 */,
 				B196DFC624FCECFC009DD78C /* frequently.mp3 */,
 				B1EDCAAF2504EE4D004D3A0D /* fuel.gif */,
 				B196DE3D24FCE146009DD78C /* fuel.mp3 */,
+				B15A65A2250A334B00920766 /* full-time.gif */,
 				B196DF4D24FCE706009DD78C /* full-time.mp3 */,
 				B196DE8A24FCE159009DD78C /* function.mp3 */,
 				B196DD6524FCD4C3009DD78C /* fund.mp3 */,
 				B196DD6424FCD4C3009DD78C /* gain.mp3 */,
+				B15A6595250A334600920766 /* generous.gif */,
 				B196DF4024FCE704009DD78C /* generous.mp3 */,
+				B15A65E3250A534600920766 /* gradually.gif */,
 				B196DFD124FCECFF009DD78C /* gradually.mp3 */,
 				B196DDBF24FCD779009DD78C /* guarantee.mp3 */,
+				B15A65E4250A534600920766 /* guided tour.gif */,
 				B196DFD024FCECFE009DD78C /* guided tour.mp3 */,
 				B196DFB124FCECF8009DD78C /* hardly.mp3 */,
 				B1EDCABF2504EE52004D3A0D /* headquarters.gif */,
 				B196DE2C24FCE143009DD78C /* headquarters.mp3 */,
+				B15A65C9250A396D00920766 /* helpful.gif */,
 				B196DF3B24FCE702009DD78C /* helpful.mp3 */,
 				B196DFC224FCECFB009DD78C /* hence.mp3 */,
 				B196DD6324FCD4C3009DD78C /* hesitate.mp3 */,
 				B196DFD224FCECFF009DD78C /* highly.mp3 */,
 				B11BDFD624F7FF490001251C /* hire.mp3 */,
 				B196DE3324FCE144009DD78C /* host.mp3 */,
+				B15A659D250A334900920766 /* ideal.gif */,
 				B196DF6124FCE70B009DD78C /* ideal.mp3 */,
+				B15A65D8250A534200920766 /* immediately.gif */,
 				B196DFDD24FCED02009DD78C /* immediately.mp3 */,
 				B196DE6024FCE151009DD78C /* impact.mp3 */,
 				B196DDAF24FCD777009DD78C /* imply.mp3 */,
@@ -1297,6 +1458,7 @@
 				B196DDAE24FCD777009DD78C /* impress.mp3 */,
 				B196DD7C24FCD4C6009DD78C /* improve.mp3 */,
 				B196DFC024FCECFB009DD78C /* in a different setting.mp3 */,
+				B15A65FD250A546500920766 /* in cash.gif */,
 				B196DFBD24FCECFA009DD78C /* in cash.mp3 */,
 				B196DFDC24FCED01009DD78C /* in spite of A.mp3 */,
 				B11BDFB624F7FE510001251C /* include.mp3 */,
@@ -1318,22 +1480,28 @@
 				B196DDB324FCD777009DD78C /* introduce.mp3 */,
 				B1EDCACE2504EE56004D3A0D /* invitation.gif */,
 				B196DE5624FCE14E009DD78C /* invitation.mp3 */,
+				B15A659E250A334A00920766 /* involved.gif */,
 				B196DF2C24FCE6FF009DD78C /* involved.mp3 */,
 				B1EDCAD82504EE59004D3A0D /* job opening.gif */,
 				B196DE4724FCE14A009DD78C /* job opening.mp3 */,
 				B196DE6124FCE151009DD78C /* labour.mp3 */,
 				B1EDCABD2504EE51004D3A0D /* landscaping.gif */,
 				B196DE9024FCE15B009DD78C /* landscaping.mp3 */,
+				B15A6589250A334100920766 /* latest.gif */,
 				B196DF6524FCE70C009DD78C /* latest.mp3 */,
 				B196DFCD24FCECFE009DD78C /* latter.mp3 */,
 				B196DD7624FCD4C5009DD78C /* launch.mp3 */,
+				B15A6591250A334500920766 /* leading.gif */,
 				B196DF4F24FCE707009DD78C /* leading.mp3 */,
+				B15A65C4250A396B00920766 /* legal.gif */,
 				B196DF5E24FCE70A009DD78C /* legal.mp3 */,
 				B196DFAE24FCECF7009DD78C /* likely.mp3 */,
 				B196DF5524FCE708009DD78C /* limited.mp3 */,
+				B15A65A3250A334C00920766 /* local.gif */,
 				B196DF5424FCE708009DD78C /* local.mp3 */,
 				B1EDCB332504EEB3004D3A0D /* locate.gif */,
 				B11BDFB124F7FE500001251C /* locate.mp3 */,
+				B15A65D7250A534200920766 /* loyal customer.gif */,
 				B196DFCA24FCECFD009DD78C /* loyal customer.mp3 */,
 				B1EDCAAA2504EE4C004D3A0D /* luggage.gif */,
 				B196DE0B24FCE13E009DD78C /* luggage.mp3 */,
@@ -1343,6 +1511,7 @@
 				B196DE8724FCE158009DD78C /* management.mp3 */,
 				B196DE3A24FCE145009DD78C /* manufacture.mp3 */,
 				B196DE6B24FCE153009DD78C /* mayor.mp3 */,
+				B15A658B250A334200920766 /* mechanical.gif */,
 				B196DF3524FCE702009DD78C /* mechanical.mp3 */,
 				B196DE1B24FCE141009DD78C /* membership.mp3 */,
 				B1EDCAA22504EE4A004D3A0D /* memorandom.gif */,
@@ -1362,6 +1531,7 @@
 				B196DFAA24FCECF6009DD78C /* occasionally.mp3 */,
 				B196DD7A24FCD4C6009DD78C /* occure.mp3 */,
 				B11BDFD424F7FF490001251C /* offer.mp3 */,
+				B15A65DC250A534300920766 /* on board.gif */,
 				B196DFDB24FCED01009DD78C /* on board.mp3 */,
 				B196DDBB24FCD778009DD78C /* operate.mp3 */,
 				B1EDCAD42504EE57004D3A0D /* option.gif */,
@@ -1370,6 +1540,7 @@
 				B196DE8524FCE158009DD78C /* organization.mp3 */,
 				B196DDB724FCD778009DD78C /* organize.mp3 */,
 				B196DF4124FCE704009DD78C /* overall.mp3 */,
+				B15A65C5250A396B00920766 /* overseas.gif */,
 				B196DF3224FCE701009DD78C /* overseas.mp3 */,
 				B1EDCAE02504EE5B004D3A0D /* packaging.gif */,
 				B196DE5424FCE14D009DD78C /* packaging.mp3 */,
@@ -1381,6 +1552,7 @@
 				B1EDCAC42504EE53004D3A0D /* payment.gif */,
 				B196DE0A24FCE13E009DD78C /* payment.mp3 */,
 				B196DFDA24FCED01009DD78C /* perhaps.mp3 */,
+				B15A658A250A334200920766 /* permanent.gif */,
 				B196DF5924FCE709009DD78C /* permanent.mp3 */,
 				B1EDCACA2504EE55004D3A0D /* personnel.gif */,
 				B196DE5924FCE14F009DD78C /* personnel.mp3 */,
@@ -1433,7 +1605,9 @@
 				B196DFA624FCECF6009DD78C /* regularly.mp3 */,
 				B1EDCAA82504EE4B004D3A0D /* regulation.gif */,
 				B196DE7C24FCE156009DD78C /* regulation.mp3 */,
+				B15A65C8250A396C00920766 /* related.gif */,
 				B196DF3E24FCE703009DD78C /* related.mp3 */,
+				B15A65E5250A534600920766 /* relatively.gif */,
 				B196E01E24FCEF3D009DD78C /* relatively.mp3 */,
 				B11BDFD524F7FF490001251C /* release.mp3 */,
 				B196DD7324FCD4C5009DD78C /* remind.mp3 */,
@@ -1472,9 +1646,12 @@
 				B196DFC324FCECFB009DD78C /* shortly.mp3 */,
 				B1EDCACB2504EE55004D3A0D /* shuttle.gif */,
 				B196DE3924FCE145009DD78C /* shuttle.mp3 */,
+				B15A6587250A334100920766 /* significant.gif */,
 				B196DF5A24FCE709009DD78C /* significant.mp3 */,
+				B15A65E6250A534700920766 /* slightly.gif */,
 				B196DFB024FCECF8009DD78C /* slightly.mp3 */,
 				B196DFB724FCECF9009DD78C /* somewhat.mp3 */,
+				B15A6596250A334700920766 /* specific.gif */,
 				B196DF4624FCE705009DD78C /* specific.mp3 */,
 				B11BDFD124F7FF480001251C /* state.mp3 */,
 				B1EDCAA12504EE49004D3A0D /* stock-holder.gif */,
@@ -1482,29 +1659,41 @@
 				B196DE8E24FCE15A009DD78C /* strength.mp3 */,
 				B196DDD024FCD77B009DD78C /* stress.mp3 */,
 				B11BDFD224F7FF480001251C /* submit.mp3 */,
+				B15A658D250A334200920766 /* successful.gif */,
 				B196DF4724FCE705009DD78C /* successful.mp3 */,
+				B15A6597250A334700920766 /* sufficient.gif */,
 				B196DF4A24FCE705009DD78C /* sufficient.mp3 */,
 				B196DE4D24FCE14B009DD78C /* suggestion.mp3 */,
 				B196DF4224FCE704009DD78C /* suitable.mp3 */,
 				B1EDCAC32504EE53004D3A0D /* survey.gif */,
 				B196DE2F24FCE144009DD78C /* survey.mp3 */,
+				B15A658C250A334200920766 /* temporary.gif */,
 				B196DF3324FCE701009DD78C /* temporary.mp3 */,
 				B196DE1324FCE13F009DD78C /* tips.mp3 */,
 				B196DE4F24FCE14C009DD78C /* trade.mp3 */,
+				B15A65A1250A334B00920766 /* traditional.gif */,
 				B196DF3424FCE701009DD78C /* traditional.mp3 */,
 				B1EDCAD22504EE57004D3A0D /* transportation.gif */,
 				B196DE3024FCE144009DD78C /* transportation.mp3 */,
+				B15A65E7250A534800920766 /* unfortunately.gif */,
 				B196DFBC24FCECFA009DD78C /* unfortunately.mp3 */,
+				B15A659B250A334900920766 /* unique.gif */,
 				B196DF4B24FCE706009DD78C /* unique.mp3 */,
+				B15A65E8250A534800920766 /* unlike.gif */,
 				B196DFD324FCECFF009DD78C /* unlike.mp3 */,
+				B15A6599250A334800920766 /* upcoming.gif */,
 				B196DF3624FCE702009DD78C /* upcoming.mp3 */,
+				B15A659C250A334900920766 /* valuable.gif */,
 				B196DF4524FCE705009DD78C /* valuable.mp3 */,
+				B15A6590250A334500920766 /* various.gif */,
 				B196DF6224FCE70B009DD78C /* various.mp3 */,
+				B15A6605250A59A100920766 /* vehicle.gif */,
 				B196DE2824FCE143009DD78C /* vehicle.mp3 */,
 				B196DD6F24FCD4C4009DD78C /* vote.mp3 */,
 				B1EDCABC2504EE51004D3A0D /* warehouse.gif */,
 				B196DE7324FCE155009DD78C /* warehouse.mp3 */,
 				B196DE4324FCE147009DD78C /* warranty.mp3 */,
+				B15A65DE250A534400920766 /* with ease.gif */,
 				B196DFA824FCECF6009DD78C /* with ease.mp3 */,
 				B196DFD524FCED00009DD78C /* without A.mp3 */,
 			);
@@ -1700,22 +1889,28 @@
 				B196DFEC24FCED02009DD78C /* recently.mp3 in Resources */,
 				B196DE0124FCD77D009DD78C /* regard A as B.mp3 in Resources */,
 				B1EDCB232504EE5C004D3A0D /* candidate.gif in Resources */,
+				B15A65B1250A334C00920766 /* amazing.gif in Resources */,
 				B196DFEB24FCED02009DD78C /* hardly.mp3 in Resources */,
-				B196E01D24FCEEA2009DD78C /* be committed to A.mp3 in Resources */,
+				B15A65AC250A334C00920766 /* confident.gif in Resources */,
 				B196DEE924FCE15D009DD78C /* personnel.mp3 in Resources */,
 				B196DF7024FCE70C009DD78C /* overseas.mp3 in Resources */,
 				B11BDFC724F7FE520001251C /* agree.mp3 in Resources */,
+				B15A65EB250A534900920766 /* immediately.gif in Resources */,
 				B196DFE824FCED02009DD78C /* likely.mp3 in Resources */,
 				B196DD8B24FCD4C7009DD78C /* inquire.mp3 in Resources */,
 				B196DEAE24FCE15D009DD78C /* content.mp3 in Resources */,
 				B196DEB624FCE15D009DD78C /* representative.mp3 in Resources */,
 				B1EDCB322504EE9F004D3A0D /* agree.gif in Resources */,
 				B196DF1224FCE15D009DD78C /* merchandise.mp3 in Resources */,
+				B15A6608250A5A6B00920766 /* brochure.gif in Resources */,
 				B1EDCAEE2504EE5B004D3A0D /* regulation.gif in Resources */,
 				B196DF2624FCE15D009DD78C /* neighborhood.mp3 in Resources */,
 				B196DEFC24FCE15D009DD78C /* response.mp3 in Resources */,
+				B15A65EA250A534900920766 /* loyal customer.gif in Resources */,
 				B196DFFB24FCED02009DD78C /* behind the wheel.mp3 in Resources */,
 				B196DF9524FCE70C009DD78C /* previous.mp3 in Resources */,
+				B15A65F6250A534900920766 /* gradually.gif in Resources */,
+				B15A65D0250A396E00920766 /* overseas.gif in Resources */,
 				B1EDCB2E2504EE87004D3A0D /* accept.gif in Resources */,
 				B196DF1624FCE15D009DD78C /* result.mp3 in Resources */,
 				B196DF1F24FCE15D009DD78C /* facility.mp3 in Resources */,
@@ -1724,13 +1919,18 @@
 				B11BDFDC24F7FF490001251C /* mail.mp3 in Resources */,
 				B196E00924FCED02009DD78C /* absolutely.mp3 in Resources */,
 				B196DD9024FCD4C7009DD78C /* fund.mp3 in Resources */,
+				B15A65CE250A396E00920766 /* exact.gif in Resources */,
 				B196DF8E24FCE70C009DD78C /* efficient.mp3 in Resources */,
 				B196E00324FCED02009DD78C /* be eager to V.mp3 in Resources */,
 				B17FD11A2462A7F200F13729 /* accept.mp3 in Resources */,
 				B1EDCAF72504EE5B004D3A0D /* council.gif in Resources */,
 				B11BDFBF24F7FE520001251C /* remove.mp3 in Resources */,
+				B15A65EC250A534900920766 /* be willing to V.gif in Resources */,
+				B15A65B5250A334C00920766 /* economic.gif in Resources */,
 				B196DEA224FCE15D009DD78C /* import.mp3 in Resources */,
 				B196DDFF24FCD77D009DD78C /* participate in.mp3 in Resources */,
+				B15A65D3250A396E00920766 /* related.gif in Resources */,
+				B15A65F5250A534900920766 /* equally.gif in Resources */,
 				B196E01524FCED02009DD78C /* on board.mp3 in Resources */,
 				B196DEAC24FCE15D009DD78C /* factor.mp3 in Resources */,
 				B1EDCB012504EE5B004D3A0D /* research.gif in Resources */,
@@ -1744,6 +1944,7 @@
 				B196DF7C24FCE70C009DD78C /* related.mp3 in Resources */,
 				B196DF1924FCE15D009DD78C /* branch.mp3 in Resources */,
 				B196DDEF24FCD77D009DD78C /* can afford to V.mp3 in Resources */,
+				B15A65FC250A534900920766 /* following A.gif in Resources */,
 				B196DDA424FCD4C7009DD78C /* fit.mp3 in Resources */,
 				B196DEDA24FCE15D009DD78C /* detail.mp3 in Resources */,
 				B196DF9924FCE70C009DD78C /* complicated.mp3 in Resources */,
@@ -1755,9 +1956,11 @@
 				B196DF6F24FCE70C009DD78C /* exact.mp3 in Resources */,
 				B196DDEA24FCD77D009DD78C /* share A with B.mp3 in Resources */,
 				B1967E0024DD7EA1007EB7D0 /* dog.json in Resources */,
+				B15A65CD250A396E00920766 /* advance.gif in Resources */,
 				B196DF7924FCE70C009DD78C /* helpful.mp3 in Resources */,
 				B196E01C24FCEEA2009DD78C /* be satisfied with A.mp3 in Resources */,
 				B196DEC524FCE15D009DD78C /* expense.mp3 in Resources */,
+				B15A65A4250A334C00920766 /* significant.gif in Resources */,
 				B196DDDF24FCD77D009DD78C /* introduce.mp3 in Resources */,
 				B196DECE24FCE15D009DD78C /* reward.mp3 in Resources */,
 				B1EDCB0B2504EE5C004D3A0D /* deadline.gif in Resources */,
@@ -1767,6 +1970,7 @@
 				B1EDCB202504EE5C004D3A0D /* promotion.gif in Resources */,
 				B196DDA624FCD4C7009DD78C /* expect.mp3 in Resources */,
 				B196DF7624FCE70C009DD78C /* intended.mp3 in Resources */,
+				B15A65BE250A334C00920766 /* traditional.gif in Resources */,
 				B1EDCAE92504EE5B004D3A0D /* client.gif in Resources */,
 				B196DDDA24FCD77D009DD78C /* impress.mp3 in Resources */,
 				B1EDCAFD2504EE5B004D3A0D /* executive.gif in Resources */,
@@ -1775,11 +1979,13 @@
 				B196DEBA24FCE15D009DD78C /* environment.mp3 in Resources */,
 				B196DFF324FCED02009DD78C /* alike.mp3 in Resources */,
 				B196DFFD24FCED02009DD78C /* shortly.mp3 in Resources */,
+				B15A65C0250A334C00920766 /* local.gif in Resources */,
 				B17FD10E246298C700F13729 /* expand.mp3 in Resources */,
 				B196DD8724FCD4C7009DD78C /* recognize.mp3 in Resources */,
 				B196DEF924FCE15D009DD78C /* popularity.mp3 in Resources */,
 				B196DEE524FCE15D009DD78C /* income.mp3 in Resources */,
 				B196DFFA24FCED02009DD78C /* in a different setting.mp3 in Resources */,
+				B15A6606250A59A200920766 /* vehicle.gif in Resources */,
 				B1EDCB1A2504EE5C004D3A0D /* option.gif in Resources */,
 				B196DEAF24FCE15D009DD78C /* discount.mp3 in Resources */,
 				B196DDAA24FCD4C7009DD78C /* affect.mp3 in Resources */,
@@ -1795,6 +2001,7 @@
 				B196DD8E24FCD4C7009DD78C /* hesitate.mp3 in Resources */,
 				B196DD8824FCD4C7009DD78C /* delay.mp3 in Resources */,
 				B196DD8624FCD4C7009DD78C /* obtain.mp3 in Resources */,
+				B15A65A5250A334C00920766 /* complicated.gif in Resources */,
 				B12D764D2490004C00D2D760 /* loading.json in Resources */,
 				B196DDE924FCD77D009DD78C /* represent.mp3 in Resources */,
 				B196DF1324FCE15D009DD78C /* employee.mp3 in Resources */,
@@ -1820,21 +2027,27 @@
 				B196DEC624FCE15D009DD78C /* atmosphere.mp3 in Resources */,
 				B196DD9224FCD4C7009DD78C /* charge.mp3 in Resources */,
 				B196E00424FCED02009DD78C /* loyal customer.mp3 in Resources */,
+				B15A6602250A561B00920766 /* be committed to A.mp3 in Resources */,
 				B1EDCB242504EE5C004D3A0D /* resume.gif in Resources */,
 				B1EDCAE72504EE5B004D3A0D /* stock-holder.gif in Resources */,
 				B196DEB224FCE15D009DD78C /* background.mp3 in Resources */,
 				B196DF1B24FCE15D009DD78C /* crop.mp3 in Resources */,
 				B196DF2424FCE15D009DD78C /* estimate.mp3 in Resources */,
 				B196DE9D24FCE15D009DD78C /* stock-holder.mp3 in Resources */,
+				B15A65B7250A334C00920766 /* crowded.gif in Resources */,
 				B196DF0D24FCE15D009DD78C /* donation.mp3 in Resources */,
 				B11BDFE024F7FF490001251C /* submit.mp3 in Resources */,
 				B196DDE624FCD77D009DD78C /* found.mp3 in Resources */,
+				B15A65B2250A334C00920766 /* generous.gif in Resources */,
 				B196DF9D24FCE70C009DD78C /* reasonable.mp3 in Resources */,
 				B196DFA024FCE70C009DD78C /* various.mp3 in Resources */,
+				B15A65AB250A334C00920766 /* comfortable.gif in Resources */,
 				B11BDFE524F7FF490001251C /* provide.mp3 in Resources */,
 				B196DEE024FCE15D009DD78C /* confident.mp3 in Resources */,
 				B196DED824FCE15D009DD78C /* bill.mp3 in Resources */,
+				B15A65CC250A396E00920766 /* commercial.gif in Resources */,
 				B196DEFE24FCE15D009DD78C /* author.mp3 in Resources */,
+				B15A65F3250A534900920766 /* be unable to V.gif in Resources */,
 				B196DF7D24FCE70C009DD78C /* favorable.mp3 in Resources */,
 				B196DF9824FCE70C009DD78C /* significant.mp3 in Resources */,
 				B196DF6924FCE70C009DD78C /* brief.mp3 in Resources */,
@@ -1849,6 +2062,7 @@
 				B1EDCAE32504EE5B004D3A0D /* clothing.gif in Resources */,
 				B1EDCB052504EE5B004D3A0D /* headquarters.gif in Resources */,
 				B196DD8424FCD4C7009DD78C /* explore.mp3 in Resources */,
+				B15A65FA250A534900920766 /* unfortunately.gif in Resources */,
 				B196DE0524FCD77D009DD78C /* prefer A to B.mp3 in Resources */,
 				B196DD9724FCD4C7009DD78C /* seek.mp3 in Resources */,
 				B1EDCB0E2504EE5C004D3A0D /* complex.gif in Resources */,
@@ -1856,6 +2070,7 @@
 				B1EDCB212504EE5C004D3A0D /* setting.gif in Resources */,
 				B1EDCAFA2504EE5B004D3A0D /* crew.gif in Resources */,
 				B196DEE224FCE15D009DD78C /* cooperation.mp3 in Resources */,
+				B15A65F7250A534900920766 /* guided tour.gif in Resources */,
 				B196DF1524FCE15D009DD78C /* organization.mp3 in Resources */,
 				B11BDFBE24F7FE520001251C /* locate.mp3 in Resources */,
 				B196DF8724FCE70C009DD78C /* corporate.mp3 in Resources */,
@@ -1875,13 +2090,16 @@
 				B196DEA724FCE15D009DD78C /* institution.mp3 in Resources */,
 				B11BDFE324F7FF490001251C /* release.mp3 in Resources */,
 				B196DEA324FCE15D009DD78C /* tips.mp3 in Resources */,
+				B15A65BB250A334C00920766 /* involved.gif in Resources */,
 				B196DECC24FCE15D009DD78C /* reputation.mp3 in Resources */,
 				B11BDFC324F7FE520001251C /* include.mp3 in Resources */,
 				B196DFE924FCED02009DD78C /* currently.mp3 in Resources */,
 				B196DE0424FCD77D009DD78C /* allow A to V.mp3 in Resources */,
+				B15A65F1250A534900920766 /* with ease.gif in Resources */,
 				B196DF7224FCE70C009DD78C /* traditional.mp3 in Resources */,
 				B1967E0424DD866F007EB7D0 /* hang.json in Resources */,
 				B1EDCB3E2504F2D0004D3A0D /* resume.mp3 in Resources */,
+				B15A65B4250A334C00920766 /* sufficient.gif in Resources */,
 				B196DFF024FCED02009DD78C /* approximately.mp3 in Resources */,
 				B1EDCB0C2504EE5C004D3A0D /* import.gif in Resources */,
 				B196DD8C24FCD4C7009DD78C /* avoid.mp3 in Resources */,
@@ -1897,6 +2115,7 @@
 				B196E00524FCED02009DD78C /* seldom.mp3 in Resources */,
 				B1BE99AE2461D18F005766A6 /* Main.storyboard in Resources */,
 				B196DEF124FCE15D009DD78C /* labour.mp3 in Resources */,
+				B15A6604250A590700920766 /* advertisement.gif in Resources */,
 				B196DEE124FCE15D009DD78C /* instruction.mp3 in Resources */,
 				B196DED724FCE15D009DD78C /* job opening.mp3 in Resources */,
 				B1E5EDFB24E19C8A0067B91C /* fuseikai.mp3 in Resources */,
@@ -1904,6 +2123,7 @@
 				B196DEFB24FCE15D009DD78C /* mayor.mp3 in Resources */,
 				B196DEC924FCE15D009DD78C /* shuttle.mp3 in Resources */,
 				B196DEC224FCE15D009DD78C /* balance.mp3 in Resources */,
+				B15A65AE250A334C00920766 /* leading.gif in Resources */,
 				B196DF2524FCE15D009DD78C /* occasion.mp3 in Resources */,
 				B196DEF624FCE15D009DD78C /* council.mp3 in Resources */,
 				B1967DFE24DD7EA1007EB7D0 /* dancing.json in Resources */,
@@ -1913,6 +2133,7 @@
 				B196DFF124FCED02009DD78C /* somewhat.mp3 in Resources */,
 				B196DEF824FCE15D009DD78C /* proposal.mp3 in Resources */,
 				B1EDCAF12504EE5B004D3A0D /* application.gif in Resources */,
+				B15A65A7250A334C00920766 /* permanent.gif in Resources */,
 				B11BDFE624F7FF490001251C /* renew.mp3 in Resources */,
 				B196DFFF24FCED02009DD78C /* properly.mp3 in Resources */,
 				B1EDCB152504EE5C004D3A0D /* equipment.gif in Resources */,
@@ -1927,10 +2148,14 @@
 				B196DEB724FCE15D009DD78C /* priority.mp3 in Resources */,
 				B196E00D24FCED02009DD78C /* unlike.mp3 in Resources */,
 				B1EDCB1E2504EE5C004D3A0D /* job opening.gif in Resources */,
+				B15A65FB250A534900920766 /* unlike.gif in Resources */,
 				B196DFEA24FCED02009DD78C /* slightly.mp3 in Resources */,
 				B196DFF224FCED02009DD78C /* afterwards.mp3 in Resources */,
 				B196E00824FCED02009DD78C /* regarding A.mp3 in Resources */,
 				B11BDFDF24F7FF490001251C /* state.mp3 in Resources */,
+				B15A65B6250A334C00920766 /* upcoming.gif in Resources */,
+				B15A65A6250A334C00920766 /* latest.gif in Resources */,
+				B15A65D2250A396E00920766 /* experienced.gif in Resources */,
 				B196DF7424FCE70C009DD78C /* upcoming.mp3 in Resources */,
 				B1EDCB252504EE5C004D3A0D /* exhibition.gif in Resources */,
 				B1EDCAE82504EE5B004D3A0D /* memorandom.gif in Resources */,
@@ -1967,9 +2192,12 @@
 				B196DDF424FCD77D009DD78C /* compete.mp3 in Resources */,
 				B11BDFDD24F7FF490001251C /* enhance.mp3 in Resources */,
 				B1EDCB262504EE5C004D3A0D /* packaging.gif in Resources */,
+				B15A65BD250A334C00920766 /* agricultural.gif in Resources */,
 				B196DEC024FCE15D009DD78C /* transportation.mp3 in Resources */,
+				B15A65B8250A334C00920766 /* unique.gif in Resources */,
 				B196DED924FCE15D009DD78C /* flyer.mp3 in Resources */,
 				B196DE9924FCE15D009DD78C /* display (1).mp3 in Resources */,
+				B15A65D1250A396E00920766 /* favorable.gif in Resources */,
 				B196DD8D24FCD4C7009DD78C /* develop.mp3 in Resources */,
 				B1EDCB192504EE5C004D3A0D /* comparison.gif in Resources */,
 				B196DDF224FCD77D009DD78C /* enclose.mp3 in Resources */,
@@ -1991,6 +2219,7 @@
 				B196E01224FCED02009DD78C /* anyway.mp3 in Resources */,
 				B196DFDF24FCED02009DD78C /* particularly.mp3 in Resources */,
 				B1EDCB0A2504EE5C004D3A0D /* payment.gif in Resources */,
+				B15A65F4250A534900920766 /* behind the wheel.gif in Resources */,
 				B196DF9124FCE70C009DD78C /* commercial.mp3 in Resources */,
 				B196DF6C24FCE70C009DD78C /* amazing.mp3 in Resources */,
 				B196DDDD24FCD77D009DD78C /* finalize.mp3 in Resources */,
@@ -1998,6 +2227,7 @@
 				B196DF9024FCE70C009DD78C /* financial.mp3 in Resources */,
 				B196E00C24FCED02009DD78C /* highly.mp3 in Resources */,
 				B196DDF724FCD77D009DD78C /* appoint.mp3 in Resources */,
+				B15A65D5250A396E00920766 /* correct.gif in Resources */,
 				B1EDCB142504EE5C004D3A0D /* invitation.gif in Resources */,
 				B196DF6B24FCE70C009DD78C /* initial.mp3 in Resources */,
 				B196E01624FCED02009DD78C /* in spite of A.mp3 in Resources */,
@@ -2008,18 +2238,26 @@
 				B196DF8D24FCE70C009DD78C /* leading.mp3 in Resources */,
 				B196DF2124FCE15D009DD78C /* policy.mp3 in Resources */,
 				B196DF9C24FCE70C009DD78C /* legal.mp3 in Resources */,
+				B15A65F9250A534900920766 /* slightly.gif in Resources */,
 				B196DF7124FCE70C009DD78C /* temporary.mp3 in Resources */,
 				B1EDCB272504EE5C004D3A0D /* priority.gif in Resources */,
 				B196DF2024FCE15D009DD78C /* landscaping.mp3 in Resources */,
 				B196DDA124FCD4C7009DD78C /* launch.mp3 in Resources */,
+				B15A65D4250A396E00920766 /* helpful.gif in Resources */,
+				B15A65FE250A546500920766 /* in cash.gif in Resources */,
 				B196DFA324FCE70C009DD78C /* latest.mp3 in Resources */,
+				B15A65B3250A334C00920766 /* specific.gif in Resources */,
 				B196DE9A24FCE15D009DD78C /* payment.mp3 in Resources */,
 				B196DDEC24FCD77D009DD78C /* postpone.mp3 in Resources */,
 				B196DFE224FCED02009DD78C /* with ease.mp3 in Resources */,
+				B15A65EE250A534900920766 /* be pleased with A.gif in Resources */,
 				B196DF1C24FCE15D009DD78C /* decade.mp3 in Resources */,
 				B196DF1024FCE15D009DD78C /* agency.mp3 in Resources */,
+				B15A65CF250A396E00920766 /* legal.gif in Resources */,
 				B196DD8924FCD4C7009DD78C /* note.mp3 in Resources */,
 				B196DF0424FCE15D009DD78C /* deadline.mp3 in Resources */,
+				B15A65A8250A334C00920766 /* mechanical.gif in Resources */,
+				B15A65F0250A534900920766 /* besides.gif in Resources */,
 				B196DF7E24FCE70C009DD78C /* generous.mp3 in Resources */,
 				B196DDFC24FCD77D009DD78C /* stress.mp3 in Resources */,
 				B196DDFB24FCD77D009DD78C /* deserve.mp3 in Resources */,
@@ -2034,6 +2272,8 @@
 				B196DEB824FCE15D009DD78C /* vehicle.mp3 in Resources */,
 				B196DEFF24FCE15D009DD78C /* firm.mp3 in Resources */,
 				B196DF7824FCE70C009DD78C /* serious.mp3 in Resources */,
+				B15A65BA250A334C00920766 /* ideal.gif in Resources */,
+				B15A65BC250A334C00920766 /* financial.gif in Resources */,
 				B196DDA524FCD4C7009DD78C /* occure.mp3 in Resources */,
 				B11BDFC824F7FE520001251C /* eliminate.mp3 in Resources */,
 				B196DD8A24FCD4C7009DD78C /* create.mp3 in Resources */,
@@ -2043,11 +2283,13 @@
 				B196DDA024FCD4C7009DD78C /* conduct.mp3 in Resources */,
 				B11BDFDB24F7FF490001251C /* appear.mp3 in Resources */,
 				B1EDCB092504EE5C004D3A0D /* survey.gif in Resources */,
+				B15A65F2250A534900920766 /* be satisfied with A.gif in Resources */,
 				B196DF6824FCE70C009DD78C /* familiar.mp3 in Resources */,
 				B196DDE524FCD77D009DD78C /* arrange.mp3 in Resources */,
 				B1EDCAFE2504EE5B004D3A0D /* district.gif in Resources */,
 				B11BDFC424F7FE520001251C /* repair.mp3 in Resources */,
 				B196DEBB24FCE15D009DD78C /* executive.mp3 in Resources */,
+				B15A65F8250A534900920766 /* relatively.gif in Resources */,
 				B196DD9424FCD4C7009DD78C /* proceed.mp3 in Resources */,
 				B1EDCB362504EF41004D3A0D /* increase.gif in Resources */,
 				B196DED524FCE15D009DD78C /* anniversary.mp3 in Resources */,
@@ -2055,11 +2297,11 @@
 				B1EDCB032504EE5B004D3A0D /* landscaping.gif in Resources */,
 				B196DE0324FCD77D009DD78C /* divide into A.mp3 in Resources */,
 				B196DDDB24FCD77D009DD78C /* imply.mp3 in Resources */,
-				B1EDCB2C2504EE62004D3A0D /* delivery.gif in Resources */,
 				B196DE9C24FCE15D009DD78C /* range.mp3 in Resources */,
 				B196DF8124FCE70C009DD78C /* downtown.mp3 in Resources */,
 				B196DF6724FCE70C009DD78C /* necessary.mp3 in Resources */,
 				B11BDFC524F7FE520001251C /* attach.mp3 in Resources */,
+				B15A65D6250A396E00920766 /* corporate.gif in Resources */,
 				B196DF8324FCE70C009DD78C /* valuable.mp3 in Resources */,
 				B196DEC324FCE15D009DD78C /* host.mp3 in Resources */,
 				B196DF0224FCE15D009DD78C /* promotion.mp3 in Resources */,
@@ -2089,6 +2331,7 @@
 				B196DFF724FCED02009DD78C /* in cash.mp3 in Resources */,
 				B196DEDF24FCE15D009DD78C /* trade.mp3 in Resources */,
 				B1EDCB082504EE5C004D3A0D /* destination.gif in Resources */,
+				B15A65B0250A334C00920766 /* downtown.gif in Resources */,
 				B196DEC724FCE15D009DD78C /* findings.mp3 in Resources */,
 				B196E01424FCED02009DD78C /* perhaps.mp3 in Resources */,
 				B196DE9B24FCE15D009DD78C /* luggage.mp3 in Resources */,
@@ -2117,14 +2360,17 @@
 				B1EDCAFB2504EE5B004D3A0D /* crop.gif in Resources */,
 				B1EDCB0D2504EE5C004D3A0D /* flyer.gif in Resources */,
 				B196DF8024FCE70C009DD78C /* suitable.mp3 in Resources */,
+				B15A6600250A55A600920766 /* be committed to A.gif in Resources */,
 				B196DF1D24FCE15D009DD78C /* saving.mp3 in Resources */,
 				B196DE0224FCD77D009DD78C /* praise.mp3 in Resources */,
 				B196DFEE24FCED02009DD78C /* fairly.mp3 in Resources */,
+				B15A660A250A5FB900920766 /* delivery.gif in Resources */,
 				B196DDA824FCD4C7009DD78C /* require.mp3 in Resources */,
 				B11BDFC124F7FE520001251C /* distribute.mp3 in Resources */,
 				B196DEEE24FCE15D009DD78C /* basis.mp3 in Resources */,
 				B196DDFE24FCD77D009DD78C /* resolve.mp3 in Resources */,
 				B196DEF424FCE15D009DD78C /* profit.mp3 in Resources */,
+				B15A65A9250A334C00920766 /* temporary.gif in Resources */,
 				B1EDCB042504EE5B004D3A0D /* organization.gif in Resources */,
 				B196DD8324FCD4C7009DD78C /* inform.mp3 in Resources */,
 				B196DF1A24FCE15D009DD78C /* function.mp3 in Resources */,
@@ -2138,24 +2384,29 @@
 				B196DED024FCE15D009DD78C /* departure.mp3 in Resources */,
 				B196DD9624FCD4C7009DD78C /* reserve.mp3 in Resources */,
 				B196DEEF24FCE15D009DD78C /* complex.mp3 in Resources */,
+				B15A65AD250A334C00920766 /* various.gif in Resources */,
 				B196DEB324FCE15D009DD78C /* document.mp3 in Resources */,
 				B196DFEF24FCED02009DD78C /* eventually.mp3 in Resources */,
+				B15A65EF250A534900920766 /* on board.gif in Resources */,
 				B1E5EDF824E1984E0067B91C /* cat.mp3 in Resources */,
 				B196DF6E24FCE70C009DD78C /* advance.mp3 in Resources */,
 				B196DEBF24FCE15D009DD78C /* survey.mp3 in Resources */,
 				B196DDF324FCD77D009DD78C /* reduce.mp3 in Resources */,
+				B15A65BF250A334C00920766 /* full-time.gif in Resources */,
 				B196DDFA24FCD77D009DD78C /* reschedule.mp3 in Resources */,
 				B196DDED24FCD77D009DD78C /* direct.mp3 in Resources */,
 				B196DEBC24FCE15D009DD78C /* headquarters.mp3 in Resources */,
 				B196DF0324FCE15D009DD78C /* warehouse.mp3 in Resources */,
 				B1EDCB112504EE5C004D3A0D /* shuttle.gif in Resources */,
 				B196DEEC24FCE15D009DD78C /* applicant.mp3 in Resources */,
+				B15A65AF250A334C00920766 /* accurate.gif in Resources */,
 				B196DF2324FCE15D009DD78C /* contrast.mp3 in Resources */,
 				B196DECB24FCE15D009DD78C /* recommendation.mp3 in Resources */,
 				B196DFED24FCED02009DD78C /* rather.mp3 in Resources */,
 				B11BDFE424F7FF490001251C /* hire.mp3 in Resources */,
 				B196DDDE24FCD77D009DD78C /* approve.mp3 in Resources */,
 				B196DEA524FCE15D009DD78C /* application.mp3 in Resources */,
+				B15A65B9250A334C00920766 /* valuable.gif in Resources */,
 				B196DEB524FCE15D009DD78C /* option.mp3 in Resources */,
 				B196DF0924FCE15D009DD78C /* crew.mp3 in Resources */,
 				B196DF6D24FCE70C009DD78C /* former.mp3 in Resources */,
@@ -2166,6 +2417,7 @@
 				B1EDCAF32504EE5B004D3A0D /* author.gif in Resources */,
 				B196DEDB24FCE15D009DD78C /* concern.mp3 in Resources */,
 				B11BDFE124F7FF490001251C /* analyse.mp3 in Resources */,
+				B15A65AA250A334C00920766 /* successful.gif in Resources */,
 				B196DDE124FCD77D009DD78C /* maintain.mp3 in Resources */,
 				B196DE9824FCE15D009DD78C /* brochure.mp3 in Resources */,
 				B196DD9924FCD4C7009DD78C /* prove.mp3 in Resources */,
