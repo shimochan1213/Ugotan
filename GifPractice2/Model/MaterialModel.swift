@@ -11,7 +11,6 @@ import Foundation
 class MaterialModel {
     
     
-    //画像名を取得して、その画像名が人間かそうでないかをフラグによって判定するための機能
     
     
     let Words:String

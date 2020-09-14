@@ -39,7 +39,7 @@ class TestRangeViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     //タップされたセルの番号を入れておく（indexPath.row番目だね）
     var CellNumber = Int()
-     var textArray = ["0-30","31-60","61-90","91-120","121-150","151-180"]
+     var textArray = ["1-30","31-60","61-90","91-120","121-150","151-180"]
      
      override func viewDidLoad() {
          super.viewDidLoad()

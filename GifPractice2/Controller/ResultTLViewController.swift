@@ -54,6 +54,13 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
          tableView.dataSource = self
         
         print(resultIncorrectNumberArray)
+        
+        //全問正解の時はアラート出す
+        if resultIncorrectNumberArray.isEmpty == true{
+        showCongratsAlert()
+        }
+        
+        
 //        //広告表示
 //        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
 //        bannerView.rootViewController = self
@@ -267,6 +274,37 @@ class ResultTLViewController: UIViewController,UITableViewDelegate,UITableViewDa
         self.present(alertController, animated: true,completion: nil)
               
            
+    }
+    
+    func showCongratsAlert(){
+        //全問正解の時にアラートを出す
+        
+        let alertController = UIAlertController(title: "全問正解です！", message: "素晴らしいです。引き続きがんばって下さいね。応援しています！", preferredStyle: .alert)
+        
+        let action1 = UIAlertAction(title: "ホームへ", style: .default) { (alert) in
+         self.navigationController?.popToRootViewController(animated: true)
+        }
+     
+     let action2 = UIAlertAction(title: "範囲選択へ", style: .default) { (alert) in
+         
+//     self.navigationController?.popViewController(animated: true)
+        
+        //2つ前の画面に戻る。
+        let index = self.navigationController!.viewControllers.count - 3
+        self.navigationController?.popToViewController(self.navigationController!.viewControllers[index], animated: true)
+        
+        
+         //ナビゲーションバー再表示
+         self.navigationController?.setNavigationBarHidden(false, animated: true)
+     }
+     
+     
+        
+        alertController.addAction(action1)
+        alertController.addAction(action2)
+        
+        self.present(alertController, animated: true,completion: nil)
+       
     }
     
     

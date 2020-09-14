@@ -63,10 +63,10 @@ ca-app-pub-5717197999913003/9349881106</string>
                                         </constraints>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                        <inset key="contentEdgeInsets" minX="-18" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <inset key="titleEdgeInsets" minX="-109" minY="9" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="39" minY="45" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="学ぶ" image="learn">
+                                        <inset key="contentEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="-81" minY="9" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="56" minY="57" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="学ぶ" image="learn3">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -80,9 +80,9 @@ ca-app-pub-5717197999913003/9349881106</string>
                                             <constraint firstAttribute="height" constant="192" id="fGd-LO-0A2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                        <inset key="titleEdgeInsets" minX="-118" minY="9" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="33" minY="44" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="テスト" image="exam">
+                                        <inset key="titleEdgeInsets" minX="-98" minY="9" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="44" minY="54" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="テスト" image="exam3">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -453,7 +453,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n7I-C4-9c5">
-                                <rect key="frame" x="6" y="60" width="363" height="265"/>
+                                <rect key="frame" x="6" y="64" width="363" height="265"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="265" id="49B-ZM-DZQ"/>
                                 </constraints>
@@ -544,7 +544,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                             <constraint firstItem="jIL-b6-L0u" firstAttribute="leading" secondItem="Oxg-Jd-fAv" secondAttribute="leading" constant="10" id="Eaz-bT-NGG"/>
                             <constraint firstItem="n7I-C4-9c5" firstAttribute="leading" secondItem="Oxg-Jd-fAv" secondAttribute="leading" constant="6" id="bsa-Zg-6f4"/>
                             <constraint firstItem="gr3-3r-7EE" firstAttribute="centerX" secondItem="vpL-Da-mFE" secondAttribute="centerX" id="jjT-HO-B0P"/>
-                            <constraint firstItem="n7I-C4-9c5" firstAttribute="top" secondItem="Oxg-Jd-fAv" secondAttribute="top" constant="16" id="kLr-Ku-UOe"/>
+                            <constraint firstItem="n7I-C4-9c5" firstAttribute="top" secondItem="Oxg-Jd-fAv" secondAttribute="top" constant="20" id="kLr-Ku-UOe"/>
                             <constraint firstItem="lTt-yE-nkK" firstAttribute="leading" secondItem="Oxg-Jd-fAv" secondAttribute="leading" constant="20" id="mDd-fV-RUN"/>
                             <constraint firstItem="Oxg-Jd-fAv" firstAttribute="trailing" secondItem="lTt-yE-nkK" secondAttribute="trailing" constant="20" id="nAN-DF-bn2"/>
                             <constraint firstAttribute="trailing" secondItem="9Eo-dd-tPz" secondAttribute="trailing" constant="40" id="oZd-lp-J20"/>
@@ -763,10 +763,10 @@ ca-app-pub-5717197999913003/9349881106</string>
             </objects>
             <point key="canvasLocation" x="-1846" y="-563"/>
         </scene>
-        <!--View Controller-->
+        <!--Setsumei0 View Controller-->
         <scene sceneID="FpC-PL-1W6">
             <objects>
-                <viewController id="Nqk-4I-RpD" sceneMemberID="viewController">
+                <viewController id="Nqk-4I-RpD" customClass="Setsumei0ViewController" customModule="ugotan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iXw-Il-8Sj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -814,6 +814,9 @@ ca-app-pub-5717197999913003/9349881106</string>
                         <viewLayoutGuide key="safeArea" id="bSx-yD-fww"/>
                     </view>
                     <navigationItem key="navigationItem" id="QrW-hz-ob5"/>
+                    <connections>
+                        <outlet property="textView" destination="bpx-6h-sUW" id="61N-C1-LVV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLj-eY-ts7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -830,7 +833,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-Or-K6F">
                                 <rect key="frame" x="19" y="112" width="337" height="478.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">　本アプリは30個ずつ英単語を学ぶことができます。まずは初めの30個を1日2回（時間を空けて）、3日間毎日「eat食べる、eat食べる、eat食べる」という風に音読して下さい。そして、音読を3日間繰り返した後に、是非テストをしてみてください。きっと正解できる単語が増えているはずです。ですが、それでも覚え切れない単語は当然あるでしょう。そのような単語たちは「ニガテ単語」である可能性が高いため意識的に繰り返し音読してください。　　　　　　　　　　　　慣れてきたら、ペースを上げて一日90単語などに挑戦してみて下さいね！　　　　　　　　　　　</string>
+                                <mutableString key="text">　本アプリは30個ずつ英単語を学ぶことができます。まずは初めの30個を1日2回（時間を空けて）、3日間毎日「eat食べる、eat食べる、eat食べる」という風に音読して下さい。1単語あたり1-2回読めればOKです。そして、音読を3日間繰り返した後に、是非テストをしてみてください。きっと正解できる単語が増えているはずです。ですが、それでも覚え切れない単語は当然あるでしょう。そのような単語たちは「ニガテ単語」である可能性が高いため意識的に繰り返し音読してください。　　　　　　　　　　　　慣れてきたら、ペースを上げて一日90単語などに挑戦してみて下さいね！　　　　　　　　　　　</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -867,6 +870,9 @@ ca-app-pub-5717197999913003/9349881106</string>
                         <viewLayoutGuide key="safeArea" id="9Oa-iX-M7M"/>
                     </view>
                     <navigationItem key="navigationItem" id="mQ5-Aj-m7C"/>
+                    <connections>
+                        <outlet property="textView" destination="hyv-Or-K6F" id="kLt-5i-B0F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w74-oG-Sej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1194,8 +1200,8 @@ ca-app-pub-5717197999913003/9349881106</string>
     <resources>
         <image name="180reo-1" width="180" height="180"/>
         <image name="back3" width="128" height="128"/>
-        <image name="exam" width="128" height="128"/>
-        <image name="learn" width="128" height="128"/>
+        <image name="exam3" width="99" height="99"/>
+        <image name="learn3" width="99" height="99"/>
         <image name="next3" width="128" height="128"/>
         <image name="pause2" width="128" height="128"/>
         <image name="review" width="128" height="128"/>

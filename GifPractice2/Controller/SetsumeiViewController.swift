@@ -9,11 +9,14 @@
 import UIKit
 
 class SetsumeiViewController: UIViewController {
-
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        textView.isEditable = false
+        textView.isSelectable = false
+        
     }
     
     @IBAction func backToModeSelect(_ sender: Any) {

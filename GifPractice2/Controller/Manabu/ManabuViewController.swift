@@ -48,126 +48,134 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         }
         
         switch firstOrNot {
+//        case true:
+//            //初めての起動
+//            showAlert()
+//
+//            switch receivedCellNumber {
+//            case 0:
+//                wordCount = 0
+//            case 1:
+//                wordCount = 30
+//            case 2:
+//                wordCount = 60
+//            case 3:
+//                wordCount = 90
+//            case 4:
+//                wordCount = 120
+//            case 5:
+//                wordCount = 150
+//            default:
+//                return
+//            }
+//
+//            playWordSound()
+//
+//            switch whichHinshi {
+//            case "verb":
+//                wordLabel.text = String(materialList.TOEIC600verbList[wordCount].Words)
+//                japanWordLabel.text = String(materialList.TOEIC600verbList[wordCount].japanWords)
+//                gifView.loadGif(name:materialList.TOEIC600verbList[wordCount].Words )
+//
+//            case "noun":
+//                wordLabel.text = String(materialList.TOEIC600NounList[wordCount].Words)
+//                japanWordLabel.text = String(materialList.TOEIC600NounList[wordCount].japanWords)
+//                gifView.loadGif(name:materialList.TOEIC600NounList[wordCount].Words )
+//
+//            case "adjective":
+//                wordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].Words)
+//                japanWordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].japanWords)
+//                gifView.loadGif(name:materialList.TOEIC600AdjectiveList[wordCount].Words )
+//
+//            case "adverb":
+//                wordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].Words)
+//                japanWordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].japanWords)
+//                gifView.loadGif(name:materialList.TOEIC600AdverbList[wordCount].Words )
+//
+//
+//            case "others":
+//                wordLabel.text = String(materialList.TOEIC600OthersList[wordCount].Words)
+//                japanWordLabel.text = String(materialList.TOEIC600OthersList[wordCount].japanWords)
+//                gifView.loadGif(name:materialList.TOEIC600OthersList[wordCount].Words )
+//
+//            default:
+//                return
+        //            }
         case true:
             //初めての起動
             showAlert()
-            
-            switch receivedCellNumber {
-            case 0:
-                wordCount = 0
-            case 1:
-                wordCount = 30
-            case 2:
-                wordCount = 60
-            case 3:
-                wordCount = 90
-            case 4:
-                wordCount = 120
-            case 5:
-                wordCount = 150
-            default:
-                return
-            }
-            
-            playWordSound()
-            
-            switch whichHinshi {
-            case "verb":
-                wordLabel.text = String(materialList.TOEIC600verbList[wordCount].Words)
-                japanWordLabel.text = String(materialList.TOEIC600verbList[wordCount].japanWords)
-                gifView.loadGif(name:materialList.TOEIC600verbList[wordCount].Words )
-                
-            case "noun":
-                wordLabel.text = String(materialList.TOEIC600NounList[wordCount].Words)
-                japanWordLabel.text = String(materialList.TOEIC600NounList[wordCount].japanWords)
-                gifView.loadGif(name:materialList.TOEIC600NounList[wordCount].Words )
-                
-            case "adjective":
-                wordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].Words)
-                japanWordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].japanWords)
-                gifView.loadGif(name:materialList.TOEIC600AdjectiveList[wordCount].Words )
-                
-            case "adverb":
-                wordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].Words)
-                japanWordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].japanWords)
-                gifView.loadGif(name:materialList.TOEIC600AdverbList[wordCount].Words )
-                
-                
-            case "others":
-                wordLabel.text = String(materialList.TOEIC600OthersList[wordCount].Words)
-                japanWordLabel.text = String(materialList.TOEIC600OthersList[wordCount].japanWords)
-                gifView.loadGif(name:materialList.TOEIC600OthersList[wordCount].Words )
-                
-            default:
-                return
-            }
-            
-            
         case false:
-            //2回目以降の起動
-            switch receivedCellNumber {
-            case 0:
-                wordCount = 0
-            case 1:
-                wordCount = 30
-            case 2:
-                wordCount = 60
-            case 3:
-                wordCount = 90
-            case 4:
-                wordCount = 120
-            case 5:
-                wordCount = 150
-            default:
-                return
-            }
-            
-            playWordSound()
-            
-            
-            switch whichHinshi {
-            case "verb":
-                wordLabel.text = String(materialList.TOEIC600verbList[wordCount].Words)
-                japanWordLabel.text = String(materialList.TOEIC600verbList[wordCount].japanWords)
-                gifView.loadGif(name:materialList.TOEIC600verbList[wordCount].Words )
-                
-            case "noun":
-                wordLabel.text = String(materialList.TOEIC600NounList[wordCount].Words)
-                japanWordLabel.text = String(materialList.TOEIC600NounList[wordCount].japanWords)
-                gifView.loadGif(name:materialList.TOEIC600NounList[wordCount].Words )
-                
-            case "adjective":
-                wordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].Words)
-                japanWordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].japanWords)
-                gifView.loadGif(name:materialList.TOEIC600AdjectiveList[wordCount].Words )
-                
-            case "adverb":
-                wordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].Words)
-                japanWordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].japanWords)
-                gifView.loadGif(name:materialList.TOEIC600AdverbList[wordCount].Words )
-                
-                
-            case "others":
-                wordLabel.text = String(materialList.TOEIC600OthersList[wordCount].Words)
-                japanWordLabel.text = String(materialList.TOEIC600OthersList[wordCount].japanWords)
-                gifView.loadGif(name:materialList.TOEIC600OthersList[wordCount].Words )
-                
-            default:
-                return
-            }
-            
             // タイマーを設定
             timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
-            
-            
-            
-            
-            
-            
         default: return
-            
-            
         }
+        
+        
+        //        case false:
+        //2回目以降の起動
+        switch receivedCellNumber {
+        case 0:
+            wordCount = 0
+        case 1:
+            wordCount = 30
+        case 2:
+            wordCount = 60
+        case 3:
+            wordCount = 90
+        case 4:
+            wordCount = 120
+        case 5:
+            wordCount = 150
+        default:
+            return
+        }
+            
+            playWordSound()
+            
+            
+            switch whichHinshi {
+            case "verb":
+                wordLabel.text = String(materialList.TOEIC600verbList[wordCount].Words)
+                japanWordLabel.text = String(materialList.TOEIC600verbList[wordCount].japanWords)
+                gifView.loadGif(name:materialList.TOEIC600verbList[wordCount].Words )
+                
+            case "noun":
+                wordLabel.text = String(materialList.TOEIC600NounList[wordCount].Words)
+                japanWordLabel.text = String(materialList.TOEIC600NounList[wordCount].japanWords)
+                gifView.loadGif(name:materialList.TOEIC600NounList[wordCount].Words )
+                
+            case "adjective":
+                wordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].Words)
+                japanWordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].japanWords)
+                gifView.loadGif(name:materialList.TOEIC600AdjectiveList[wordCount].Words )
+                
+            case "adverb":
+                wordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].Words)
+                japanWordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].japanWords)
+                gifView.loadGif(name:materialList.TOEIC600AdverbList[wordCount].Words )
+                
+                
+            case "others":
+                wordLabel.text = String(materialList.TOEIC600OthersList[wordCount].Words)
+                japanWordLabel.text = String(materialList.TOEIC600OthersList[wordCount].japanWords)
+                gifView.loadGif(name:materialList.TOEIC600OthersList[wordCount].Words )
+                
+            default:
+                return
+            }
+            
+//            // タイマーを設定
+//            timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+            
+            
+            
+            
+            
+//            
+//        default: return
+            
+            
+//        }
         
         
         
@@ -176,242 +184,675 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     
-    // NSTimerによって、一定の間隔で呼び出される関数
+//    // NSTimerによって、一定の間隔で呼び出される関数
+//    @objc func onTimer(timer: Timer) {
+//
+//
+//        //0-30
+//        if receivedCellNumber == 0 && wordCount < 29{
+//
+//            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+//
+//            switch whichHinshi {
+//            case "verb":
+//                if wordCount == materialList.TOEIC600verbList.count - 1{
+//                    return
+//                }
+//            case "noun":
+//                if wordCount == materialList.TOEIC600NounList.count - 1{
+//                    return
+//                }
+//            case "adjective":
+//
+//                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+//                    return
+//                }
+//
+//            case "adverb":
+//                if wordCount == materialList.TOEIC600AdverbList.count - 1{
+//                    return
+//                }
+//            case "others":
+//                if wordCount == materialList.TOEIC600OthersList.count - 1{
+//                    return
+//                }
+//            default:
+//                return
+//            }
+//
+//
+//            // 表示しているgifの番号を1増やす
+//            wordCount += 1
+//
+//            playWordSound()
+//
+//            // 表示している画像の番号を基にgifを表示する。
+//            displayGif()
+//            //wordCountに応じてラベルを変更（英単語と日本語訳）
+//            changeLabelsOfWordAndJapan()
+//
+//        }else if receivedCellNumber == 1 && wordCount < 59{
+//            //31-60
+//            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+//
+//            switch whichHinshi {
+//            case "verb":
+//                if wordCount == materialList.TOEIC600verbList.count - 1{
+//                    return
+//                }
+//            case "noun":
+//                if wordCount == materialList.TOEIC600NounList.count - 1{
+//                    return
+//                }
+//            case "adjective":
+//
+//                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+//                    return
+//                }
+//
+//            case "adverb":
+//                if wordCount == materialList.TOEIC600AdverbList.count - 1{
+//                    return
+//                }
+//            case "others":
+//                if wordCount == materialList.TOEIC600OthersList.count - 1{
+//                    return
+//                }
+//            default:
+//                return
+//            }
+//
+//
+//
+//            wordCount += 1
+//            playWordSound()
+//            displayGif()
+//            changeLabelsOfWordAndJapan()
+//        }else if receivedCellNumber == 2 && wordCount < 89{
+//            //61-90
+//
+//            switch whichHinshi {
+//            case "verb":
+//                if wordCount == materialList.TOEIC600verbList.count - 1{
+//                    return
+//                }
+//            case "noun":
+//                if wordCount == materialList.TOEIC600NounList.count - 1{
+//                    return
+//                }
+//            case "adjective":
+//
+//                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+//                    return
+//                }
+//
+//            case "adverb":
+//                if wordCount == materialList.TOEIC600AdverbList.count - 1{
+//                    return
+//                }
+//            case "others":
+//                if wordCount == materialList.TOEIC600OthersList.count - 1{
+//                    return
+//                }
+//            default:
+//                return
+//            }
+//
+//
+//
+//            wordCount += 1
+//            playWordSound()
+//            displayGif()
+//            changeLabelsOfWordAndJapan()
+//
+//        }else if receivedCellNumber == 3 && wordCount < 119{
+//            //91-120
+//            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+//
+//            switch whichHinshi {
+//            case "verb":
+//                if wordCount == materialList.TOEIC600verbList.count - 1{
+//                    return
+//                }
+//            case "noun":
+//                if wordCount == materialList.TOEIC600NounList.count - 1{
+//                    return
+//                }
+//            case "adjective":
+//
+//                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+//                    return
+//                }
+//
+//            case "adverb":
+//                if wordCount == materialList.TOEIC600AdverbList.count - 1{
+//                    return
+//                }
+//            case "others":
+//                if wordCount == materialList.TOEIC600OthersList.count - 1{
+//                    return
+//                }
+//            default:
+//                return
+//            }
+//
+//            wordCount += 1
+//            playWordSound()
+//            displayGif()
+//            changeLabelsOfWordAndJapan()
+//        }else if receivedCellNumber == 4 && wordCount < 149{
+//            //121-150
+//            //品詞ごとに、wordCountをその配列のカウントまでとしてout of rangeしないようにする
+//
+//            switch whichHinshi {
+//            case "verb":
+//                if wordCount == materialList.TOEIC600verbList.count - 1{
+//                    return
+//                }
+//            case "noun":
+//                if wordCount == materialList.TOEIC600NounList.count - 1{
+//                    return
+//                }
+//            case "adjective":
+//
+//                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+//                    return
+//                }
+//
+//            case "adverb":
+//                if wordCount == materialList.TOEIC600AdverbList.count - 1{
+//                    return
+//                }
+//            case "others":
+//                if wordCount == materialList.TOEIC600OthersList.count - 1{
+//                    return
+//                }
+//            default:
+//                return
+//            }
+//
+//            wordCount += 1
+//            playWordSound()
+//            displayGif()
+//            changeLabelsOfWordAndJapan()
+//        }else if receivedCellNumber == 5 && wordCount < 179{
+//            //151-180
+//            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+//
+//            switch whichHinshi {
+//            case "verb":
+//                if wordCount == materialList.TOEIC600verbList.count - 1{
+//                    return
+//                }
+//            case "noun":
+//                if wordCount == materialList.TOEIC600NounList.count - 1{
+//                    return
+//                }
+//            case "adjective":
+//
+//                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+//                    return
+//                }
+//
+//            case "adverb":
+//                if wordCount == materialList.TOEIC600AdverbList.count - 1{
+//                    return
+//                }
+//            case "others":
+//                if wordCount == materialList.TOEIC600OthersList.count - 1{
+//                    return
+//                }
+//            default:
+//                return
+//            }
+//
+//            wordCount += 1
+//            playWordSound()
+//            displayGif()
+//            changeLabelsOfWordAndJapan()
+//        }
+//    }
+    
+    
+    
+    
     @objc func onTimer(timer: Timer) {
         
+        //countが問題数最大になるならreturn
+               if receivedCellNumber == 0{
+                   //0-30
+                   //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+                   
+                   switch whichHinshi {
+                   case "verb":
+                       if wordCount == materialList.TOEIC600verbList.count - 1{
+                           return
+                       }
+                   case "noun":
+                       if wordCount == materialList.TOEIC600NounList.count - 1{
+                           return
+                       }
+                   case "adjective":
+                       
+                       if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+                           return
+                       }
+                       
+                   case "adverb":
+                       if wordCount == materialList.TOEIC600AdverbList.count - 1{
+                           showCongratsAlert()
+                           return
+                       }
+                   case "others":
+                       if wordCount == materialList.TOEIC600OthersList.count - 1{
+                           showCongratsAlert()
+                           return
+                       }
+                   default:
+                       return
+                   }
+                   
+                   
+                   
+                   if wordCount == 29{
+                       showCongratsAlert()
+                       return
+                   }else{
+//                       //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
+//                       self.timer?.invalidate()
+                       wordCount += 1
+                       
+                       playWordSound()
+                       
+                       switch whichHinshi {
+                       case "verb":
+                           gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
+                           
+                       case "noun":
+                           gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
+                           
+                       case "adjective":
+                           gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
+                           
+                       case "adverb":
+                           
+                           gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
+                           
+                       case "others":
+                           gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
+                           
+                       default:
+                           return
+                       }
+                       
+                       
+                       changeLabelsOfWordAndJapan()
+//                       //タイマー再開
+//                       timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                   }
+               }else if receivedCellNumber == 1{
+                   //31-60
+                   //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+                   
+                   switch whichHinshi {
+                   case "verb":
+                       if wordCount == materialList.TOEIC600verbList.count - 1{
+                           return
+                       }
+                   case "noun":
+                       if wordCount == materialList.TOEIC600NounList.count - 1{
+                           return
+                       }
+                   case "adjective":
+                       
+                       if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+                           return
+                       }
+                       
+                   case "adverb":
+                       if wordCount == materialList.TOEIC600AdverbList.count - 1{
+                           showCongratsAlert()
+                           return
+                       }
+                   case "others":
+                       if wordCount == materialList.TOEIC600OthersList.count - 1{
+                           showCongratsAlert()
+                           return
+                       }
+                   default:
+                       return
+                   }
+                   
+                   
+                   
+                   if wordCount == 59{
+                       showCongratsAlert()
+                       return
+                   }else{
+//                       //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
+//                       self.timer?.invalidate()
+                       wordCount += 1
+                       playWordSound()
+                       
+                       switch whichHinshi {
+                       case "verb":
+                           gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
+                           
+                       case "noun":
+                           gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
+                           
+                       case "adjective":
+                           gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
+                           
+                       case "adverb":
+                           
+                           gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
+                           
+                       case "others":
+                           gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
+                           
+                       default:
+                           return
+                       }
+                       
+                       changeLabelsOfWordAndJapan()
+//                       //タイマー再開
+//                       timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                   }
+               }else if receivedCellNumber == 2{
+                   //61-90のセルが押された
+                   
+                   //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+                   
+                   switch whichHinshi {
+                   case "verb":
+                       if wordCount == materialList.TOEIC600verbList.count - 1{
+                           return
+                       }
+                   case "noun":
+                       if wordCount == materialList.TOEIC600NounList.count - 1{
+                           return
+                       }
+                   case "adjective":
+                       
+                       if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+                           showCongratsAlert()
+                           return
+                       }
+                       
+                   case "adverb":
+                       if wordCount == materialList.TOEIC600AdverbList.count - 1{
+                           return
+                       }
+                   case "others":
+                       if wordCount == materialList.TOEIC600OthersList.count - 1{
+                           return
+                       }
+                   default:
+                       return
+                   }
+                   
+                   if wordCount == 89{
+                       showCongratsAlert()
+                       return
+                   }else{
+//                       //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
+//                       self.timer?.invalidate()
+                       wordCount += 1
+                       playWordSound()
+                       
+                       switch whichHinshi {
+                       case "verb":
+                           gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
+                           
+                       case "noun":
+                           gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
+                           
+                       case "adjective":
+                           gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
+                           
+                       case "adverb":
+                           
+                           gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
+                           
+                       case "others":
+                           gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
+                           
+                       default:
+                           return
+                       }
+                       
+                       changeLabelsOfWordAndJapan()
+//                       //タイマー再開
+//                       timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                   }
+                   
+                   
+               }else if receivedCellNumber == 3{
+                   //91-120
+                   //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+                   
+                   switch whichHinshi {
+                   case "verb":
+                       if wordCount == materialList.TOEIC600verbList.count - 1{
+                           showCongratsAlert()
+                           return
+                       }
+                   case "noun":
+                       if wordCount == materialList.TOEIC600NounList.count - 1{
+                           return
+                       }
+                   case "adjective":
+                       
+                       if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+                           return
+                       }
+                       
+                   case "adverb":
+                       if wordCount == materialList.TOEIC600AdverbList.count - 1{
+                           return
+                       }
+                   case "others":
+                       if wordCount == materialList.TOEIC600OthersList.count - 1{
+                           return
+                       }
+                   default:
+                       return
+                   }
+                   
+                   
+                   
+                   
+                   
+                   
+                   if wordCount == 119{
+                       showCongratsAlert()
+                       return
+                   }else{
+//                       //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
+//                       self.timer?.invalidate()
+                       wordCount += 1
+                       playWordSound()
+                       
+                       switch whichHinshi {
+                       case "verb":
+                           gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
+                           
+                       case "noun":
+                           gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
+                           
+                       case "adjective":
+                           gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
+                           
+                       case "adverb":
+                           
+                           gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
+                           
+                       case "others":
+                           gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
+                           
+                       default:
+                           return
+                       }
+                       
+                       changeLabelsOfWordAndJapan()
+//                       //タイマー再開
+//                       timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                   }
+               }else if receivedCellNumber == 4{
+                   
+                   //121-150
+                   //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+                   
+                   switch whichHinshi {
+                   case "verb":
+                       if wordCount == materialList.TOEIC600verbList.count - 1{
+                           return
+                       }
+                   case "noun":
+                       if wordCount == materialList.TOEIC600NounList.count - 1{
+                           showCongratsAlert()
+                           return
+                       }
+                   case "adjective":
+                       
+                       if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+                           return
+                       }
+                       
+                   case "adverb":
+                       if wordCount == materialList.TOEIC600AdverbList.count - 1{
+                           return
+                       }
+                   case "others":
+                       if wordCount == materialList.TOEIC600OthersList.count - 1{
+                           return
+                       }
+                   default:
+                       return
+                   }
+                   
+                   
+                   if wordCount == 149{
+                       showCongratsAlert()
+                       return
+                   }else{
+//                       //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
+//                       self.timer?.invalidate()
+                       wordCount += 1
+                       playWordSound()
+                       
+                       switch whichHinshi {
+                       case "verb":
+                           gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
+                           
+                       case "noun":
+                           gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
+                           
+                       case "adjective":
+                           gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
+                           
+                       case "adverb":
+                           
+                           gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
+                           
+                       case "others":
+                           gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
+                           
+                       default:
+                           return
+                       }
+                       
+                       changeLabelsOfWordAndJapan()
+//                       //タイマー再開
+//                       timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                   }
+                   
+                   
+               }else if receivedCellNumber == 5{
+                   
+                   //151-180
+                   //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
+                   
+                   switch whichHinshi {
+                   case "verb":
+                       if wordCount == materialList.TOEIC600verbList.count - 1{
+                           return
+                       }
+                   case "noun":
+                       if wordCount == materialList.TOEIC600NounList.count - 1{
+                           return
+                       }
+                   case "adjective":
+                       
+                       if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
+                           return
+                       }
+                       
+                   case "adverb":
+                       if wordCount == materialList.TOEIC600AdverbList.count - 1{
+                           return
+                       }
+                   case "others":
+                       if wordCount == materialList.TOEIC600OthersList.count - 1{
+                           return
+                       }
+                   default:
+                       return
+                   }
+                   
+                   
+                   if wordCount == 179{
+                       showCongratsAlert()
+                       return
+                   }else{
+//                       //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
+//                       self.timer?.invalidate()
+                       wordCount += 1
+                       playWordSound()
+                       
+                       switch whichHinshi {
+                       case "verb":
+                           gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
+                           
+                       case "noun":
+                           gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
+                           
+                       case "adjective":
+                           gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
+                           
+                       case "adverb":
+                           
+                           gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
+                           
+                       case "others":
+                           gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
+                           
+                       default:
+                           return
+                       }
+                       
+                       changeLabelsOfWordAndJapan()
+//                       //タイマー再開
+//                       timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                   }
+                   
+                   
+               }
+               
         
-        //0-30
-        if receivedCellNumber == 0 && wordCount < 29{
-            
-            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
-            
-            switch whichHinshi {
-            case "verb":
-                if wordCount == materialList.TOEIC600verbList.count - 1{
-                    return
-                }
-            case "noun":
-                if wordCount == materialList.TOEIC600NounList.count - 1{
-                    return
-                }
-            case "adjective":
-                
-                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
-                    return
-                }
-                
-            case "adverb":
-                if wordCount == materialList.TOEIC600AdverbList.count - 1{
-                    return
-                }
-            case "others":
-                if wordCount == materialList.TOEIC600OthersList.count - 1{
-                    return
-                }
-            default:
-                return
-            }
-            
-            
-            // 表示しているgifの番号を1増やす
-            wordCount += 1
-            
-            playWordSound()
-            
-            // 表示している画像の番号を基にgifを表示する。
-            displayGif()
-            //wordCountに応じてラベルを変更（英単語と日本語訳）
-            changeLabelsOfWordAndJapan()
-            
-        }else if receivedCellNumber == 1 && wordCount < 59{
-            //31-60
-            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
-            
-            switch whichHinshi {
-            case "verb":
-                if wordCount == materialList.TOEIC600verbList.count - 1{
-                    return
-                }
-            case "noun":
-                if wordCount == materialList.TOEIC600NounList.count - 1{
-                    return
-                }
-            case "adjective":
-                
-                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
-                    return
-                }
-                
-            case "adverb":
-                if wordCount == materialList.TOEIC600AdverbList.count - 1{
-                    return
-                }
-            case "others":
-                if wordCount == materialList.TOEIC600OthersList.count - 1{
-                    return
-                }
-            default:
-                return
-            }
-            
-            
-            
-            wordCount += 1
-            playWordSound()
-            displayGif()
-            changeLabelsOfWordAndJapan()
-        }else if receivedCellNumber == 2 && wordCount < 89{
-            //61-90
-
-            switch whichHinshi {
-            case "verb":
-                if wordCount == materialList.TOEIC600verbList.count - 1{
-                    return
-                }
-            case "noun":
-                if wordCount == materialList.TOEIC600NounList.count - 1{
-                    return
-                }
-            case "adjective":
-                
-                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
-                    return
-                }
-                
-            case "adverb":
-                if wordCount == materialList.TOEIC600AdverbList.count - 1{
-                    return
-                }
-            case "others":
-                if wordCount == materialList.TOEIC600OthersList.count - 1{
-                    return
-                }
-            default:
-                return
-            }
-            
-            
-            
-            wordCount += 1
-            playWordSound()
-            displayGif()
-            changeLabelsOfWordAndJapan()
-            
-        }else if receivedCellNumber == 3 && wordCount < 119{
-            //91-120
-            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
-            
-            switch whichHinshi {
-            case "verb":
-                if wordCount == materialList.TOEIC600verbList.count - 1{
-                    return
-                }
-            case "noun":
-                if wordCount == materialList.TOEIC600NounList.count - 1{
-                    return
-                }
-            case "adjective":
-                
-                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
-                    return
-                }
-                
-            case "adverb":
-                if wordCount == materialList.TOEIC600AdverbList.count - 1{
-                    return
-                }
-            case "others":
-                if wordCount == materialList.TOEIC600OthersList.count - 1{
-                    return
-                }
-            default:
-                return
-            }
-            
-            wordCount += 1
-            playWordSound()
-            displayGif()
-            changeLabelsOfWordAndJapan()
-        }else if receivedCellNumber == 4 && wordCount < 149{
-            //121-150
-            //品詞ごとに、wordCountをその配列のカウントまでとしてout of rangeしないようにする
-            
-            switch whichHinshi {
-            case "verb":
-                if wordCount == materialList.TOEIC600verbList.count - 1{
-                    return
-                }
-            case "noun":
-                if wordCount == materialList.TOEIC600NounList.count - 1{
-                    return
-                }
-            case "adjective":
-                
-                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
-                    return
-                }
-                
-            case "adverb":
-                if wordCount == materialList.TOEIC600AdverbList.count - 1{
-                    return
-                }
-            case "others":
-                if wordCount == materialList.TOEIC600OthersList.count - 1{
-                    return
-                }
-            default:
-                return
-            }
-            
-            wordCount += 1
-            playWordSound()
-            displayGif()
-            changeLabelsOfWordAndJapan()
-        }else if receivedCellNumber == 5 && wordCount < 179{
-            //151-180
-            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
-            
-            switch whichHinshi {
-            case "verb":
-                if wordCount == materialList.TOEIC600verbList.count - 1{
-                    return
-                }
-            case "noun":
-                if wordCount == materialList.TOEIC600NounList.count - 1{
-                    return
-                }
-            case "adjective":
-                
-                if wordCount == materialList.TOEIC600AdjectiveList.count - 1{
-                    return
-                }
-                
-            case "adverb":
-                if wordCount == materialList.TOEIC600AdverbList.count - 1{
-                    return
-                }
-            case "others":
-                if wordCount == materialList.TOEIC600OthersList.count - 1{
-                    return
-                }
-            default:
-                return
-            }
-            
-            wordCount += 1
-            playWordSound()
-            displayGif()
-            changeLabelsOfWordAndJapan()
-        }
+        
     }
+    
+    
     
     
     
     
     @IBAction func beforeQuestion(_ sender: Any) {
         
-        //countが0になったらreturn
-        if wordCount == 0{
+        //問題のはじめは戻るボタン押せない様にする
+        if wordCount == 0 || wordCount == 30 || wordCount == 60 || wordCount == 90 || wordCount == 120 || wordCount == 150 || wordCount == 180{
             return
         }else{
             //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
@@ -455,9 +896,9 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }else if receivedCellNumber == 1{
                 //31-60
                 
-                if wordCount == 30{
-                    return
-                }else{
+//                if wordCount == 30{
+//                    return
+//                }else{
                     
                     switch whichHinshi {
                     case "verb":
@@ -483,7 +924,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     changeLabelsOfWordAndJapan()
                     //タイマー再開
                     timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
-                }
+//                }
                 
             }else if receivedCellNumber == 2 {
                 //61-90
@@ -491,9 +932,9 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 
                 
                 
-                if wordCount == 61{
-                    return
-                }else{
+//                if wordCount == 61{
+//                    return
+//                }else{
                     
                     switch whichHinshi {
                     case "verb":
@@ -519,15 +960,15 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                     //タイマー再開
                     timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
                     
-                }
-                
+//                }
+//
                 
             }else if receivedCellNumber == 3{
                 //91-120
                 
-                if wordCount == 91{
-                    return
-                }
+//                if wordCount == 91{
+//                    return
+//                }
                 
                 switch whichHinshi {
                 case "verb":
@@ -555,9 +996,9 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
                 
             }else if receivedCellNumber == 4{
-                if wordCount == 121{
-                    return
-                }
+//                if wordCount == 121{
+//                    return
+//                }
                 
                 switch whichHinshi {
                 case "verb":
@@ -588,9 +1029,9 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 
             }else if receivedCellNumber == 5{
                 
-                if wordCount == 151{
-                    return
-                }
+//                if wordCount == 151{
+//                    return
+//                }
                 
                 switch whichHinshi {
                 case "verb":
@@ -1222,7 +1663,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     func showAlert(){
         //テストの説明を表示
         
-        let alertController = UIAlertController(title: "はじめまして", message: "3秒で自動的に次の単語が出ます。1単語あたり2-3回音読ができると良いペースです。流れてくる音声に続いて「increase増加する、increase増加する」という風に音読します。では、頑張って下さい！", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "はじめまして", message: "3秒で自動的に次の単語が出ます。1単語あたり1-3回音読ができると良いペースです。流れてくる音声に続いて「increase増加する、increase増加する」という風に音読します。では、頑張って下さい！", preferredStyle: .alert)
         
         let action1 = UIAlertAction(title: "はい", style: .default) { (alert) in
             

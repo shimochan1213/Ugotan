@@ -18,7 +18,8 @@ class SettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        //リザルトから戻ったときにナビゲーションバー消えないように
+        self.navigationController?.isNavigationBarHidden = false
         
         
         //スイッチonOff設定
