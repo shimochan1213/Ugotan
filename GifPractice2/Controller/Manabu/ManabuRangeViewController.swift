@@ -37,7 +37,7 @@ class ManabuRangeViewController: UIViewController,UITableViewDelegate,UITableVie
          tableView.dataSource = self
         
         //広告表示
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-5717197999913003/2476547037"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         

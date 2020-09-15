@@ -50,7 +50,7 @@ class TestRangeViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         
         //広告表示
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-5717197999913003/4719566996"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IWy-hD-PxZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IWy-hD-PxZ">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -144,52 +144,6 @@ ca-app-pub-5717197999913003/9349881106</string>
             </objects>
             <point key="canvasLocation" x="581.60000000000002" y="339.58020989505252"/>
         </scene>
-        <!--Login View Controller-->
-        <scene sceneID="4jo-fl-vy6">
-            <objects>
-                <viewController id="zpY-E6-ScO" customClass="LoginViewController" customModule="ugotan" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xeE-Io-9j4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eメールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yNy-fh-tAb">
-                                <rect key="frame" x="45" y="73" width="285" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bah-C0-WAX">
-                                <rect key="frame" x="45" y="133" width="285" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHr-EM-i1R">
-                                <rect key="frame" x="45" y="192" width="285" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
-                                <state key="normal" title="ログイン">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButton:" destination="zpY-E6-ScO" eventType="touchUpInside" id="N16-Xh-0Wd"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="AiZ-zu-TvY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Brc-Tn-ODs"/>
-                    <connections>
-                        <outlet property="emailTextField" destination="yNy-fh-tAb" id="I8n-9M-ct3"/>
-                        <outlet property="passwordTextField" destination="bah-C0-WAX" id="YCZ-Gh-Ni2"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fdB-rn-ibO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-807" y="1645"/>
-        </scene>
         <!--Setting View Controller-->
         <scene sceneID="Ua2-Hs-ZCl">
             <objects>
@@ -301,52 +255,6 @@ ca-app-pub-5717197999913003/9349881106</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oY1-kn-cyR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1634" y="139"/>
-        </scene>
-        <!--Register View Controller-->
-        <scene sceneID="jZI-ut-OEp">
-            <objects>
-                <viewController id="4oR-bI-vWe" customClass="RegisterViewController" customModule="ugotan" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KA8-VE-exR" customClass="re">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eメールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8UW-8O-ija">
-                                <rect key="frame" x="45" y="95" width="285" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TEZ-yq-fO3">
-                                <rect key="frame" x="45" y="165" width="285" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuF-Jh-KnF">
-                                <rect key="frame" x="45" y="221" width="285" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
-                                <state key="normal" title="新規登録">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="registerButton:" destination="4oR-bI-vWe" eventType="touchUpInside" id="7Bb-tC-ibs"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="UFl-JE-L8e"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ezc-HU-xV1"/>
-                    <connections>
-                        <outlet property="emailTextField" destination="8UW-8O-ija" id="Ydp-Zq-ffJ"/>
-                        <outlet property="passwordTextField" destination="TEZ-yq-fO3" id="cUr-jl-lT7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W8S-Jm-l8q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1543" y="1635"/>
         </scene>
         <!--Manabu Range View Controller-->
         <scene sceneID="Vbm-in-wk4">
@@ -736,33 +644,6 @@ ca-app-pub-5717197999913003/9349881106</string>
             </objects>
             <point key="canvasLocation" x="3245.5999999999999" y="688.60569715142435"/>
         </scene>
-        <!--Intro Scroll View Controller-->
-        <scene sceneID="F1d-8E-Dt2">
-            <objects>
-                <viewController id="NpH-qu-6s0" customClass="IntroScrollViewController" customModule="ugotan" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hlx-hl-UIw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTu-r6-fU7">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="BQh-Rq-ePb"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="XPj-5a-3C3"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="XUg-Xd-EP9"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="U2X-mB-rRA"/>
-                    <connections>
-                        <outlet property="scrollView" destination="NTu-r6-fU7" id="aps-xU-nJP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FTf-dS-NEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1846" y="-563"/>
-        </scene>
         <!--Setsumei0 View Controller-->
         <scene sceneID="FpC-PL-1W6">
             <objects>
@@ -833,9 +714,9 @@ ca-app-pub-5717197999913003/9349881106</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-Or-K6F">
                                 <rect key="frame" x="19" y="112" width="337" height="478.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">　本アプリは30個ずつ英単語を学ぶことができます。まずは初めの30個を1日2回（時間を空けて）、3日間毎日「eat食べる、eat食べる、eat食べる」という風に音読して下さい。1単語あたり1-2回読めればOKです。そして、音読を3日間繰り返した後に、是非テストをしてみてください。きっと正解できる単語が増えているはずです。ですが、それでも覚え切れない単語は当然あるでしょう。そのような単語たちは「ニガテ単語」である可能性が高いため意識的に繰り返し音読してください。　　　　　　　　　　　　慣れてきたら、ペースを上げて一日90単語などに挑戦してみて下さいね！　　　　　　　　　　　</mutableString>
+                                <mutableString key="text">　本アプリは30個ずつ英単語を学ぶことができます。まずは初めの30個を1日2回（時間を空けて）、3日間毎日「eat食べる、eat食べる、eat食べる」という風に音読して下さい。(声が出せないところではテストや復習をメインにすると良いでしょう。）1単語あたり1-2回読めればOKです。そして、音読を3日間繰り返した後に、是非テストをしてみてください。きっと正解できる単語が増えているはずです。ですが、それでも覚え切れない単語は当然あるでしょう。そのような単語たちは「ニガテ単語」である可能性が高いため意識的に繰り返し音読してください。　　　　　　　　　　　　慣れてきたら、ペースを上げて一日90単語などに挑戦してみて下さいね！　　　　　　　　　　　</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毎日2回、同じ30個を3日間繰り返す" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-ac-GQk">
@@ -938,7 +819,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                                                     </subviews>
                                                 </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-UL-4qb">
-                                                    <rect key="frame" x="15" y="66" width="267" height="103"/>
+                                                    <rect key="frame" x="15" y="66" width="267" height="108"/>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="volume2" translatesAutoresizingMaskIntoConstraints="NO" id="B01-Yz-51E">
                                                     <rect key="frame" x="304" y="92" width="50" height="50"/>
@@ -952,7 +833,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                                                 <constraint firstItem="B01-Yz-51E" firstAttribute="top" secondItem="dgx-Us-xHv" secondAttribute="bottom" constant="34" id="HKr-Ds-Ivy"/>
                                                 <constraint firstItem="dgx-Us-xHv" firstAttribute="leading" secondItem="Ud1-Zb-Kb5" secondAttribute="leading" constant="10" id="IXg-KQ-Ggm"/>
                                                 <constraint firstItem="ycd-UL-4qb" firstAttribute="leading" secondItem="Ud1-Zb-Kb5" secondAttribute="leadingMargin" id="Qr7-W7-bnn"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ycd-UL-4qb" secondAttribute="bottom" constant="7" id="Txe-on-CX0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ycd-UL-4qb" secondAttribute="bottom" constant="2" id="Txe-on-CX0"/>
                                                 <constraint firstAttribute="trailing" secondItem="dgx-Us-xHv" secondAttribute="trailing" constant="10" id="dOE-lH-zzN"/>
                                                 <constraint firstItem="ycd-UL-4qb" firstAttribute="top" secondItem="dgx-Us-xHv" secondAttribute="bottom" constant="8" id="eJN-fW-Mgn"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="B01-Yz-51E" secondAttribute="trailing" constant="6" id="htx-r9-wzF"/>

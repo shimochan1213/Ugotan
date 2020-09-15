@@ -114,12 +114,7 @@
 		B12875C9250F5D4D00FA4F29 /* attend.gif in Resources */ = {isa = PBXBuildFile; fileRef = B12875C5250F5D4800FA4F29 /* attend.gif */; };
 		B12875CA250F5D4D00FA4F29 /* confirm.gif in Resources */ = {isa = PBXBuildFile; fileRef = B12875C6250F5D4900FA4F29 /* confirm.gif */; };
 		B12875CC250F5F6500FA4F29 /* inform.gif in Resources */ = {isa = PBXBuildFile; fileRef = B12875CB250F5F6500FA4F29 /* inform.gif */; };
-		B12D764D2490004C00D2D760 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = B12D764C2490004C00D2D760 /* loading.json */; };
 		B13638B924E296370089ED95 /* SetsumeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13638B824E296370089ED95 /* SetsumeiViewController.swift */; };
-		B13A0158248FE5F200EC6EED /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13A0157248FE5F200EC6EED /* RegisterViewController.swift */; };
-		B13A015A248FE60000EC6EED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13A0159248FE60000EC6EED /* LoginViewController.swift */; };
-		B13CE25E24DD530C006C9902 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13CE25D24DD530C006C9902 /* ResultViewController.swift */; };
-		B156B4002462B56400E2D762 /* ChangeGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B156B3FF2462B56400E2D762 /* ChangeGif.swift */; };
 		B15A65A4250A334C00920766 /* significant.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6587250A334100920766 /* significant.gif */; };
 		B15A65A5250A334C00920766 /* complicated.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6588250A334100920766 /* complicated.gif */; };
 		B15A65A6250A334C00920766 /* latest.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6589250A334100920766 /* latest.gif */; };
@@ -191,15 +186,7 @@
 		B17FD10C246298C100F13729 /* move.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17FD10B246298C000F13729 /* move.mp3 */; };
 		B17FD10E246298C700F13729 /* expand.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17FD10D246298C700F13729 /* expand.mp3 */; };
 		B17FD11224629C3E00F13729 /* SoundFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17FD11124629C3E00F13729 /* SoundFile.swift */; };
-		B17FD11424629F1200F13729 /* WordsGifSoundList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17FD11324629F1200F13729 /* WordsGifSoundList.swift */; };
 		B17FD11A2462A7F200F13729 /* accept.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17FD1192462A7F200F13729 /* accept.mp3 */; };
-		B1967DF724DD769B007EB7D0 /* IntroScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1967DF624DD769B007EB7D0 /* IntroScrollViewController.swift */; };
-		B1967DFE24DD7EA1007EB7D0 /* dancing.json in Resources */ = {isa = PBXBuildFile; fileRef = B1967DF924DD7E9D007EB7D0 /* dancing.json */; };
-		B1967DFF24DD7EA1007EB7D0 /* fall.json in Resources */ = {isa = PBXBuildFile; fileRef = B1967DFA24DD7E9E007EB7D0 /* fall.json */; };
-		B1967E0024DD7EA1007EB7D0 /* dog.json in Resources */ = {isa = PBXBuildFile; fileRef = B1967DFB24DD7E9E007EB7D0 /* dog.json */; };
-		B1967E0124DD7EA1007EB7D0 /* summer.json in Resources */ = {isa = PBXBuildFile; fileRef = B1967DFC24DD7EA0007EB7D0 /* summer.json */; };
-		B1967E0424DD866F007EB7D0 /* hang.json in Resources */ = {isa = PBXBuildFile; fileRef = B1967E0324DD866E007EB7D0 /* hang.json */; };
-		B1967E0624DD875B007EB7D0 /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = B1967E0524DD875A007EB7D0 /* cat.json */; };
 		B196DD5224FCB478009DD78C /* WhichReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196DD5124FCB478009DD78C /* WhichReviewViewController.swift */; };
 		B196DD5424FCB548009DD78C /* ReviewRangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196DD5324FCB548009DD78C /* ReviewRangeViewController.swift */; };
 		B196DD5624FCB665009DD78C /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196DD5524FCB665009DD78C /* ReviewViewController.swift */; };
@@ -556,6 +543,13 @@
 		B1BE99BB2461D1E0005766A6 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BE99BA2461D1E0005766A6 /* Swift+Gif.swift */; };
 		B1C49DEE24DB006600C25A35 /* ManabuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C49DED24DB006600C25A35 /* ManabuViewController.swift */; };
 		B1D0E5B324F5545800FB2CDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D0E5B224F5545800FB2CDA /* GoogleService-Info.plist */; };
+		B1DB369B2510F71400840A2A /* maintain.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1DB36942510F71200840A2A /* maintain.gif */; };
+		B1DB369C2510F71400840A2A /* enhance.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1DB36952510F71200840A2A /* enhance.gif */; };
+		B1DB369D2510F71400840A2A /* mail.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1DB36962510F71200840A2A /* mail.gif */; };
+		B1DB369E2510F71400840A2A /* analyse.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1DB36972510F71300840A2A /* analyse.gif */; };
+		B1DB369F2510F71400840A2A /* resolve.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1DB36982510F71300840A2A /* resolve.gif */; };
+		B1DB36A02510F71400840A2A /* raise.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1DB36992510F71400840A2A /* raise.gif */; };
+		B1DB36A12510F71400840A2A /* delay.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1DB369A2510F71400840A2A /* delay.gif */; };
 		B1E563B02492A6BF000B69C6 /* WhichHinshiTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E563AF2492A6BF000B69C6 /* WhichHinshiTestViewController.swift */; };
 		B1E5EDF824E1984E0067B91C /* cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EDF624E1984D0067B91C /* cat.mp3 */; };
 		B1E5EDF924E1984E0067B91C /* seikai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EDF724E1984D0067B91C /* seikai.mp3 */; };
@@ -747,12 +741,7 @@
 		B12875C5250F5D4800FA4F29 /* attend.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = attend.gif; sourceTree = "<group>"; };
 		B12875C6250F5D4900FA4F29 /* confirm.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = confirm.gif; sourceTree = "<group>"; };
 		B12875CB250F5F6500FA4F29 /* inform.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = inform.gif; sourceTree = "<group>"; };
-		B12D764C2490004C00D2D760 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		B13638B824E296370089ED95 /* SetsumeiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsumeiViewController.swift; sourceTree = "<group>"; };
-		B13A0157248FE5F200EC6EED /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		B13A0159248FE60000EC6EED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B13CE25D24DD530C006C9902 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		B156B3FF2462B56400E2D762 /* ChangeGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeGif.swift; sourceTree = "<group>"; };
 		B15A6587250A334100920766 /* significant.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = significant.gif; sourceTree = "<group>"; };
 		B15A6588250A334100920766 /* complicated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = complicated.gif; sourceTree = "<group>"; };
 		B15A6589250A334100920766 /* latest.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = latest.gif; sourceTree = "<group>"; };
@@ -824,15 +813,7 @@
 		B17FD10B246298C000F13729 /* move.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = move.mp3; sourceTree = "<group>"; };
 		B17FD10D246298C700F13729 /* expand.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = expand.mp3; sourceTree = "<group>"; };
 		B17FD11124629C3E00F13729 /* SoundFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFile.swift; sourceTree = "<group>"; };
-		B17FD11324629F1200F13729 /* WordsGifSoundList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsGifSoundList.swift; sourceTree = "<group>"; };
 		B17FD1192462A7F200F13729 /* accept.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = accept.mp3; sourceTree = "<group>"; };
-		B1967DF624DD769B007EB7D0 /* IntroScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScrollViewController.swift; sourceTree = "<group>"; };
-		B1967DF924DD7E9D007EB7D0 /* dancing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dancing.json; sourceTree = "<group>"; };
-		B1967DFA24DD7E9E007EB7D0 /* fall.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fall.json; sourceTree = "<group>"; };
-		B1967DFB24DD7E9E007EB7D0 /* dog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dog.json; sourceTree = "<group>"; };
-		B1967DFC24DD7EA0007EB7D0 /* summer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = summer.json; sourceTree = "<group>"; };
-		B1967E0324DD866E007EB7D0 /* hang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hang.json; path = ../../../Downloads/hang.json; sourceTree = "<group>"; };
-		B1967E0524DD875A007EB7D0 /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
 		B196DD5124FCB478009DD78C /* WhichReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichReviewViewController.swift; sourceTree = "<group>"; };
 		B196DD5324FCB548009DD78C /* ReviewRangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRangeViewController.swift; sourceTree = "<group>"; };
 		B196DD5524FCB665009DD78C /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
@@ -1192,6 +1173,13 @@
 		B1C49DED24DB006600C25A35 /* ManabuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManabuViewController.swift; sourceTree = "<group>"; };
 		B1D0E5B224F5545800FB2CDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1D0E5B424F55C3D00FB2CDA /* ugotan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ugotan.entitlements; sourceTree = "<group>"; };
+		B1DB36942510F71200840A2A /* maintain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = maintain.gif; sourceTree = "<group>"; };
+		B1DB36952510F71200840A2A /* enhance.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = enhance.gif; sourceTree = "<group>"; };
+		B1DB36962510F71200840A2A /* mail.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mail.gif; sourceTree = "<group>"; };
+		B1DB36972510F71300840A2A /* analyse.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = analyse.gif; sourceTree = "<group>"; };
+		B1DB36982510F71300840A2A /* resolve.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = resolve.gif; sourceTree = "<group>"; };
+		B1DB36992510F71400840A2A /* raise.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = raise.gif; sourceTree = "<group>"; };
+		B1DB369A2510F71400840A2A /* delay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = delay.gif; sourceTree = "<group>"; };
 		B1DF5656247F8EBB006BAAFC /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
 		B1E563AF2492A6BF000B69C6 /* WhichHinshiTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichHinshiTestViewController.swift; sourceTree = "<group>"; };
 		B1E5EDF624E1984D0067B91C /* cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat.mp3; sourceTree = "<group>"; };
@@ -1330,6 +1318,7 @@
 				B196DF5D24FCE70A009DD78C /* alternative.mp3 */,
 				B15A6594250A334600920766 /* amazing.gif */,
 				B196DF2E24FCE700009DD78C /* amazing.mp3 */,
+				B1DB36972510F71300840A2A /* analyse.gif */,
 				B11BDFD324F7FF480001251C /* analyse.mp3 */,
 				B1EDCAA42504EE4A004D3A0D /* anniversary.gif */,
 				B1199965250D115E009FB2FB /* anniversary.mp3 */,
@@ -1416,7 +1405,6 @@
 				B196DD6724FCD4C3009DD78C /* charge.mp3 */,
 				B196DE0E24FCE13F009DD78C /* claim.mp3 */,
 				B1EDCAA32504EE4A004D3A0D /* client.gif */,
-				B12875CB250F5F6500FA4F29 /* inform.gif */,
 				B196DE4424FCE148009DD78C /* client.mp3 */,
 				B1EDCA9D2504EE48004D3A0D /* clothing.gif */,
 				B196DE1924FCE140009DD78C /* clothing.mp3 */,
@@ -1479,6 +1467,7 @@
 				B1EDCAC52504EE53004D3A0D /* deadline.gif */,
 				B196DE7424FCE155009DD78C /* deadline.mp3 */,
 				B196DE8C24FCE15A009DD78C /* decade.mp3 */,
+				B1DB369A2510F71400840A2A /* delay.gif */,
 				B196DD5D24FCD4C2009DD78C /* delay.mp3 */,
 				B15A6609250A5FB700920766 /* delivery.gif */,
 				B196DE5A24FCE14F009DD78C /* delivery.mp3 */,
@@ -1531,6 +1520,7 @@
 				B196DE8324FCE158009DD78C /* employee.mp3 */,
 				B1199902250CEA3A009FB2FB /* enclose.gif */,
 				B196DDC624FCD77A009DD78C /* enclose.mp3 */,
+				B1DB36952510F71200840A2A /* enhance.gif */,
 				B11BDFCF24F7FF480001251C /* enhance.mp3 */,
 				B196DE2A24FCE143009DD78C /* environment.mp3 */,
 				B15A65E2250A534500920766 /* equally.gif */,
@@ -1638,6 +1628,7 @@
 				B11BDFAF24F79FA70001251C /* increase.mp3 */,
 				B196DE3F24FCE147009DD78C /* individual.mp3 */,
 				B196DE2424FCE142009DD78C /* industory.mp3 */,
+				B12875CB250F5F6500FA4F29 /* inform.gif */,
 				B196DD5824FCD4C1009DD78C /* inform.mp3 */,
 				B196DF6024FCE70A009DD78C /* informal.mp3 */,
 				B196DF2D24FCE700009DD78C /* initial.mp3 */,
@@ -1676,7 +1667,9 @@
 				B196DFCA24FCECFD009DD78C /* loyal customer.mp3 */,
 				B1EDCAAA2504EE4C004D3A0D /* luggage.gif */,
 				B196DE0B24FCE13E009DD78C /* luggage.mp3 */,
+				B1DB36962510F71200840A2A /* mail.gif */,
 				B11BDFCE24F7FF480001251C /* mail.mp3 */,
+				B1DB36942510F71200840A2A /* maintain.gif */,
 				B196DDB524FCD778009DD78C /* maintain.mp3 */,
 				B1EDCAA92504EE4C004D3A0D /* management.gif */,
 				B196DE8724FCE158009DD78C /* management.mp3 */,
@@ -1766,6 +1759,7 @@
 				B11998FA250CEA37009FB2FB /* purchase.gif */,
 				B196DD6A24FCD4C4009DD78C /* purchase.mp3 */,
 				B196DE2124FCE142009DD78C /* quarter.mp3 */,
+				B1DB36992510F71400840A2A /* raise.gif */,
 				B11BDFB524F7FE510001251C /* raise.mp3 */,
 				B1EDCAB22504EE4E004D3A0D /* range.gif */,
 				B196DE0C24FCE13E009DD78C /* range.mp3 */,
@@ -1814,6 +1808,7 @@
 				B196DD6B24FCD4C4009DD78C /* reserve.mp3 */,
 				B1EDCAA62504EE4B004D3A0D /* resident.gif */,
 				B196DE9724FCE15C009DD78C /* resident.mp3 */,
+				B1DB36982510F71300840A2A /* resolve.gif */,
 				B196DDD224FCD77C009DD78C /* resolve.mp3 */,
 				B1EDCAB62504EE4F004D3A0D /* resource.gif */,
 				B196DE6D24FCE153009DD78C /* resource.mp3 */,
@@ -1942,10 +1937,6 @@
 				B173337E24E12B4A00B6CC39 /* Test */,
 				B196DD5724FCD098009DD78C /* Review */,
 				B122FFC8248CF23600D5450B /* ModeSelectViewController.swift */,
-				B13A0157248FE5F200EC6EED /* RegisterViewController.swift */,
-				B13A0159248FE60000EC6EED /* LoginViewController.swift */,
-				B13CE25D24DD530C006C9902 /* ResultViewController.swift */,
-				B1967DF624DD769B007EB7D0 /* IntroScrollViewController.swift */,
 				B15DB49C24E039D100A14C11 /* ResultTLViewController.swift */,
 				B13638B824E296370089ED95 /* SetsumeiViewController.swift */,
 				B117C59D250380FB003266C3 /* SettingViewController.swift */,
@@ -1991,21 +1982,12 @@
 				B1A4CE2D2472F86A009F361F /* View */,
 				B1A4CE2C2472F836009F361F /* Controller */,
 				B1BE99A62461D18F005766A6 /* AppDelegate.swift */,
-				B156B3FF2462B56400E2D762 /* ChangeGif.swift */,
+				B1BE99A82461D18F005766A6 /* SceneDelegate.swift */,
 				B1E5EDF624E1984D0067B91C /* cat.mp3 */,
 				B1E5EDF724E1984D0067B91C /* seikai.mp3 */,
 				B1E5EDFA24E19C8A0067B91C /* fuseikai.mp3 */,
 				B1DF5656247F8EBB006BAAFC /* maruSound.mp3 */,
-				B17FD11324629F1200F13729 /* WordsGifSoundList.swift */,
-				B1BE99A82461D18F005766A6 /* SceneDelegate.swift */,
-				B12D764C2490004C00D2D760 /* loading.json */,
 				B1BE99B42461D190005766A6 /* Info.plist */,
-				B1967DF924DD7E9D007EB7D0 /* dancing.json */,
-				B1967DFB24DD7E9E007EB7D0 /* dog.json */,
-				B1967DFA24DD7E9E007EB7D0 /* fall.json */,
-				B1967E0524DD875A007EB7D0 /* cat.json */,
-				B1967E0324DD866E007EB7D0 /* hang.json */,
-				B1967DFC24DD7EA0007EB7D0 /* summer.json */,
 				B1D0E5B224F5545800FB2CDA /* GoogleService-Info.plist */,
 			);
 			path = GifPractice2;
@@ -2104,6 +2086,7 @@
 				B196DF9524FCE70C009DD78C /* previous.mp3 in Resources */,
 				B15A65F6250A534900920766 /* gradually.gif in Resources */,
 				B15A65D0250A396E00920766 /* overseas.gif in Resources */,
+				B1DB36A12510F71400840A2A /* delay.gif in Resources */,
 				B1EDCB2E2504EE87004D3A0D /* accept.gif in Resources */,
 				B196DF1624FCE15D009DD78C /* result.mp3 in Resources */,
 				B196DF1F24FCE15D009DD78C /* facility.mp3 in Resources */,
@@ -2113,6 +2096,7 @@
 				B11BDFDC24F7FF490001251C /* mail.mp3 in Resources */,
 				B196E00924FCED02009DD78C /* absolutely.mp3 in Resources */,
 				B196DD9024FCD4C7009DD78C /* fund.mp3 in Resources */,
+				B1DB369B2510F71400840A2A /* maintain.gif in Resources */,
 				B15A65CE250A396E00920766 /* exact.gif in Resources */,
 				B119996C250D120A009FB2FB /* permission.mp3 in Resources */,
 				B196E00324FCED02009DD78C /* be eager to V.mp3 in Resources */,
@@ -2154,16 +2138,17 @@
 				B196DEE424FCE15D009DD78C /* packaging.mp3 in Resources */,
 				B196DF6F24FCE70C009DD78C /* exact.mp3 in Resources */,
 				B196DDEA24FCD77D009DD78C /* share A with B.mp3 in Resources */,
-				B1967E0024DD7EA1007EB7D0 /* dog.json in Resources */,
 				B15A65CD250A396E00920766 /* advance.gif in Resources */,
 				B196DF7924FCE70C009DD78C /* helpful.mp3 in Resources */,
 				B196E01C24FCEEA2009DD78C /* be satisfied with A.mp3 in Resources */,
+				B1DB36A02510F71400840A2A /* raise.gif in Resources */,
 				B196DEC524FCE15D009DD78C /* expense.mp3 in Resources */,
 				B15A65A4250A334C00920766 /* significant.gif in Resources */,
 				B196DDDF24FCD77D009DD78C /* introduce.mp3 in Resources */,
 				B1EDCB0B2504EE5C004D3A0D /* deadline.gif in Resources */,
 				B1BE99B02461D190005766A6 /* Assets.xcassets in Resources */,
 				B196DF1824FCE15D009DD78C /* refund.mp3 in Resources */,
+				B1DB369E2510F71400840A2A /* analyse.gif in Resources */,
 				B196DEAD24FCE15D009DD78C /* celebration.mp3 in Resources */,
 				B1EDCB202504EE5C004D3A0D /* promotion.gif in Resources */,
 				B196DDA624FCD4C7009DD78C /* expect.mp3 in Resources */,
@@ -2204,7 +2189,6 @@
 				B196DD8624FCD4C7009DD78C /* obtain.mp3 in Resources */,
 				B1199930250CEA44009FB2FB /* release.gif in Resources */,
 				B15A65A5250A334C00920766 /* complicated.gif in Resources */,
-				B12D764D2490004C00D2D760 /* loading.json in Resources */,
 				B196DDE924FCD77D009DD78C /* represent.mp3 in Resources */,
 				B196DF1324FCE15D009DD78C /* employee.mp3 in Resources */,
 				B196E00A24FCED02009DD78C /* guided tour.mp3 in Resources */,
@@ -2253,6 +2237,7 @@
 				B196DEFE24FCE15D009DD78C /* author.mp3 in Resources */,
 				B15A65F3250A534900920766 /* be unable to V.gif in Resources */,
 				B196DF7D24FCE70C009DD78C /* favorable.mp3 in Resources */,
+				B1DB369F2510F71400840A2A /* resolve.gif in Resources */,
 				B196DF9824FCE70C009DD78C /* significant.mp3 in Resources */,
 				B196DF6924FCE70C009DD78C /* brief.mp3 in Resources */,
 				B1199962250D10AA009FB2FB /* reward.mp3 in Resources */,
@@ -2272,6 +2257,7 @@
 				B196DD8424FCD4C7009DD78C /* explore.mp3 in Resources */,
 				B119992F250CEA44009FB2FB /* participate in.gif in Resources */,
 				B15A65FA250A534900920766 /* unfortunately.gif in Resources */,
+				B1DB369D2510F71400840A2A /* mail.gif in Resources */,
 				B196DE0524FCD77D009DD78C /* prefer A to B.mp3 in Resources */,
 				B196DD9724FCD4C7009DD78C /* seek.mp3 in Resources */,
 				B1EDCB0E2504EE5C004D3A0D /* complex.gif in Resources */,
@@ -2309,7 +2295,6 @@
 				B15A65F1250A534900920766 /* with ease.gif in Resources */,
 				B119993E250CEA44009FB2FB /* demand.gif in Resources */,
 				B196DF7224FCE70C009DD78C /* traditional.mp3 in Resources */,
-				B1967E0424DD866F007EB7D0 /* hang.json in Resources */,
 				B1EDCB3E2504F2D0004D3A0D /* resume.mp3 in Resources */,
 				B15A65B4250A334C00920766 /* sufficient.gif in Resources */,
 				B196DFF024FCED02009DD78C /* approximately.mp3 in Resources */,
@@ -2342,7 +2327,6 @@
 				B15A65AE250A334C00920766 /* leading.gif in Resources */,
 				B196DF2524FCE15D009DD78C /* occasion.mp3 in Resources */,
 				B196DEF624FCE15D009DD78C /* council.mp3 in Resources */,
-				B1967DFE24DD7EA1007EB7D0 /* dancing.json in Resources */,
 				B196DD9A24FCD4C7009DD78C /* vote.mp3 in Resources */,
 				B11BDFDA24F7FF490001251C /* establish.mp3 in Resources */,
 				B196DD9B24FCD4C7009DD78C /* assure.mp3 in Resources */,
@@ -2385,7 +2369,6 @@
 				B196DDF924FCD77D009DD78C /* appreciate.mp3 in Resources */,
 				B119993B250CEA44009FB2FB /* display.gif in Resources */,
 				B196DFA124FCE70C009DD78C /* economic.mp3 in Resources */,
-				B1967DFF24DD7EA1007EB7D0 /* fall.json in Resources */,
 				B196DEBD24FCE15D009DD78C /* cafeteria.mp3 in Resources */,
 				B196DF0B24FCE15D009DD78C /* component.mp3 in Resources */,
 				B1199939250CEA44009FB2FB /* share A with B.gif in Resources */,
@@ -2413,7 +2396,6 @@
 				B12875C8250F5D4D00FA4F29 /* assure.gif in Resources */,
 				B1EDCB1C2504EE5C004D3A0D /* discount.gif in Resources */,
 				B1EDCAE52504EE5B004D3A0D /* income.gif in Resources */,
-				B1967E0124DD7EA1007EB7D0 /* summer.json in Resources */,
 				B1199934250CEA44009FB2FB /* compete.gif in Resources */,
 				B196DEF024FCE15D009DD78C /* impact.mp3 in Resources */,
 				B11BDFDE24F7FF490001251C /* consider.mp3 in Resources */,
@@ -2443,7 +2425,6 @@
 				B196DF9224FCE70C009DD78C /* local.mp3 in Resources */,
 				B1199928250CEA44009FB2FB /* hesitate.gif in Resources */,
 				B196DEA924FCE15D009DD78C /* clothing.mp3 in Resources */,
-				B1967E0624DD875B007EB7D0 /* cat.json in Resources */,
 				B1199933250CEA44009FB2FB /* establish.gif in Resources */,
 				B196DF6624FCE70C009DD78C /* modern.mp3 in Resources */,
 				B122FFC5248CEDB900D5450B /* correctSound.mp3 in Resources */,
@@ -2510,6 +2491,7 @@
 				B196DFA224FCE70C009DD78C /* correct.mp3 in Resources */,
 				B12875CA250F5D4D00FA4F29 /* confirm.gif in Resources */,
 				B196DEB824FCE15D009DD78C /* vehicle.mp3 in Resources */,
+				B1DB369C2510F71400840A2A /* enhance.gif in Resources */,
 				B196DEFF24FCE15D009DD78C /* firm.mp3 in Resources */,
 				B1199960250D105B009FB2FB /* candidate.mp3 in Resources */,
 				B196DF7824FCE70C009DD78C /* serious.mp3 in Resources */,
@@ -2735,16 +2717,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B13A015A248FE60000EC6EED /* LoginViewController.swift in Sources */,
 				B1C49DEE24DB006600C25A35 /* ManabuViewController.swift in Sources */,
-				B13CE25E24DD530C006C9902 /* ResultViewController.swift in Sources */,
 				B1A96B39248E98E000E751EA /* WhichHinshiViewController.swift in Sources */,
 				B196DD5424FCB548009DD78C /* ReviewRangeViewController.swift in Sources */,
 				B1A4CE2B2472F716009F361F /* MaterialList.swift in Sources */,
 				B171AFBD24DD401300CF5214 /* TestRangeViewController.swift in Sources */,
 				B171AFB724DD223B00CF5214 /* TestViewController.swift in Sources */,
 				B1BE99BB2461D1E0005766A6 /* Swift+Gif.swift in Sources */,
-				B1967DF724DD769B007EB7D0 /* IntroScrollViewController.swift in Sources */,
 				B117C59E250380FB003266C3 /* SettingViewController.swift in Sources */,
 				B1BE99A72461D18F005766A6 /* AppDelegate.swift in Sources */,
 				B1A4CE292472F5BF009F361F /* MaterialModel.swift in Sources */,
@@ -2756,10 +2735,7 @@
 				B12875C2250F5A9E00FA4F29 /* Setsumei0ViewController.swift in Sources */,
 				B17FD11224629C3E00F13729 /* SoundFile.swift in Sources */,
 				B1E563B02492A6BF000B69C6 /* WhichHinshiTestViewController.swift in Sources */,
-				B17FD11424629F1200F13729 /* WordsGifSoundList.swift in Sources */,
 				B196DD5224FCB478009DD78C /* WhichReviewViewController.swift in Sources */,
-				B156B4002462B56400E2D762 /* ChangeGif.swift in Sources */,
-				B13A0158248FE5F200EC6EED /* RegisterViewController.swift in Sources */,
 				B1BE99A92461D18F005766A6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

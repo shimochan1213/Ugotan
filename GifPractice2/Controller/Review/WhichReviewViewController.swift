@@ -44,7 +44,7 @@ class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableVie
         
         
         //広告表示
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-5717197999913003/5649505287"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         
