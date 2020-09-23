@@ -7,6 +7,9 @@
 //
 import UIKit
 
+
+//コードを見る担当者様へ。品詞に関するswitch文が長くて申し訳ありません・・。メソッドで実行しようとしたのですがどうもうまくいかず、全てswitch文を書いてあります。お手数おかけします。
+
 class TestViewController: UIViewController{
     
     let materialList = MaterialList()
@@ -38,6 +41,10 @@ class TestViewController: UIViewController{
     @IBOutlet weak var selection1: UIButton!
     @IBOutlet weak var selection2: UIButton!
     @IBOutlet weak var countdownLabel: UILabel!
+    
+    
+    //コードを見る担当者様へ。品詞に関するswitch文が長くて申し訳ありません・・。メソッドで実行しようとしたのですがどうもうまくいかず、全てswitch文を書いてあります。お手数おかけします。
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,19 +91,19 @@ class TestViewController: UIViewController{
             case "verb":
                 
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+                
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+                
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+                
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+                
             default:
                 return
             }
@@ -114,19 +121,19 @@ class TestViewController: UIViewController{
             switch whichHinshi {
             case "verb":
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+                
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+                
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+                
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+                
             default:
                 return
             }
@@ -141,19 +148,19 @@ class TestViewController: UIViewController{
             switch whichHinshi {
             case "verb":
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+                
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+                
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+                
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+                
             default:
                 return
             }
@@ -165,19 +172,19 @@ class TestViewController: UIViewController{
             switch whichHinshi {
             case "verb":
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
+                
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
+                
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
+                
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
+                
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+                
             default:
                 return
             }
@@ -191,19 +198,14 @@ class TestViewController: UIViewController{
             switch whichHinshi {
             case "verb":
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
             default:
                 return
             }
@@ -218,19 +220,15 @@ class TestViewController: UIViewController{
             switch whichHinshi {
             case "verb":
                 testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600verbList[questionNumber].Words)
             case "noun":
                 testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600NounList[questionNumber].Words)
             case "adjective":
                 testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdjectiveList[questionNumber].Words)
             case "adverb":
                 testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600AdverbList[questionNumber].Words)
             case "others":
                 testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-//                testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
+                
             default:
                 return
             }
@@ -265,10 +263,10 @@ class TestViewController: UIViewController{
         
         //不正解の番号を記録
         incorrectArray.append(questionNumber)
-     
+        
         //不正解の音を鳴らす
         soundFile.playSound(fileName: "fuseikai", extensionName: "mp3")
-
+        
         
         maruBatsuImage.image = batsuImage
         
@@ -281,7 +279,7 @@ class TestViewController: UIViewController{
         switch receivedCellNumber {
         case 0:
             //0-30
-
+            
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
@@ -348,16 +346,16 @@ class TestViewController: UIViewController{
                 return
             }
             
-           
-//            if questionNumber == 30{
-//                //問題終了
-//                timerResetAndPerformSegue()
-//            }
-//
+            
+            //            if questionNumber == 30{
+            //                //問題終了
+            //                timerResetAndPerformSegue()
+            //            }
+            //
             
         case 1:
             //31-60
-
+            
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
@@ -424,7 +422,7 @@ class TestViewController: UIViewController{
                 return
             }
             
-
+            
             
         case 2:
             //61-90
@@ -495,7 +493,7 @@ class TestViewController: UIViewController{
             }
             
             
- 
+            
         case 3:
             //91-120
             switch whichHinshi {
@@ -517,8 +515,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
                     questionNumber += 1
-                       
-                      
+                    
+                    
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -532,8 +530,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
                     questionNumber += 1
-                       
-                      
+                    
+                    
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -546,8 +544,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
                     questionNumber += 1
-                       
-                      
+                    
+                    
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -560,8 +558,8 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
                     questionNumber += 1
-                       
-                      
+                    
+                    
                     displayGif()
                     changeWordLabel()
                     showRandomSelection()
@@ -572,7 +570,7 @@ class TestViewController: UIViewController{
                 return
             }
             
-
+            
             
         case 4:
             //121-150
@@ -642,7 +640,7 @@ class TestViewController: UIViewController{
                 return
             }
             
-
+            
             
         case 5:
             //151-180
@@ -712,7 +710,7 @@ class TestViewController: UIViewController{
                 return
             }
             
-
+            
             
         default:
             return
@@ -734,7 +732,7 @@ class TestViewController: UIViewController{
         
         //設定で「表示しない」となってたらここでreturnさせれば良い
         if UserDefaults.standard.object(forKey: "gifOnOff") != nil{
-                  gifOnOff = UserDefaults.standard.object(forKey: "gifOnOff") as! Bool
+            gifOnOff = UserDefaults.standard.object(forKey: "gifOnOff") as! Bool
             if gifOnOff == false{
                 return
             }else{
@@ -773,7 +771,7 @@ class TestViewController: UIViewController{
             default:
                 return
             }
-
+            
             
             
         }
@@ -870,7 +868,6 @@ class TestViewController: UIViewController{
             //不正解を配列に記録
             incorrectArray.append(questionNumber)
             
-            //            UserDefaults.standard.set(questionNumber, forKey: String(questionNumber))
             //不正解の音鳴らす
             soundFile.playSound(fileName: "fuseikai", extensionName: "mp3")
             
@@ -953,7 +950,7 @@ class TestViewController: UIViewController{
             default:
                 return
             }
-    
+            
             
             
         case 1:
@@ -1021,7 +1018,7 @@ class TestViewController: UIViewController{
                 return
             }
             
- 
+            
             
         case 2:
             
@@ -1090,11 +1087,11 @@ class TestViewController: UIViewController{
             }
             
             
-
+            
             
         case 3:
             
-         
+            
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
@@ -1156,14 +1153,10 @@ class TestViewController: UIViewController{
                 return
             }
             
-//            if questionNumber == 120{
-//                //問題終了
-//                timerResetAndPerformSegue()
-//            }
             
             
         case 4:
-          
+            
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
@@ -1292,7 +1285,7 @@ class TestViewController: UIViewController{
                 return
             }
             
-       
+            
             
             
             
@@ -1460,7 +1453,7 @@ class TestViewController: UIViewController{
             
             
             if random != questionNumber{
-     
+                
                 switch whichHinshi {
                 case "verb":
                     random = Int(arc4random_uniform(UInt32(Int(materialList.TOEIC600verbList.count - 1))))
@@ -1588,60 +1581,23 @@ class TestViewController: UIViewController{
         self.present(alertController, animated: true,completion: nil)
     }
     
-//    func preventOutOfRange(){
-//
-//        //品詞ごとに、単語の個数を超えてアプリが落ちないようにする処理
-//        switch whichHinshi {
-//        case "verb":
-//            if questionNumber == materialList.TOEIC600verbList.count - 1{
-//
-//                timerResetAndPerformSegue()
-//            }
-//        case "noun":
-//            if questionNumber == materialList.TOEIC600NounList.count - 1{
-//
-//                timerResetAndPerformSegue()
-//            }
-//        case "adjective":
-//
-//            if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
-//
-//                timerResetAndPerformSegue()
-//            }
-//        case "adverb":
-//            if questionNumber == materialList.TOEIC600AdverbList.count - 1{
-//
-//                timerResetAndPerformSegue()
-//            }
-//        case "others":
-//            if questionNumber == materialList.TOEIC600OthersList.count - 1{
-//
-//                timerResetAndPerformSegue()
-//            }
-//        default:
-//            questionNumber += 1
-//            displayGif()
-//            changeWordLabel()
-//        }
-//    }
-//
     
     func validateAndInvalidateButton (){
-       //回答ボタンを無効化
+        //回答ボタンを無効化
         selection1.isEnabled = false
         selection2.isEnabled = false
         
-      //0.3秒後にボタンを有効化
-    //タイマーを設定
+        //0.3秒後にボタンを有効化
+        //タイマーを設定
         timer3 = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(TestViewController.onTimer3(timer:)), userInfo: nil, repeats: false)
     }
     
-   @objc func onTimer3(timer: Timer){
+    @objc func onTimer3(timer: Timer){
         selection1.isEnabled = true
         selection2.isEnabled = true
     }
     
-
+    
     
     
     

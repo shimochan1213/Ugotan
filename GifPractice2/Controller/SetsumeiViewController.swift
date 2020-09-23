@@ -8,6 +8,8 @@
 
 import UIKit
 
+//「英単語を覚えるコツ」のコントローラ
+
 class SetsumeiViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     

@@ -550,6 +550,7 @@
 		B1DB369F2510F71400840A2A /* resolve.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1DB36982510F71300840A2A /* resolve.gif */; };
 		B1DB36A02510F71400840A2A /* raise.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1DB36992510F71400840A2A /* raise.gif */; };
 		B1DB36A12510F71400840A2A /* delay.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1DB369A2510F71400840A2A /* delay.gif */; };
+		B1DB36A32511105C00840A2A /* achieve.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1DB36A22511105B00840A2A /* achieve.gif */; };
 		B1E563B02492A6BF000B69C6 /* WhichHinshiTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E563AF2492A6BF000B69C6 /* WhichHinshiTestViewController.swift */; };
 		B1E5EDF824E1984E0067B91C /* cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EDF624E1984D0067B91C /* cat.mp3 */; };
 		B1E5EDF924E1984E0067B91C /* seikai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EDF724E1984D0067B91C /* seikai.mp3 */; };
@@ -1180,6 +1181,7 @@
 		B1DB36982510F71300840A2A /* resolve.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = resolve.gif; sourceTree = "<group>"; };
 		B1DB36992510F71400840A2A /* raise.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = raise.gif; sourceTree = "<group>"; };
 		B1DB369A2510F71400840A2A /* delay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = delay.gif; sourceTree = "<group>"; };
+		B1DB36A22511105B00840A2A /* achieve.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = achieve.gif; sourceTree = "<group>"; };
 		B1DF5656247F8EBB006BAAFC /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
 		B1E563AF2492A6BF000B69C6 /* WhichHinshiTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichHinshiTestViewController.swift; sourceTree = "<group>"; };
 		B1E5EDF624E1984D0067B91C /* cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat.mp3; sourceTree = "<group>"; };
@@ -1296,6 +1298,7 @@
 				B196DFAD24FCECF7009DD78C /* according to.mp3 */,
 				B15A6592250A334500920766 /* accurate.gif */,
 				B196DF4424FCE704009DD78C /* accurate.mp3 */,
+				B1DB36A22511105B00840A2A /* achieve.gif */,
 				B196DD7224FCD4C5009DD78C /* achieve.mp3 */,
 				B1EDCACD2504EE56004D3A0D /* admission.gif */,
 				B196DE1624FCE140009DD78C /* admission.mp3 */,
@@ -1938,9 +1941,9 @@
 				B196DD5724FCD098009DD78C /* Review */,
 				B122FFC8248CF23600D5450B /* ModeSelectViewController.swift */,
 				B15DB49C24E039D100A14C11 /* ResultTLViewController.swift */,
+				B12875C1250F5A9E00FA4F29 /* Setsumei0ViewController.swift */,
 				B13638B824E296370089ED95 /* SetsumeiViewController.swift */,
 				B117C59D250380FB003266C3 /* SettingViewController.swift */,
-				B12875C1250F5A9E00FA4F29 /* Setsumei0ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2013,7 +2016,7 @@
 				B1BE999F2461D18F005766A6 /* Sources */,
 				B1BE99A02461D18F005766A6 /* Frameworks */,
 				B1BE99A12461D18F005766A6 /* Resources */,
-				2957A71F679B00BB361B69E7 /* [CP] Embed Pods Frameworks */,
+				DAF14EA3010D4F70300FC56E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2378,6 +2381,7 @@
 				B196DD9F24FCD4C7009DD78C /* announce.mp3 in Resources */,
 				B196DF0524FCE15D009DD78C /* award.mp3 in Resources */,
 				B1EDCAF02504EE5B004D3A0D /* luggage.gif in Resources */,
+				B1DB36A32511105C00840A2A /* achieve.gif in Resources */,
 				B196DEF724FCE15D009DD78C /* complaint.mp3 in Resources */,
 				B11BDFD924F7FF490001251C /* convey.mp3 in Resources */,
 				B196DD8F24FCD4C7009DD78C /* gain.mp3 in Resources */,
@@ -2671,23 +2675,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2957A71F679B00BB361B69E7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C7B6F8693E64B3101173CC1C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2708,6 +2695,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAF14EA3010D4F70300FC56E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2892,7 +2896,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.2;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuchineko.GifPractice2;
 				PRODUCT_NAME = ugotan;
 				PROVISIONING_PROFILE_SPECIFIER = ugotanIos;
@@ -2917,7 +2922,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.2;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuchineko.GifPractice2;
 				PRODUCT_NAME = ugotan;
 				PROVISIONING_PROFILE_SPECIFIER = ugotan;

@@ -21,7 +21,6 @@ class MaterialModel {
         
         //外部から入ってきたimageName,correctOrNotをImageModelクラスのプロパティに入れてる
         
-//        GifText = GifName
         
         Words = wordsName
         

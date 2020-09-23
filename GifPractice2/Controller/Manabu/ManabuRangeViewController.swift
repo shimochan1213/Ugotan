@@ -10,31 +10,30 @@ import UIKit
 import ViewAnimator
 import GoogleMobileAds
 
-//動詞編をタップされたときに表示されるセルたち。30こずつ範囲を選ばせる予定。
+//品詞を選択された時に表示されるセルたち。30こずつ範囲を選ばせる予定。
 
 class ManabuRangeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
-
-//    @IBOutlet weak var bannerView: GADBannerView!
     
-  
+    
+    
     var receivedCellNumber = 0
     
     var whichHinshi = String()
     let materialList = MaterialList()
     let manabuVC = ManabuViewController()
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var bannerView: GADBannerView!
     
-    //タップされたセルの番号を入れておく（indexPath.row番目だね）
+    //タップされたセルの番号を入れておく（indexPath.row番目）
     var CellNumber = Int()
-     var textArray = ["1-30","31-60","61-90","91-120","121-150","151-180"]
-     
-     override func viewDidLoad() {
-         super.viewDidLoad()
-
-         tableView.delegate = self
-         tableView.dataSource = self
+    var textArray = ["1-30","31-60","61-90","91-120","121-150","151-180"]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         
         //広告表示
         bannerView.adUnitID = "ca-app-pub-5717197999913003/2476547037"
@@ -42,24 +41,19 @@ class ManabuRangeViewController: UIViewController,UITableViewDelegate,UITableVie
         bannerView.load(GADRequest())
         
         
-
         
-         
-     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-//        //この画面に戻った時に学ぶモードのタイマーを無効化
-//        manabuVC.timer?.invalidate()
+        
         
     }
-     
-     func numberOfSections(in tableView: UITableView) -> Int {
-         return 1
-     }
-     
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         //配列の中身の数だけセルを返す
+    
+ 
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //配列の中身の数だけセルを返す
         
         var numberOfRows = Int()
         
@@ -84,42 +78,42 @@ class ManabuRangeViewController: UIViewController,UITableViewDelegate,UITableVie
         
         return numberOfRows
     }
-     
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-         
-         //偶数のセルの時
-         if indexPath.row % 2 == 0{
-             
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        //偶数のセルの時
+        if indexPath.row % 2 == 0{
+            
             cell.backgroundColor = .opaqueSeparator
-             
-         }else{
+            
+        }else{
             cell.backgroundColor = .systemOrange
-         }
-         
-         cell.textLabel?.text = textArray[indexPath.row]
-         cell.textLabel?.font = .boldSystemFont(ofSize: 40)
-         cell.textLabel?.textColor = .white
+        }
+        
+        cell.textLabel?.text = textArray[indexPath.row]
+        cell.textLabel?.font = .boldSystemFont(ofSize: 40)
+        cell.textLabel?.textColor = .white
         
         //セルに丸みを帯びさせる
         cell.layer.cornerRadius = 8
-      
-         
-         return cell
-         
-     }
-     
-     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
-     }
-     
-     //セルがタップされた時に呼ばれる
+    }
+    
+    //セルがタップされた時に呼ばれる
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-//        let animation = [AnimationType.rotate(angle: CGFloat.pi/6)]
-//        let animation = [AnimationType.random()]
+        //        let animation = [AnimationType.rotate(angle: CGFloat.pi/6)]
+        //        let animation = [AnimationType.random()]
         tableView.reloadData()
-//        UIView.animate(views: tableView.visibleCells, animations: animation)
+        //        UIView.animate(views: tableView.visibleCells, animations: animation)
         
         
         
@@ -131,17 +125,17 @@ class ManabuRangeViewController: UIViewController,UITableViewDelegate,UITableVie
         
     }
     
-        
-        
-        
+    
+    
+    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-          //単語の範囲を次の画面へ伝える（押されたセルを教えることで伝えてる）
+        //単語の範囲を次の画面へ伝える（押されたセルを教えることで伝えてる）
         
-            let ManabuVC = segue.destination as! ManabuViewController
-            ManabuVC.receivedCellNumber  = CellNumber
+        let ManabuVC = segue.destination as! ManabuViewController
+        ManabuVC.receivedCellNumber  = CellNumber
         
         //どの品詞なのかを伝える
         switch whichHinshi {
@@ -160,13 +154,13 @@ class ManabuRangeViewController: UIViewController,UITableViewDelegate,UITableVie
         }
         
         
-     
-        }
-    
-    
-    
-        
         
     }
     
+    
+    
+    
+    
+}
+
 

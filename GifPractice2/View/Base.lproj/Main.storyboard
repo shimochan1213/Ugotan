@@ -652,7 +652,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="とにかく繰り返すこと" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1D-jS-HgP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="とにかく繰り返すこと" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O1D-jS-HgP">
                                 <rect key="frame" x="77" y="71" width="221" height="25.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -673,7 +673,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                                     <constraint firstAttribute="height" constant="50" id="trd-zE-hwQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <state key="normal" title="→　 具体的にはどうするか？"/>
+                                <state key="normal" title="具体的にはどうするか？"/>
                                 <connections>
                                     <segue destination="92V-N6-cO6" kind="show" id="vau-ip-ggH"/>
                                 </connections>
@@ -719,7 +719,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毎日2回、同じ30個を3日間繰り返す" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-ac-GQk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毎日2回、同じ30個を3日間繰り返す" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-ac-GQk">
                                 <rect key="frame" x="12" y="66" width="353" height="25.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" red="1" green="0.2752544582" blue="0.35707038639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -729,7 +729,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                                 <rect key="frame" x="28" y="606" width="319" height="41"/>
                                 <color key="backgroundColor" red="0.99824160340000001" green="0.98150688409999998" blue="0.63259905579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <state key="normal" title="うごく英単語をはじめる"/>
+                                <state key="normal" title="うご単をはじめる"/>
                                 <connections>
                                     <action selector="backToModeSelect:" destination="92V-N6-cO6" eventType="touchUpInside" id="zRy-BN-DQb"/>
                                 </connections>

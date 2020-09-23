@@ -12,10 +12,12 @@ import GoogleMobileAds
 
 class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
+    //復習する品詞を選ぶコントローラ
+    
     @IBOutlet weak var bannerView: GADBannerView!
     
     @IBOutlet weak var tableView: UITableView!
-   
+    
     var firstOrNot = true
     //タップされたセルの番号を入れておく（indexPath.row番目だね）
     var CellNumber = Int()
@@ -33,13 +35,8 @@ class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableVie
         }
         
         if firstOrNot == true{
-        showAlert()
+            showAlert()
         }
-        
-        
-        
-        
-        
         
         
         
@@ -76,7 +73,7 @@ class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableVie
             
         }
         
-//        cell.textLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 40)
+        //        cell.textLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 40)
         cell.textLabel?.text = textArray[indexPath.row]
         cell.textLabel?.font = .boldSystemFont(ofSize: 40)
         cell.textLabel?.textColor = .white
@@ -96,14 +93,9 @@ class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableVie
     
     //セルがタップされた時に呼ばれる
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //         let animation = [AnimationType.from(direction: .right, offset: 30.0)]
-        
-        //         let animation = [AnimationType.zoom(scale: 50)]
-        
-//        let animation = [AnimationType.rotate(angle: CGFloat.pi/6)]
-//        let animation = [AnimationType.random()]
+
         tableView.reloadData()
-//        UIView.animate(views: tableView.visibleCells, animations: animation)
+        //        UIView.animate(views: tableView.visibleCells, animations: animation)
         
         
         
@@ -128,16 +120,16 @@ class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableVie
             
             ReviewRangeVC.whichHinshi = "verb"
         case 1:
-          
+            
             ReviewRangeVC.whichHinshi = "noun"
         case 2:
-          
+            
             ReviewRangeVC.whichHinshi = "adjective"
         case 3:
-          
+            
             ReviewRangeVC.whichHinshi = "adverb"
         case 4:
-         
+            
             ReviewRangeVC.whichHinshi = "others"
         default:
             return
@@ -148,7 +140,7 @@ class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableVie
     
     
     func showAlert(){
-       
+        
         
         let alertController = UIAlertController(title: "復習モードへようこそ", message: "テストモードで間違えた単語のみを表示します。繰り返し英単語に触れてくださいね!", preferredStyle: .alert)
         
@@ -167,7 +159,7 @@ class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableVie
         UserDefaults.standard.set(firstOrNot, forKey: "alreadyReview")
         self.present(alertController, animated: true,completion: nil)
     }
-
+    
     
     
     

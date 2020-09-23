@@ -8,6 +8,8 @@
 
 import UIKit
 
+//設定画面のコントローラ
+
 class SettingViewController: UIViewController {
     
     var gifOnOff = true
@@ -23,14 +25,14 @@ class SettingViewController: UIViewController {
         
         
         //スイッチonOff設定
-              if UserDefaults.standard.object(forKey: "switchOn") != nil{
-                  switchOnOff = UserDefaults.standard.object(forKey: "switchOn") as! Bool
-                  if switchOnOff == true{
-                      Gifswitch.setOn(true, animated: true)
-                  }else{
-                      Gifswitch.setOn(false, animated: true)
-                  }
-              }
+        if UserDefaults.standard.object(forKey: "switchOn") != nil{
+            switchOnOff = UserDefaults.standard.object(forKey: "switchOn") as! Bool
+            if switchOnOff == true{
+                Gifswitch.setOn(true, animated: true)
+            }else{
+                Gifswitch.setOn(false, animated: true)
+            }
+        }
         
         
         

@@ -58,7 +58,7 @@ class WhichHinshiTestViewController: UIViewController,UITableViewDelegate,UITabl
             cell.backgroundColor = .systemYellow
         }
         
-//        cell.textLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 40)
+        //        cell.textLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 40)
         cell.textLabel?.text = textArray[indexPath.row]
         cell.textLabel?.font = .boldSystemFont(ofSize: 40)
         cell.textLabel?.textColor = .white
@@ -79,13 +79,9 @@ class WhichHinshiTestViewController: UIViewController,UITableViewDelegate,UITabl
     //セルがタップされた時に呼ばれる
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //         let animation = [AnimationType.from(direction: .right, offset: 30.0)]
-        
-        //         let animation = [AnimationType.zoom(scale: 50)]
-        
-//        let animation = [AnimationType.rotate(angle: CGFloat.pi/6)]
-//        let animation = [AnimationType.random()]
+
         tableView.reloadData()
-//        UIView.animate(views: tableView.visibleCells, animations: animation)
+        //        UIView.animate(views: tableView.visibleCells, animations: animation)
         
         
         
@@ -110,16 +106,16 @@ class WhichHinshiTestViewController: UIViewController,UITableViewDelegate,UITabl
             
             TestRangeVC.whichHinshi = "verb"
         case 1:
-          
+            
             TestRangeVC.whichHinshi = "noun"
         case 2:
-          
+            
             TestRangeVC.whichHinshi = "adjective"
         case 3:
-          
+            
             TestRangeVC.whichHinshi = "adverb"
         case 4:
-         
+            
             TestRangeVC.whichHinshi = "others"
         default:
             return
