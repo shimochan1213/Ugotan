@@ -267,13 +267,13 @@ class TestViewController: UIViewController{
         //不正解の音を鳴らす
         soundFile.playSound(fileName: "fuseikai", extensionName: "mp3")
         
-        
+        //不正解イラスト表示
         maruBatsuImage.image = batsuImage
         
         //タイマーをリセットし、残り時間を再表示
         timersResetAndShowLabel()
         
-        //選択肢を0.5秒間無効化。制限時間ギリ超過時の誤タッチ防止。
+        //選択肢を0.5秒間無効化。制限時間ギリギリで超過時の誤タッチ防止。
         validateAndInvalidateButton()
         
         switch receivedCellNumber {
@@ -346,12 +346,7 @@ class TestViewController: UIViewController{
                 return
             }
             
-            
-            //            if questionNumber == 30{
-            //                //問題終了
-            //                timerResetAndPerformSegue()
-            //            }
-            //
+  
             
         case 1:
             //31-60
@@ -725,12 +720,9 @@ class TestViewController: UIViewController{
         countdownLabel.text = String(timerCount)
     }
     
-    //このへんはmodelにぶちこむかい？
+ 
     func displayGif(){
-        
-        
-        
-        //設定で「表示しない」となってたらここでreturnさせれば良い
+        //設定で「イラストを表示しない」となってたらここでreturnさせれば良い
         if UserDefaults.standard.object(forKey: "gifOnOff") != nil{
             gifOnOff = UserDefaults.standard.object(forKey: "gifOnOff") as! Bool
             if gifOnOff == false{
@@ -771,13 +763,7 @@ class TestViewController: UIViewController{
             default:
                 return
             }
-            
-            
-            
         }
-        
-        
-        
     }
     
     func changeWordLabel(){
@@ -799,7 +785,7 @@ class TestViewController: UIViewController{
         
     }
     
-    //おそらくセレクション1に正解を常に入れてる
+   //正解を入れてる（※おそらく今は使っていないメソッドです）
     func selection1NextWord(){
         switch whichHinshi {
         case "verb":
@@ -817,6 +803,7 @@ class TestViewController: UIViewController{
         }
     }
     
+    //ダミーの選択肢を入れてる（※おそらく今は使っていないメソッドです）
     func selection2NextWord(){
         let random = arc4random_uniform(UInt32(Int(materialList.TOEIC600verbList.count)))
         
@@ -871,6 +858,7 @@ class TestViewController: UIViewController{
             //不正解の音鳴らす
             soundFile.playSound(fileName: "fuseikai", extensionName: "mp3")
             
+            //不正解イラスト表示
             maruBatsuImage.image = batsuImage
             maruBatsuImage.isHighlighted = true
             
@@ -881,8 +869,6 @@ class TestViewController: UIViewController{
     
     func newNextQuestion(){
         //次の問題へ行く処理
-        //ランダムに選択肢を表示する処理も書くべきじゃね？
-        
         //タイマーをリセットし、残り時間を再表示
         timersResetAndShowLabel()
         
@@ -890,7 +876,7 @@ class TestViewController: UIViewController{
         case 0:
             //0-30
             //OKのやつ
-            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにす
+            //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
@@ -955,7 +941,6 @@ class TestViewController: UIViewController{
             
         case 1:
             //31-60
-            //purchaseはquestionNumber = 30
             
             switch whichHinshi {
             case "verb":
@@ -1222,8 +1207,7 @@ class TestViewController: UIViewController{
             
             
         case 5:
-            
-            //これならOk!
+ 
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
@@ -1296,7 +1280,6 @@ class TestViewController: UIViewController{
     
     
     func timerResetAndPerformSegue(){
-        //returnは、いるのだろうか？要検証
         self.timer2.invalidate()
         self.timer.invalidate()
         performSegue(withIdentifier: "TL", sender: nil)
@@ -1432,8 +1415,7 @@ class TestViewController: UIViewController{
                 return
             }
             
-            //ダミー選択肢を左に表示（選択肢重複を防ぐ処理）　!!!まれに「選択肢1」や「選択肢2」が表示されてしまう。要修正。
-            //        var random = Int(arc4random_uniform(UInt32(Int(materialList.TOEIC600verbList.count - 1))))
+            //ダミー選択肢を左に表示（選択肢重複を防ぐ処理）
             var random = Int()
             
             switch whichHinshi {
@@ -1512,7 +1494,7 @@ class TestViewController: UIViewController{
     
     
     @IBAction func answer(_ sender: Any){
-        //選択肢を0.5秒間無効化。制限時間ギリ超過時の誤タッチ防止。
+        //選択肢を0.5秒間無効化。制限時間ギリギリ超過時の誤タッチ防止。
         validateAndInvalidateButton()
         
         timersResetAndShowLabel()
@@ -1593,6 +1575,7 @@ class TestViewController: UIViewController{
     }
     
     @objc func onTimer3(timer: Timer){
+        //回答ボタン有効化
         selection1.isEnabled = true
         selection2.isEnabled = true
     }

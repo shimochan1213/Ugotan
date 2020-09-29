@@ -1908,6 +1908,7 @@
 				B1E563AF2492A6BF000B69C6 /* WhichHinshiTestViewController.swift */,
 				B171AFBC24DD401300CF5214 /* TestRangeViewController.swift */,
 				B171AFB624DD223B00CF5214 /* TestViewController.swift */,
+				B15DB49C24E039D100A14C11 /* ResultTLViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1940,7 +1941,6 @@
 				B173337E24E12B4A00B6CC39 /* Test */,
 				B196DD5724FCD098009DD78C /* Review */,
 				B122FFC8248CF23600D5450B /* ModeSelectViewController.swift */,
-				B15DB49C24E039D100A14C11 /* ResultTLViewController.swift */,
 				B12875C1250F5A9E00FA4F29 /* Setsumei0ViewController.swift */,
 				B13638B824E296370089ED95 /* SetsumeiViewController.swift */,
 				B117C59D250380FB003266C3 /* SettingViewController.swift */,

@@ -5,17 +5,6 @@
 //  Created by 下川勇輝 on 2020/06/09.
 //  Copyright © 2020 Yuki Shimokawa. All rights reserved.
 
-
-
-
-
-
-
-
-
-
-
-
 import UIKit
 import ViewAnimator
 import GoogleMobileAds

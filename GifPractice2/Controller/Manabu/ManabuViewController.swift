@@ -1331,7 +1331,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     func showAlert(){
         //テストの説明を表示
         
-        let alertController = UIAlertController(title: "はじめまして", message: "3秒で自動的に次の単語が出ます。1単語あたり2,3回音読ができると良いペースです。流れてくる音声に続いて「increase増加する、increase増加する」という風に音読します。最初の1周は一時停止を使って発音やイラストを確認すると音読がスムーズにできます。では、頑張って下さい！", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "はじめまして", message: "3秒で自動的に次の単語が出ます。1単語あたり2,3回音読ができると良いペースです。流れてくる音声に続いて「eat食べる、eat食べる」という風に音読します。では、頑張って下さい！", preferredStyle: .alert)
         
         let action1 = UIAlertAction(title: "はい", style: .default) { (alert) in
             
