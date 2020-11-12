@@ -14,6 +14,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     
+    @IBOutlet weak var numberLabel: UILabel!
     var audioPlayer:AVAudioPlayer!
     var soundFile = SoundFile()
     var wordCount = Int()
@@ -41,6 +42,8 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        numberLabel.text = String("No. \(wordCount + 1)")
         
         navigationController?.setNavigationBarHidden(true, animated: false)
         
