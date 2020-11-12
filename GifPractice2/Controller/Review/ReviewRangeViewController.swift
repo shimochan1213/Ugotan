@@ -6,7 +6,6 @@
 //  Copyright © 2020 Yuki Shimokawa. All rights reserved.
 
 import UIKit
-import ViewAnimator
 import GoogleMobileAds
 
 

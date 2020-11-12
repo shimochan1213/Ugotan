@@ -7,7 +7,6 @@
 
 
 import UIKit
-import ViewAnimator
 import GoogleMobileAds
 
 //品詞を選択された時に表示されるセルたち。30こずつ範囲を選ばせる予定。

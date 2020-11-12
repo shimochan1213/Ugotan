@@ -8,12 +8,10 @@ target 'GifPractice2' do
   # Pods for GifPractice2
 
 	pod 'Google-Mobile-Ads-SDK'
-	pod 'ViewAnimator'
 	pod 'Firebase'
 	pod 'Firebase/Auth'
 	pod 'Firebase/Database'
 	pod 'lottie-ios'
-	pod 'ChameleonFramework'
 	pod 'Firebase/Core'
 	pod 'Firebase/Messaging'
 	pod 'Firebase/Analytics'

@@ -115,6 +115,7 @@
 		B12875CA250F5D4D00FA4F29 /* confirm.gif in Resources */ = {isa = PBXBuildFile; fileRef = B12875C6250F5D4900FA4F29 /* confirm.gif */; };
 		B12875CC250F5F6500FA4F29 /* inform.gif in Resources */ = {isa = PBXBuildFile; fileRef = B12875CB250F5F6500FA4F29 /* inform.gif */; };
 		B13638B924E296370089ED95 /* SetsumeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13638B824E296370089ED95 /* SetsumeiViewController.swift */; };
+		B155CACE255D5960004A4F80 /* Pods_GifPractice2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D620D364235C3D3308023943 /* Pods_GifPractice2.framework */; };
 		B15A65A4250A334C00920766 /* significant.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6587250A334100920766 /* significant.gif */; };
 		B15A65A5250A334C00920766 /* complicated.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6588250A334100920766 /* complicated.gif */; };
 		B15A65A6250A334C00920766 /* latest.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6589250A334100920766 /* latest.gif */; };
@@ -631,7 +632,6 @@
 		B1EDCB362504EF41004D3A0D /* increase.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCB352504EF40004D3A0D /* increase.gif */; };
 		B1EDCB3A2504F25F004D3A0D /* figure.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCB392504F25E004D3A0D /* figure.gif */; };
 		B1EDCB3E2504F2D0004D3A0D /* resume.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCB3D2504F2CF004D3A0D /* resume.mp3 */; };
-		DF2BF24982A1C1F0D11E14A4 /* Pods_GifPractice2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D620D364235C3D3308023943 /* Pods_GifPractice2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1273,7 +1273,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2BF24982A1C1F0D11E14A4 /* Pods_GifPractice2.framework in Frameworks */,
+				B155CACE255D5960004A4F80 /* Pods_GifPractice2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2016,7 +2016,7 @@
 				B1BE999F2461D18F005766A6 /* Sources */,
 				B1BE99A02461D18F005766A6 /* Frameworks */,
 				B1BE99A12461D18F005766A6 /* Resources */,
-				9E72EE13599345E469262A44 /* [CP] Embed Pods Frameworks */,
+				8588B4DD557E65507479AB1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2034,7 +2034,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Yuki Shimokawa";
 				TargetAttributes = {
 					B1BE99A22461D18F005766A6 = {
@@ -2675,7 +2675,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9E72EE13599345E469262A44 /* [CP] Embed Pods Frameworks */ = {
+		8588B4DD557E65507479AB1C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2792,6 +2792,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2852,6 +2853,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2897,7 +2899,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.2;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuchineko.GifPractice2;
 				PRODUCT_NAME = ugotan;
 				PROVISIONING_PROFILE_SPECIFIER = ugotanIos;
@@ -2923,7 +2925,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.2;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuchineko.GifPractice2;
 				PRODUCT_NAME = ugotan;
 				PROVISIONING_PROFILE_SPECIFIER = ugotan;

@@ -7,7 +7,6 @@
 
 
 import UIKit
-import ViewAnimator
 import GoogleMobileAds
 
 class WhichReviewViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{

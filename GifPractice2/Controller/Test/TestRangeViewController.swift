@@ -17,7 +17,6 @@
 
 
 import UIKit
-import ViewAnimator
 import GoogleMobileAds
 
 //動詞編をタップされたときに表示されるセルたち。30こずつ範囲を選ばせる予定。

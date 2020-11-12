@@ -7,7 +7,6 @@
 //あたらしい方 テストのレベル用
 
 import UIKit
-import ViewAnimator
 import GoogleMobileAds
 
 class WhichHinshiTestViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{

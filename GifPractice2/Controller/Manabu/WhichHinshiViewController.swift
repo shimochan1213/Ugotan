@@ -7,7 +7,6 @@
 
 
 import UIKit
-import ViewAnimator
 import GoogleMobileAds
 
 class WhichHinshiViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{

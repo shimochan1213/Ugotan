@@ -551,6 +551,30 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     
+    func testMethod(){
+        switch whichHinshi {
+        case "verb":
+            gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
+            
+        case "noun":
+            gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
+            
+        case "adjective":
+            gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
+            
+        case "adverb":
+            
+            gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
+            
+        case "others":
+            gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
+            
+        default:
+            break
+        }
+        
+    }
+    
     
     
     @IBAction func beforeQuestion(_ sender: Any) {
@@ -572,23 +596,24 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 switch whichHinshi {
                 case "verb":
                     gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
+
                 case "noun":
                     gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
+
                 case "adjective":
                     gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
+
                 case "adverb":
-                    
+
                     gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
+
                 case "others":
                     gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
+
                 default:
                     return
                 }
+//                testMethod()
                 
                 
                 
