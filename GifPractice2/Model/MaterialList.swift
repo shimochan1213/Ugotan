@@ -19,6 +19,8 @@ class MaterialList{
     var TOEIC600AdverbList = [MaterialModel]()
     var TOEIC600OthersList = [MaterialModel]()
     
+    var TOEIC600AdverbOthersList = [MaterialModel]()
+    
     init(){
         
         //correctOrNotについて。正解はすべてtrueであることを前提に作っているのでこの配列では全てtrueでOK
@@ -495,6 +497,70 @@ class MaterialList{
         
         
         //30子以上入れる！
+        
+        //AdverbとOthersの新リスト
+        
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "slightly", japanWordsName: "わずかに", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "rather", japanWordsName: "かなり", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "properly", japanWordsName: "適切に", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "anyway", japanWordsName: "とにかく", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "frequently", japanWordsName: "頻繁に", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "likely", japanWordsName: "する可能性が高い", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "absolutely", japanWordsName: "絶対に", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "nearly", japanWordsName: "ほぼ", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "highly", japanWordsName: "とても", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "currently", japanWordsName: "現在", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "immediately", japanWordsName: "すぐに", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "equally", japanWordsName: "同じように", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "particularly", japanWordsName: "特に", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "occasionally", japanWordsName: "時々", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "shortly", japanWordsName: "すぐに、じきに", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "fairly", japanWordsName: "かなり", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "alike", japanWordsName: "同様に", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "relatively", japanWordsName: "比較的", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "regularly", japanWordsName: "定期的に", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "unfortunately", japanWordsName: "不幸なことに", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "recently", japanWordsName: "最近（過去形、現在完了と使う）", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "almost", japanWordsName: "ほぼ", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "unlike", japanWordsName: "とは違って", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "perhaps", japanWordsName: "ひょっとしたら", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "eventually", japanWordsName: "最終的に", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "hardly", japanWordsName: "ほとんどない", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "gradually", japanWordsName: "だんだんと、段階的に", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "somewhat", japanWordsName: "多少", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "afterwards", japanWordsName: "後で", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "approximately", japanWordsName: "およそ", correctOrNot: true))
+        
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "be willing to V", japanWordsName: "進んで〜する", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "following A", japanWordsName: "Aの後で", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "guided tour", japanWordsName: "ガイド付きツアー", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "with ease", japanWordsName: "簡単に", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "loyal customer", japanWordsName: "忠実な客（常連客）", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "be pleased with A", japanWordsName: "Aに対し嬉しい", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "according to", japanWordsName: "〜によると", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "be eager to V", japanWordsName: "〜したい", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "in a different setting", japanWordsName: "違った環境では", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "be aware of A", japanWordsName: "Aに気付いている", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "be responsible of A", japanWordsName: "Aに責任をもつ", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "be committed to A", japanWordsName: "献身的に取り組む", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "be satisfied with A", japanWordsName: "Aに満足している", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "regarding A", japanWordsName: "Aに関して", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "be unable to V", japanWordsName: "〜できない", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "neither A nor B", japanWordsName: "AもBも違う", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "without A", japanWordsName: "Aなしで", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "in spite of A", japanWordsName: "Aにも関わらず", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "unlike", japanWordsName: "と違って", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "besides", japanWordsName: "に加えて", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "each 単数名詞", japanWordsName: "それぞれの", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "both A and B", japanWordsName: "AとB両方", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "hence", japanWordsName: "だから", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "seldom", japanWordsName: "滅多にない", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "latter", japanWordsName: "(二つのうち）後者", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "behind the wheel", japanWordsName: "運転する", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "every other week", japanWordsName: "1週間おきに", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "on board", japanWordsName: "（飛行）機内で", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "in cash", japanWordsName: "現金で", correctOrNot: true))
+        TOEIC600AdverbOthersList.append(MaterialModel(wordsName: "due to A", japanWordsName: "Aが理由で", correctOrNot: true))
         
         
         
