@@ -179,26 +179,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 
                 playWordSound()
                 
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+                displayGif()
                 
                 
                 changeLabelsOfWordAndJapan()
@@ -247,26 +228,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 wordCount += 1
                 playWordSound()
                 
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
 
@@ -311,27 +273,8 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
 
                 wordCount += 1
                 playWordSound()
-                
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
 
@@ -383,26 +326,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 wordCount += 1
                 playWordSound()
                 
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
 
@@ -449,26 +373,8 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 wordCount += 1
                 playWordSound()
                 
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
 
@@ -516,26 +422,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 wordCount += 1
                 playWordSound()
                 
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
 
@@ -548,32 +435,6 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
-    
-    
-    
-    func gifAsRange(){
-        switch whichHinshi {
-        case "verb":
-            gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-            
-        case "noun":
-            gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-            
-        case "adjective":
-            gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-            
-        case "adverb":
-            
-            gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-            
-        case "others":
-            gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-            
-        default:
-            break
-        }
-        
-    }
     
     
     
@@ -593,11 +454,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             if receivedCellNumber == 0{
                 
 
-                gifAsRange()
-                
-                
-                
-                
+                displayGif()
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
                 timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
@@ -605,8 +462,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }else if receivedCellNumber == 1{
                 //31-60
                 
-                gifAsRange()
-                
+                displayGif()
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
                 timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
@@ -615,8 +471,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }else if receivedCellNumber == 2 {
                 //61-90
 
-                gifAsRange()
-                
+                displayGif()
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
                 timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
@@ -626,7 +481,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 //91-120
 
 
-                gifAsRange()
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
@@ -635,7 +490,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }else if receivedCellNumber == 4{
 
 
-                gifAsRange()
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
@@ -646,7 +501,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }else if receivedCellNumber == 5{
                 
 
-                gifAsRange()
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
@@ -747,26 +602,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 
                 playWordSound()
                 
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+                displayGif()
                 
                 
                 changeLabelsOfWordAndJapan()
@@ -816,27 +652,8 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 self.timer?.invalidate()
                 wordCount += 1
                 playWordSound()
-                
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
@@ -884,26 +701,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 wordCount += 1
                 playWordSound()
                 
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
@@ -957,26 +755,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 wordCount += 1
                 playWordSound()
                 
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
@@ -1025,26 +804,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 wordCount += 1
                 playWordSound()
                 
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
@@ -1094,26 +854,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 wordCount += 1
                 playWordSound()
                 
-                switch whichHinshi {
-                case "verb":
-                    gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-                    
-                case "noun":
-                    gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-                    
-                case "adjective":
-                    gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-                    
-                case "adverb":
-                    
-                    gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-                    
-                case "others":
-                    gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-                    
-                default:
-                    return
-                }
+                displayGif()
                 
                 changeLabelsOfWordAndJapan()
                 //タイマー再開
@@ -1185,7 +926,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
             
         default:
-            return
+            break
         }
     }
     
