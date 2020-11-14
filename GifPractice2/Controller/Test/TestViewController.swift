@@ -89,7 +89,6 @@ class TestViewController: UIViewController{
             
             displayGif()
             changeWordLabel()
-            
             //選択肢を左右ランダムに表示したい
             showRandomSelection()
             
@@ -100,7 +99,6 @@ class TestViewController: UIViewController{
             
             displayGif()
             changeWordLabel()
-            
             showRandomSelection()
             
         case 2:
@@ -113,6 +111,7 @@ class TestViewController: UIViewController{
         case 3:
             //91-120
             questionNumber = 90
+            
             displayGif()
             changeWordLabel()
             showRandomSelection()
@@ -120,18 +119,16 @@ class TestViewController: UIViewController{
         case 4:
             //121-150
             questionNumber = 120
+            
             displayGif()
             changeWordLabel()
-            
-            //選択肢を左右ランダムに表示したい
             showRandomSelection()
         case 5:
             //151-180
             questionNumber = 150
+            
             displayGif()
             changeWordLabel()
-            
-            //選択肢を左右ランダムに表示したい
             showRandomSelection()
         default:
             break
@@ -502,13 +499,13 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                 }
             default:
-                return
+                break
             }
             
             
             
         default:
-            return
+            break
         }
         
     }
@@ -552,7 +549,7 @@ class TestViewController: UIViewController{
                 case "others":
                     testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
                 default:
-                    return
+                    break
                 }
                 
                 
@@ -572,7 +569,7 @@ class TestViewController: UIViewController{
             case "others":
                 testGifView.loadGif(name: materialList.TOEIC600OthersList[questionNumber].Words)
             default:
-                return
+                break
             }
         }
     }
@@ -639,6 +636,11 @@ class TestViewController: UIViewController{
         }
     }
     
+    func NEWNEXTQUES(){
+        questionNumber += 1
+        displayGif()
+        changeWordLabel()
+    }
     
     
     func newNextQuestion(){
@@ -656,9 +658,7 @@ class TestViewController: UIViewController{
                 if questionNumber == materialList.TOEIC600verbList.count - 1{
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -668,9 +668,7 @@ class TestViewController: UIViewController{
                 if questionNumber == materialList.TOEIC600NounList.count - 1{
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -680,9 +678,7 @@ class TestViewController: UIViewController{
                 if questionNumber == materialList.TOEIC600AdjectiveList.count - 1{
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -690,9 +686,7 @@ class TestViewController: UIViewController{
                 if questionNumber == materialList.TOEIC600AdverbList.count - 1{
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -701,9 +695,7 @@ class TestViewController: UIViewController{
                     timerResetAndPerformSegue()
                     
                 }else if questionNumber != 29{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -722,9 +714,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -733,9 +723,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -745,9 +733,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -756,9 +742,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -767,9 +751,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -790,9 +772,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -801,9 +781,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -813,9 +791,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -824,9 +800,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -835,9 +809,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -857,9 +829,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 120{
                     timerResetAndPerformSegue()
                 }
@@ -868,9 +838,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 120{
                     timerResetAndPerformSegue()
                 }
@@ -880,9 +848,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 120{
                     timerResetAndPerformSegue()
                 }
@@ -891,9 +857,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 120{
                     timerResetAndPerformSegue()
                 }
@@ -902,9 +866,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 120{
                     timerResetAndPerformSegue()
                 }
@@ -922,9 +884,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -933,9 +893,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -945,9 +903,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -956,9 +912,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -967,9 +921,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -988,9 +940,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -999,9 +949,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -1011,9 +959,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -1022,9 +968,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -1033,9 +977,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
+                    NEWNEXTQUES()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
