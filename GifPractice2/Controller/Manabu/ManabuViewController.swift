@@ -38,8 +38,6 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     
-    //コードを見る担当者様へ。品詞に関するswitch文が長くて申し訳ありません・・。メソッドで実行しようとしたのですがどうもうまくいかず、全てswitch文を書いてあります。お手数おかけします
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,19 +56,19 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         }
         
         switch firstOrNot {
-
+        
         case true:
             //初めての起動
             showAlert()
         case false:
             // タイマーを設定
-            timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+        setTimer()
         default:
             break
         }
         
         
-  
+        
         //2回目以降の起動
         switch receivedCellNumber {
         case 0:
@@ -86,7 +84,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         case 5:
             wordCount = 150
         default:
-             break
+            break
         }
         
         playWordSound()
@@ -97,7 +95,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     
- 
+    
     
     
     
@@ -144,13 +142,11 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 showCongratsAlert()
                 return
             }else{
-
+                
                 wordCount += 1
                 playWordSound()
-//                displayGif()
-//                changeLabelsOfWordAndJapan()
                 displayGifWordJapan()
-
+                
             }
         }else if receivedCellNumber == 1{
             //31-60
@@ -191,11 +187,11 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 showCongratsAlert()
                 return
             }else{
-
+                
                 wordCount += 1
                 playWordSound()
                 displayGifWordJapan()
-
+                
             }
         }else if receivedCellNumber == 2{
             //61-90のセルが押された
@@ -234,11 +230,11 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 showCongratsAlert()
                 return
             }else{
-
+                
                 wordCount += 1
                 playWordSound()
                 displayGifWordJapan()
-
+                
             }
             
             
@@ -275,19 +271,15 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }
             
             
-            
-            
-            
-            
             if wordCount == 119{
                 showCongratsAlert()
                 return
             }else{
-
+                
                 wordCount += 1
                 playWordSound()
                 displayGifWordJapan()
-
+                
             }
         }else if receivedCellNumber == 4{
             
@@ -327,11 +319,11 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 showCongratsAlert()
                 return
             }else{
-
+                
                 wordCount += 1
                 playWordSound()
                 displayGifWordJapan()
-
+                
             }
             
             
@@ -372,18 +364,15 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 showCongratsAlert()
                 return
             }else{
-
+                
                 wordCount += 1
                 playWordSound()
                 displayGifWordJapan()
-
+                
             }
             
             
         }
-        
-        
-        
     }
     
     
@@ -398,62 +387,64 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             //タイマーをリセット（一単語戻ったら即つぎにいくことがあったため）
             self.timer?.invalidate()
             wordCount -= 1
-            
             playWordSound()
             
             //0-30ならば
             if receivedCellNumber == 0{
                 
-
-                displayGif()
-                changeLabelsOfWordAndJapan()
-                //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
                 
+                displayGifWordJapan()
+                //タイマー再開
+//                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+               setTimer()
             }else if receivedCellNumber == 1{
                 //31-60
                 
                 displayGifWordJapan()
                 //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                setTimer()
                 
             }else if receivedCellNumber == 2 {
                 //61-90
-
+                
                 displayGifWordJapan()
                 //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
-  
+                setTimer()
+                
                 
             }else if receivedCellNumber == 3{
                 //91-120
-
-
+                
+                
                 displayGifWordJapan()
                 //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                setTimer()
                 
             }else if receivedCellNumber == 4{
-
-
+                
+                
                 displayGifWordJapan()
                 //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                setTimer()
                 
                 
                 
             }else if receivedCellNumber == 5{
                 
-
+                
                 displayGifWordJapan()
                 //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                setTimer()
                 
             }
             
             
         }
         
+    }
+    
+    func setTimer(){
+        timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
     }
     
     
@@ -480,7 +471,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         }else if timerChecker == false{
             
             //再開させる
-            timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+            setTimer()
             timerChecker = true
             //アイコンを⏸にする
             let image = UIImage(named: "pause2")
@@ -544,7 +535,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 playWordSound()
                 displayGifWordJapan()
                 //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                setTimer()
             }
         }else if receivedCellNumber == 1{
             //31-60
@@ -591,7 +582,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 playWordSound()
                 displayGifWordJapan()
                 //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                setTimer()
             }
         }else if receivedCellNumber == 2{
             //61-90のセルが押された
@@ -636,7 +627,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 playWordSound()
                 displayGifWordJapan()
                 //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                setTimer()
             }
             
             
@@ -672,11 +663,6 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 return
             }
             
-            
-            
-            
-            
-            
             if wordCount == 119{
                 showCongratsAlert()
                 return
@@ -687,7 +673,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 playWordSound()
                 displayGifWordJapan()
                 //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                setTimer()
             }
         }else if receivedCellNumber == 4{
             
@@ -733,7 +719,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 playWordSound()
                 displayGifWordJapan()
                 //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                setTimer()
             }
             
             
@@ -780,7 +766,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 playWordSound()
                 displayGifWordJapan()
                 //タイマー再開
-                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+                setTimer()
             }
             
             
@@ -887,67 +873,6 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     
-    
-    
-    
-    func displayGif() {
-        switch whichHinshi {
-        case "verb":
-            gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
-            
-        case "noun":
-            gifView.loadGif(name: materialList.TOEIC600NounList[wordCount].Words)
-            
-        case "adjective":
-            gifView.loadGif(name: materialList.TOEIC600AdjectiveList[wordCount].Words)
-            
-        case "adverb":
-            
-            gifView.loadGif(name: materialList.TOEIC600AdverbList[wordCount].Words)
-            
-        case "others":
-            gifView.loadGif(name: materialList.TOEIC600OthersList[wordCount].Words)
-            
-        default:
-            break
-        }
-    }
-    
-    func changeLabelsOfWordAndJapan(){
-        
-        
-        switch whichHinshi {
-        case "verb":
-            wordLabel.text = String(materialList.TOEIC600verbList[wordCount].Words)
-            japanWordLabel.text = String(materialList.TOEIC600verbList[wordCount].japanWords)
-            
-        case "noun":
-            wordLabel.text = String(materialList.TOEIC600NounList[wordCount].Words)
-            japanWordLabel.text = String(materialList.TOEIC600NounList[wordCount].japanWords)
-            
-        case "adjective":
-            wordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].Words)
-            japanWordLabel.text = String(materialList.TOEIC600AdjectiveList[wordCount].japanWords)
-            
-        case "adverb":
-            
-            wordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].Words)
-            japanWordLabel.text = String(materialList.TOEIC600AdverbList[wordCount].japanWords)
-            
-        case "others":
-            wordLabel.text = String(materialList.TOEIC600OthersList[wordCount].Words)
-            japanWordLabel.text = String(materialList.TOEIC600OthersList[wordCount].japanWords)
-            
-        default:
-            return
-        }
-        
-        
-    }
-    
-    
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -973,7 +898,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         let action1 = UIAlertAction(title: "はい", style: .default) { (alert) in
             
             //タイマースタート
-            self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+            self.setTimer()
             
             
             
