@@ -3,7 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -615,6 +615,13 @@ ca-app-pub-5717197999913003/9349881106</string>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題番号表示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4l-Vd-6Kq">
+                                <rect key="frame" x="231" y="57" width="98" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Ga-20-s6a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -643,6 +650,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                         <outlet property="countdownLabel" destination="fxG-nG-Ipp" id="bNx-R7-l1y"/>
                         <outlet property="gifView" destination="dIi-qs-tOx" id="iFk-eD-rJV"/>
                         <outlet property="maruBatsuImage" destination="KvL-OX-w6T" id="nY7-sS-j6C"/>
+                        <outlet property="quesNumberLabel" destination="u4l-Vd-6Kq" id="OZW-xz-6NN"/>
                         <outlet property="selection1" destination="8rQ-uU-kdb" id="Iu3-1f-FUh"/>
                         <outlet property="selection2" destination="hTs-Tb-CxY" id="Qs2-ah-lvi"/>
                         <outlet property="testGifView" destination="dIi-qs-tOx" id="zQv-NJ-S4q"/>

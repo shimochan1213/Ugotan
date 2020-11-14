@@ -41,6 +41,7 @@ class TestViewController: UIViewController{
     @IBOutlet weak var selection1: UIButton!
     @IBOutlet weak var selection2: UIButton!
     @IBOutlet weak var countdownLabel: UILabel!
+    @IBOutlet weak var quesNumberLabel: UILabel!
     
     
     //コードを見る担当者様へ。品詞に関するswitch文が長くて申し訳ありません・・。メソッドで実行しようとしたのですがどうもうまくいかず、全てswitch文を書いてあります。お手数おかけします。
@@ -48,6 +49,7 @@ class TestViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
         
         selection1.layer.cornerRadius = 15.0
         selection2.layer.cornerRadius = 15.0
@@ -75,7 +77,7 @@ class TestViewController: UIViewController{
             timer = Timer.scheduledTimer(timeInterval: timeLimit, target: self, selector: #selector(TestViewController.onTimer(timer:)), userInfo: nil, repeats: true)
             
         default:
-            return
+            break
         }
         
         //単語の範囲はどこか
@@ -219,15 +221,12 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                    questionNumber += 1                                             
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
             default:
-                return
+                break
             }
             
   
@@ -519,7 +518,11 @@ class TestViewController: UIViewController{
         displayGif()
         changeWordLabel()
         showRandomSelection()
+        
+        quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
     }
+    
+
     
     //残り時間のラベル
     @objc func onTimer2(timer:Timer){
@@ -1280,12 +1283,16 @@ class TestViewController: UIViewController{
                 newNextQuestion()
                 showRandomSelection()
                 
+                quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
+                
             }else if selectionRightOrLeft == 1{
                 //正解は右にある。つまり左を押したから不正解
                 pickedAnswer = false
                 checkAnswer()
                 newNextQuestion()
                 showRandomSelection()
+                
+                quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
             }
             
         }else if (sender as AnyObject).tag == 2{
@@ -1298,12 +1305,16 @@ class TestViewController: UIViewController{
                 newNextQuestion()
                 showRandomSelection()
                 
+                quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
+                
             }else if selectionRightOrLeft == 1{
                 //正解は右にある。つまり、右が押されたので正解。
                 pickedAnswer = true
                 checkAnswer()
                 newNextQuestion()
                 showRandomSelection()
+                
+                quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
             }
         }
     }
