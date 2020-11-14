@@ -10,10 +10,6 @@ import AVFoundation
 
 class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
-    //コードを見る担当者様へ。品詞に関するswitch文が長くて申し訳ありません・・。メソッドで実行しようとしたのですがどうもうまくいかず、全てswitch文を書いてあります。お手数おかけします
-    
-    
-    
     @IBOutlet weak var numberLabel: UILabel!
     var audioPlayer:AVAudioPlayer!
     var soundFile = SoundFile()
@@ -40,14 +36,8 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        numberLabel.text = String("No. \(wordCount + 1)")
-        
         navigationController?.setNavigationBarHidden(true, animated: false)
-        
-        
         timerChecker = true
-        
         beforeViewBtn.layer.cornerRadius = 10.0
         
         //初起動かどうかのチェック
@@ -66,8 +56,6 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         default:
             break
         }
-        
-        
         
         //2回目以降の起動
         switch receivedCellNumber {
@@ -89,16 +77,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         
         playWordSound()
         displayGifWordJapan()
-        
-        
-        
     }
-    
-    
-    
-    
-    
-    
     
     @objc func onTimer(timer: Timer) {
         
@@ -106,7 +85,6 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         if receivedCellNumber == 0{
             //0-30
             //品詞ごとに、その配列のカウントまでとしてout of rangeしないようにする
-            
             switch whichHinshi {
             case "verb":
                 if wordCount == materialList.TOEIC600verbList.count - 1{
@@ -391,11 +369,9 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
             //0-30ならば
             if receivedCellNumber == 0{
-                
-                
+                                
                 displayGifWordJapan()
                 //タイマー再開
-//                timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
                setTimer()
             }else if receivedCellNumber == 1{
                 //31-60
@@ -406,34 +382,25 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
                 
             }else if receivedCellNumber == 2 {
                 //61-90
-                
                 displayGifWordJapan()
-                //タイマー再開
                 setTimer()
                 
                 
             }else if receivedCellNumber == 3{
                 //91-120
-                
-                
                 displayGifWordJapan()
-                //タイマー再開
                 setTimer()
                 
             }else if receivedCellNumber == 4{
                 
-                
                 displayGifWordJapan()
-                //タイマー再開
                 setTimer()
                 
                 
                 
             }else if receivedCellNumber == 5{
                 
-                
                 displayGifWordJapan()
-                //タイマー再開
                 setTimer()
                 
             }
@@ -833,13 +800,19 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             soundFile.playSound(fileName: materialList.TOEIC600OthersList[wordCount].Words, extensionName: "mp3")
             
         default:
-            return
+            break
         }
         
     }
     
     func displayGifWordJapan(){
+        //単語の番号、gif,英単語とその訳を表示する
+                
+        numberLabel.text = String("No. \(wordCount + 1)")
+        
         switch whichHinshi {
+        
+        
         case "verb":
             gifView.loadGif(name: materialList.TOEIC600verbList[wordCount].Words)
             wordLabel.text = String(materialList.TOEIC600verbList[wordCount].Words)

@@ -86,27 +86,7 @@ class TestViewController: UIViewController{
             questionNumber = 0
             
             displayGif()
-            
-            switch whichHinshi {
-            case "verb":
-                
-                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                
-            case "noun":
-                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                
-            case "adjective":
-                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                
-            case "adverb":
-                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                
-            case "others":
-                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                
-            default:
-                return
-            }
+            changeWordLabel()
             
             //選択肢を左右ランダムに表示したい
             showRandomSelection()
@@ -117,26 +97,7 @@ class TestViewController: UIViewController{
             questionNumber = 30
             
             displayGif()
-            
-            switch whichHinshi {
-            case "verb":
-                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                
-            case "noun":
-                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                
-            case "adjective":
-                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                
-            case "adverb":
-                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                
-            case "others":
-                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                
-            default:
-                return
-            }
+            changeWordLabel()
             
             showRandomSelection()
             
@@ -145,70 +106,20 @@ class TestViewController: UIViewController{
             questionNumber = 60
             
             displayGif()
-            switch whichHinshi {
-            case "verb":
-                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                
-            case "noun":
-                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                
-            case "adjective":
-                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                
-            case "adverb":
-                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                
-            case "others":
-                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                
-            default:
-                return
-            }
+            changeWordLabel()
             showRandomSelection()
         case 3:
             //91-120
             questionNumber = 90
             displayGif()
-            switch whichHinshi {
-            case "verb":
-                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-                
-            case "noun":
-                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-                
-            case "adjective":
-                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-                
-            case "adverb":
-                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-                
-            case "others":
-                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                
-            default:
-                return
-            }
+            changeWordLabel()
             showRandomSelection()
             
         case 4:
             //121-150
             questionNumber = 120
             displayGif()
-            
-            switch whichHinshi {
-            case "verb":
-                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-            case "noun":
-                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-            case "adjective":
-                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-            case "adverb":
-                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-            case "others":
-                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-            default:
-                return
-            }
+            changeWordLabel()
             
             //選択肢を左右ランダムに表示したい
             showRandomSelection()
@@ -216,27 +127,12 @@ class TestViewController: UIViewController{
             //151-180
             questionNumber = 150
             displayGif()
-            
-            switch whichHinshi {
-            case "verb":
-                testWordLabel.text = String(materialList.TOEIC600verbList[questionNumber].Words)
-            case "noun":
-                testWordLabel.text = String(materialList.TOEIC600NounList[questionNumber].Words)
-            case "adjective":
-                testWordLabel.text = String(materialList.TOEIC600AdjectiveList[questionNumber].Words)
-            case "adverb":
-                testWordLabel.text = String(materialList.TOEIC600AdverbList[questionNumber].Words)
-            case "others":
-                testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
-                
-            default:
-                return
-            }
+            changeWordLabel()
             
             //選択肢を左右ランダムに表示したい
             showRandomSelection()
         default:
-            return
+            break
         }
         
         
@@ -286,10 +182,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -298,10 +191,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -311,10 +201,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -323,10 +210,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -357,10 +241,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -369,10 +250,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -382,10 +260,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -394,10 +269,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -406,10 +278,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -427,10 +296,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -439,10 +305,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -452,10 +315,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -464,10 +324,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -476,10 +333,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -497,10 +351,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -509,12 +360,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                    questionNumber += 1
-                    
-                    
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -524,12 +370,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                    questionNumber += 1
-                    
-                    
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 120{
                     timerResetAndPerformSegue()
                 }
@@ -538,12 +379,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                    questionNumber += 1
-                    
-                    
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 120{
                     timerResetAndPerformSegue()
                 }
@@ -552,12 +388,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                    questionNumber += 1
-                    
-                    
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 120{
                     timerResetAndPerformSegue()
                 }
@@ -575,10 +406,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -587,10 +415,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -600,10 +425,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -612,10 +434,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -624,10 +443,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -645,10 +461,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -657,10 +470,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -670,10 +480,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -682,10 +489,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -694,10 +498,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                    questionNumber += 1
-                    displayGif()
-                    changeWordLabel()
-                    showRandomSelection()
+                   NEXTQUESTIONMETHOD()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -711,6 +512,13 @@ class TestViewController: UIViewController{
             return
         }
         
+    }
+    
+    func NEXTQUESTIONMETHOD(){
+        questionNumber += 1
+        displayGif()
+        changeWordLabel()
+        showRandomSelection()
     }
     
     //残り時間のラベル
@@ -779,49 +587,12 @@ class TestViewController: UIViewController{
         case "others":
             testWordLabel.text = String(materialList.TOEIC600OthersList[questionNumber].Words)
         default:
-            return
+            break
         }
         
         
     }
     
-   //正解を入れてる（※おそらく今は使っていないメソッドです）
-    func selection1NextWord(){
-        switch whichHinshi {
-        case "verb":
-            selection1.setTitle(materialList.TOEIC600verbList[questionNumber].japanWords, for: UIControl.State.normal)
-        case "noun":
-            selection1.setTitle(materialList.TOEIC600NounList[questionNumber].japanWords, for: UIControl.State.normal)
-        case "adjective":
-            selection1.setTitle(materialList.TOEIC600AdjectiveList[questionNumber].japanWords, for: UIControl.State.normal)
-        case "adverb":
-            selection1.setTitle(materialList.TOEIC600AdverbList[questionNumber].japanWords, for: UIControl.State.normal)
-        case "others":
-            selection1.setTitle(materialList.TOEIC600OthersList[questionNumber].japanWords, for: UIControl.State.normal)
-        default:
-            return
-        }
-    }
-    
-    //ダミーの選択肢を入れてる（※おそらく今は使っていないメソッドです）
-    func selection2NextWord(){
-        let random = arc4random_uniform(UInt32(Int(materialList.TOEIC600verbList.count)))
-        
-        switch whichHinshi {
-        case "verb":
-            selection2.setTitle(materialList.TOEIC600verbList[Int(random)].japanWords, for:UIControl.State.normal)
-        case "noun":
-            selection2.setTitle(materialList.TOEIC600NounList[Int(random)].japanWords, for:UIControl.State.normal)
-        case "adjective":
-            selection2.setTitle(materialList.TOEIC600AdjectiveList[Int(random)].japanWords, for:UIControl.State.normal)
-        case "adverb":
-            selection2.setTitle(materialList.TOEIC600AdverbList[Int(random)].japanWords, for:UIControl.State.normal)
-        case "others":
-            selection2.setTitle(materialList.TOEIC600OthersList[Int(random)].japanWords, for:UIControl.State.normal)
-        default:
-            return
-        }
-    }
     
     
     //正答判定の機能
