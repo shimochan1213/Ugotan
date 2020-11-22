@@ -35,6 +35,7 @@ class ModeSelectViewController: UIViewController, UIImagePickerControllerDelegat
         tipsBtn.layer.cornerRadius = 10.0
         settingBtn.layer.cornerRadius = 10.0
         profileView.layer.cornerRadius = 20.0
+        profileImageView.layer.cornerRadius = profileImageView.bounds.width/2
         
         //materia design風の影の付け方の基本
         profileView.layer.shadowColor = UIColor.black.cgColor
