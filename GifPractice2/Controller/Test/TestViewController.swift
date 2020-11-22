@@ -181,7 +181,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -190,7 +190,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -200,7 +200,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -209,7 +209,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 29{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -226,7 +226,7 @@ class TestViewController: UIViewController{
                 break
             }
             
-  
+            
             
         case 1:
             //31-60
@@ -237,7 +237,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -246,7 +246,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -256,7 +256,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -265,7 +265,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -274,7 +274,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 60{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 60{
                     timerResetAndPerformSegue()
                 }
@@ -292,7 +292,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -301,7 +301,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -311,7 +311,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -320,7 +320,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -329,7 +329,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 90{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 90{
                     timerResetAndPerformSegue()
                 }
@@ -347,7 +347,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -356,7 +356,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 29{
                     timerResetAndPerformSegue()
                 }
@@ -366,7 +366,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 120{
                     timerResetAndPerformSegue()
                 }
@@ -375,7 +375,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 120{
                     timerResetAndPerformSegue()
                 }
@@ -384,7 +384,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 120{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 120{
                     timerResetAndPerformSegue()
                 }
@@ -402,7 +402,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -411,7 +411,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -421,7 +421,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -430,7 +430,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -439,7 +439,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 150{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 150{
                     timerResetAndPerformSegue()
                 }
@@ -457,7 +457,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -466,7 +466,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -476,7 +476,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -485,7 +485,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -494,7 +494,7 @@ class TestViewController: UIViewController{
                     
                     timerResetAndPerformSegue()
                 }else if questionNumber != 180{
-                   NEXTQUESTIONMETHOD()
+                    NEXTQUESTIONMETHOD()
                 }else if questionNumber == 180{
                     timerResetAndPerformSegue()
                 }
@@ -519,7 +519,7 @@ class TestViewController: UIViewController{
         quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
     }
     
-
+    
     
     //残り時間のラベル
     @objc func onTimer2(timer:Timer){
@@ -528,7 +528,7 @@ class TestViewController: UIViewController{
         countdownLabel.text = String(timerCount)
     }
     
- 
+    
     func displayGif(){
         //設定で「イラストを表示しない」となってたらここでreturnさせれば良い
         if UserDefaults.standard.object(forKey: "gifOnOff") != nil{
@@ -933,7 +933,7 @@ class TestViewController: UIViewController{
             
             
         case 5:
- 
+            
             switch whichHinshi {
             case "verb":
                 if questionNumber == materialList.TOEIC600verbList.count - 1{

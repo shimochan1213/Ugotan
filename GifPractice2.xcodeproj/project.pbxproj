@@ -556,6 +556,7 @@
 		B1E5EDF824E1984E0067B91C /* cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EDF624E1984D0067B91C /* cat.mp3 */; };
 		B1E5EDF924E1984E0067B91C /* seikai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EDF724E1984D0067B91C /* seikai.mp3 */; };
 		B1E5EDFB24E19C8A0067B91C /* fuseikai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E5EDFA24E19C8A0067B91C /* fuseikai.mp3 */; };
+		B1E76F54256A49B500604254 /* EditUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E76F53256A49B500604254 /* EditUserNameViewController.swift */; };
 		B1EDCAE32504EE5B004D3A0D /* clothing.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCA9D2504EE48004D3A0D /* clothing.gif */; };
 		B1EDCAE42504EE5B004D3A0D /* fee.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCA9E2504EE48004D3A0D /* fee.gif */; };
 		B1EDCAE52504EE5B004D3A0D /* income.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1EDCA9F2504EE49004D3A0D /* income.gif */; };
@@ -1187,6 +1188,7 @@
 		B1E5EDF624E1984D0067B91C /* cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat.mp3; sourceTree = "<group>"; };
 		B1E5EDF724E1984D0067B91C /* seikai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = seikai.mp3; sourceTree = "<group>"; };
 		B1E5EDFA24E19C8A0067B91C /* fuseikai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fuseikai.mp3; sourceTree = "<group>"; };
+		B1E76F53256A49B500604254 /* EditUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserNameViewController.swift; sourceTree = "<group>"; };
 		B1EDCA9D2504EE48004D3A0D /* clothing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = clothing.gif; sourceTree = "<group>"; };
 		B1EDCA9E2504EE48004D3A0D /* fee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fee.gif; sourceTree = "<group>"; };
 		B1EDCA9F2504EE49004D3A0D /* income.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = income.gif; sourceTree = "<group>"; };
@@ -1944,6 +1946,7 @@
 				B12875C1250F5A9E00FA4F29 /* Setsumei0ViewController.swift */,
 				B13638B824E296370089ED95 /* SetsumeiViewController.swift */,
 				B117C59D250380FB003266C3 /* SettingViewController.swift */,
+				B1E76F53256A49B500604254 /* EditUserNameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2016,7 +2019,7 @@
 				B1BE999F2461D18F005766A6 /* Sources */,
 				B1BE99A02461D18F005766A6 /* Frameworks */,
 				B1BE99A12461D18F005766A6 /* Resources */,
-				8588B4DD557E65507479AB1C /* [CP] Embed Pods Frameworks */,
+				931D9BC1D2C6FC181ECF47B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2675,7 +2678,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8588B4DD557E65507479AB1C /* [CP] Embed Pods Frameworks */ = {
+		931D9BC1D2C6FC181ECF47B5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2721,6 +2724,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E76F54256A49B500604254 /* EditUserNameViewController.swift in Sources */,
 				B1C49DEE24DB006600C25A35 /* ManabuViewController.swift in Sources */,
 				B1A96B39248E98E000E751EA /* WhichHinshiViewController.swift in Sources */,
 				B196DD5424FCB548009DD78C /* ReviewRangeViewController.swift in Sources */,

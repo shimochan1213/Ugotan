@@ -21,6 +21,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     var timerChecker = true
     var receivedCellNumber = Int()
     var whichHinshi = String()
+    var learnedNumber = 0
     
     
     @IBOutlet var beforeViewBtn: UIView!
@@ -350,6 +351,14 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             }
             
             
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        if UserDefaults.standard.object(forKey: "learnedNumber") != nil{
+            learnedNumber = UserDefaults.standard.object(forKey: "learnedNumber") as! Int
         }
     }
     
@@ -887,6 +896,13 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     func showCongratsAlert(){
+        
+        //学んだ数記録
+        learnedNumber += 30
+        UserDefaults.standard.setValue(learnedNumber, forKey: "learnedNumber")
+     
+        
+        
         //単語最後まで行った時に「完了」を示すアラートを出す
         
         let alertController = UIAlertController(title: "お疲れ様でした！", message: "引き続き頑張ってくださいね！", preferredStyle: .alert)
