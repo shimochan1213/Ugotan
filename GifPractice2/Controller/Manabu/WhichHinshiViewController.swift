@@ -32,8 +32,8 @@ class WhichHinshiViewController: UIViewController,UITableViewDelegate,UITableVie
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         
-        //リザルトから戻ったときにナビゲーションバー消えないように
-        self.navigationController?.isNavigationBarHidden = false
+//        //リザルトから戻ったときにナビゲーションバー消えないように
+//        self.navigationController?.isNavigationBarHidden = false
         
         
     }

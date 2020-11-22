@@ -34,9 +34,14 @@ class ModeSelectViewController: UIViewController, UIImagePickerControllerDelegat
         
         tipsBtn.layer.cornerRadius = 10.0
         settingBtn.layer.cornerRadius = 10.0
+        profileView.layer.cornerRadius = 20.0
         
-//        //リザルトから戻ったときにナビゲーションバー消えないように
-//        self.navigationController?.isNavigationBarHidden = false
+        //materia design風の影の付け方の基本
+        profileView.layer.shadowColor = UIColor.black.cgColor
+        profileView.layer.shadowRadius = 1
+        profileView.layer.shadowOpacity = 0.5
+        profileView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        
         NotificationCenter.default.addObserver(self, selector: #selector(fromEdit), name: .notificationFromEditName, object: nil)
         
         
@@ -49,16 +54,18 @@ class ModeSelectViewController: UIViewController, UIImagePickerControllerDelegat
             userNameLabel.text =  UserDefaults.standard.object(forKey: "userName") as! String
         }
         
-        if UserDefaults.standard.object(forKey: "learnedNumber") != nil{
-            learnedNumber = UserDefaults.standard.object(forKey: "learnedNumber") as! Int
-            learnedNumberLabel.text = String(learnedNumber)
-        }
+       
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
+        if UserDefaults.standard.object(forKey: "learnedNumber") != nil{
+            learnedNumber = UserDefaults.standard.object(forKey: "learnedNumber") as! Int
+            learnedNumberLabel.text = "学んだ単語数は\(String(learnedNumber))です"
+            
+        }
         
         //リザルトから戻ったときにナビゲーションバー消えないように
         self.navigationController?.isNavigationBarHidden = false
@@ -74,7 +81,9 @@ class ModeSelectViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     @objc func fromEdit() {
+        if UserDefaults.standard.object(forKey: "userName") != nil{
         userNameLabel.text = UserDefaults.standard.object(forKey: "userName") as! String
+    }
     }
     
     

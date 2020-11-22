@@ -45,6 +45,10 @@ class ManabuRangeViewController: UIViewController,UITableViewDelegate,UITableVie
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.isNavigationBarHidden = false
+    }
  
     
     func numberOfSections(in tableView: UITableView) -> Int {

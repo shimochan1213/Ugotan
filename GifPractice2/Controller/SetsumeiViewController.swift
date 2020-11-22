@@ -22,7 +22,8 @@ class SetsumeiViewController: UIViewController {
     }
     
     @IBAction func backToModeSelect(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+//        self.navigationController?.popToRootViewController(animated: true)
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     /*

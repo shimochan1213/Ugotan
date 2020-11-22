@@ -34,6 +34,7 @@ class TestViewController: UIViewController{
     var firstOrNot = true
     var gifOnOff = true
     var whichHinshi = String()
+    var learnedNumber = Int()
     @IBOutlet weak var gifView: UIImageView!
     @IBOutlet weak var maruBatsuImage: UIImageView!
     @IBOutlet weak var testGifView: UIImageView!
@@ -49,7 +50,7 @@ class TestViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
+        quesNumberLabel.text = "\(questionNumber % 30 + 1) / 30"
         
         selection1.layer.cornerRadius = 15.0
         selection2.layer.cornerRadius = 15.0
@@ -508,6 +509,15 @@ class TestViewController: UIViewController{
             break
         }
         
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        if UserDefaults.standard.object(forKey: "learnedNumber") != nil{
+            learnedNumber = UserDefaults.standard.object(forKey: "learnedNumber") as! Int
+        }
     }
     
     func NEXTQUESTIONMETHOD(){
@@ -1004,6 +1014,10 @@ class TestViewController: UIViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        //学んだ数記録
+        learnedNumber += 30
+        UserDefaults.standard.setValue(learnedNumber, forKey: "learnedNumber")
+        
         
         let resultTLVC = segue.destination as! ResultTLViewController
         
@@ -1225,7 +1239,7 @@ class TestViewController: UIViewController{
                 newNextQuestion()
                 showRandomSelection()
                 
-                quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
+                quesNumberLabel.text = "\(questionNumber % 30 + 1) / 30"
                 
             }else if selectionRightOrLeft == 1{
                 //正解は右にある。つまり左を押したから不正解
@@ -1234,7 +1248,7 @@ class TestViewController: UIViewController{
                 newNextQuestion()
                 showRandomSelection()
                 
-                quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
+                quesNumberLabel.text = "\(questionNumber % 30 + 1) / 30"
             }
             
         }else if (sender as AnyObject).tag == 2{
@@ -1247,7 +1261,7 @@ class TestViewController: UIViewController{
                 newNextQuestion()
                 showRandomSelection()
                 
-                quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
+                quesNumberLabel.text = "\(questionNumber % 30 + 1) / 30"
                 
             }else if selectionRightOrLeft == 1{
                 //正解は右にある。つまり、右が押されたので正解。
@@ -1256,7 +1270,7 @@ class TestViewController: UIViewController{
                 newNextQuestion()
                 showRandomSelection()
                 
-                quesNumberLabel.text = "\(questionNumber % 30 + 1) /30"
+                quesNumberLabel.text = "\(questionNumber % 30 + 1) / 30"
             }
         }
     }

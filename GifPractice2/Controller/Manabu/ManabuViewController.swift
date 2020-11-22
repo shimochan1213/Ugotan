@@ -897,21 +897,24 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     func showCongratsAlert(){
         
-        //学んだ数記録
-        learnedNumber += 30
-        UserDefaults.standard.setValue(learnedNumber, forKey: "learnedNumber")
-     
-        
-        
         //単語最後まで行った時に「完了」を示すアラートを出す
         
         let alertController = UIAlertController(title: "お疲れ様でした！", message: "引き続き頑張ってくださいね！", preferredStyle: .alert)
         
         let action1 = UIAlertAction(title: "ホームへ", style: .default) { (alert) in
+            
+            //学んだ数記録
+            self.learnedNumber += 30
+            UserDefaults.standard.setValue(self.learnedNumber, forKey: "learnedNumber")
+            
             self.navigationController?.popToRootViewController(animated: true)
         }
         
         let action2 = UIAlertAction(title: "範囲選択へ", style: .default) { (alert) in
+            
+            //学んだ数記録
+            self.learnedNumber += 30
+            UserDefaults.standard.setValue(self.learnedNumber, forKey: "learnedNumber")
             
             self.navigationController?.popViewController(animated: true)
             //ナビゲーションバー再表示
