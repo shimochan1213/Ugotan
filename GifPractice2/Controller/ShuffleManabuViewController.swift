@@ -13,7 +13,7 @@ import Lottie
 
 class ShuffleManabuViewController: UIViewController {
     
-    // AVSpeechSynthesizerをクラス変数で保持しておく、インスタンス変数だと読み上げるまえに破棄されてしまう
+//AVSpeechSynthesizerをクラス変数で保持しておく、インスタンス変数だと読み上げるまえに破棄されてしまう
     var speechSynthesizer : AVSpeechSynthesizer!
     
     @IBOutlet weak var gifView: UIImageView!
@@ -26,7 +26,6 @@ class ShuffleManabuViewController: UIViewController {
     
 
     @IBOutlet weak var manabuView: UIView!
-    var animationView = AnimationView()
     
     //単語の範囲を受け取る
     var receivedCellNumber = Int()
@@ -34,12 +33,10 @@ class ShuffleManabuViewController: UIViewController {
     //累計単語学習数を記録
     var learnedNumber = Int()
     
-
     
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //単語の範囲を指定
         switch receivedCellNumber {
         case 0:
@@ -65,12 +62,9 @@ class ShuffleManabuViewController: UIViewController {
         manabuView.layer.shadowRadius = 1
         manabuView.layer.shadowOpacity = 0.5
         manabuView.layer.shadowOffset = CGSize(width: 1, height: 1)
-//        //単語の番号を表示
-//        numberLabel.text = String("No. \(wordCount + 1)")
-//        wordLabel.text = materialList.TOEIC600List[wordCount].Words
-//        japanWordLabel.text = materialList.TOEIC600List[wordCount].japanWords
-        
+     
         displayGifWordJapan()
+        playSoundMethod()
         
         
     }
@@ -83,6 +77,26 @@ class ShuffleManabuViewController: UIViewController {
 
     
     @IBAction func playSound(_ sender: Any) {
+        playSoundMethod()
+    }
+    
+    
+    @IBAction func close(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func nextWord(_ sender: Any) {
+        NEXTWORD()
+    }
+    
+    
+
+    @IBAction func beforeWord(_ sender: Any) {
+        BEFOREWORD()
+    }
+    
+    func playSoundMethod(){
         // AVSpeechSynthesizerのインスタンス作成
         self.speechSynthesizer = AVSpeechSynthesizer()
         // 読み上げる、文字、言語などの設定
@@ -96,22 +110,6 @@ class ShuffleManabuViewController: UIViewController {
     
     
     
-    @IBAction func close(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
-
-    
-    @IBAction func nextWord(_ sender: Any) {
-        NEXTWORD()
-    }
-    
-    
-
-    @IBAction func beforeWord(_ sender: Any) {
-        BEFOREWORD()
-    }
     
     
     
@@ -121,7 +119,9 @@ class ShuffleManabuViewController: UIViewController {
       
         
         dismiss(animated: true, completion: nil)
+        
     }
+    
     
     func NEXTWORD(){
         switch receivedCellNumber {
@@ -151,11 +151,10 @@ class ShuffleManabuViewController: UIViewController {
         }
 
         wordCount += 1
-//        wordLabel.text = materialList.TOEIC600List[wordCount].Words
-//        japanWordLabel.text = materialList.TOEIC600List[wordCount].japanWords
-//        //単語の番号を表示
-//        numberLabel.text = String("No. \(wordCount + 1)")
+        
+
         displayGifWordJapan()
+        playSoundMethod()
     }
     
     func BEFOREWORD(){
@@ -165,25 +164,19 @@ class ShuffleManabuViewController: UIViewController {
         }
         
         wordCount -= 1
-//        wordLabel.text = materialList.TOEIC600List[wordCount].Words
-//        japanWordLabel.text = materialList.TOEIC600List[wordCount].japanWords
-//        //単語の番号を表示
-//        numberLabel.text = String("No. \(wordCount + 1)")
+
         displayGifWordJapan()
+        playSoundMethod()
     }
     
     
     
     func displayGifWordJapan(){
         //単語の番号、gif,英単語とその訳を表示する
-        
         numberLabel.text = String("No. \(wordCount + 1)")
-        
-        
         gifView.loadGif(name: materialList.TOEIC600List[wordCount].Words)
         wordLabel.text = String(materialList.TOEIC600List[wordCount].Words)
         japanWordLabel.text = String(materialList.TOEIC600List[wordCount].japanWords)
-        
     }
     
     
