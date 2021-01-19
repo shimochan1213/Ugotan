@@ -114,7 +114,17 @@
 		B12875C9250F5D4D00FA4F29 /* attend.gif in Resources */ = {isa = PBXBuildFile; fileRef = B12875C5250F5D4800FA4F29 /* attend.gif */; };
 		B12875CA250F5D4D00FA4F29 /* confirm.gif in Resources */ = {isa = PBXBuildFile; fileRef = B12875C6250F5D4900FA4F29 /* confirm.gif */; };
 		B12875CC250F5F6500FA4F29 /* inform.gif in Resources */ = {isa = PBXBuildFile; fileRef = B12875CB250F5F6500FA4F29 /* inform.gif */; };
+		B12C6C0225B726100077114A /* failure.json in Resources */ = {isa = PBXBuildFile; fileRef = B12C6BF925B7260E0077114A /* failure.json */; };
+		B12C6C0325B726100077114A /* correct.json in Resources */ = {isa = PBXBuildFile; fileRef = B12C6BFA25B7260F0077114A /* correct.json */; };
+		B12C6C0425B726100077114A /* unlocked.json in Resources */ = {isa = PBXBuildFile; fileRef = B12C6BFB25B7260F0077114A /* unlocked.json */; };
+		B12C6C0525B726100077114A /* swipe.json in Resources */ = {isa = PBXBuildFile; fileRef = B12C6BFC25B7260F0077114A /* swipe.json */; };
+		B12C6C0625B726100077114A /* well done.json in Resources */ = {isa = PBXBuildFile; fileRef = B12C6BFD25B7260F0077114A /* well done.json */; };
+		B12C6C0725B726100077114A /* congrats.json in Resources */ = {isa = PBXBuildFile; fileRef = B12C6BFE25B7260F0077114A /* congrats.json */; };
+		B12C6C0825B726100077114A /* incorrect.json in Resources */ = {isa = PBXBuildFile; fileRef = B12C6BFF25B7260F0077114A /* incorrect.json */; };
+		B12C6C0925B726100077114A /* tap.json in Resources */ = {isa = PBXBuildFile; fileRef = B12C6C0025B7260F0077114A /* tap.json */; };
+		B12C6C0A25B726100077114A /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = B12C6C0125B726100077114A /* success.json */; };
 		B13638B924E296370089ED95 /* SetsumeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13638B824E296370089ED95 /* SetsumeiViewController.swift */; };
+		B14CACA525B71EF20049DB4C /* ShuffleResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CACA425B71EF20049DB4C /* ShuffleResultViewController.swift */; };
 		B155CACE255D5960004A4F80 /* Pods_GifPractice2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D620D364235C3D3308023943 /* Pods_GifPractice2.framework */; };
 		B15A65A4250A334C00920766 /* significant.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6587250A334100920766 /* significant.gif */; };
 		B15A65A5250A334C00920766 /* complicated.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6588250A334100920766 /* complicated.gif */; };
@@ -747,7 +757,17 @@
 		B12875C5250F5D4800FA4F29 /* attend.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = attend.gif; sourceTree = "<group>"; };
 		B12875C6250F5D4900FA4F29 /* confirm.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = confirm.gif; sourceTree = "<group>"; };
 		B12875CB250F5F6500FA4F29 /* inform.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = inform.gif; sourceTree = "<group>"; };
+		B12C6BF925B7260E0077114A /* failure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = failure.json; sourceTree = "<group>"; };
+		B12C6BFA25B7260F0077114A /* correct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = correct.json; sourceTree = "<group>"; };
+		B12C6BFB25B7260F0077114A /* unlocked.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = unlocked.json; sourceTree = "<group>"; };
+		B12C6BFC25B7260F0077114A /* swipe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swipe.json; sourceTree = "<group>"; };
+		B12C6BFD25B7260F0077114A /* well done.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "well done.json"; sourceTree = "<group>"; };
+		B12C6BFE25B7260F0077114A /* congrats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = congrats.json; sourceTree = "<group>"; };
+		B12C6BFF25B7260F0077114A /* incorrect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = incorrect.json; sourceTree = "<group>"; };
+		B12C6C0025B7260F0077114A /* tap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tap.json; sourceTree = "<group>"; };
+		B12C6C0125B726100077114A /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		B13638B824E296370089ED95 /* SetsumeiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsumeiViewController.swift; sourceTree = "<group>"; };
+		B14CACA425B71EF20049DB4C /* ShuffleResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleResultViewController.swift; sourceTree = "<group>"; };
 		B15A6587250A334100920766 /* significant.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = significant.gif; sourceTree = "<group>"; };
 		B15A6588250A334100920766 /* complicated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = complicated.gif; sourceTree = "<group>"; };
 		B15A6589250A334100920766 /* latest.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = latest.gif; sourceTree = "<group>"; };
@@ -1959,6 +1979,7 @@
 				B15A87E725A341170031622C /* ShuffleManabuViewController.swift */,
 				B15A87EA25A3412C0031622C /* ShuffleTestViewController.swift */,
 				B15A87ED25A341440031622C /* ShuffleReviewViewController.swift */,
+				B14CACA425B71EF20049DB4C /* ShuffleResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2001,6 +2022,15 @@
 				B1A4CE2C2472F836009F361F /* Controller */,
 				B1BE99A62461D18F005766A6 /* AppDelegate.swift */,
 				B1BE99A82461D18F005766A6 /* SceneDelegate.swift */,
+				B12C6BFE25B7260F0077114A /* congrats.json */,
+				B12C6BFA25B7260F0077114A /* correct.json */,
+				B12C6BF925B7260E0077114A /* failure.json */,
+				B12C6BFF25B7260F0077114A /* incorrect.json */,
+				B12C6C0125B726100077114A /* success.json */,
+				B12C6BFC25B7260F0077114A /* swipe.json */,
+				B12C6C0025B7260F0077114A /* tap.json */,
+				B12C6BFB25B7260F0077114A /* unlocked.json */,
+				B12C6BFD25B7260F0077114A /* well done.json */,
 				B1E5EDF624E1984D0067B91C /* cat.mp3 */,
 				B1E5EDF724E1984D0067B91C /* seikai.mp3 */,
 				B1E5EDFA24E19C8A0067B91C /* fuseikai.mp3 */,
@@ -2184,6 +2214,7 @@
 				B15A65C0250A334C00920766 /* local.gif in Resources */,
 				B17FD10E246298C700F13729 /* expand.mp3 in Resources */,
 				B196DD8724FCD4C7009DD78C /* recognize.mp3 in Resources */,
+				B12C6C0725B726100077114A /* congrats.json in Resources */,
 				B196DEF924FCE15D009DD78C /* popularity.mp3 in Resources */,
 				B196DEE524FCE15D009DD78C /* income.mp3 in Resources */,
 				B196DFFA24FCED02009DD78C /* in a different setting.mp3 in Resources */,
@@ -2309,6 +2340,7 @@
 				B196DECC24FCE15D009DD78C /* reputation.mp3 in Resources */,
 				B11BDFC324F7FE520001251C /* include.mp3 in Resources */,
 				B196DFE924FCED02009DD78C /* currently.mp3 in Resources */,
+				B12C6C0A25B726100077114A /* success.json in Resources */,
 				B196DE0424FCD77D009DD78C /* allow A to V.mp3 in Resources */,
 				B15A65F1250A534900920766 /* with ease.gif in Resources */,
 				B119993E250CEA44009FB2FB /* demand.gif in Resources */,
@@ -2324,10 +2356,12 @@
 				B1EDCB342504EEB4004D3A0D /* locate.gif in Resources */,
 				B11BDFC024F7FE520001251C /* emphasize.mp3 in Resources */,
 				B1199917250CEA44009FB2FB /* attach.gif in Resources */,
+				B12C6C0925B726100077114A /* tap.json in Resources */,
 				B196DF8F24FCE70C009DD78C /* available.mp3 in Resources */,
 				B119992D250CEA44009FB2FB /* broadcast.gif in Resources */,
 				B196DFF524FCED02009DD78C /* both A and B.mp3 in Resources */,
 				B196DEEA24FCE15D009DD78C /* delivery.mp3 in Resources */,
+				B12C6C0325B726100077114A /* correct.json in Resources */,
 				B196DDFD24FCD77D009DD78C /* apologize.mp3 in Resources */,
 				B196E00524FCED02009DD78C /* seldom.mp3 in Resources */,
 				B119996A250D11F8009FB2FB /* complaint.gif in Resources */,
@@ -2339,6 +2373,7 @@
 				B196DED724FCE15D009DD78C /* job opening.mp3 in Resources */,
 				B1E5EDFB24E19C8A0067B91C /* fuseikai.mp3 in Resources */,
 				B11BDFB024F79FA70001251C /* increase.mp3 in Resources */,
+				B12C6C0625B726100077114A /* well done.json in Resources */,
 				B196DEFB24FCE15D009DD78C /* mayor.mp3 in Resources */,
 				B196DEC924FCE15D009DD78C /* shuttle.mp3 in Resources */,
 				B196DEC224FCE15D009DD78C /* balance.mp3 in Resources */,
@@ -2361,6 +2396,7 @@
 				B196DF8C24FCE70C009DD78C /* agricultural.mp3 in Resources */,
 				B196DEC124FCE15D009DD78C /* department.mp3 in Resources */,
 				B1199929250CEA44009FB2FB /* expand.gif in Resources */,
+				B12C6C0525B726100077114A /* swipe.json in Resources */,
 				B196DFE424FCED02009DD78C /* occasionally.mp3 in Resources */,
 				B196DDF824FCD77D009DD78C /* publish.mp3 in Resources */,
 				B196DEA124FCE15D009DD78C /* construction.mp3 in Resources */,
@@ -2383,6 +2419,7 @@
 				B1EDCB252504EE5C004D3A0D /* exhibition.gif in Resources */,
 				B1EDCAE82504EE5B004D3A0D /* memorandom.gif in Resources */,
 				B196E01724FCED02009DD78C /* immediately.mp3 in Resources */,
+				B12C6C0825B726100077114A /* incorrect.json in Resources */,
 				B1EDCB1F2504EE5C004D3A0D /* component.gif in Resources */,
 				B196DDF924FCD77D009DD78C /* appreciate.mp3 in Resources */,
 				B119993B250CEA44009FB2FB /* display.gif in Resources */,
@@ -2518,6 +2555,7 @@
 				B1199970250D12C4009FB2FB /* annual.mp3 in Resources */,
 				B15A65BA250A334C00920766 /* ideal.gif in Resources */,
 				B15A65BC250A334C00920766 /* financial.gif in Resources */,
+				B12C6C0425B726100077114A /* unlocked.json in Resources */,
 				B119991A250CEA44009FB2FB /* inquire.gif in Resources */,
 				B11BDFC824F7FE520001251C /* eliminate.mp3 in Resources */,
 				B196DDA724FCD4C7009DD78C /* improve.mp3 in Resources */,
@@ -2602,6 +2640,7 @@
 				B11BDFCA24F7FE520001251C /* earn.mp3 in Resources */,
 				B119994F250D0CF3009FB2FB /* consider.gif in Resources */,
 				B196DEDC24FCE15D009DD78C /* exhibit.mp3 in Resources */,
+				B12C6C0225B726100077114A /* failure.json in Resources */,
 				B196DF9724FCE70C009DD78C /* permanent.mp3 in Resources */,
 				B1EDCB1B2504EE5C004D3A0D /* conference.gif in Resources */,
 				B196DF9324FCE70C009DD78C /* limited.mp3 in Resources */,
@@ -2741,6 +2780,7 @@
 				B1C49DEE24DB006600C25A35 /* ManabuViewController.swift in Sources */,
 				B1A96B39248E98E000E751EA /* WhichHinshiViewController.swift in Sources */,
 				B196DD5424FCB548009DD78C /* ReviewRangeViewController.swift in Sources */,
+				B14CACA525B71EF20049DB4C /* ShuffleResultViewController.swift in Sources */,
 				B1A4CE2B2472F716009F361F /* MaterialList.swift in Sources */,
 				B171AFBD24DD401300CF5214 /* TestRangeViewController.swift in Sources */,
 				B171AFB724DD223B00CF5214 /* TestViewController.swift in Sources */,

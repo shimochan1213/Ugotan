@@ -174,7 +174,7 @@ class ShuffleHomeViewController: UIViewController,UICollectionViewDelegate,UICol
             ManabuVC.receivedCellNumber  = cellNumber
         }else if segue.identifier == "test"{
             let TestVC = segue.destination as! ShuffleTestViewController
-//            TestVC.receivedCellNumber  = cellNumber
+            TestVC.receivedCellNumber  = cellNumber
         }else if segue.identifier == "review"{
             let ReviewVC = segue.destination as! ShuffleReviewViewController
 //            ReviewVC.receivedCellNumber = cellNumber

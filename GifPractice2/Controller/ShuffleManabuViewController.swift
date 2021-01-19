@@ -182,107 +182,16 @@ class ShuffleManabuViewController: UIViewController {
         
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
+
     func endLearning(){
         //学んだ単語数を保存
         //終了
         timer?.invalidate()
         timer2.invalidate()
-//        dismiss(animated: true, completion: nil)
         showCongratsAlert()
     }
     
-    func endOrContinue(){
-                switch receivedCellNumber {
-                case 0:
-                    if wordCount == 49{
-                        //終了
-                        endLearning()
-                    }else{
-                        //最後の単語の次の音が鳴らないようにこういうふうに書いてる。
-                        wordCount += 1
-                        displayGifWordJapan()
-                        playSoundMethod()
-                    }
-                case 1:
-                    if wordCount == 99{
-                        endLearning()
-                    }else{
-                        wordCount += 1
-                        displayGifWordJapan()
-                        playSoundMethod()
-                    }
-                case 2:
-                    if wordCount == 149{
-                        endLearning()
-                    }else{
-                        wordCount += 1
-                        displayGifWordJapan()
-                        playSoundMethod()
-                    }
-                case 3:
-                    if wordCount == 199{
-                        endLearning()
-                    }else{
-                        wordCount += 1
-                        displayGifWordJapan()
-                        playSoundMethod()
-                    }
-                case 4:
-                    if wordCount == 249{
-                        endLearning()
-                    }else{
-                        wordCount += 1
-                        displayGifWordJapan()
-                        playSoundMethod()
-                    }
-                case 5:
-                    if wordCount == 299{
-                        endLearning()
-                    }else{
-                        wordCount += 1
-                        displayGifWordJapan()
-                        playSoundMethod()
-                    }
-                case 6:
-                    if wordCount == 349{
-                        endLearning()
-                    }else{
-                        wordCount += 1
-                        displayGifWordJapan()
-                        playSoundMethod()
-                    }
-                case 7:
-                    if wordCount == 399{
-                        endLearning()
-                    }else{
-                        wordCount += 1
-                        displayGifWordJapan()
-                        playSoundMethod()
-                    }
-                default:
-                    break
-                }
-        
-    
-    }
-        
-
-        
-    
-    
-    
     func NEXTWORD(){
-        
-        print(wordCount)
-        print(materialList.TOEIC600List.count)
         
         //配列のカウントまでとしてout of rangeしないようにする
             if wordCount == materialList.TOEIC600List.count - 1{
@@ -372,6 +281,82 @@ class ShuffleManabuViewController: UIViewController {
             countdownLabel.textColor = .red
         }
     }
+    
+    func endOrContinue(){
+                switch receivedCellNumber {
+                case 0:
+                    if wordCount == 49{
+                        //終了
+                        endLearning()
+                    }else{
+                        //最後の単語の次の音が鳴らないようにこういうふうに書いてる。
+                        wordCount += 1
+                        displayGifWordJapan()
+                        playSoundMethod()
+                    }
+                case 1:
+                    if wordCount == 99{
+                        endLearning()
+                    }else{
+                        wordCount += 1
+                        displayGifWordJapan()
+                        playSoundMethod()
+                    }
+                case 2:
+                    if wordCount == 149{
+                        endLearning()
+                    }else{
+                        wordCount += 1
+                        displayGifWordJapan()
+                        playSoundMethod()
+                    }
+                case 3:
+                    if wordCount == 199{
+                        endLearning()
+                    }else{
+                        wordCount += 1
+                        displayGifWordJapan()
+                        playSoundMethod()
+                    }
+                case 4:
+                    if wordCount == 249{
+                        endLearning()
+                    }else{
+                        wordCount += 1
+                        displayGifWordJapan()
+                        playSoundMethod()
+                    }
+                case 5:
+                    if wordCount == 299{
+                        endLearning()
+                    }else{
+                        wordCount += 1
+                        displayGifWordJapan()
+                        playSoundMethod()
+                    }
+                case 6:
+                    if wordCount == 349{
+                        endLearning()
+                    }else{
+                        wordCount += 1
+                        displayGifWordJapan()
+                        playSoundMethod()
+                    }
+                case 7:
+                    if wordCount == 399{
+                        endLearning()
+                    }else{
+                        wordCount += 1
+                        displayGifWordJapan()
+                        playSoundMethod()
+                    }
+                default:
+                    break
+                }
+        
+    
+    }
+    
     
     func showCongratsAlert(){
         //単語最後まで行った時に「完了」を示すアラートを出す
