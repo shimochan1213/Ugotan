@@ -17,5 +17,6 @@ target 'GifPractice2' do
 	pod 'Firebase/Analytics'
 	
 
+	pod 'MaterialComponents'
 
 end

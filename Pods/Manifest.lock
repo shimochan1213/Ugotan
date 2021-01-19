@@ -1,105 +1,745 @@
 PODS:
-  - Firebase (6.29.0):
-    - Firebase/Core (= 6.29.0)
-  - Firebase/Analytics (6.29.0):
+  - Firebase (7.4.0):
+    - Firebase/Core (= 7.4.0)
+  - Firebase/Analytics (7.4.0):
     - Firebase/Core
-  - Firebase/Auth (6.29.0):
+  - Firebase/Auth (7.4.0):
     - Firebase/CoreOnly
-    - FirebaseAuth (~> 6.7.1)
-  - Firebase/Core (6.29.0):
+    - FirebaseAuth (~> 7.4.0)
+  - Firebase/Core (7.4.0):
     - Firebase/CoreOnly
-    - FirebaseAnalytics (= 6.7.0)
-  - Firebase/CoreOnly (6.29.0):
-    - FirebaseCore (= 6.9.2)
-  - Firebase/Database (6.29.0):
+    - FirebaseAnalytics (= 7.4.0)
+  - Firebase/CoreOnly (7.4.0):
+    - FirebaseCore (= 7.4.0)
+  - Firebase/Database (7.4.0):
     - Firebase/CoreOnly
-    - FirebaseDatabase (~> 6.4.0)
-  - Firebase/Messaging (6.29.0):
+    - FirebaseDatabase (~> 7.4.0)
+  - Firebase/Messaging (7.4.0):
     - Firebase/CoreOnly
-    - FirebaseMessaging (~> 4.6.1)
-  - FirebaseAnalytics (6.7.0):
-    - FirebaseCore (~> 6.8)
-    - FirebaseInstallations (~> 1.4)
-    - GoogleAppMeasurement (= 6.7.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
-    - GoogleUtilities/MethodSwizzler (~> 6.7)
-    - GoogleUtilities/Network (~> 6.7)
-    - "GoogleUtilities/NSData+zlib (~> 6.7)"
-    - nanopb (~> 1.30905.0)
-  - FirebaseAuth (6.7.1):
-    - FirebaseCore (~> 6.8)
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (6.9.2):
-    - FirebaseCoreDiagnostics (~> 1.3)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GoogleUtilities/Logger (~> 6.7)
-  - FirebaseCoreDiagnostics (1.5.0):
-    - GoogleDataTransport (~> 7.0)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GoogleUtilities/Logger (~> 6.7)
-    - nanopb (~> 1.30905.0)
-  - FirebaseDatabase (6.4.0):
-    - FirebaseCore (~> 6.8)
+    - FirebaseMessaging (~> 7.4.0)
+  - FirebaseAnalytics (7.4.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleAppMeasurement (= 7.4.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30907.0)
+  - FirebaseAuth (7.4.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GTMSessionFetcher/Core (~> 1.4)
+  - FirebaseCore (7.4.0):
+    - FirebaseCoreDiagnostics (~> 7.4)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+  - FirebaseCoreDiagnostics (7.4.0):
+    - GoogleDataTransport (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+    - nanopb (~> 2.30907.0)
+  - FirebaseDatabase (7.4.0):
+    - FirebaseCore (~> 7.0)
     - leveldb-library (~> 1.22)
-  - FirebaseInstallations (1.5.0):
-    - FirebaseCore (~> 6.8)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GoogleUtilities/UserDefaults (~> 6.7)
+  - FirebaseInstallations (7.4.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
     - PromisesObjC (~> 1.2)
-  - FirebaseInstanceID (4.5.1):
-    - FirebaseCore (~> 6.8)
-    - FirebaseInstallations (~> 1.0)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GoogleUtilities/UserDefaults (~> 6.7)
-  - FirebaseMessaging (4.6.1):
-    - FirebaseCore (~> 6.8)
-    - FirebaseInstanceID (~> 4.3)
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GoogleUtilities/Reachability (~> 6.7)
-    - GoogleUtilities/UserDefaults (~> 6.7)
-    - Protobuf (>= 3.9.2, ~> 3.9)
-  - Google-Mobile-Ads-SDK (7.63.0):
-    - GoogleAppMeasurement (~> 6.0)
-  - GoogleAppMeasurement (6.7.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
-    - GoogleUtilities/MethodSwizzler (~> 6.7)
-    - GoogleUtilities/Network (~> 6.7)
-    - "GoogleUtilities/NSData+zlib (~> 6.7)"
-    - nanopb (~> 1.30905.0)
-  - GoogleDataTransport (7.1.0):
-    - nanopb (~> 1.30905.0)
-  - GoogleUtilities/AppDelegateSwizzler (6.7.1):
+  - FirebaseInstanceID (7.4.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+  - FirebaseMessaging (7.4.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstanceID (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Reachability (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+  - Google-Mobile-Ads-SDK (7.69.0):
+    - GoogleAppMeasurement (~> 7.0)
+    - GoogleUserMessagingPlatform (~> 1.1)
+  - GoogleAppMeasurement (7.4.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30907.0)
+  - GoogleDataTransport (8.2.0):
+    - nanopb (~> 2.30907.0)
+  - GoogleUserMessagingPlatform (1.4.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.2.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.7.1):
+  - GoogleUtilities/Environment (7.2.0):
     - PromisesObjC (~> 1.2)
-  - GoogleUtilities/Logger (6.7.1):
+  - GoogleUtilities/Logger (7.2.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.7.1):
+  - GoogleUtilities/MethodSwizzler (7.2.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.7.1):
+  - GoogleUtilities/Network (7.2.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.7.1)"
-  - GoogleUtilities/Reachability (6.7.1):
+  - "GoogleUtilities/NSData+zlib (7.2.0)"
+  - GoogleUtilities/Reachability (7.2.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (6.7.1):
+  - GoogleUtilities/UserDefaults (7.2.0):
     - GoogleUtilities/Logger
-  - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Core (1.5.0)
   - leveldb-library (1.22)
-  - lottie-ios (3.1.8)
-  - nanopb (1.30905.0):
-    - nanopb/decode (= 1.30905.0)
-    - nanopb/encode (= 1.30905.0)
-  - nanopb/decode (1.30905.0)
-  - nanopb/encode (1.30905.0)
-  - PromisesObjC (1.2.9)
-  - Protobuf (3.12.0)
+  - lottie-ios (3.1.9)
+  - MaterialComponents (119.5.0):
+    - MaterialComponents/ActionSheet (= 119.5.0)
+    - "MaterialComponents/ActionSheet+Theming (= 119.5.0)"
+    - MaterialComponents/ActivityIndicator (= 119.5.0)
+    - MaterialComponents/AnimationTiming (= 119.5.0)
+    - MaterialComponents/AppBar (= 119.5.0)
+    - "MaterialComponents/AppBar+ColorThemer (= 119.5.0)"
+    - "MaterialComponents/AppBar+Theming (= 119.5.0)"
+    - "MaterialComponents/AppBar+TypographyThemer (= 119.5.0)"
+    - MaterialComponents/Availability (= 119.5.0)
+    - MaterialComponents/Banner (= 119.5.0)
+    - "MaterialComponents/Banner+Theming (= 119.5.0)"
+    - MaterialComponents/BottomAppBar (= 119.5.0)
+    - MaterialComponents/BottomNavigation (= 119.5.0)
+    - "MaterialComponents/BottomNavigation+BottomNavigationController (= 119.5.0)"
+    - "MaterialComponents/BottomNavigation+Theming (= 119.5.0)"
+    - MaterialComponents/BottomSheet (= 119.5.0)
+    - "MaterialComponents/BottomSheet+ShapeThemer (= 119.5.0)"
+    - MaterialComponents/ButtonBar (= 119.5.0)
+    - MaterialComponents/Buttons (= 119.5.0)
+    - "MaterialComponents/Buttons+ButtonThemer (= 119.5.0)"
+    - "MaterialComponents/Buttons+ColorThemer (= 119.5.0)"
+    - "MaterialComponents/Buttons+ShapeThemer (= 119.5.0)"
+    - "MaterialComponents/Buttons+Theming (= 119.5.0)"
+    - "MaterialComponents/Buttons+TypographyThemer (= 119.5.0)"
+    - MaterialComponents/Cards (= 119.5.0)
+    - "MaterialComponents/Cards+Theming (= 119.5.0)"
+    - MaterialComponents/Chips (= 119.5.0)
+    - "MaterialComponents/Chips+Theming (= 119.5.0)"
+    - MaterialComponents/CollectionCells (= 119.5.0)
+    - MaterialComponents/CollectionLayoutAttributes (= 119.5.0)
+    - MaterialComponents/Collections (= 119.5.0)
+    - MaterialComponents/Dialogs (= 119.5.0)
+    - "MaterialComponents/Dialogs+ColorThemer (= 119.5.0)"
+    - "MaterialComponents/Dialogs+Theming (= 119.5.0)"
+    - "MaterialComponents/Dialogs+TypographyThemer (= 119.5.0)"
+    - MaterialComponents/Elevation (= 119.5.0)
+    - MaterialComponents/FeatureHighlight (= 119.5.0)
+    - "MaterialComponents/FeatureHighlight+ColorThemer (= 119.5.0)"
+    - MaterialComponents/FlexibleHeader (= 119.5.0)
+    - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight (= 119.5.0)"
+    - "MaterialComponents/FlexibleHeader+ShiftBehavior (= 119.5.0)"
+    - "MaterialComponents/FlexibleHeader+ShiftBehaviorEnabledWithStatusBar (= 119.5.0)"
+    - MaterialComponents/HeaderStackView (= 119.5.0)
+    - MaterialComponents/Ink (= 119.5.0)
+    - MaterialComponents/LibraryInfo (= 119.5.0)
+    - MaterialComponents/List (= 119.5.0)
+    - "MaterialComponents/List+Theming (= 119.5.0)"
+    - MaterialComponents/NavigationBar (= 119.5.0)
+    - "MaterialComponents/NavigationBar+ColorThemer (= 119.5.0)"
+    - "MaterialComponents/NavigationBar+TypographyThemer (= 119.5.0)"
+    - MaterialComponents/NavigationDrawer (= 119.5.0)
+    - "MaterialComponents/NavigationDrawer+ColorThemer (= 119.5.0)"
+    - "MaterialComponents/NavigationDrawer+Theming (= 119.5.0)"
+    - MaterialComponents/OverlayWindow (= 119.5.0)
+    - MaterialComponents/PageControl (= 119.5.0)
+    - MaterialComponents/Palettes (= 119.5.0)
+    - MaterialComponents/private (= 119.5.0)
+    - MaterialComponents/ProgressView (= 119.5.0)
+    - "MaterialComponents/ProgressView+Theming (= 119.5.0)"
+    - MaterialComponents/Ripple (= 119.5.0)
+    - MaterialComponents/schemes (= 119.5.0)
+    - MaterialComponents/ShadowElevations (= 119.5.0)
+    - MaterialComponents/ShadowLayer (= 119.5.0)
+    - MaterialComponents/ShapeLibrary (= 119.5.0)
+    - MaterialComponents/Shapes (= 119.5.0)
+    - MaterialComponents/Slider (= 119.5.0)
+    - "MaterialComponents/Slider+ColorThemer (= 119.5.0)"
+    - MaterialComponents/Snackbar (= 119.5.0)
+    - MaterialComponents/Tabs (= 119.5.0)
+    - "MaterialComponents/Tabs+TabBarView (= 119.5.0)"
+    - "MaterialComponents/Tabs+TabBarViewTheming (= 119.5.0)"
+    - "MaterialComponents/Tabs+Theming (= 119.5.0)"
+    - "MaterialComponents/Tabs+TypographyThemer (= 119.5.0)"
+    - "MaterialComponents/TextControls+BaseTextAreas (= 119.5.0)"
+    - "MaterialComponents/TextControls+BaseTextFields (= 119.5.0)"
+    - "MaterialComponents/TextControls+Enums (= 119.5.0)"
+    - "MaterialComponents/TextControls+FilledTextAreas (= 119.5.0)"
+    - "MaterialComponents/TextControls+FilledTextAreasTheming (= 119.5.0)"
+    - "MaterialComponents/TextControls+FilledTextFields (= 119.5.0)"
+    - "MaterialComponents/TextControls+FilledTextFieldsTheming (= 119.5.0)"
+    - "MaterialComponents/TextControls+OutlinedTextAreas (= 119.5.0)"
+    - "MaterialComponents/TextControls+OutlinedTextAreasTheming (= 119.5.0)"
+    - "MaterialComponents/TextControls+OutlinedTextFields (= 119.5.0)"
+    - "MaterialComponents/TextControls+OutlinedTextFieldsTheming (= 119.5.0)"
+    - "MaterialComponents/TextControls+UnderlinedTextFields (= 119.5.0)"
+    - "MaterialComponents/TextControls+UnderlinedTextFieldsTheming (= 119.5.0)"
+    - MaterialComponents/TextFields (= 119.5.0)
+    - "MaterialComponents/TextFields+ColorThemer (= 119.5.0)"
+    - "MaterialComponents/TextFields+Theming (= 119.5.0)"
+    - MaterialComponents/Themes (= 119.5.0)
+    - MaterialComponents/Typography (= 119.5.0)
+  - MaterialComponents/ActionSheet (119.5.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/BottomSheet
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/Typography
+  - "MaterialComponents/ActionSheet+Theming (119.5.0)":
+    - MaterialComponents/ActionSheet
+    - MaterialComponents/Availability
+    - MaterialComponents/Elevation
+    - MaterialComponents/private/Color
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ActivityIndicator (119.5.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 2.0)
+  - MaterialComponents/AnimationTiming (119.5.0)
+  - MaterialComponents/AppBar (119.5.0):
+    - MaterialComponents/FlexibleHeader
+    - MaterialComponents/HeaderStackView
+    - MaterialComponents/NavigationBar
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Icons/ic_arrow_back
+    - MaterialComponents/private/UIMetrics
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - "MaterialComponents/AppBar+ColorThemer (119.5.0)":
+    - MaterialComponents/AppBar
+    - "MaterialComponents/NavigationBar+ColorThemer"
+    - MaterialComponents/Themes
+  - "MaterialComponents/AppBar+Theming (119.5.0)":
+    - MaterialComponents/AppBar
+    - MaterialComponents/schemes/Container
+  - "MaterialComponents/AppBar+TypographyThemer (119.5.0)":
+    - MaterialComponents/AppBar
+    - "MaterialComponents/NavigationBar+TypographyThemer"
+  - MaterialComponents/Availability (119.5.0)
+  - MaterialComponents/Banner (119.5.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/Typography
+  - "MaterialComponents/Banner+Theming (119.5.0)":
+    - MaterialComponents/Banner
+    - MaterialComponents/Buttons
+    - "MaterialComponents/Buttons+Theming"
+    - MaterialComponents/Elevation
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/Typography
+  - MaterialComponents/BottomAppBar (119.5.0):
+    - MaterialComponents/Buttons
+    - MaterialComponents/NavigationBar
+    - MaterialComponents/private/Math
+    - MDFInternationalization
+  - MaterialComponents/BottomNavigation (119.5.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - "MaterialComponents/BottomNavigation+BottomNavigationController (119.5.0)":
+    - MaterialComponents/BottomNavigation
+  - "MaterialComponents/BottomNavigation+Theming (119.5.0)":
+    - MaterialComponents/BottomNavigation
+    - MaterialComponents/schemes/Color
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/schemes/Typography
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/BottomSheet (119.5.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+  - "MaterialComponents/BottomSheet+ShapeThemer (119.5.0)":
+    - MaterialComponents/BottomSheet
+    - MaterialComponents/schemes/Shape
+  - MaterialComponents/ButtonBar (119.5.0):
+    - MaterialComponents/Buttons
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+  - MaterialComponents/Buttons (119.5.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - "MaterialComponents/Buttons+ButtonThemer (119.5.0)":
+    - MaterialComponents/Buttons
+    - "MaterialComponents/Buttons+ColorThemer"
+    - "MaterialComponents/Buttons+ShapeThemer"
+    - "MaterialComponents/Buttons+TypographyThemer"
+    - MaterialComponents/Palettes
+  - "MaterialComponents/Buttons+ColorThemer (119.5.0)":
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Color
+  - "MaterialComponents/Buttons+ShapeThemer (119.5.0)":
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Shape
+  - "MaterialComponents/Buttons+Theming (119.5.0)":
+    - MaterialComponents/Buttons
+    - "MaterialComponents/Buttons+ColorThemer"
+    - "MaterialComponents/Buttons+ShapeThemer"
+    - "MaterialComponents/Buttons+TypographyThemer"
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/ShadowElevations
+  - "MaterialComponents/Buttons+TypographyThemer (119.5.0)":
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/Cards (119.5.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Icons/ic_check_circle
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+  - "MaterialComponents/Cards+Theming (119.5.0)":
+    - MaterialComponents/Cards
+    - MaterialComponents/schemes/Container
+  - MaterialComponents/Chips (119.5.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+    - MaterialComponents/TextFields
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - "MaterialComponents/Chips+Theming (119.5.0)":
+    - MaterialComponents/Chips
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/Typography
+  - MaterialComponents/CollectionCells (119.5.0):
+    - MaterialComponents/CollectionLayoutAttributes
+    - MaterialComponents/Ink
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Icons/ic_check
+    - MaterialComponents/private/Icons/ic_check_circle
+    - MaterialComponents/private/Icons/ic_chevron_right
+    - MaterialComponents/private/Icons/ic_info
+    - MaterialComponents/private/Icons/ic_radio_button_unchecked
+    - MaterialComponents/private/Icons/ic_reorder
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/CollectionLayoutAttributes (119.5.0)
+  - MaterialComponents/Collections (119.5.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/CollectionCells
+    - MaterialComponents/CollectionLayoutAttributes
+    - MaterialComponents/Ink
+    - MaterialComponents/Palettes
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+  - MaterialComponents/Dialogs (119.5.0):
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - "MaterialComponents/Dialogs+ColorThemer (119.5.0)":
+    - "MaterialComponents/Buttons+ColorThemer"
+    - MaterialComponents/Dialogs
+    - MaterialComponents/Themes
+  - "MaterialComponents/Dialogs+Theming (119.5.0)":
+    - "MaterialComponents/Buttons+Theming"
+    - MaterialComponents/Dialogs
+    - "MaterialComponents/Dialogs+ColorThemer"
+    - "MaterialComponents/Dialogs+TypographyThemer"
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/ShadowElevations
+  - "MaterialComponents/Dialogs+TypographyThemer (119.5.0)":
+    - "MaterialComponents/Buttons+TypographyThemer"
+    - MaterialComponents/Dialogs
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/Elevation (119.5.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/FeatureHighlight (119.5.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFTextAccessibility
+  - "MaterialComponents/FeatureHighlight+ColorThemer (119.5.0)":
+    - MaterialComponents/FeatureHighlight
+    - MaterialComponents/Themes
+  - MaterialComponents/FlexibleHeader (119.5.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/Elevation
+    - "MaterialComponents/FlexibleHeader+ShiftBehavior"
+    - "MaterialComponents/FlexibleHeader+ShiftBehaviorEnabledWithStatusBar"
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/UIMetrics
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MDFTextAccessibility
+  - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight (119.5.0)":
+    - MaterialComponents/FlexibleHeader
+  - "MaterialComponents/FlexibleHeader+ShiftBehavior (119.5.0)"
+  - "MaterialComponents/FlexibleHeader+ShiftBehaviorEnabledWithStatusBar (119.5.0)":
+    - "MaterialComponents/FlexibleHeader+ShiftBehavior"
+  - MaterialComponents/HeaderStackView (119.5.0)
+  - MaterialComponents/Ink (119.5.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/LibraryInfo (119.5.0)
+  - MaterialComponents/List (119.5.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - "MaterialComponents/List+Theming (119.5.0)":
+    - MaterialComponents/List
+    - MaterialComponents/schemes/Container
+  - MaterialComponents/NavigationBar (119.5.0):
+    - MaterialComponents/ButtonBar
+    - MaterialComponents/Elevation
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - "MaterialComponents/NavigationBar+ColorThemer (119.5.0)":
+    - MaterialComponents/NavigationBar
+    - MaterialComponents/schemes/Color
+  - "MaterialComponents/NavigationBar+TypographyThemer (119.5.0)":
+    - MaterialComponents/NavigationBar
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/NavigationDrawer (119.5.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/UIMetrics
+    - MaterialComponents/ShadowLayer
+  - "MaterialComponents/NavigationDrawer+ColorThemer (119.5.0)":
+    - MaterialComponents/NavigationDrawer
+    - MaterialComponents/schemes/Color
+  - "MaterialComponents/NavigationDrawer+Theming (119.5.0)":
+    - MaterialComponents/NavigationDrawer
+    - MaterialComponents/schemes/Container
+  - MaterialComponents/OverlayWindow (119.5.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Application
+  - MaterialComponents/PageControl (119.5.0):
+    - MDFInternationalization
+  - MaterialComponents/Palettes (119.5.0)
+  - MaterialComponents/private (119.5.0):
+    - MaterialComponents/private/Application (= 119.5.0)
+    - MaterialComponents/private/Color (= 119.5.0)
+    - MaterialComponents/private/Icons (= 119.5.0)
+    - MaterialComponents/private/KeyboardWatcher (= 119.5.0)
+    - MaterialComponents/private/Math (= 119.5.0)
+    - MaterialComponents/private/Overlay (= 119.5.0)
+    - "MaterialComponents/private/TextControlsPrivate+BaseStyle (= 119.5.0)"
+    - "MaterialComponents/private/TextControlsPrivate+FilledStyle (= 119.5.0)"
+    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (= 119.5.0)"
+    - "MaterialComponents/private/TextControlsPrivate+Shared (= 119.5.0)"
+    - "MaterialComponents/private/TextControlsPrivate+TextFields (= 119.5.0)"
+    - "MaterialComponents/private/TextControlsPrivate+UnderlinedStyle (= 119.5.0)"
+    - MaterialComponents/private/ThumbTrack (= 119.5.0)
+    - MaterialComponents/private/UIMetrics (= 119.5.0)
+  - MaterialComponents/private/Application (119.5.0)
+  - MaterialComponents/private/Color (119.5.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Icons (119.5.0):
+    - MaterialComponents/private/Icons/Base (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_arrow_back (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_check (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_check_circle (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_chevron_right (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_color_lens (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_feedback (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_help_outline (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_info (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_more_horiz (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_radio_button_unchecked (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_reorder (= 119.5.0)
+    - MaterialComponents/private/Icons/ic_settings (= 119.5.0)
+  - MaterialComponents/private/Icons/Base (119.5.0)
+  - MaterialComponents/private/Icons/ic_arrow_back (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_check (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_check_circle (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_chevron_right (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_color_lens (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_feedback (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_help_outline (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_info (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_more_horiz (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_radio_button_unchecked (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_reorder (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_settings (119.5.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/KeyboardWatcher (119.5.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (119.5.0)
+  - MaterialComponents/private/Overlay (119.5.0)
+  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (119.5.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+FilledStyle (119.5.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+    - "MaterialComponents/private/TextControlsPrivate+UnderlinedStyle"
+  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (119.5.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+Shared (119.5.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/TextControls+Enums"
+  - "MaterialComponents/private/TextControlsPrivate+TextFields (119.5.0)":
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+UnderlinedStyle (119.5.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - MaterialComponents/private/ThumbTrack (119.5.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/private/UIMetrics (119.5.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/ProgressView (119.5.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MDFInternationalization
+  - "MaterialComponents/ProgressView+Theming (119.5.0)":
+    - MaterialComponents/ProgressView
+    - MaterialComponents/schemes/Container
+  - MaterialComponents/Ripple (119.5.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/schemes (119.5.0):
+    - MaterialComponents/schemes/Color (= 119.5.0)
+    - MaterialComponents/schemes/Container (= 119.5.0)
+    - MaterialComponents/schemes/Shape (= 119.5.0)
+    - MaterialComponents/schemes/Typography (= 119.5.0)
+    - "MaterialComponents/schemes/Typography+BasicFontScheme (= 119.5.0)"
+    - "MaterialComponents/schemes/Typography+Scheming (= 119.5.0)"
+  - MaterialComponents/schemes/Color (119.5.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+  - MaterialComponents/schemes/Container (119.5.0):
+    - MaterialComponents/schemes/Color
+    - MaterialComponents/schemes/Shape
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/schemes/Shape (119.5.0):
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+  - MaterialComponents/schemes/Typography (119.5.0):
+    - "MaterialComponents/schemes/Typography+BasicFontScheme"
+    - "MaterialComponents/schemes/Typography+Scheming"
+    - MaterialComponents/Typography
+  - "MaterialComponents/schemes/Typography+BasicFontScheme (119.5.0)"
+  - "MaterialComponents/schemes/Typography+Scheming (119.5.0)"
+  - MaterialComponents/ShadowElevations (119.5.0)
+  - MaterialComponents/ShadowLayer (119.5.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (119.5.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (119.5.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/Slider (119.5.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/ThumbTrack
+    - MaterialComponents/ShadowElevations
+  - "MaterialComponents/Slider+ColorThemer (119.5.0)":
+    - MaterialComponents/Palettes
+    - MaterialComponents/schemes/Color
+    - MaterialComponents/Slider
+  - MaterialComponents/Snackbar (119.5.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/OverlayWindow
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/Overlay
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+  - MaterialComponents/Tabs (119.5.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - "MaterialComponents/Tabs+TabBarView (119.5.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MDFInternationalization
+  - "MaterialComponents/Tabs+TabBarViewTheming (119.5.0)":
+    - MaterialComponents/schemes/Container
+    - "MaterialComponents/Tabs+TabBarView"
+  - "MaterialComponents/Tabs+Theming (119.5.0)":
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/Tabs
+    - "MaterialComponents/Tabs+TypographyThemer"
+  - "MaterialComponents/Tabs+TypographyThemer (119.5.0)":
+    - MaterialComponents/schemes/Typography
+    - MaterialComponents/Tabs
+  - "MaterialComponents/TextControls+BaseTextAreas (119.5.0)":
+    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+    - MDFInternationalization
+  - "MaterialComponents/TextControls+BaseTextFields (119.5.0)":
+    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+    - "MaterialComponents/private/TextControlsPrivate+TextFields"
+    - MDFInternationalization
+  - "MaterialComponents/TextControls+Enums (119.5.0)"
+  - "MaterialComponents/TextControls+FilledTextAreas (119.5.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+FilledStyle"
+    - "MaterialComponents/TextControls+BaseTextAreas"
+  - "MaterialComponents/TextControls+FilledTextAreasTheming (119.5.0)":
+    - MaterialComponents/schemes/Container
+    - "MaterialComponents/TextControls+FilledTextAreas"
+  - "MaterialComponents/TextControls+FilledTextFields (119.5.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+FilledStyle"
+    - "MaterialComponents/TextControls+BaseTextFields"
+  - "MaterialComponents/TextControls+FilledTextFieldsTheming (119.5.0)":
+    - MaterialComponents/schemes/Container
+    - "MaterialComponents/TextControls+FilledTextFields"
+  - "MaterialComponents/TextControls+OutlinedTextAreas (119.5.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
+    - "MaterialComponents/TextControls+BaseTextAreas"
+  - "MaterialComponents/TextControls+OutlinedTextAreasTheming (119.5.0)":
+    - MaterialComponents/schemes/Container
+    - "MaterialComponents/TextControls+OutlinedTextAreas"
+  - "MaterialComponents/TextControls+OutlinedTextFields (119.5.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
+    - "MaterialComponents/TextControls+BaseTextFields"
+  - "MaterialComponents/TextControls+OutlinedTextFieldsTheming (119.5.0)":
+    - MaterialComponents/schemes/Container
+    - "MaterialComponents/TextControls+OutlinedTextFields"
+  - "MaterialComponents/TextControls+UnderlinedTextFields (119.5.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+UnderlinedStyle"
+    - "MaterialComponents/TextControls+BaseTextFields"
+  - "MaterialComponents/TextControls+UnderlinedTextFieldsTheming (119.5.0)":
+    - MaterialComponents/schemes/Container
+    - "MaterialComponents/TextControls+UnderlinedTextFields"
+  - MaterialComponents/TextFields (119.5.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - "MaterialComponents/TextFields+ColorThemer (119.5.0)":
+    - MaterialComponents/TextFields
+    - MaterialComponents/Themes
+  - "MaterialComponents/TextFields+Theming (119.5.0)":
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/TextFields
+    - "MaterialComponents/TextFields+ColorThemer"
+  - MaterialComponents/Themes (119.5.0):
+    - MaterialComponents/schemes/Color
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/Typography (119.5.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+    - MDFTextAccessibility
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
+  - nanopb (2.30907.0):
+    - nanopb/decode (= 2.30907.0)
+    - nanopb/encode (= 2.30907.0)
+  - nanopb/decode (2.30907.0)
+  - nanopb/encode (2.30907.0)
+  - PromisesObjC (1.2.12)
 
 DEPENDENCIES:
   - Firebase
@@ -110,6 +750,7 @@ DEPENDENCIES:
   - Firebase/Messaging
   - Google-Mobile-Ads-SDK
   - lottie-ios
+  - MaterialComponents
 
 SPEC REPOS:
   trunk:
@@ -125,35 +766,45 @@ SPEC REPOS:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleDataTransport
+    - GoogleUserMessagingPlatform
     - GoogleUtilities
     - GTMSessionFetcher
     - leveldb-library
     - lottie-ios
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
+    - MotionAnimator
+    - MotionInterchange
     - nanopb
     - PromisesObjC
-    - Protobuf
 
 SPEC CHECKSUMS:
-  Firebase: 57957c8d6eb3d8b80a560b1dc58be24724b89ff2
-  FirebaseAnalytics: aa522dce9fd93002ba1554467d23ce7092323000
-  FirebaseAuth: a818d73466d51db897d3bf3c0f3baa3dae7fd4c0
-  FirebaseCore: 7930a1946517d94256d857f97371ed993b55f7bd
-  FirebaseCoreDiagnostics: 7535fe695737f8c5b350584292a70b7f8ff0357b
-  FirebaseDatabase: 55e69fe802ccb438d9c6ee51eb32fd425d5409d3
-  FirebaseInstallations: 3c520c951305cbf9ca54eb891ff9e6d1fd384881
-  FirebaseInstanceID: c4ad474b87787afd27d09541800620993b457d6f
-  FirebaseMessaging: 942cfe05b4f53c95ab8959395ca35c200398b2f0
-  Google-Mobile-Ads-SDK: a71d6bc14f9cf1f66d686dbdf9ad2091de04059c
-  GoogleAppMeasurement: 345d365fd105e6682bf5084783a5352a3db26820
-  GoogleDataTransport: af0c79193dc59acd37630b4833d0dc6912ae6bd5
-  GoogleUtilities: e121a3867449ce16b0e35ddf1797ea7a389ffdf2
-  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  Firebase: 09fb40287b6dfc8ee65f726fa0b788719d3f2a07
+  FirebaseAnalytics: adb3c8f02f83d00661cdaac6dbb4d54e9720d1b6
+  FirebaseAuth: d8dba8db90a1705ee2493857047282ca4f6e7598
+  FirebaseCore: 99c06e5a1e8d6952e75cb1f0a6d0b23c0f5ccdcf
+  FirebaseCoreDiagnostics: 3770093ac4f2be4590fa03cfa1d3a6e5602d4557
+  FirebaseDatabase: 0a619c887a9565bf4808eba37d2f0ed1d62f62d0
+  FirebaseInstallations: 30646fc9a61c6f4ee3cd7a8b7231721842b40c95
+  FirebaseInstanceID: 46d93d287108246fabbd85371ca27141d2c21ff9
+  FirebaseMessaging: 6112b5cd04e0ff58c4a9920e5e29cf193ea88439
+  Google-Mobile-Ads-SDK: 2f288748a42920d1c744946a460896a95b0e9110
+  GoogleAppMeasurement: 688d7f00e2894d9e13823ed9a028b13b993bc277
+  GoogleDataTransport: 1024b1a4dfbd7a0e92cb20d7e0a6f1fb66b449a4
+  GoogleUserMessagingPlatform: b168e8c46cd8f92aa3e34b584c4ca78a411ce367
+  GoogleUtilities: d866834472f1324d080496bc67ab3ce5d0d46027
+  GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
-  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
-  nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
-  PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
-  Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+  MaterialComponents: 2cdc12c16528ed7e6f1d5bd6d6927c47f9f4e90f
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
+  nanopb: 59221d7f958fb711001e6a449489542d92ae113e
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 02120cf2a8e94b87500f99d8b3010be5444af4c9
+PODFILE CHECKSUM: e72905208f6b1b4f2c936ce93dd06c39ec8e7571
 
 COCOAPODS: 1.9.1

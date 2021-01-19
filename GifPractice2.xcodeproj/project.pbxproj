@@ -2058,10 +2058,11 @@
 			buildConfigurationList = B1BE99B72461D190005766A6 /* Build configuration list for PBXNativeTarget "GifPractice2" */;
 			buildPhases = (
 				C7B6F8693E64B3101173CC1C /* [CP] Check Pods Manifest.lock */,
+				94CD5AEF0EB6DD227BAE25A5 /* [CP] Prepare Artifacts */,
 				B1BE999F2461D18F005766A6 /* Sources */,
 				B1BE99A02461D18F005766A6 /* Frameworks */,
 				B1BE99A12461D18F005766A6 /* Resources */,
-				931D9BC1D2C6FC181ECF47B5 /* [CP] Embed Pods Frameworks */,
+				F13C431331D6DC130F03B284 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2729,21 +2730,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		931D9BC1D2C6FC181ECF47B5 /* [CP] Embed Pods Frameworks */ = {
+		94CD5AEF0EB6DD227BAE25A5 /* [CP] Prepare Artifacts */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-artifacts-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Prepare Artifacts";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-artifacts-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-artifacts.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C7B6F8693E64B3101173CC1C /* [CP] Check Pods Manifest.lock */ = {
@@ -2766,6 +2767,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F13C431331D6DC130F03B284 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifPractice2/Pods-GifPractice2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
