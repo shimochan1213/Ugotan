@@ -180,6 +180,10 @@
 		B15A6606250A59A200920766 /* vehicle.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6605250A59A100920766 /* vehicle.gif */; };
 		B15A6608250A5A6B00920766 /* brochure.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6607250A5A6A00920766 /* brochure.gif */; };
 		B15A660A250A5FB900920766 /* delivery.gif in Resources */ = {isa = PBXBuildFile; fileRef = B15A6609250A5FB700920766 /* delivery.gif */; };
+		B15A87E525A3405F0031622C /* ShuffleHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A87E425A3405F0031622C /* ShuffleHomeViewController.swift */; };
+		B15A87E825A341170031622C /* ShuffleManabuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A87E725A341170031622C /* ShuffleManabuViewController.swift */; };
+		B15A87EB25A3412C0031622C /* ShuffleTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A87EA25A3412C0031622C /* ShuffleTestViewController.swift */; };
+		B15A87EE25A341440031622C /* ShuffleReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A87ED25A341440031622C /* ShuffleReviewViewController.swift */; };
 		B15DB49D24E039D100A14C11 /* ResultTLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DB49C24E039D100A14C11 /* ResultTLViewController.swift */; };
 		B171AFB724DD223B00CF5214 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171AFB624DD223B00CF5214 /* TestViewController.swift */; };
 		B171AFBB24DD3ECE00CF5214 /* ManabuRangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171AFBA24DD3ECE00CF5214 /* ManabuRangeViewController.swift */; };
@@ -808,6 +812,10 @@
 		B15A6605250A59A100920766 /* vehicle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = vehicle.gif; path = ../../../../Downloads/vehicle.gif; sourceTree = "<group>"; };
 		B15A6607250A5A6A00920766 /* brochure.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = brochure.gif; sourceTree = "<group>"; };
 		B15A6609250A5FB700920766 /* delivery.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = delivery.gif; sourceTree = "<group>"; };
+		B15A87E425A3405F0031622C /* ShuffleHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleHomeViewController.swift; sourceTree = "<group>"; };
+		B15A87E725A341170031622C /* ShuffleManabuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleManabuViewController.swift; sourceTree = "<group>"; };
+		B15A87EA25A3412C0031622C /* ShuffleTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleTestViewController.swift; sourceTree = "<group>"; };
+		B15A87ED25A341440031622C /* ShuffleReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleReviewViewController.swift; sourceTree = "<group>"; };
 		B15DB49C24E039D100A14C11 /* ResultTLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTLViewController.swift; sourceTree = "<group>"; };
 		B171AFB624DD223B00CF5214 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		B171AFBA24DD3ECE00CF5214 /* ManabuRangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManabuRangeViewController.swift; sourceTree = "<group>"; };
@@ -1947,6 +1955,10 @@
 				B13638B824E296370089ED95 /* SetsumeiViewController.swift */,
 				B117C59D250380FB003266C3 /* SettingViewController.swift */,
 				B1E76F53256A49B500604254 /* EditUserNameViewController.swift */,
+				B15A87E425A3405F0031622C /* ShuffleHomeViewController.swift */,
+				B15A87E725A341170031622C /* ShuffleManabuViewController.swift */,
+				B15A87EA25A3412C0031622C /* ShuffleTestViewController.swift */,
+				B15A87ED25A341440031622C /* ShuffleReviewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2725,6 +2737,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E76F54256A49B500604254 /* EditUserNameViewController.swift in Sources */,
+				B15A87E825A341170031622C /* ShuffleManabuViewController.swift in Sources */,
 				B1C49DEE24DB006600C25A35 /* ManabuViewController.swift in Sources */,
 				B1A96B39248E98E000E751EA /* WhichHinshiViewController.swift in Sources */,
 				B196DD5424FCB548009DD78C /* ReviewRangeViewController.swift in Sources */,
@@ -2737,6 +2750,7 @@
 				B1A4CE292472F5BF009F361F /* MaterialModel.swift in Sources */,
 				B122FFC9248CF23600D5450B /* ModeSelectViewController.swift in Sources */,
 				B13638B924E296370089ED95 /* SetsumeiViewController.swift in Sources */,
+				B15A87EB25A3412C0031622C /* ShuffleTestViewController.swift in Sources */,
 				B196DD5624FCB665009DD78C /* ReviewViewController.swift in Sources */,
 				B15DB49D24E039D100A14C11 /* ResultTLViewController.swift in Sources */,
 				B171AFBB24DD3ECE00CF5214 /* ManabuRangeViewController.swift in Sources */,
@@ -2744,7 +2758,9 @@
 				B17FD11224629C3E00F13729 /* SoundFile.swift in Sources */,
 				B1E563B02492A6BF000B69C6 /* WhichHinshiTestViewController.swift in Sources */,
 				B196DD5224FCB478009DD78C /* WhichReviewViewController.swift in Sources */,
+				B15A87EE25A341440031622C /* ShuffleReviewViewController.swift in Sources */,
 				B1BE99A92461D18F005766A6 /* SceneDelegate.swift in Sources */,
+				B15A87E525A3405F0031622C /* ShuffleHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

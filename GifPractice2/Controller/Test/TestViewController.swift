@@ -45,7 +45,6 @@ class TestViewController: UIViewController{
     @IBOutlet weak var quesNumberLabel: UILabel!
     
     
-    //コードを見る担当者様へ。品詞に関するswitch文が長くて申し訳ありません・・。メソッドで実行しようとしたのですがどうもうまくいかず、全てswitch文を書いてあります。お手数おかけします。
     
     
     override func viewDidLoad() {

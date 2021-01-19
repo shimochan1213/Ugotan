@@ -22,6 +22,12 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     var receivedCellNumber = Int()
     var whichHinshi = String()
     var learnedNumber = 0
+    var timerSec = 3.0
+    
+    //制限時間
+    var timerCount = 2
+    var timer2 = Timer()
+    
     
     
     @IBOutlet var beforeViewBtn: UIView!
@@ -32,6 +38,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var japanWordLabel: UILabel!
     @IBOutlet weak var gifView: UIImageView!
+    @IBOutlet weak var countdownLabel: UILabel!
     
     
     
@@ -54,9 +61,22 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         case false:
             // タイマーを設定
         setTimer()
+            
+            
+            
+            //             タイマーを設定　制限時間カウントダウンタイマー
+            timer2 = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ManabuViewController.onTimer2(timer:)), userInfo: nil, repeats: true)
+            countdownLabel.text = String(timerCount)
+        
+            
         default:
             break
         }
+        
+        
+
+        
+        
         
         //2回目以降の起動
         switch receivedCellNumber {
@@ -81,6 +101,10 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @objc func onTimer(timer: Timer) {
+        
+        //残り時間ラベル
+        timer2.invalidate()
+        setTimer2()
         
         //countが問題数最大になるならreturn
         if receivedCellNumber == 0{
@@ -354,6 +378,16 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
+    
+    //残り時間のラベル
+    @objc func onTimer2(timer:Timer){
+        timerCount -= 1
+        //ラベルに表示
+        countdownLabel.text = String(timerCount)
+    }
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
@@ -362,10 +396,15 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
+
+    
     
     
     
     @IBAction func beforeQuestion(_ sender: Any) {
+        
+        timer2.invalidate()
+        setTimer2()
         
         //問題のはじめは戻るボタン押せない様にする
         if wordCount == 0 || wordCount == 30 || wordCount == 60 || wordCount == 90 || wordCount == 120 || wordCount == 150 || wordCount == 180{
@@ -420,14 +459,23 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     func setTimer(){
-        timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: timerSec, target: self, selector: #selector(ManabuViewController.onTimer(timer:)), userInfo: nil, repeats: true)
     }
     
+    func setTimer2(){
+        //残り時間を表示
+       
+        timerCount = 2
+        timer2 = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ManabuViewController.onTimer2(timer:)), userInfo: nil, repeats: true)
+        countdownLabel.text = String(timerCount)
+    }
     
     
     
     @IBAction func stopAndRestartButton(_ sender: Any) {
         //一時停止する
+        
+        timer2.invalidate()
         
         if timerChecker == true{
             
@@ -448,6 +496,7 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
             
             //再開させる
             setTimer()
+            setTimer2()
             timerChecker = true
             //アイコンを⏸にする
             let image = UIImage(named: "pause2")
@@ -464,6 +513,9 @@ class ManabuViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func nextWordsButton(_ sender: Any) {
         
+        
+        timer2.invalidate()
+        setTimer2()
         
         //countが問題数最大になるならreturn
         if receivedCellNumber == 0{
