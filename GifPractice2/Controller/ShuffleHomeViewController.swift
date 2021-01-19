@@ -19,7 +19,7 @@ class ShuffleHomeViewController: UIViewController,UICollectionViewDelegate,UICol
     @IBOutlet weak var ReviewCollectionView: UICollectionView!
     @IBOutlet weak var learnCollectionView: UICollectionView!
     
-    let ranges: [String] = ["1-20","21-40","41-60","61-80","81-100"]
+    let ranges: [String] = ["1-50","51-100","101-150","151-200","201-250","251-300","301-350","351-400"]
     
     //タップされたセルの番号を入れておく
     var cellNumber = Int()

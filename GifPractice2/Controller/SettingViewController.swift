@@ -10,10 +10,22 @@ import UIKit
 
 //設定画面のコントローラ
 
+extension UserDefaults {
+
+    var sliderValue: Float {
+        get { return float(forKey: "SliderValue") }
+        set { set(newValue, forKey: "SliderValue") }
+    }
+}
+
+
 class SettingViewController: UIViewController {
     
     var gifOnOff = true
     var switchOnOff = false
+    @IBOutlet weak var secSliderForManabu: UISlider!
+    var secForManabu = Int()
+    @IBOutlet weak var secLabel: UILabel!
     
     @IBOutlet weak var Gifswitch: UISwitch!
     
@@ -32,6 +44,18 @@ class SettingViewController: UIViewController {
             }else{
                 Gifswitch.setOn(false, animated: true)
             }
+        }
+        
+     
+        //保存されている値をスライダーに反映
+        secSliderForManabu.value = UserDefaults.standard.sliderValue
+        
+        
+        if UserDefaults.standard.object(forKey: "secForManabu") != nil{
+            secForManabu = UserDefaults.standard.object(forKey: "secForManabu") as! Int
+            secLabel.text = "学ぶモードの自動遷移秒数： \(secForManabu)"
+        }else{
+            secLabel.text = "学ぶモードの自動遷移秒数： 6"
         }
         
         
@@ -62,6 +86,18 @@ class SettingViewController: UIViewController {
             
         }
     }
+    
+    @IBAction func sliderValue(_ sender: UISlider) {
+        //学ぶモードの自動遷移までの時間を設定
+        secForManabu = Int(sender.value)
+        secLabel.text = "学ぶモードの自動遷移秒数： \(secForManabu)"
+
+        UserDefaults.standard.set(secForManabu, forKey: "secForManabu")
+        
+        UserDefaults.standard.sliderValue = secSliderForManabu.value
+    }
+    
+    
     
     
     
