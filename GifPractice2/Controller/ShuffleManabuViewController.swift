@@ -13,18 +13,19 @@ import Lottie
 
 class ShuffleManabuViewController: UIViewController {
     
-    @IBOutlet weak var numberLabel: UILabel!
     // AVSpeechSynthesizerをクラス変数で保持しておく、インスタンス変数だと読み上げるまえに破棄されてしまう
     var speechSynthesizer : AVSpeechSynthesizer!
-    @IBOutlet weak var manabuImageView: UIImageView!
+    
+    @IBOutlet weak var gifView: UIImageView!
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var japanWordLabel: UILabel!
-    @IBOutlet weak var manabuView: UIView!
+    @IBOutlet weak var numberLabel: UILabel!
     
     var materialList = MaterialList()
     var wordCount = 0
-    var refString = String()
     
+
+    @IBOutlet weak var manabuView: UIView!
     var animationView = AnimationView()
     
     //単語の範囲を受け取る
@@ -38,13 +39,6 @@ class ShuffleManabuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-      
-        
-       
-        
-        
-        
         
         //単語の範囲を指定
         switch receivedCellNumber {
@@ -65,16 +59,18 @@ class ShuffleManabuViewController: UIViewController {
         }
         
         manabuView.layer.cornerRadius = 20
-        manabuImageView.layer.cornerRadius = 20
+        gifView.layer.cornerRadius = 20
         //materia design風の影の付け方の基本
         manabuView.layer.shadowColor = UIColor.black.cgColor
         manabuView.layer.shadowRadius = 1
         manabuView.layer.shadowOpacity = 0.5
         manabuView.layer.shadowOffset = CGSize(width: 1, height: 1)
-        //単語の番号を表示
-        numberLabel.text = String("No. \(wordCount + 1)")
-        wordLabel.text = materialList.TOEIC600NounList[wordCount].Words
-        japanWordLabel.text = materialList.TOEIC600NounList[wordCount].japanWords
+//        //単語の番号を表示
+//        numberLabel.text = String("No. \(wordCount + 1)")
+//        wordLabel.text = materialList.TOEIC600List[wordCount].Words
+//        japanWordLabel.text = materialList.TOEIC600List[wordCount].japanWords
+        
+        displayGifWordJapan()
         
         
     }
@@ -86,48 +82,43 @@ class ShuffleManabuViewController: UIViewController {
     
 
     
-    
     @IBAction func playSound(_ sender: Any) {
-        
         // AVSpeechSynthesizerのインスタンス作成
         self.speechSynthesizer = AVSpeechSynthesizer()
         // 読み上げる、文字、言語などの設定
-        let utterance = AVSpeechUtterance(string:materialList.TOEIC600NounList[wordCount].Words) // 読み上げる文字
+        let utterance = AVSpeechUtterance(string:materialList.TOEIC600List[wordCount].Words) // 読み上げる文字
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US") // 言語
         utterance.rate = 0.5; // 読み上げ速度
         utterance.pitchMultiplier = 1.3; // 読み上げる声のピッチ
         utterance.preUtteranceDelay = 0; // 読み上げるまでのため
         self.speechSynthesizer.speak(utterance)
-        
     }
+    
     
     
     @IBAction func close(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    
+
+    
     @IBAction func nextWord(_ sender: Any) {
         NEXTWORD()
-        
     }
     
+    
+
     @IBAction func beforeWord(_ sender: Any) {
         BEFOREWORD()
     }
     
-
+    
+    
     
     func endLearning(){
-        //ログイン済みであれば学んだ単語数をfirestoreに送信する
-        if Auth.auth().currentUser?.uid != nil{
-            //学んだ単語数をfirestoreに送信する
-            //ドキュメントの中身を一部更新する
-            db.collection("Profile").document(refString).updateData(["learnedNumber" : learnedNumber + 20]) { (error) in
-                print(error.debugDescription)
-                return
-            }
-            
-        }
+        //学んだ単語数を保存
+      
         
         dismiss(animated: true, completion: nil)
     }
@@ -160,11 +151,11 @@ class ShuffleManabuViewController: UIViewController {
         }
 
         wordCount += 1
-        getImages(keyword: materialList.TOEIC600NounList[wordCount].Words)
-        wordLabel.text = materialList.TOEIC600NounList[wordCount].Words
-        japanWordLabel.text = materialList.TOEIC600NounList[wordCount].japanWords
-        //単語の番号を表示
-        numberLabel.text = String("No. \(wordCount + 1)")
+//        wordLabel.text = materialList.TOEIC600List[wordCount].Words
+//        japanWordLabel.text = materialList.TOEIC600List[wordCount].japanWords
+//        //単語の番号を表示
+//        numberLabel.text = String("No. \(wordCount + 1)")
+        displayGifWordJapan()
     }
     
     func BEFOREWORD(){
@@ -174,15 +165,26 @@ class ShuffleManabuViewController: UIViewController {
         }
         
         wordCount -= 1
-        getImages(keyword: materialList.TOEIC600NounList[wordCount].Words)
-        wordLabel.text = materialList.TOEIC600NounList[wordCount].Words
-        japanWordLabel.text = materialList.TOEIC600NounList[wordCount].japanWords
-        //単語の番号を表示
-        numberLabel.text = String("No. \(wordCount + 1)")
+//        wordLabel.text = materialList.TOEIC600List[wordCount].Words
+//        japanWordLabel.text = materialList.TOEIC600List[wordCount].japanWords
+//        //単語の番号を表示
+//        numberLabel.text = String("No. \(wordCount + 1)")
+        displayGifWordJapan()
     }
     
     
- 
+    
+    func displayGifWordJapan(){
+        //単語の番号、gif,英単語とその訳を表示する
+        
+        numberLabel.text = String("No. \(wordCount + 1)")
+        
+        
+        gifView.loadGif(name: materialList.TOEIC600List[wordCount].Words)
+        wordLabel.text = String(materialList.TOEIC600List[wordCount].Words)
+        japanWordLabel.text = String(materialList.TOEIC600List[wordCount].japanWords)
+        
+    }
     
     
     
