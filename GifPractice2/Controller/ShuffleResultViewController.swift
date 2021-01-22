@@ -21,11 +21,14 @@ class ShuffleResultViewController: UIViewController,UITableViewDelegate,UITableV
     var correctCount = 0
     var incorrectCount = 0
     
-    var noun0:[Int] = []
-    var noun1:[Int] = []
-    var noun2:[Int] = []
-    var noun3:[Int] = []
-    var noun4:[Int] = []
+    var TOEIC0:[Int] = []
+    var TOEIC1:[Int] = []
+    var TOEIC2:[Int] = []
+    var TOEIC3:[Int] = []
+    var TOEIC4:[Int] = []
+    var TOEIC5:[Int] = []
+    var TOEIC6:[Int] = []
+    var TOEIC7:[Int] = []
     
     var materialList = MaterialList()
     let soundFile = SoundFile()
@@ -80,23 +83,29 @@ class ShuffleResultViewController: UIViewController,UITableViewDelegate,UITableV
             
         }else{
             
-            correctRateLabel.text = "正解数:\(correctCount)　不正解数:\(incorrectCount)　正解率は\(Int(correctCount * 100 / (correctCount + incorrectCount) ) )％です"
+//            correctRateLabel.text = "正解数:\(correctCount)　不正解数:\(incorrectCount)　正解率は\(Int(correctCount * 100 / (correctCount + incorrectCount) ) )％です"
         }
         
         
         //復習用に、間違えた単語たちを保存
         //名詞　セル0 ならば　”noun0”で配列の中身を保存
         switch receivedCellNumber{
-        case 0:noun0 = receivedIncorrectNumberArray
-            UserDefaults.standard.set(noun0, forKey: "noun0")
-        case 1:noun1 = receivedIncorrectNumberArray
-            UserDefaults.standard.set(noun1, forKey: "noun1")
-        case 2:noun2 = receivedIncorrectNumberArray
-            UserDefaults.standard.set(noun2, forKey: "noun2")
-        case 3:noun3 = receivedIncorrectNumberArray
-            UserDefaults.standard.set(noun3, forKey: "noun3")
-        case 4:noun4 = receivedIncorrectNumberArray
-            UserDefaults.standard.set(noun4, forKey: "noun4")
+        case 0:TOEIC0 = receivedIncorrectNumberArray
+            UserDefaults.standard.set(TOEIC0, forKey: "TOEIC0")
+        case 1:TOEIC1 = receivedIncorrectNumberArray
+            UserDefaults.standard.set(TOEIC1, forKey: "TOEIC1")
+        case 2:TOEIC2 = receivedIncorrectNumberArray
+            UserDefaults.standard.set(TOEIC2, forKey: "TOEIC2")
+        case 3:TOEIC3 = receivedIncorrectNumberArray
+            UserDefaults.standard.set(TOEIC3, forKey: "TOEIC3")
+        case 4:TOEIC4 = receivedIncorrectNumberArray
+            UserDefaults.standard.set(TOEIC4, forKey: "TOEIC4")
+        case 5:TOEIC2 = receivedIncorrectNumberArray
+            UserDefaults.standard.set(TOEIC5, forKey: "TOEIC5")
+        case 6:TOEIC6 = receivedIncorrectNumberArray
+            UserDefaults.standard.set(TOEIC6, forKey: "TOEIC6")
+        case 7:TOEIC7 = receivedIncorrectNumberArray
+            UserDefaults.standard.set(TOEIC7, forKey: "TOEIC7")
         default: return
         }
         
@@ -105,6 +114,7 @@ class ShuffleResultViewController: UIViewController,UITableViewDelegate,UITableV
     }
     
     @objc func buttonTapped(_ sender: UIButton){
+        //ホームへ戻る
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
@@ -123,10 +133,15 @@ class ShuffleResultViewController: UIViewController,UITableViewDelegate,UITableV
         
         let imageView = cell.viewWithTag(1) as! UIImageView
         imageView.layer.cornerRadius = 10
+        imageView.loadGif(name: materialList.TOEIC600List[receivedIncorrectNumberArray[indexPath.row]].Words)
+        
+        
         let wordLabel = cell.viewWithTag(2) as! UILabel
-        wordLabel.text = materialList.TOEIC600NounList[receivedIncorrectNumberArray[indexPath.row]].Words
+        wordLabel.text = materialList.TOEIC600List[receivedIncorrectNumberArray[indexPath.row]].Words
         let jpnWordLabel = cell.viewWithTag(3) as! UILabel
-        jpnWordLabel.text = materialList.TOEIC600NounList[receivedIncorrectNumberArray[indexPath.row]].japanWords
+        jpnWordLabel.text = materialList.TOEIC600List[receivedIncorrectNumberArray[indexPath.row]].japanWords
+        
+        
         
         
         
@@ -138,7 +153,7 @@ class ShuffleResultViewController: UIViewController,UITableViewDelegate,UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        soundYomiage(string: materialList.TOEIC600NounList[receivedIncorrectNumberArray[indexPath.row]].Words)
+        soundYomiage(string: materialList.TOEIC600List[receivedIncorrectNumberArray[indexPath.row]].Words)
     }
     
     
@@ -155,13 +170,12 @@ class ShuffleResultViewController: UIViewController,UITableViewDelegate,UITableV
     }
     
     
+    @IBAction func closeBtn(_ sender: Any) {
+        //2つ前の画面に戻る
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     
     
-//    @IBAction func closeBtn(_ sender: Any) {
-//        //2つ前の画面に戻る
-//        print("aa")
-//        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
-//    }
     
     
 }

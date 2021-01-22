@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TLA-G4-UvE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TLA-G4-UvE">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1453,7 +1453,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                         <outlet property="learnCollectionView" destination="fPG-Eh-lgv" id="1d2-bk-h8U"/>
                         <outlet property="testCollectionView" destination="FG7-NZ-KCI" id="Kjh-DL-FWv"/>
                         <segue destination="aPF-ZQ-UlS" kind="presentation" identifier="test" modalPresentationStyle="fullScreen" id="k1K-HB-HZf"/>
-                        <segue destination="6Yt-pc-uSm" kind="presentation" modalPresentationStyle="fullScreen" id="cgV-3z-wfQ"/>
+                        <segue destination="6Yt-pc-uSm" kind="presentation" identifier="review" modalPresentationStyle="fullScreen" id="cgV-3z-wfQ"/>
                         <segue destination="ETV-oe-8E8" kind="presentation" identifier="manabu" modalPresentationStyle="fullScreen" id="qLb-xb-fUC"/>
                     </connections>
                 </viewController>
@@ -1558,6 +1558,13 @@ ca-app-pub-5717197999913003/9349881106</string>
                                     <action selector="closeBtn:" destination="aPF-ZQ-UlS" eventType="touchUpInside" id="q9A-H4-RXJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvG-aw-FkH">
+                                <rect key="frame" x="39" y="42" width="39" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CeY-j1-NZl"/>
                         <color key="backgroundColor" red="0.95907469869999995" green="1" blue="0.9143457196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1579,6 +1586,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                     </view>
                     <navigationItem key="navigationItem" id="maQ-K8-PZ4"/>
                     <connections>
+                        <outlet property="countdownLabel" destination="nvG-aw-FkH" id="TUQ-nX-N77"/>
                         <outlet property="jpnWordLabel" destination="BCn-2B-zD1" id="yN5-90-fIm"/>
                         <outlet property="quesNumberLabel" destination="901-O6-rbL" id="MRW-0V-gbJ"/>
                         <outlet property="selec1" destination="QZX-e9-Izq" id="CaU-Ml-nUQ"/>
@@ -1586,17 +1594,17 @@ ca-app-pub-5717197999913003/9349881106</string>
                         <outlet property="selec3" destination="LXI-BI-suG" id="pTz-6G-OxX"/>
                         <outlet property="selec4" destination="JG0-09-Dq3" id="hvt-a5-aEA"/>
                         <outlet property="wordLabel" destination="Mvp-i1-lBf" id="qLC-hp-3NQ"/>
-                        <segue destination="4qc-6a-vYB" kind="presentation" modalPresentationStyle="fullScreen" id="vJo-NE-I5d"/>
+                        <segue destination="4qc-6a-vYB" kind="presentation" identifier="result" modalPresentationStyle="fullScreen" id="vJo-NE-I5d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Uv-yG-LQY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6343" y="3833"/>
+            <point key="canvasLocation" x="-6343.1999999999998" y="3832.5337331334335"/>
         </scene>
-        <!--Review View Controller-->
+        <!--Shuffle Review View Controller-->
         <scene sceneID="wYG-xh-GT2">
             <objects>
-                <viewController id="6Yt-pc-uSm" customClass="ReviewViewController" customModule="ugotan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6Yt-pc-uSm" customClass="ShuffleReviewViewController" customModule="ugotan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Wx-bG-Trz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1626,7 +1634,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                                     </connections>
                                 </button>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="187" id="fDV-Fi-BVj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="187" id="fDV-Fi-BVj">
                                         <rect key="frame" x="0.0" y="28" width="375" height="187"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fDV-Fi-BVj" id="67y-os-iXJ">
@@ -1652,7 +1660,7 @@ ca-app-pub-5717197999913003/9349881106</string>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="97f-V0-7F8">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="97f-V0-7F8">
                                                     <rect key="frame" x="16" y="66" width="265" height="103"/>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="volume2" translatesAutoresizingMaskIntoConstraints="NO" id="bmX-fo-UFe">
@@ -1935,6 +1943,9 @@ ca-app-pub-5717197999913003/9349881106</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6h-0S-7Tx">
                                 <rect key="frame" x="301" y="14" width="64" height="64"/>
                                 <state key="normal" image="crossGrey"/>
+                                <connections>
+                                    <action selector="closeBtn:" destination="4qc-6a-vYB" eventType="touchUpInside" id="L9m-Oe-hMA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wVv-kq-dWb"/>
@@ -1963,7 +1974,7 @@ ca-app-pub-5717197999913003/9349881106</string>
     </scenes>
     <resources>
         <image name="180reo-1" width="180" height="180"/>
-        <image name="applelogo" catalog="system" width="128" height="121"/>
+        <image name="applelogo" catalog="system" width="103" height="128"/>
         <image name="back3" width="128" height="128"/>
         <image name="bookmark.fill" catalog="system" width="112" height="128"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>

@@ -45,6 +45,14 @@ class ShuffleTestViewController: UIViewController,UIGestureRecognizerDelegate  {
     var tapGesture: UITapGestureRecognizer!
     var tapOK:Bool = false
     
+    //カウントダウンのラベル用
+    var timerCount = 5
+    var timer2 = Timer()
+    @IBOutlet weak var countdownLabel: UILabel!
+    
+    //次の単語に行くまでの秒数
+    var timerSec = 6.0
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,7 +98,85 @@ class ShuffleTestViewController: UIViewController,UIGestureRecognizerDelegate  {
         
         //        nextQuesBtn.isEnabled = false
         
+        
+        setTimer()
+        setTimer2()
+        
+        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        if UserDefaults.standard.object(forKey: "learnedNumber") != nil{
+            learnedNumber = UserDefaults.standard.object(forKey: "learnedNumber") as! Int
+        }
+    }
+    
+    
+    func setTimer(){
+        timer = Timer.scheduledTimer(timeInterval: timerSec, target: self, selector: #selector(ShuffleTestViewController.onTimer(timer:)), userInfo: nil, repeats: true)
+    }
+    
+    @objc func onTimer(timer: Timer) {
+        //配列のカウントまでとしてout of rangeしないようにする
+        if wordCount == materialList.TOEIC600List.count - 1{
+            endTest()
+            //下の処理を続けないようにreturn
+            return
+        }
+        
+        //正解表示
+        jpnWordLabel.text = materialList.TOEIC600List[wordCount].japanWords
+        
+        //解答後、初めてタップを有効にする
+        tapOK = true
+        
+        //ボタン何回も押してアニメバグらないように
+        selec1.isEnabled = false
+        selec2.isEnabled = false
+        selec3.isEnabled = false
+        selec4.isEnabled = false
+        
+        timer.invalidate()
+        timer2.invalidate()
+        
+        playIncorrectAniSound()
+        incorrectArray.append(wordCount)
+        
+
+//
+//        setTimer2()
+//        endOrContinue()
+
+    }
+    
+    
+    func setTimer2(){
+        //残り時間を表示
+        timer2.invalidate()
+        countdownLabel.textColor = .black
+        timerCount = 5
+        
+        timer2 = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ShuffleTestViewController.onTimer2(timer:)), userInfo: nil, repeats: true)
+        countdownLabel.text = String(timerCount)
+    }
+    
+    
+    
+    //残り時間のラベル
+    @objc func onTimer2(timer:Timer){
+        timerCount -= 1
+        //ラベルに表示
+        countdownLabel.text = String(timerCount)
+        if timerCount == 0 {
+            countdownLabel.textColor = .red
+        }
+    }
+    
+    
+    
+    
     
     // ジェスチャーイベント処理
     @objc func tap(_ sender: UITapGestureRecognizer) {
@@ -159,6 +245,10 @@ class ShuffleTestViewController: UIViewController,UIGestureRecognizerDelegate  {
         default:
             break
         }
+        
+        //タイマーとめる
+        timer.invalidate()
+        timer2.invalidate()
         
         //正解表示
         jpnWordLabel.text = materialList.TOEIC600List[wordCount].japanWords
@@ -261,12 +351,16 @@ class ShuffleTestViewController: UIViewController,UIGestureRecognizerDelegate  {
         
         //正解不正解のアニメ消す
         animationView.removeFromSuperview()
-        
+    
         //out of rangeしないように。
         if wordCount == materialList.TOEIC600List.count - 1{
             endTest()
             return
         }
+        
+        //タイマー再開
+        setTimer()
+        setTimer2()
         
         
         wordCount += 1
@@ -354,6 +448,8 @@ class ShuffleTestViewController: UIViewController,UIGestureRecognizerDelegate  {
     func endTest(){
         
      //学んだ単語数を記録
+        learnedNumber += 50
+        UserDefaults.standard.setValue(self.learnedNumber, forKey: "learnedNumber")
         
         //結果画面へ
         performSegue(withIdentifier: "result", sender: nil)
@@ -366,9 +462,9 @@ class ShuffleTestViewController: UIViewController,UIGestureRecognizerDelegate  {
         resultVC.receivedIncorrectNumberArray = incorrectArray
         //単語の範囲を渡す（復習用保存のため）
         resultVC.receivedCellNumber = receivedCellNumber
-        //正解数不正解数を渡す
-        resultVC.correctCount = correctCount
-        resultVC.incorrectCount = incorrectCount
+//        //正解数不正解数を渡す
+//        resultVC.correctCount = correctCount
+//        resultVC.incorrectCount = incorrectCount
         
     }
     
@@ -410,7 +506,7 @@ class ShuffleTestViewController: UIViewController,UIGestureRecognizerDelegate  {
         animationView.play()
         
         //音ならす
-        soundFile.playSound(fileName: "fuseikai", extensionName: "mp3")
+//        soundFile.playSound(fileName: "fuseikai", extensionName: "mp3")
         incorrectCount += 1
     }
     
